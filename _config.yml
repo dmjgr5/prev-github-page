@@ -8,15 +8,15 @@ permalink:           pretty
 title:               "Developer Note"
 tagline:             'Day by day, in Everyway, I am getting better and better'
 description:         'One a day'
-url:                 https://thedevlayer.github.io
+url:                 https://dmjgr5.github.io
 baseurl:             ''
 paginate:            5
 
 # About/contact
 author:
   name:              dcp
-  url:               https://thedevlayer.github.io
-  email:             thedevlayer@gmail.com
+  url:               https://dmjgr5.github.io
+  email:             dmjgr5@gmail.com
 
 # Custom vars
 version:             1.0.0
@@ -40,7 +40,7 @@ google_analytics:
   ua: 'UA-109898110-1'
 
 github:
-  repo: 'https://github.com/thedevlayer/thedevlayer.github.io'
+  repo: 'https://github.com/dmjgr5/dmjgr5.github.io'
 
 category_dir: category/
 tag_dir: tag/

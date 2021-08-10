@@ -84,9 +84,9 @@ Writing objects: 100% (3/3), 203 bytes | 67.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 remote:
 remote: Create a pull request for 'master' on GitHub by visiting:
-remote:      https://github.com/thedevlayer/test/pull/new/master
+remote:      https://github.com/dmjgr5/test/pull/new/master
 remote:
-To https://github.com/thedevlayer/test.git
+To https://github.com/dmjgr5/test.git
  * [new branch]      master -> master
 ```
 

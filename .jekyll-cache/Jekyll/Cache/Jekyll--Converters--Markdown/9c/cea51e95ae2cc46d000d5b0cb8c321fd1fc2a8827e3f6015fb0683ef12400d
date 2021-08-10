@@ -1,4 +1,4 @@
-I"�<h2 id="로컬-저장소를-github-에-올리고-싶다면-">로컬 저장소를 Github 에 올리고 싶다면 ??</h2>
+I"�<h2 id="로컬-저장소를-github-에-올리고-싶다면-">로컬 저장소를 Github 에 올리고 싶다면 ??</h2>
 
 <blockquote>
   <p>로컬에 있는 데이터 및 소스들을 Github 에 올리기 위해 필요한 절차 및 명령어를 간단히 정리해 보고자 한다.</p>
@@ -81,9 +81,9 @@ Writing objects: 100% (3/3), 203 bytes | 67.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 remote:
 remote: Create a pull request for 'master' on GitHub by visiting:
-remote:      https://github.com/thedevlayer/test/pull/new/master
+remote:      https://github.com/dmjgr5/test/pull/new/master
 remote:
-To https://github.com/thedevlayer/test.git
+To https://github.com/dmjgr5/test.git
  * [new branch]      master -&gt; master
 </code></pre></div></div>
 
