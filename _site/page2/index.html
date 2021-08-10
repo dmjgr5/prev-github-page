@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Developer Note &middot; Day by day, in Everyway, I am getting better and better
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/font.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="https://thedevlayer.github.io/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109898110-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109898110-1', 'auto');
+</script>
+
+  
+
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>One a day</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="https://thedevlayer.github.io/">Home</a>
+
+    
+
+    <!-- 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     -->
+<!-- 
+    <a class="sidebar-nav-item" href="https://github.com/thedevlayer/thedevlayer.github.io">GitHub project</a> -->
+  </nav>
+  <div>
+    <div class="sidebar-nav-item">Category</div>
+    <nav class="content-ul">
+      
+
+
+      
+      <a href="/category/#01_Algorithm"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                01_Algorithm
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#02_AI"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                02_AI
+                            </span>
+        <span class="badge">1</span>
+      </a>
+      
+      <a href="/category/#03_Cloud"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                03_Cloud
+                            </span>
+        <span class="badge">1</span>
+      </a>
+      
+      <a href="/category/#04_ToyProject"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                04_ToyProject
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+    </nav>
+  </div>
+  <div>
+    <div class="sidebar-nav-item">Tags</div>
+    <div class="tags-cloud">
+      <div>
+        
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#tensorflow" style="font-size: 9pt; color: #555;">tensorflow</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#주식" style="font-size: 18pt; color: #eee;">주식</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Python" style="font-size: 9pt; color: #555;">Python</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PyQt5" style="font-size: 9pt; color: #555;">PyQt5</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LCA" style="font-size: 9pt; color: #555;">LCA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SparseTable" style="font-size: 9pt; color: #555;">SparseTable</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MST" style="font-size: 9pt; color: #555;">MST</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#BFS" style="font-size: 9pt; color: #555;">BFS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#FailureFunction" style="font-size: 9pt; color: #555;">FailureFunction</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Priority Queue" style="font-size: 9pt; color: #555;">Priority Queue</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Django" style="font-size: 9pt; color: #555;">Django</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Git" style="font-size: 9pt; color: #555;">Git</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Github" style="font-size: 9pt; color: #555;">Github</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <a class="sidebar-nav-item" href="https://github.com/thedevlayer/thedevlayer.github.io">GitHub project</a> -->
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a class="sidebar-nav-item" href="/about/">About</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2021. All rights reserved.
+    </p>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('hashchange', function(){
+    location.reload();
+  });
+</script>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="https://thedevlayer.github.io/" title="Home">Developer Note</a>
+            <small>Day by day, in Everyway, I am getting better and better</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/04_toyproject/2020/01/03/toy-creon/">
+        파이썬을 이용한 주식관리 프로그램
+      </a>
+    </h1>
+
+    <span class="post-date">03 Jan 2020</span>
+
+    <!-- ## 목차
+1. [프로젝트 목적](#1장.-프로젝트-목적)
+1. [프로젝트 개요](#프로젝트-개요)
+1. [프로젝트 소스](#3장.-프로젝트-소스)
+1. [주요-기능별-파이썬-이해하기](#4장.-주요-기능별-파이썬-이해하기)
+1. [마무리](#5장.-마무리)
+
+--- -->
+
+<h2 id="1장-프로젝트-목적">1장. 프로젝트 목적</h2>
+<p>파이썬을 이용한 프로그램을 만드는 것이 일차적인 목표였으며, 평소 주식에 관심이 있는 나로서는 보유 종목에 대한 주식 관리 프로그램을 만드는 것이 본 프로젝트를 하는데 있어서의 동기부여 및 효율적이라는 판단에 주식 관리 프로그램 구현을 목적으로 하였다.</p>
+
+<hr />
+
+<h2 id="2장-프로젝트-개요">2장. 프로젝트 개요</h2>
+<p>실시간 호가, 매매 등의 고급 기능보다는 보유 주식과 비중 등을 확인해 보고자 하였으며, 그러한 기능을 구현하는 것이 1차적인 목표이다.</p>
+
+<ul>
+  <li>개발 도구
+    <ul>
+      <li>아나콘다 conda 4.7.12</li>
+      <li>Python 3.6.8 32 bit</li>
+      <li>PyQt5 5.13.0
+        <ul>
+          <li>접속링크 : <a href="https://www.riverbankcomputing.com/software/pyqt/download5," title="PyQt5 Download">PyQt5 Download</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>주요 API
+    <ul>
+      <li>대신증권 크레온 플러스 API
+        <ul>
+          <li>접속링크 :  <a href="https://money2.creontrade.com/E5/WTS/Customer/GuideTrading/CW_TradingSystemPlus_Page.aspx?m=9505&amp;p=8815&amp;v=8633," title="creon link">CREON Plus</a></li>
+          <li>FAQ 상의 아래 내용과 같이 크레온 플러스 API 는 32 비트만 지원 가능하였기에, 위 개발도구의 Python 도 32 비트로 설치하여 개발하였다.</li>
+        </ul>
+
+        <blockquote>
+          <p>플러스 사용시 윈도우 운영체제는 32bit 또는 64bit 모두 가능합니다. 플러스 API가 32bit로 개발되어서 플러스 API를 호출하는 응용프로그램(엑셀, Visual Studio, 파이썬 등)은 반드시 32bit 버전으로 개발되어야 합니다.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="3장-프로젝트-소스">3장. 프로젝트 소스</h2>
+<ul>
+  <li>접속링크 :  <a href="https://github.com/thedevlayer/Creon-with-Python">Github</a></li>
+</ul>
+
+<hr />
+
+<h2 id="4장-주요-기능별-파이썬-이해하기">4장. 주요 기능별 파이썬 이해하기</h2>
+
+<p>메인 화면은 아래와 같으며 로그인, 보유 종목, 전략 검색, 로그 등의 화면으로 간단하게 구성하였다.</p>
+
+<p><img src="/assets/images/main.jpg" title="메인 화면" alt="메인 화면" /><br /></p>
+
+<h3 id="로그인">로그인</h3>
+<p>로그인 화면은 아래와 같이 구성되어 있으며, Application.start 속성을 이용하여 크레온 플러스 API 에 접속을 시도한다.</p>
+
+<p><img src="/assets/images/login.jpg" title="메인 화면" alt="메인 화면" /><br /></p>
+
+<p>사용자 비밀번호와 공인인증서 비밀번호의 값을 노출시키지 않기 위해 위와 같이 QLineEdit 에 password 속성을 사용하였다. 물론 보안에 취약하긴 마찬가지지만 일단 타인의 눈에 보이지 않기 위해 어쩔 수 없는 방편으로 구성하였다. 다시 한 번 설명하지만 본 프로젝트는 파이썬 공부를 위해 제작하였으므로 참고만 하길 바란다.</p>
+
+<p>패스워드 속성을 위한 코드는 아래와 같이 간단히 구현할 수 있다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">urllib2</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">inputPw</span><span class="p">.</span><span class="n">setEchoMode</span><span class="p">(</span><span class="n">QtWidgets</span><span class="p">.</span><span class="n">QLineEdit</span><span class="p">.</span><span class="n">Password</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">inputCert</span><span class="p">.</span><span class="n">setEchoMode</span><span class="p">(</span><span class="n">QtWidgets</span><span class="p">.</span><span class="n">QLineEdit</span><span class="p">.</span><span class="n">Password</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>이후 크레온 플러스 설치 시 생성된 CoStarter.exe 를 이용하여 아래와 같이 접속한다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">app</span> <span class="o">=</span> <span class="n">application</span><span class="p">.</span><span class="n">Application</span><span class="p">()</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">start</span><span class="p">(</span><span class="s">"C:\CREON\STARTER\coStarter.exe //prj:cp /id:%s /pwd:%s /pwdcert:%s /autostart"</span> <span class="o">%</span> <span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">pw</span><span class="p">,</span> <span class="n">cert</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>일반적으로 HTS 에 접속할 때에는 사용자 인증, 주요 기능 업데이트 등을 동시에 처리하므로 다소 시간이 소요된다. 크레온 플러스 API 접속하기 위한 소요 시간 역시 비슷하다. 따라서 화면이 버벅거리는 듯한 현상을 방지하기 위해 스레드를 구현하였다. 초보로서 스레드를 구현하는 것은 다소 이해하기 어렵고 까다로웠으나 아래와 같이 구현하였으며 다른 방식의 스레드도 아래에 별도로 언급하였다.</p>
+
+<ol>
+  <li>스레드 선언
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="bp">self</span><span class="p">.</span><span class="n">threadclass</span> <span class="o">=</span> <span class="n">ThreadClass</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">pw</span><span class="p">,</span> <span class="n">cert</span><span class="p">)</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">threadclass</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+  <li>스레드 진행 및 login 함수 호출
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ThreadClass</span><span class="p">(</span><span class="n">QtCore</span><span class="p">.</span><span class="n">QThread</span><span class="p">):</span>
+ <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">pw</span><span class="p">,</span> <span class="n">cert</span><span class="p">):</span>
+     <span class="nb">super</span><span class="p">(</span><span class="n">ThreadClass</span><span class="p">,</span> <span class="bp">self</span><span class="p">).</span><span class="n">__init__</span><span class="p">()</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">access</span> <span class="o">=</span> <span class="n">handler</span><span class="p">.</span><span class="n">access</span><span class="p">()</span>
+     <span class="bp">self</span><span class="p">.</span><span class="nb">id</span> <span class="o">=</span> <span class="nb">id</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">pw</span> <span class="o">=</span> <span class="n">pw</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">cert</span> <span class="o">=</span> <span class="n">cert</span>
+
+ <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+     <span class="k">if</span> <span class="n">CONNECTED</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+         <span class="n">QMessageBox</span><span class="p">.</span><span class="n">about</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s">"Message"</span><span class="p">,</span> <span class="s">"크레온 플러스 로그인 중입니다."</span><span class="p">)</span>
+         <span class="k">return</span>
+
+     <span class="bp">self</span><span class="p">.</span><span class="n">access</span><span class="p">.</span><span class="n">get_data_creon</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="nb">id</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">pw</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">cert</span><span class="p">)</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">access</span><span class="p">.</span><span class="n">login_creon</span><span class="p">()</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   * threadclass 인스턴스를 생성 후, self.threadclass.start() 를 통해서 run 함수를 실행한다. self.access.login_creon() 함수 내 coStarter.exe 를 호출한다.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="상태바">상태바</h3>
+
+<p>위 메인화면 하단에 시간과 서버접속 여부를 볼 수 있는 상태바를 구현하였다. 마찬가지로 스레드로 구현하였으며, 여기서는 간단히 아래와 같이 threading.Timer 속성을 이용한다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">showCurrentTime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">CONNECTED</span><span class="p">:</span>
+            <span class="n">conStatus</span> <span class="o">=</span> <span class="s">'Server Connected'</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">conStatus</span> <span class="o">=</span> <span class="s">'Server Not Connected'</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">statusBar</span><span class="p">().</span><span class="n">showMessage</span><span class="p">(</span><span class="s">"현재 시간: "</span> <span class="o">+</span> <span class="n">QTime</span><span class="p">.</span><span class="n">currentTime</span><span class="p">().</span><span class="n">toString</span><span class="p">(</span><span class="s">"hh:mm:ss"</span><span class="p">)</span> <span class="o">+</span> <span class="s">" | "</span> <span class="o">+</span> <span class="n">conStatus</span><span class="p">)</span>
+        <span class="n">threading</span><span class="p">.</span><span class="n">Timer</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">showCurrentTime</span><span class="p">).</span><span class="n">start</span><span class="p">()</span>
+</code></pre></div></div>
+<ul>
+  <li>함수 선언, 해당 로직 구현 후 하단에 threading.Timer 로 1초마다 해당 함수를 start 할 수 있게 하였으며 간단한 주기적인 스레드로 활용할 때 유용한 듯 하다.</li>
+</ul>
+
+<h3 id="잔고조회">잔고조회</h3>
+
+<p>잔고조회 버튼을 클릭하면 크레온 API 로부터 보유 계좌의 잔고 값들을 불러와 아래처럼 QtableWidget 를 이용하여 표현하였다.</p>
+
+<p><img src="/assets/images/balances.jpg" title="메인 화면" alt="메인 화면" /><br /></p>
+
+<p>API 로부터 잔고 정보를 불러와 데이터프레임을 적절히 가공하고 테이블에 띄우고 로딩하는데 뭔가 오래 걸린다는 생각에 ProgressBar 를 구현하였다. 구글링을 하면 보통 100% 까지 진행되는 로직으로 for 문 내에서 count 하는 예제만 있다. 여기서는 언제 종료될지 모르므로 % 값이 없이 그냥 흘러가는 로딩바를 구현하는데 어떻게 할 지 막막했으나, 정답은 의외로 간단하였다. 일반적으로 min 0, max 100 을 설정하나 내가 원하는 답은 max 0 으로 하면 무한 로딩으로 된다는 것이며 이것이 문제를 해결하는데 키포인트이다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">setMaximum</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div></div>
+<p>화면에서의 progressbar 는 아래 하단의 그림과 같다.</p>
+
+<p><img src="/assets/images/progress.jpg" title="메인 화면" alt="메인 화면" /><br /></p>
+
+<ul>
+  <li>ProgressBar 진행 동안 스레드로 받아 처리하기</li>
+</ul>
+
+<ol>
+  <li>메인 화면 초기화 시 progressBar를 먼저 생성하고 hide 로 일단 감춘다.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="bp">self</span><span class="p">.</span><span class="n">progress</span> <span class="o">=</span> <span class="n">QProgressBar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+     <span class="c1"># self.progress.setGeometry(self.width()/2 - PROGRESS_WIDTH / 2,self.height()/2 - PROGRESS_HEIGHT / 2,
+</span>     <span class="c1">#                           PROGRESS_WIDTH, PROGRESS_HEIGHT)
+</span>     <span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">PROGRESS_WIDTH</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">280</span><span class="p">,</span><span class="bp">self</span><span class="p">.</span><span class="n">height</span><span class="p">()</span><span class="o">-</span><span class="mi">25</span><span class="p">,</span>
+                               <span class="n">PROGRESS_WIDTH</span><span class="p">,</span> <span class="n">PROGRESS_HEIGHT</span><span class="p">)</span>
+
+     <span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">setTextVisible</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">setFormat</span><span class="p">(</span><span class="s">'Loading...'</span><span class="p">)</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">setMaximum</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">hide</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+  <li>잔고 조회 호출 시 progressBar 를 show 하고, QThreadPool 에 넣어둔다.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         <span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+
+         <span class="n">runnable</span> <span class="o">=</span> <span class="n">get_AccBalance_Runnable</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+         <span class="n">QThreadPool</span><span class="p">.</span><span class="n">globalInstance</span><span class="p">().</span><span class="n">start</span><span class="p">(</span><span class="n">runnable</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>스레드 실행 함수는 아래와 같다. 잔고 정보를 받은 후에, QMetaObject.invokeMethod 를 이용하여 show_AccBalance 라는 slot 으로 이동한다.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">get_AccBalance_Runnable</span><span class="p">(</span><span class="n">QRunnable</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">dialog</span><span class="p">):</span>
+        <span class="n">QRunnable</span><span class="p">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">w</span> <span class="o">=</span> <span class="n">dialog</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+
+        <span class="bp">self</span><span class="p">.</span><span class="n">account_list</span> <span class="o">=</span> <span class="n">handler</span><span class="p">.</span><span class="n">Account_list</span><span class="p">()</span>
+        <span class="n">acc_balance</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">account_list</span><span class="p">.</span><span class="n">get_account_list</span><span class="p">()</span>
+
+        <span class="c1"># 이전로직 종료된 후에 아래 메서드로 output 을 가지고 간다.
+</span>        <span class="n">QMetaObject</span><span class="p">.</span><span class="n">invokeMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">w</span><span class="p">,</span> <span class="s">"show_AccBalance"</span><span class="p">,</span>
+                                 <span class="n">Qt</span><span class="p">.</span><span class="n">QueuedConnection</span><span class="p">,</span>
+                                 <span class="n">Q_ARG</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">acc_balance</span><span class="p">))</span>
+</code></pre></div></div>
+
+<ol>
+  <li>테이블에 각 정보를 넣은 후 종료 전 self.progress.hide() 로 progressBar 를 없앤다.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="o">@</span><span class="n">pyqtSlot</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">show_AccBalance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">acc_balance</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">acc_balance</span><span class="p">)</span>
+
+        <span class="n">acc_balance1</span> <span class="o">=</span> <span class="n">collections</span><span class="p">.</span><span class="n">OrderedDict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">acc_balance</span><span class="p">.</span><span class="n">items</span><span class="p">(),</span>
+
+        <span class="p">............</span>  <span class="n">중간</span> <span class="n">생략</span>  <span class="p">..............</span>
+
+
+        <span class="bp">self</span><span class="p">.</span><span class="n">tableWidget_2</span><span class="p">.</span><span class="n">horizontalHeader</span><span class="p">().</span><span class="n">sortIndicatorChanged</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">tableWidget_2</span><span class="p">.</span><span class="n">resizeRowsToContents</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="p">.</span><span class="n">progress</span><span class="p">.</span><span class="n">hide</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>이 외에 여러 종목을 정렬해서 보면 낫지 않을까, 해당 종목을 클릭하여 차트보기나, 네이버 주식으로 바로가기 하면 더 편하지 않을까 하는 욕심 아닌 욕심이 생겨 위와 같이 추가 기능을 구현하였다.</p>
+
+<ul>
+  <li>차트보기</li>
+</ul>
+
+<p>matplotlib 라이브러리를 사용하였으며, 구현하는데 가장 시간이 많으 걸린 부분 중의 하나이다. 잔고조회 화면에서 우클릭 후 차트보기를 통해 해당 종목의 차트를 바로 조회할 수 있으며, 해당 창에서 종목코드 또는 종목명을 바로 입력하여 일봉, 주봉, 월봉을 확인할 수 있다. 오른쪽의 200 이라는 숫자는 몇개의 데이터를 가져올 것인지를 설정할 수 있다. 예를 들어 최근 100일치의 일봉 데이터를 가져오고 싶다면, 조회 데이터 수 100 입력 후 일봉을 클릭하면 확인할 수 있다.</p>
+
+<p><img src="/assets/images/schart.jpg" title="차트" alt="chart" /><br /></p>
+
+<p>크레온 플러스 API 에서는 일별 현재가 정보에서 최근 일자를 첫번째로 가져와 그대로 plotting 한다면 시계열의 반대로 차트가 생성된다. 따라서 아래와 같이 데이터 프레임을 역으로 정렬하였다. 매우 간단하지만 데이터 프레임을 쓰면서 가장 활용도가 높았다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">day_info</span><span class="p">.</span><span class="n">reverse</span><span class="p">()</span>
+</code></pre></div></div>
+<p>이동 평균선의 경우, 아래와 같이 rolling 속성을 이용하여 MA5 컬럼에 넣을 수 있다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_data</span><span class="p">[</span><span class="s">'MA5'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s">'close'</span><span class="p">].</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">).</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>아래가 캔들 스틱을 구현하는 주로 로직이다. mpl_finance 모듈을 이용하여 한 줄의 코드로 plot 이 가능하다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mpl_finance</span><span class="p">.</span><span class="n">candlestick2_ohlc</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">ax</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s">'open'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'high'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'low'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'close'</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">colorup</span><span class="o">=</span><span class="s">'r'</span><span class="p">,</span> <span class="n">colordown</span><span class="o">=</span><span class="s">'b'</span><span class="p">)</span>
+</code></pre></div></div>
+<ul>
+  <li>네이버주식 바로가기</li>
+</ul>
+
+<p>주식정보 하단에 네이버 바로가기를 통하여 네이버 금융 사이트로 해당 종목의 정보를 조회할 수 있다. webbrowser 모듈을 이용하여 아래와 같이 접속 가능하다. 아래 주석된 부분과 같이 조회하고자 하는 종목의 코드를 6자리로 붙여넣어 구현할 수 있다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">webbrowser</span>
+
+            <span class="n">url</span> <span class="o">=</span> <span class="s">'https://finance.naver.com/item/main.nhn?code='</span> <span class="o">+</span> <span class="n">code_text</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+            <span class="c1"># url = 'https://finance.naver.com/item/main.nhn?code=263720'
+</span>            <span class="n">webbrowser</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>팝업 메뉴</li>
+</ul>
+
+<p>웹에서 검색하기 힘들었던 부분이다. 아래 코드를 통해 오른쪽 클릭 팝업메뉴를 구성할 수 있다. 해당 부분의 전체 코드는 아래와 같다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+        <span class="n">top_menu</span> <span class="o">=</span> <span class="n">QMenu</span><span class="p">()</span>
+        <span class="n">menu</span> <span class="o">=</span> <span class="n">top_menu</span><span class="p">.</span><span class="n">addMenu</span><span class="p">(</span><span class="s">"Menu"</span><span class="p">)</span>
+
+        <span class="n">chart</span> <span class="o">=</span> <span class="n">menu</span><span class="p">.</span><span class="n">addAction</span><span class="p">(</span><span class="s">"차트보기"</span><span class="p">)</span>
+        <span class="n">menu</span><span class="p">.</span><span class="n">addSeparator</span><span class="p">()</span>
+        <span class="n">info</span> <span class="o">=</span> <span class="n">menu</span><span class="p">.</span><span class="n">addMenu</span><span class="p">(</span><span class="s">"주식 정보"</span><span class="p">)</span>
+
+        <span class="n">info1</span> <span class="o">=</span> <span class="n">info</span><span class="p">.</span><span class="n">addAction</span><span class="p">(</span><span class="s">"네이버 금융"</span><span class="p">)</span>
+        <span class="n">info2</span> <span class="o">=</span> <span class="n">info</span><span class="p">.</span><span class="n">addAction</span><span class="p">(</span><span class="s">"기타 2"</span><span class="p">)</span>
+
+        <span class="n">action</span> <span class="o">=</span> <span class="n">menu</span><span class="p">.</span><span class="n">exec_</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">tableWidget_2</span><span class="p">.</span><span class="n">viewport</span><span class="p">().</span><span class="n">mapToGlobal</span><span class="p">(</span><span class="n">position</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"action : "</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="n">chart</span><span class="p">:</span>
+            <span class="c1"># self.showChart(item_text, 'D')
+</span>            <span class="bp">self</span><span class="p">.</span><span class="n">newWindow</span> <span class="o">=</span> <span class="n">MyWindow</span><span class="p">(</span><span class="n">item_text</span><span class="p">)</span>
+
+            <span class="c1"># self.newWindow.show()
+</span>
+        <span class="k">elif</span> <span class="n">action</span> <span class="o">==</span> <span class="n">info1</span><span class="p">:</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="s">'https://finance.naver.com/item/main.nhn?code='</span> <span class="o">+</span> <span class="n">code_text</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+            <span class="c1"># url = 'https://finance.naver.com/item/main.nhn?code=263720'
+</span>            <span class="n">webbrowser</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>계좌정보</li>
+</ul>
+
+<p>우측 상단에 계좌 정보에 대한 요약으로 보유 종목 수량, 매입금액, 평가금액, 수익률 등을 한 눈에 볼 수 있게 구성하였다. 예제로 캡쳐한 것은 본인 계좌로서 손익이 파란색으로 아직 마이너스이다. 빨간 색으로 변하는 그 날을 기대해 본다. 각 금액들은 임의로 모자이크 처리했으므로 이해해 주시기 바랍니다.</p>
+
+<p><img src="/assets/images/summary_origin.jpg" title="summary_origin" alt="summary_origin" /><br /></p>
+
+<p>메인 화면에 해당 정보가 있다보니 항상 금액과 수익률 등이 보여지는게 눈에 거슬려 아래와 같이 체크박스를 통해 마스킹 제어할 수 있도록 구현하였다. 체크했을 때만 해당 정보들이 보이게 설정하였다.</p>
+
+<p><img src="/assets/images/summary_marking.jpg" title="summary_origin" alt="summary_origin" /><br /></p>
+
+<p>‘*’ 로 마스킹을 할 수 있는 속성이 있지 않을까 해서 구글링을 해봤으나 찾지는 못해 아래와 같이 구현하였다. 금액 자리수만큼 곱하면 * 의 개수가 여러 개로 출력되는 것이다. 파이썬의 가장 큰 장점은 생각되로 다 된다는 것이다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">spre</span> <span class="o">=</span> <span class="s">'*'</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">pre_amount</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="분포-조회">분포 조회</h3>
+
+<p>보유하고 있는 주식에 대해 직관적으로 확인할 수 있는 것이 차트라고 생각한다. 특히 많은 종목을 보유하고 있는 경우 어떠한 주식들이 비중이 높은지 또는 한 눈에 보기에 어떠한 분포를 가지고 있는지 확인하고 싶은 때 유용한 것 같다. 약 180 종목 보유하고 있어 차트가 보기 힘들 정도이다. 그래서 거래소와 코스닥 분포도 표현하였다.</p>
+
+<ul>
+  <li><em>종목별 비중</em></li>
+</ul>
+
+<p><img src="/assets/images/balchart_pie1.jpg" title="차트" alt="chart" /><br /></p>
+
+<p>보유 종목명, 금액등의 데이터 프레임을 아래 함수를 이용하여 정렬하였다. 데이터 프레임의 장점 중 하나는 아래와 같이 쉽게 정렬할 수 있다는 점이다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">zipdf</span><span class="p">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s">'market'</span><span class="p">,</span> <span class="s">'amount'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="bp">False</span><span class="p">,</span> <span class="bp">False</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>고민을 많이 했던 부분이 그림과 같이 도넛 모양의 이중 pie 차트를 구성하는 것이었다. 여러 시행 착오 끝에 아래의 코드로 완성하였다. 물론 어느 검색 자료를 참조한 것이긴 하나 현 시점에서 검색 자료를 찾지 못했다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="bp">self</span><span class="p">.</span><span class="n">fig</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">fig</span><span class="p">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+
+        <span class="bp">self</span><span class="p">.</span><span class="n">smallcolors</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">getcolor</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">small_values</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">splitindex</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">first_color</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">second_color</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">smallcolors</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="p">.</span><span class="n">pie</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">small_values</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">smallcolors</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">small_labels</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s">'%.1f%%'</span><span class="p">,</span>
+                <span class="n">pctdistance</span><span class="o">=</span><span class="mf">0.85</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">wedgeprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s">'white'</span><span class="p">),</span> <span class="n">textprops</span><span class="o">=</span><span class="p">{</span><span class="s">'fontsize'</span><span class="p">:</span> <span class="mi">6</span><span class="p">},</span> <span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="p">.</span><span class="n">pie</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">big_values</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">big_colors</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">big_labels</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s">'%.1f%%'</span><span class="p">,</span>
+                <span class="n">pctdistance</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">labeldistance</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">wedgeprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s">'white'</span><span class="p">),</span> <span class="n">textprops</span><span class="o">=</span><span class="p">{</span><span class="s">'fontsize'</span><span class="p">:</span> <span class="mi">10</span><span class="p">},</span> <span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="p">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'equal'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>그 중에 가장 난해했던 부분이 연한색부터 진한 색까지 discrete 하게 만드는 것이다. 몇 개의 종목만 보유하고 있다면 임의로 몇 개 설정할 수 있겠지만 많은 종목을 하나하나 적을 수 없는 노릇이다. 여러 구글링과 많은 고민 끝의 로직은 최소, 최대값을 normalize 하여 matplotlib.cm.get_cmap 에 해당 값을 넣어 각 종목별 색상을 정하는 것이다. 이의 코드는 아래와 같다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        firstNorm = matplotlib.colors.Normalize(vmin=firstMin, vmax=firstMax)
+
+        firstmap = matplotlib.cm.get_cmap(firstColor)
+        firstarr = []
+
+        for i in firstSection:
+            rgba = firstmap(firstNorm(i))
+            firstarr.append(rgba)
+</code></pre></div></div>
+
+<ul>
+  <li><em>종목별 평가 금액</em></li>
+</ul>
+
+<p>비중이 높은 종목을 우선순위로 하여 barchart 로 표현하였다. 오른쪽 부분으로 갈수록 수익률이 낮은 곳이다. 보면 볼수록 마음이 아픈 차트다. 주식 공부도 게을리 하지 말아야 겠다는 생각이 든다.</p>
+
+<p><img src="/assets/images/balchart_bar.jpg" title="차트" alt="chart" /><br /></p>
+
+<p>종목별 평가 금액 차트는 어렵지 않게 구현할 수 있다. 정렬 후 아래 코드를 적용한다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ax.bar(df_inputvalue1['종목명'].tolist(), list(map(int, df_inputvalue1['평가금액'].tolist())), align='center', alpha=0.5)
+</code></pre></div></div>
+
+<p>종목명들이 겹치는 현상은 종목이 많아서이다. 45도 정도로 rotation 하여 할 수도 있으나 이건 해결책이 아닌 듯하여 여기서 이대로 놔두기로 한다.</p>
+
+<h3 id="전략-검색">전략 검색</h3>
+
+<p>전략 리스트를 기준으로 종목을 검색하는 기능은 크레온 API 에서 이미 제공하고 있다. 물론 특정 조건 상세 기준으로의 검색은 별도로 개발해야 겠지만 아래 그림과 같이 많은 리스트를 제공하므로 원하는 적합한 리스트를 선택하여 종목을 도출할 수 있다.</p>
+
+<p><img src="/assets/images/stglist.jpg" title="차트" alt="chart" /><br /></p>
+
+<p>화면의 전략 리스트 가져오기를 클릭하면 위와 같이 리스트들을 받아올 수 있으며, 우측에 검색종목 수, 체크했던 검색 조건 그리고 검색 종목들을 나열하였다. 예시와 같이 중복으로 선택하였을 경우 모두 만족하는 검색 기능을 구현하였다. 이를 위해 아래와 같은 코드로 간단히 구현할 수 있다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flist = set(resultlist[0]).intersection(*resultlist)
+</code></pre></div></div>
+
+<p>또한, 검색된 종목을 더블 클릭하여 해당 종목의 차트를 바로 확인할 수 있게 아래와 같이 구현하였다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="n">row</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">tableWidget_3</span><span class="p">.</span><span class="n">currentIndex</span><span class="p">().</span><span class="n">row</span><span class="p">()</span>
+        <span class="n">column</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">tableWidget_3</span><span class="p">.</span><span class="n">currentIndex</span><span class="p">().</span><span class="n">column</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">column</span><span class="p">)</span>
+
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">tableWidget_3</span><span class="p">.</span><span class="n">item</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># 클릭한 row 의 종목명
+</span>        <span class="n">item_text</span> <span class="o">=</span> <span class="n">item</span><span class="p">.</span><span class="n">text</span><span class="p">()</span> <span class="c1"># 종목명
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">newWindow</span> <span class="o">=</span> <span class="n">MyWindow</span><span class="p">(</span><span class="n">item_text</span><span class="p">)</span> <span class="c1"># 차트 화면 불러오기
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="5장-마무리">5장. 마무리</h2>
+
+<p>파이썬 학습을 위해 데이터 타입, matplotlib, pandas 등의 모듈에 대해 체계적으로 학습하려 했으나, 시간이 지나면 잊어버리고 후에 다시 보게 되어 제대로 해보자는 마음으로 본 프로젝트를 진행하였으며, 이를 통해 파이썬에 익숙해지려 노력했다. 2주 간의 구글링과 코딩, 그리고 디버깅을 통해 나름 파이썬이란 이런 것이구나라는 것을 알게 되었고 고민에 고민을 더한 결과 위와 같은 결과물이 나올 수 있게 된 것 같다. <br /></p>
+
+<p>아직 완벽하다 말할 수 없고 생각치 못한 버그가 있을 수 도 있다. 물론 이 글을 올리는 현 시점에서 중복 코드는 몇몇 존재하긴 하다. 여유가 있다면 소스 상세 분석 및 Refactoring 등을 통해 나은 소스를 구현하고 싶지만 또 다른 토이 프로젝트를 진행하고자 하는 욕구가 강해 여기까지 진행하기로 했다.<br /></p>
+
+<p>주로 검색했던 곳은 google, stackoverflow 등을 참조하였으며, 검색 자료를 참고하여 디버깅 및 적용하느라 소스 출처들을 제대로 메모하지 못했다. 본 글을 보시는 소스 주인님이 계신다면 이 글을 통해 먼저 감사하다는 말씀을 드리고 싶다. 이 글 또한 누군가에게 도움이 된다면 그것으로 충분히 만족할 수 있을 것이다.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/02_ai/2019/12/31/simpleneuralnetwork/">
+        Simple Neural Network
+      </a>
+    </h1>
+
+    <span class="post-date">31 Dec 2019</span>
+
+    <h4 id="this-is-from-codelab-where-located-in-httpscodelabsdevelopersgooglecomcodelabsneural-tensorflow-jsindexhtmlindex2findex0">This is from codelab where located in <a href="https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0">https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0</a></h4>
+
+<p><img src="/assets/images/neuralsample.jpeg" /></p>
+
+<h4 id="we-are-going-to-build-a-simple-neural-network-that-can-classify-irises-into-three-classes-using-tensorflowjs">We are going to build a simple neural network that can classify irises into three classes using TensorFlow.js:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Setosa
+- Virginica 
+- Versicolor
+</code></pre></div></div>
+
+<h4 id="getting-set-up">Getting set up</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- git clone https://github.com/aayusharora/TensorflowJS-NeuralNet.git
+- Running the project : In cmd, npm install
+- Surely, Nodejs should be installed before
+- Generate training and testing data from iris node 
+- Source code : generateTest.js
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">let</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">144</span><span class="p">;</span>
+<span class="n">let</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">let</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">let</span> <span class="n">testArray</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="n">let</span> <span class="n">trainArray</span> <span class="o">=</span> <span class="p">[];</span>
+
+<span class="n">const</span> <span class="n">fs</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s">'fs'</span><span class="p">);</span> 
+<span class="n">const</span> <span class="n">data</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s">'./iris.json'</span><span class="p">);</span>
+
+<span class="n">function</span> <span class="n">formDataset</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+<span class="o">//</span> <span class="n">Creating</span> <span class="n">training</span> <span class="ow">and</span> <span class="n">testing</span> <span class="n">dataset</span>
+<span class="o">//</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">let</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span> <span class="n">Math</span><span class="p">.</span><span class="nb">round</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="n">k</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="n">floor</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="n">Math</span><span class="p">.</span><span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">testArray</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]);</span>
+    <span class="n">data</span><span class="p">.</span><span class="n">splice</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="p">;</span> 
+    <span class="n">trainArray</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+  <span class="p">}</span>  
+
+  <span class="n">fs</span><span class="p">.</span><span class="n">writeFile</span><span class="p">(</span><span class="s">'training.json'</span><span class="p">,</span> <span class="n">JSON</span><span class="p">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">trainArray</span><span class="p">),</span> <span class="n">function</span><span class="p">(){});</span>
+  <span class="n">fs</span><span class="p">.</span><span class="n">writeFile</span><span class="p">(</span><span class="s">'testing.json'</span><span class="p">,</span> <span class="n">JSON</span><span class="p">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">testArray</span><span class="p">),</span> <span class="n">function</span><span class="p">(){});</span>
+<span class="p">}</span>
+
+<span class="n">formDataset</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<h4 id="building-neural-network-model">Building Neural Network Model</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> - Refer to this git source
+	- git clone https://github.com/aayusharora/TensorflowJS-NeuralNet.git
+- index.js
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">const</span> <span class="n">tf</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s">'@tensorflow/tfjs'</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">iris</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s">'./training.json'</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">irisTesting</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s">'./testing.json'</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">Mapping</span> <span class="n">the</span> <span class="n">trainingdata</span>
+<span class="n">const</span> <span class="n">trainingData</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">tensor2d</span><span class="p">(</span><span class="n">iris</span><span class="p">.</span><span class="nb">map</span><span class="p">(</span><span class="n">item</span><span class="o">=&gt;</span> <span class="p">[</span>
+    <span class="n">item</span><span class="p">.</span><span class="n">sepal_length</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">sepal_width</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">petal_length</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">petal_width</span>
+<span class="p">]</span>
+<span class="p">),[</span><span class="mi">130</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="o">//</span> <span class="n">Mapping</span> <span class="n">the</span> <span class="n">testing</span> <span class="n">data</span>
+<span class="n">const</span> <span class="n">testingData</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">tensor2d</span><span class="p">(</span><span class="n">irisTesting</span><span class="p">.</span><span class="nb">map</span><span class="p">(</span><span class="n">item</span><span class="o">=&gt;</span> <span class="p">[</span>
+    <span class="n">item</span><span class="p">.</span><span class="n">sepal_length</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">sepal_width</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">petal_length</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">petal_width</span>
+<span class="p">]</span>
+<span class="p">),[</span><span class="mi">14</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="o">//</span> <span class="n">creating</span> <span class="n">model</span>
+<span class="n">const</span> <span class="n">outputData</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">tensor2d</span><span class="p">(</span><span class="n">iris</span><span class="p">.</span><span class="nb">map</span><span class="p">(</span><span class="n">item</span> <span class="o">=&gt;</span> <span class="p">[</span>
+    <span class="n">item</span><span class="p">.</span><span class="n">species</span> <span class="o">===</span> <span class="s">'setosa'</span> <span class="err">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">item</span><span class="p">.</span><span class="n">species</span> <span class="o">===</span> <span class="s">'virginica'</span> <span class="err">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">item</span><span class="p">.</span><span class="n">species</span> <span class="o">===</span> <span class="s">'versicolor'</span> <span class="err">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+<span class="p">]),</span> <span class="p">[</span><span class="mi">130</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="o">//</span> <span class="n">Creating</span> <span class="n">Model</span>
+<span class="n">const</span> <span class="n">model</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">sequential</span><span class="p">();</span>
+
+<span class="n">model</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">layers</span><span class="p">.</span><span class="n">dense</span><span class="p">(</span>
+    <span class="p">{</span>   <span class="n">inputShape</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> 
+        <span class="n">activation</span><span class="p">:</span> <span class="s">'sigmoid'</span><span class="p">,</span> 
+        <span class="n">units</span><span class="p">:</span> <span class="mi">10</span>
+    <span class="p">}</span>
+<span class="p">));</span>
+
+<span class="n">model</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">layers</span><span class="p">.</span><span class="n">dense</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="n">inputShape</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> 
+        <span class="n">units</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> 
+        <span class="n">activation</span><span class="p">:</span> <span class="s">'softmax'</span>
+    <span class="p">}</span>
+<span class="p">));</span>
+
+<span class="n">model</span><span class="p">.</span><span class="n">summary</span><span class="p">();</span>
+
+<span class="o">//</span> <span class="n">compiling</span> <span class="n">model</span>
+<span class="n">model</span><span class="p">.</span><span class="nb">compile</span><span class="p">({</span>
+    <span class="n">loss</span><span class="p">:</span> <span class="s">"categoricalCrossentropy"</span><span class="p">,</span>
+    <span class="n">optimizer</span><span class="p">:</span> <span class="n">tf</span><span class="p">.</span><span class="n">train</span><span class="p">.</span><span class="n">adam</span><span class="p">()</span>
+<span class="p">})</span>
+
+<span class="k">async</span> <span class="n">function</span> <span class="n">train_data</span><span class="p">(){</span>
+    <span class="n">console</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="s">'......Loss History.......'</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">let</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">40</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+     <span class="n">let</span> <span class="n">res</span> <span class="o">=</span> <span class="k">await</span> <span class="n">model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">trainingData</span><span class="p">,</span> <span class="n">outputData</span><span class="p">,</span> <span class="p">{</span><span class="n">epochs</span><span class="p">:</span> <span class="mi">40</span><span class="p">});</span>
+     <span class="n">console</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="sb">`Iteration ${i}: ${res.history.loss[0]}`</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="k">async</span> <span class="n">function</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">await</span> <span class="n">train_data</span><span class="p">();</span>
+    <span class="n">console</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="s">'....Model Prediction .....'</span><span class="p">)</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">testingData</span><span class="p">).</span><span class="k">print</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="n">main</span><span class="p">();</span>
+
+</code></pre></div></div>
+
+<h4 id="run-indexjs">Run index.js</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="n">tensorflow36gpu</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">samsung1</span>\<span class="n">Desktop</span>\<span class="n">TensorflowJS</span><span class="o">-</span><span class="n">NeuralNet</span><span class="o">-</span><span class="n">master</span>\<span class="n">TensorflowJS</span><span class="o">-</span><span class="n">NeuralNet</span><span class="o">-</span><span class="n">master</span>\<span class="n">solution</span><span class="o">&gt;</span><span class="n">node</span> <span class="n">index</span><span class="p">.</span><span class="n">js</span>
+
+<span class="o">============================</span>
+
+<span class="n">Hi</span> <span class="n">there</span> <span class="err">👋</span><span class="p">.</span> <span class="n">Looks</span> <span class="n">like</span> <span class="n">you</span> <span class="n">are</span> <span class="n">running</span> <span class="n">TensorFlow</span><span class="p">.</span><span class="n">js</span> <span class="ow">in</span> <span class="n">Node</span><span class="p">.</span><span class="n">js</span><span class="p">.</span> <span class="n">To</span> <span class="n">speed</span> <span class="n">things</span> <span class="n">up</span> <span class="n">dramatically</span><span class="p">,</span> <span class="n">install</span> <span class="n">our</span> <span class="n">node</span> <span class="n">backend</span><span class="p">,</span> <span class="n">which</span> <span class="n">binds</span> <span class="n">to</span> <span class="n">TensorFlow</span> <span class="n">C</span><span class="o">++</span><span class="p">,</span> <span class="n">by</span> <span class="n">running</span> <span class="n">npm</span> <span class="n">i</span> <span class="o">@</span><span class="n">tensorflow</span><span class="o">/</span><span class="n">tfjs</span><span class="o">-</span><span class="n">node</span><span class="p">,</span> <span class="ow">or</span> <span class="n">npm</span> <span class="n">i</span> <span class="o">@</span><span class="n">tensorflow</span><span class="o">/</span><span class="n">tfjs</span><span class="o">-</span><span class="n">node</span><span class="o">-</span><span class="n">gpu</span> <span class="k">if</span> <span class="n">you</span> <span class="n">have</span> <span class="n">CUDA</span><span class="p">.</span> <span class="n">Then</span> <span class="n">call</span> <span class="n">require</span><span class="p">(</span><span class="s">'@tensorflow/tfjs-node'</span><span class="p">);</span> <span class="p">(</span><span class="o">-</span><span class="n">gpu</span> <span class="n">suffix</span> <span class="k">for</span> <span class="n">CUDA</span><span class="p">)</span> <span class="n">at</span> <span class="n">the</span> <span class="n">start</span> <span class="n">of</span> <span class="n">your</span> <span class="n">program</span><span class="p">.</span> <span class="n">Visit</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tensorflow</span><span class="o">/</span><span class="n">tfjs</span><span class="o">-</span><span class="n">node</span> <span class="k">for</span> <span class="n">more</span> <span class="n">details</span><span class="p">.</span>
+
+<span class="o">============================</span>
+
+
+<span class="n">_________________________________________________________________</span>
+
+<span class="n">Layer</span> <span class="p">(</span><span class="nb">type</span><span class="p">)</span>                 <span class="n">Output</span> <span class="n">shape</span>              <span class="n">Param</span> <span class="c1">#
+</span>
+<span class="o">=================================================================</span>
+
+<span class="n">dense_Dense1</span> <span class="p">(</span><span class="n">Dense</span><span class="p">)</span>         <span class="p">[</span><span class="n">null</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>                 <span class="mi">50</span>
+
+<span class="n">_________________________________________________________________</span>
+
+<span class="n">dense_Dense2</span> <span class="p">(</span><span class="n">Dense</span><span class="p">)</span>         <span class="p">[</span><span class="n">null</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>                  <span class="mi">33</span>
+
+<span class="o">=================================================================</span>
+
+<span class="n">Total</span> <span class="n">params</span><span class="p">:</span> <span class="mi">83</span>
+
+<span class="n">Trainable</span> <span class="n">params</span><span class="p">:</span> <span class="mi">83</span>
+
+<span class="n">Non</span><span class="o">-</span><span class="n">trainable</span> <span class="n">params</span><span class="p">:</span> <span class="mi">0</span>
+
+<span class="n">_________________________________________________________________</span>
+
+<span class="p">......</span><span class="n">Loss</span> <span class="n">History</span><span class="p">.......</span>
+
+<span class="n">Iteration</span> <span class="mi">0</span><span class="p">:</span> <span class="mf">1.1662038564682007</span>
+
+<span class="n">Iteration</span> <span class="mi">1</span><span class="p">:</span> <span class="mf">1.0506356917894804</span>
+
+<span class="n">Iteration</span> <span class="mi">2</span><span class="p">:</span> <span class="mf">0.8976518456752484</span>
+
+<span class="n">Iteration</span> <span class="mi">3</span><span class="p">:</span> <span class="mf">0.7571693823887752</span>
+
+<span class="n">Iteration</span> <span class="mi">4</span><span class="p">:</span> <span class="mf">0.6467501438581027</span>
+
+<span class="n">Iteration</span> <span class="mi">5</span><span class="p">:</span> <span class="mf">0.5714254358640084</span>
+
+<span class="n">Iteration</span> <span class="mi">6</span><span class="p">:</span> <span class="mf">0.5055675928409283</span>
+
+<span class="n">Iteration</span> <span class="mi">7</span><span class="p">:</span> <span class="mf">0.46349796515244707</span>
+
+<span class="n">Iteration</span> <span class="mi">8</span><span class="p">:</span> <span class="mf">0.43163500611598676</span>
+
+<span class="n">Iteration</span> <span class="mi">9</span><span class="p">:</span> <span class="mf">0.3972092811877911</span>
+
+<span class="n">Iteration</span> <span class="mi">10</span><span class="p">:</span> <span class="mf">0.3674122438980983</span>
+
+<span class="n">Iteration</span> <span class="mi">11</span><span class="p">:</span> <span class="mf">0.3369893605892475</span>
+
+<span class="n">Iteration</span> <span class="mi">12</span><span class="p">:</span> <span class="mf">0.30642905819874544</span>
+
+<span class="n">Iteration</span> <span class="mi">13</span><span class="p">:</span> <span class="mf">0.27981403149091283</span>
+
+<span class="n">Iteration</span> <span class="mi">14</span><span class="p">:</span> <span class="mf">0.25635493993759156</span>
+
+<span class="n">Iteration</span> <span class="mi">15</span><span class="p">:</span> <span class="mf">0.2361850876074571</span>
+
+<span class="n">Iteration</span> <span class="mi">16</span><span class="p">:</span> <span class="mf">0.21609901533677028</span>
+
+<span class="n">Iteration</span> <span class="mi">17</span><span class="p">:</span> <span class="mf">0.20003663393167348</span>
+
+<span class="n">Iteration</span> <span class="mi">18</span><span class="p">:</span> <span class="mf">0.1843679586282143</span>
+
+<span class="n">Iteration</span> <span class="mi">19</span><span class="p">:</span> <span class="mf">0.17246765941381453</span>
+
+<span class="n">Iteration</span> <span class="mi">20</span><span class="p">:</span> <span class="mf">0.1598011803168517</span>
+
+<span class="n">Iteration</span> <span class="mi">21</span><span class="p">:</span> <span class="mf">0.15122175308374258</span>
+
+<span class="n">Iteration</span> <span class="mi">22</span><span class="p">:</span> <span class="mf">0.14070233599497722</span>
+
+<span class="n">Iteration</span> <span class="mi">23</span><span class="p">:</span> <span class="mf">0.13351650604834922</span>
+
+<span class="n">Iteration</span> <span class="mi">24</span><span class="p">:</span> <span class="mf">0.12579153592769915</span>
+
+<span class="n">Iteration</span> <span class="mi">25</span><span class="p">:</span> <span class="mf">0.11973627645235796</span>
+
+<span class="n">Iteration</span> <span class="mi">26</span><span class="p">:</span> <span class="mf">0.11630492943983811</span>
+
+<span class="n">Iteration</span> <span class="mi">27</span><span class="p">:</span> <span class="mf">0.10865777432918548</span>
+
+<span class="n">Iteration</span> <span class="mi">28</span><span class="p">:</span> <span class="mf">0.10432640784061872</span>
+
+<span class="n">Iteration</span> <span class="mi">29</span><span class="p">:</span> <span class="mf">0.10155008463905407</span>
+
+<span class="n">Iteration</span> <span class="mi">30</span><span class="p">:</span> <span class="mf">0.09651463008843936</span>
+
+<span class="n">Iteration</span> <span class="mi">31</span><span class="p">:</span> <span class="mf">0.09530227688642648</span>
+
+<span class="n">Iteration</span> <span class="mi">32</span><span class="p">:</span> <span class="mf">0.08995573016313406</span>
+
+<span class="n">Iteration</span> <span class="mi">33</span><span class="p">:</span> <span class="mf">0.0872224965920815</span>
+
+<span class="n">Iteration</span> <span class="mi">34</span><span class="p">:</span> <span class="mf">0.08483409400169666</span>
+
+<span class="n">Iteration</span> <span class="mi">35</span><span class="p">:</span> <span class="mf">0.08211586575668592</span>
+
+<span class="n">Iteration</span> <span class="mi">36</span><span class="p">:</span> <span class="mf">0.07996474094688892</span>
+
+<span class="n">Iteration</span> <span class="mi">37</span><span class="p">:</span> <span class="mf">0.07782226459911236</span>
+
+<span class="n">Iteration</span> <span class="mi">38</span><span class="p">:</span> <span class="mf">0.07606427617944204</span>
+
+<span class="n">Iteration</span> <span class="mi">39</span><span class="p">:</span> <span class="mf">0.07418118130702239</span>
+
+<span class="p">....</span><span class="n">Model</span> <span class="n">Prediction</span> <span class="p">.....</span>
+
+<span class="n">Tensor</span>
+
+    <span class="p">[[</span><span class="mf">0.0148891</span><span class="p">,</span> <span class="mf">0.0020564</span><span class="p">,</span> <span class="mf">0.9830545</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.9934919</span><span class="p">,</span> <span class="mf">1e-7</span>     <span class="p">,</span> <span class="mf">0.0065079</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.0003181</span><span class="p">,</span> <span class="mf">0.4368047</span><span class="p">,</span> <span class="mf">0.5628772</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.9943109</span><span class="p">,</span> <span class="mf">1e-7</span>     <span class="p">,</span> <span class="mf">0.005689</span> <span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.994063</span> <span class="p">,</span> <span class="mf">1e-7</span>     <span class="p">,</span> <span class="mf">0.0059368</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.9938089</span><span class="p">,</span> <span class="mf">1e-7</span>     <span class="p">,</span> <span class="mf">0.006191</span> <span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.0000029</span><span class="p">,</span> <span class="mf">0.9713891</span><span class="p">,</span> <span class="mf">0.0286081</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.9946841</span><span class="p">,</span> <span class="mf">1e-7</span>     <span class="p">,</span> <span class="mf">0.0053159</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.00013</span>  <span class="p">,</span> <span class="mf">0.6348923</span><span class="p">,</span> <span class="mf">0.3649777</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.0048211</span><span class="p">,</span> <span class="mf">0.0106864</span><span class="p">,</span> <span class="mf">0.9844925</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.0051933</span><span class="p">,</span> <span class="mf">0.0093848</span><span class="p">,</span> <span class="mf">0.9854218</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.0035861</span><span class="p">,</span> <span class="mf">0.0175166</span><span class="p">,</span> <span class="mf">0.9788972</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.0039866</span><span class="p">,</span> <span class="mf">0.0160286</span><span class="p">,</span> <span class="mf">0.9799848</span><span class="p">],</span>
+
+     <span class="p">[</span><span class="mf">0.9924375</span><span class="p">,</span> <span class="mf">1e-7</span>     <span class="p">,</span> <span class="mf">0.0075622</span><span class="p">]]</span>
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>[Appendix: Simple Neural Network using TensorFlow.js from <a href="https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0">https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0</a></p>
+</blockquote>
+
+<ul>
+  <li>coding</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.PriorityQueue</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">implements</span> <span class="nc">Comparable</span><span class="o">&lt;</span><span class="nc">Student</span><span class="o">&gt;{</span>
+	<span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+	<span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+	
+	<span class="kd">public</span> <span class="nf">Student</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">compareTo</span><span class="o">(</span><span class="nc">Student</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// age 가 같을 경우 name 첫번째 문자열 기준으로 내림차순</span>
+		<span class="k">if</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">==</span> <span class="n">o</span><span class="o">.</span><span class="na">age</span><span class="o">)</span> <span class="k">return</span> <span class="n">o</span><span class="o">.</span><span class="na">toString</span><span class="o">().</span><span class="na">charAt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="o">-</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">.</span><span class="na">toString</span><span class="o">().</span><span class="na">charAt</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>  
+		<span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">-</span> <span class="n">o</span><span class="o">.</span><span class="na">age</span><span class="o">;</span> <span class="c1">// age 로 오름차순</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Solution</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		
+		<span class="nc">PriorityQueue</span><span class="o">&lt;</span><span class="nc">Student</span><span class="o">&gt;</span> <span class="n">pq</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PriorityQueue</span><span class="o">&lt;</span><span class="nc">Student</span><span class="o">&gt;();</span>
+		
+		<span class="n">pq</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Park"</span><span class="o">,</span> <span class="mi">23</span><span class="o">));</span>
+		<span class="n">pq</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Kim"</span><span class="o">,</span> <span class="mi">12</span><span class="o">));</span>
+		<span class="n">pq</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Ace"</span><span class="o">,</span> <span class="mi">66</span><span class="o">));</span>
+		<span class="n">pq</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Lee"</span><span class="o">,</span> <span class="mi">45</span><span class="o">));</span>
+		<span class="n">pq</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Hong"</span><span class="o">,</span> <span class="mi">44</span><span class="o">));</span>
+		<span class="n">pq</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Park"</span><span class="o">,</span> <span class="mi">66</span><span class="o">));</span>
+		<span class="n">pq</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Choi"</span><span class="o">,</span> <span class="mi">66</span><span class="o">));</span>
+		
+		<span class="k">while</span><span class="o">(!</span><span class="n">pq</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+			<span class="nc">Student</span> <span class="n">st</span> <span class="o">=</span> <span class="n">pq</span><span class="o">.</span><span class="na">poll</span><span class="o">();</span>
+			<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">age</span> <span class="o">+</span> <span class="s">"\t"</span><span class="o">+</span> <span class="n">st</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
+		<span class="o">}</span>
+ 
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>출력값</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>12	Kim
+23	Park
+44	Hong
+45	Lee
+66	Ace
+66	Park
+66	Choi
+</code></pre></div></div>
+
+  </div>
+  
+</div>
+<div class="pagination">
+  
+  <span class="pagination-item older">Older</span>
+  
+  
+  
+  <a class="pagination-item newer" href="https://thedevlayer.github.io/">Newer</a>
+  
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
