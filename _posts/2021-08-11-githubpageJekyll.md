@@ -16,8 +16,10 @@ tag: [Github, 깃허브페이지ㄴ, Jekyll]
 ## 1. 루비(Ruby) 설치
 
 - URL : https://rubyinstaller.org/downloads/
+    - Ruby+Devkit 2.7.4-1 (x64) : 3.0 지원안하므로 2.X 로 설치한다.
+    
 - 버전 확인 : ruby -v
-
+    
 
 ------
 
