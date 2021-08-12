@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 깃허브페이지 실행 환경설정 - Jekyll
+title: 깃허브페이지 로컬에서 실행하기 - Jekyll
 category: 03_Cloud
 tag: [Github, 깃허브페이지ㄴ, Jekyll]
 ---
