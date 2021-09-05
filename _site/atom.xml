@@ -4,13 +4,208 @@
  <title>Developer Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-07-07T20:52:10+09:00</updated>
+ <updated>2021-09-05T15:26:11+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
    <email>dmjgr5@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>MSA 개요</title>
+   <link href="https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic/"/>
+   <updated>2021-09-05T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
+ MicroService  -&amp;gt; Contailer -&amp;gt; 많아지니까 클러스터 구성 -&amp;gt; 이런 환경을 클라우드 환경에서 구현함&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/msa-arch.png&quot; alt=&quot;https://www.s-core.co.kr/ 참조&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Monolith 한 시스템
+2. VMdnldp 가상환경 만들어 서비스
+3. VM 위에 작은  서비스 만듦
+    - 많아진다, 관리하기 어렵다. 
+    - 쿠버네티스 오픈 소스 제공(많은 서비스를 넣어 놓고 스케일업 할 수 있음)
+    - 결국 작은 서비스를 쉽고 빠르게 운용하기 위함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;msa-정의&quot;&gt;MSA 정의&lt;/h3&gt;
+
+&lt;h5 id=&quot;microservice-와-architecture-로-구분해서-이해해보자&quot;&gt;MicroService 와 Architecture 로 구분해서 이해해보자. &lt;/h5&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MicroService : 서비스를 가능한 작게, 도메인 기준으로, 독립적으로 동작 가능하게 하나는 개념
+Architecture :기술적으로 MicroService 를 어떻게 구현할 것지 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;주요-고려사항&quot;&gt;주요 고려사항&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 게이트웨이 :어느 서비스로 갈지를 정해야 하기 때문에 필요하다.(넷플릭스의 Zuul)
+    - 여러 서비스의 주소를 게이트웨이의 단일 주소로 관리(테스트 시 용이)
+2. 서비스 발견 : 어느 서비스로 갈지를 정해야 하기 때문에 필요하다.
+3. 레지스트리 :서비스 정보를 보관(넷플릭스의 Erueka)
+    - 많은 서비스의 상태, 주소기록/관리 : 서비스명만 알면 가능하도록 한다. 
+4. 서비스 간 통신 :타 서비스가 필요할 때 서비스끼리 활용할 수 있도록 한다.
+    - 다른 서비스한테 바로 알려줘, 또는 넣어놓을테니 필요할 때 처리해
+        - CircuitBreaker : 다른 서비스끼리 통신하다 하나의 서비스가 안될 때
+5. 로깅/모니터링 : 다수 서비스에 대한 로그 확인 필요 (오픈소스 예: Fluentd -&amp;gt; ElasticSearch -&amp;gt; Kibana)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;패턴화&quot;&gt;패턴화&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;실질적으로 어떻게 구현하고 무엇으로 개발해야 될지를 다이어그램으로 제공(CNCF)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/msa-cncf.jpg&quot; alt=&quot;generateFolder&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;주요-활용기업&quot;&gt;주요 활용기업&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 넷플릭스 : SpringBoot + SpringCloud library =&amp;gt; SpringCloud 로 Maven  Repository(Maven.org ) 검색
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;시연-내용-정리&quot;&gt;시연 내용 정리&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;각각의 서비스가 이클립스 상에서 각각의 Project 라고 보면 됨
+swagger : 개발된 API 를 테스트할 수 있는 화면
+재고 서비스가 죽더라도 다른 서비스들은 살아 있어야 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;서비스:         재고서비스         생산서비스          주문서비스
+                          |                           |                          |
+화면 :             swagger(1)    swagger(2)      swagger(3)
+                          |                          |                          | 
+DB:                RabbitMQ        MariaDB          MongoDB
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;호출-방법&quot;&gt;호출 방법&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;방법1. 다른 서비로 직접 호출하는 방법
+    -     1. HTTP REST API 호출 : 일반적으로 간단한 데이터
+    -     2 . 다른 서비스 죽었을 때 살아있는 서비스는 문제없이 된다. 단 복구 이후에 수량 안맞으면 맞춰준다.
+        - 보상트랜잭션:MSA 구성시 보상트랜잭션 설계가 중요하다.
+
+
+방법2) 간접적으로 다른 서비스의 큐(RabbitMQ) 를 활용한다.
+    - 간접 큐 호출 시에도 문제없이 작동하지만 살아있을 때 큐에 적재되었던 것을 그때 처리한다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;쿠버네티스-요약&quot;&gt;쿠버네티스 요약&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;          POD (서비스마다 하나씩 들어가 있음)
+                        |
+                     Service
+                        | 
+  Ingress (외부에서 접속할 수 있음, 쿠버네티스 안에서 네이밍 역할)
+   
+   
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>깃허브페이지 로컬에서 실행하기 - Jekyll</title>
+   <link href="https://dmjgr5.github.io/03_cloud/2021/08/11/githubpageJekyll/"/>
+   <updated>2021-08-11T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_cloud/2021/08/11/githubpageJekyll</id>
+   <content type="html">&lt;h2 id=&quot;깃허브-페이지-로컬-실행-환경-설정&quot;&gt;깃허브 페이지 로컬 실행 환경 설정&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;깃허브 페이지를 작성 후 로컬에서 테스트할 수 있는 환경을 구성하고자 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-루비ruby-설치&quot;&gt;1. 루비(Ruby) 설치&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;URL : https://rubyinstaller.org/downloads/
+    &lt;ul&gt;
+      &lt;li&gt;Ruby+Devkit 2.7.4-1 (x64) : 3.0 지원안하므로 2.X 로 설치한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;버전 확인 : ruby -v&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-지킬jekyll-설치&quot;&gt;2. 지킬(Jekyll) 설치&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Command Prompt with Ruby를 실행
+    &lt;ul&gt;
+      &lt;li&gt;gem install jekyll&lt;/li&gt;
+      &lt;li&gt;gem install bundler&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;샘플블로그 체크
+    &lt;ul&gt;
+      &lt;li&gt;jekyll new HelloBlog&lt;/li&gt;
+      &lt;li&gt;cd HelloBlog&lt;/li&gt;
+      &lt;li&gt;bundle exec jekyll serve
+        &lt;ul&gt;
+          &lt;li&gt;http://127.0.0.1:4000/&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-로컬-환경-접속&quot;&gt;3. 로컬 환경 접속&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;깃허브 페이지 폴더로 이동한다.&lt;/li&gt;
+  &lt;li&gt;인코딩 에러 발생시 다음의 코드를 실행한다.
+    &lt;ul&gt;
+      &lt;li&gt;chcp 65001&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;지킬을 실행한다.
+    &lt;ul&gt;
+      &lt;li&gt;jekyll serve&lt;/li&gt;
+      &lt;li&gt;브라우저를 열어 http://127.0.0.1:4000/로 접속하면 로컬 상에서 블로그가 구현된 결과를 살펴 볼 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-업로드&quot;&gt;4. 업로드&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;포스트 업로드하는 것은 일반적인 소스코드 업로드하는 것과 동일하다. VSCODE 에서 직접 업로드 하는 방법이 있으며, 작업의 반복적인 부분이 있어 쉘 스크립트로 자동화가 가능하며 자동화하는 방법은 다음과 같다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;쉘스크립트
+    &lt;ul&gt;
+      &lt;li&gt;프로젝트 폴더에 post_upload.sh 파일을 만들고 다음과 같이 내용을 입력한다.
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  echo `git status`
+  echo `git add _posts/*`
+  echo `git commit -m &quot;post upload&quot;`
+  echo `git push origin master`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;실행 명령어는 다음과 같다.
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sh post_upload.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;로컬 실행 : C:\park.github.io&amp;gt;bundle exec jekyll serve
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  C:\park.github.io&amp;gt;git add .
+
+  C:\park.github.io&amp;gt;git commit -m &quot;3rd blog page test&quot;
+
+  C:\park.github.io&amp;gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Github 원격 저장소와 로컬 저장소 연동하기</title>
@@ -116,7 +311,7 @@ To https://github.com/dmjgr5/test.git
  </entry>
  
  <entry>
-   <title>주식 관리 프로그램</title>
+   <title>Django 웹사이트 구축</title>
    <link href="https://dmjgr5.github.io/04_toyproject/2021/03/12/panabara/"/>
    <updated>2021-03-12T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/04_toyproject/2021/03/12/panabara</id>
@@ -588,7 +783,7 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
 &lt;hr /&gt;
 &lt;h2 id=&quot;3장-프로젝트-소스&quot;&gt;3장. 프로젝트 소스&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;접속링크 :  &lt;a href=&quot;https://github.com/dmjgr5/Creon-with-Python&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;접속링크 :  &lt;a href=&quot;https://github.com/dmjgr5/CreonWithPython&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
