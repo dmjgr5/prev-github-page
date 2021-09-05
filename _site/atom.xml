@@ -4,7 +4,7 @@
  <title>Developer Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-09-05T15:26:11+09:00</updated>
+ <updated>2021-09-05T20:45:45+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -17,10 +17,8 @@
    <link href="https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic/"/>
    <updated>2021-09-05T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic</id>
-   <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
+   <content type="html">&lt;p&gt;단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
  MicroService  -&amp;gt; Contailer -&amp;gt; 많아지니까 클러스터 구성 -&amp;gt; 이런 환경을 클라우드 환경에서 구현함&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/msa-arch.png&quot; alt=&quot;https://www.s-core.co.kr/ 참조&quot; /&gt;&lt;/p&gt;
 
@@ -108,11 +106,7 @@ DB:                RabbitMQ        MariaDB          MongoDB
    <link href="https://dmjgr5.github.io/03_cloud/2021/08/11/githubpageJekyll/"/>
    <updated>2021-08-11T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/03_cloud/2021/08/11/githubpageJekyll</id>
-   <content type="html">&lt;h2 id=&quot;깃허브-페이지-로컬-실행-환경-설정&quot;&gt;깃허브 페이지 로컬 실행 환경 설정&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;깃허브 페이지를 작성 후 로컬에서 테스트할 수 있는 환경을 구성하고자 한다.&lt;/p&gt;
-&lt;/blockquote&gt;
+   <content type="html">&lt;p&gt;깃허브 페이지를 작성 후 로컬에서 테스트할 수 있는 환경을 구성하고자 한다. 깃허브에 Push 후 확인할 수 있지만, 오타가 기타 오류가 발생할 경우 재업로드 해야 하는 불편함이 따르므로 Push 이전에 항상 로컬에서 테스트를 하면 이러한 불편함을 없앨 수 있다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -212,11 +206,7 @@ DB:                RabbitMQ        MariaDB          MongoDB
    <link href="https://dmjgr5.github.io/03_cloud/2021/07/07/githubsetting/"/>
    <updated>2021-07-07T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/03_cloud/2021/07/07/githubsetting</id>
-   <content type="html">&lt;h2 id=&quot;로컬-저장소를-github-에-올리고-싶다면-&quot;&gt;로컬 저장소를 Github 에 올리고 싶다면 ??&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;로컬에 있는 데이터 및 소스들을 Github 에 올리기 위해 필요한 절차 및 명령어를 간단히 정리해 보고자 한다.&lt;/p&gt;
-&lt;/blockquote&gt;
+   <content type="html">&lt;p&gt;로컬에 있는 데이터 및 소스들을 Github 에 올리기 위해 필요한 절차 및 명령어를 간단히 정리해 보고자 한다. 기본적인 내용이지만 가끔 생성할 때마다 기억이 잘 안나 구글링을 다시 해보곤 해서 이참에 정리하고자 한다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -315,7 +305,7 @@ To https://github.com/dmjgr5/test.git
    <link href="https://dmjgr5.github.io/04_toyproject/2021/03/12/panabara/"/>
    <updated>2021-03-12T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/04_toyproject/2021/03/12/panabara</id>
-   <content type="html">&lt;h4 id=&quot;분산된-투자-종목들을-한번에-관리하고-투자-유형별-종목별로-자산-현황을-쉽게-파악하고자-아래와-같이-간단히-구성하였다&quot;&gt;분산된 투자 종목들을 한번에 관리하고 투자 유형별, 종목별로 자산 현황을 쉽게 파악하고자 아래와 같이 간단히 구성하였다.&lt;/h4&gt;
+   <content type="html">&lt;p&gt;분산된 투자 종목들을 한번에 관리하고 투자 유형별, 종목별로 자산 현황을 쉽게 파악하고자 아래와 같이 간단히 구성하였다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;적용 항목
@@ -465,7 +455,7 @@ To https://github.com/dmjgr5/test.git
    <link href="https://dmjgr5.github.io/01_algorithm/2021/03/09/kmp/"/>
    <updated>2021-03-09T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/01_algorithm/2021/03/09/kmp</id>
-   <content type="html">&lt;p&gt;문자열에서 특정 패턴을 검색할 수 있다.&lt;/p&gt;
+   <content type="html">&lt;p&gt;문자열과 관련된 알고리즘 중 기본적으로 이해해야 할 KMP 문자열에 대해서 알아본다. 이해하긴 쉬울 순 있으나 처음 이해하는 과정이 다소 어려긴 하다. 문자열에서 특정 패턴을 검색할 수 있다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;특이 사항으로는 실패함수를 생성하여 로직을 구현한다.&lt;/li&gt;
@@ -744,12 +734,11 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
 
 --- --&gt;
 
-&lt;h2 id=&quot;1장-프로젝트-목적&quot;&gt;1장. 프로젝트 목적&lt;/h2&gt;
 &lt;p&gt;파이썬을 이용한 프로그램을 만드는 것이 일차적인 목표였으며, 평소 주식에 관심이 있는 나로서는 보유 종목에 대한 주식 관리 프로그램을 만드는 것이 본 프로젝트를 하는데 있어서의 동기부여 및 효율적이라는 판단에 주식 관리 프로그램 구현을 목적으로 하였다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;2장-프로젝트-개요&quot;&gt;2장. 프로젝트 개요&lt;/h2&gt;
+&lt;h2 id=&quot;1장-프로젝트-개요&quot;&gt;1장. 프로젝트 개요&lt;/h2&gt;
 &lt;p&gt;실시간 호가, 매매 등의 고급 기능보다는 보유 주식과 비중 등을 확인해 보고자 하였으며, 그러한 기능을 구현하는 것이 1차적인 목표이다.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -781,14 +770,14 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
 &lt;/ul&gt;
 
 &lt;hr /&gt;
-&lt;h2 id=&quot;3장-프로젝트-소스&quot;&gt;3장. 프로젝트 소스&lt;/h2&gt;
+&lt;h2 id=&quot;2장-프로젝트-소스&quot;&gt;2장. 프로젝트 소스&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;접속링크 :  &lt;a href=&quot;https://github.com/dmjgr5/CreonWithPython&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;4장-주요-기능별-파이썬-이해하기&quot;&gt;4장. 주요 기능별 파이썬 이해하기&lt;/h2&gt;
+&lt;h2 id=&quot;3장-주요-기능별-파이썬-이해하기&quot;&gt;3장. 주요 기능별 파이썬 이해하기&lt;/h2&gt;
 
 &lt;p&gt;메인 화면은 아래와 같으며 로그인, 보유 종목, 전략 검색, 로그 등의 화면으로 간단하게 구성하였다.&lt;/p&gt;
 
@@ -1098,7 +1087,7 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;5장-마무리&quot;&gt;5장. 마무리&lt;/h2&gt;
+&lt;h2 id=&quot;4장-마무리&quot;&gt;4장. 마무리&lt;/h2&gt;
 
 &lt;p&gt;파이썬 학습을 위해 데이터 타입, matplotlib, pandas 등의 모듈에 대해 체계적으로 학습하려 했으나, 시간이 지나면 잊어버리고 후에 다시 보게 되어 제대로 해보자는 마음으로 본 프로젝트를 진행하였으며, 이를 통해 파이썬에 익숙해지려 노력했다. 2주 간의 구글링과 코딩, 그리고 디버깅을 통해 나름 파이썬이란 이런 것이구나라는 것을 알게 되었고 고민에 고민을 더한 결과 위와 같은 결과물이 나올 수 있게 된 것 같다. &lt;br /&gt;&lt;/p&gt;
 

@@ -1,7 +1,7 @@
-I"}<blockquote>
-  <p>단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
+I"�<p>단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
  MicroService  -&gt; Contailer -&gt; 많아지니까 클러스터 구성 -&gt; 이런 환경을 클라우드 환경에서 구현함</p>
-</blockquote>
+
+<p><img src="/assets/images/msa-arch.png" alt="https://www.s-core.co.kr/ 참조" /></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Monolith 한 시스템
 2. VMdnldp 가상환경 만들어 서비스
@@ -33,8 +33,9 @@ Architecture :기술적으로 MicroService 를 어떻게 구현할 것지
 
 <h3 id="패턴화">패턴화</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>실질적으로 어떻게 구현하고 무엇으로 개발해야 될지를 다이어그램으로 제공(CNCF)
-![generateFolder](/assets/images/msa-cncf.jpg)
 </code></pre></div></div>
+
+<p><img src="/assets/images/msa-cncf.jpg" alt="generateFolder" /></p>
 
 <h3 id="주요-활용기업">주요 활용기업</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 넷플릭스 : SpringBoot + SpringCloud library =&gt; SpringCloud 로 Maven  Repository(Maven.org ) 검색
