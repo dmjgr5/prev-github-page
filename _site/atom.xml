@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-09-15T20:41:34+09:00</updated>
+ <updated>2021-09-15T21:09:48+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -13,12 +13,173 @@
 
  
  <entry>
+   <title>통계 분석 기초 용어 정리</title>
+   <link href="https://dmjgr5.github.io/04_theoretical/2021/09/15/statsbasic/"/>
+   <updated>2021-09-15T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/04_theoretical/2021/09/15/statsbasic</id>
+   <content type="html">&lt;p&gt;빅데이터를 학습하기 전에 가장 먼저 맞닥뜨리는 것이 아무래도 통계일 것입니다. 수집된 자료를 정리, 분석하고 일정한 패턴 분석 및 인과관계를 파악하기 위해서는 기본이 되는 통계 개념을 이해하고 넘어가고자 아래와 같이 정리합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;■ 평균&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;자료의 합 / 자료의 개수&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 중앙값(Median)     &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;자료를 크기순서로 나열했을 때 가장 중앙에 위치한 값이다.
+     ㄴ = MEDIAN(범위)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 최빈값(mode) &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;자료 중에서 가장 출현빈도가 높은 값이다.&lt;/li&gt;
+  &lt;li&gt;= MODE(범위)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 분산(Variance)
+     ㄴ평균을 중심으로 관찰값들이 얼마나 떨어져 분포하는가를 나타낸다.
+     ㄴ편차제곱합 : 편차1^2 + 편차2^2 + …..
+     ㄴ분산 = 편차제곱합 / 데이터 수 = VAR(범위)&lt;/p&gt;
+
+&lt;p&gt;■ 표준편차(standard deviation)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;분산의 양의 제곱근으로 원 자료 측정단위와 같은 단위로 퍼짐 정도를 나타낸다.&lt;/li&gt;
+  &lt;li&gt;표준편차 = 분산^(1/2) = STDEV(범위)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 변동계수(coefficient of variation, CV)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;평균이 크게 다른 두 개 이상의 집단을 비교할 때 또는 각 집단의 상대적 동질성을 비교할 때 주로 사용&lt;/li&gt;
+  &lt;li&gt;CV = 표준편차 / 평균&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 범위&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;최대값 - 최소값, 가장 간단하게 퍼짐 정도를 파악할 수 있는 척도이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 사분위수 범위(IQR : Interquartile Range)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;제 3사분위수와 제 1사분위수의 차를 의미, 자료의 가운데 부분에 위치한 50%의미&lt;/li&gt;
+  &lt;li&gt;사분위수 = 3사분위수 - 1사분위수 = QUARTILE(범위, quart)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 상자그림&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;최소값, 1사분위, 2사분위, 3사분위, 최대값을 이용하여 그림을 그린다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 백분위수&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;어떤 숫자들의 집합에서 제c백분위수는 수들의 c% 가 그 값보다 작고 나머지는 그 값보다 큰 값을 말한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 데이터의 Z 값&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;어떤 특정한 자료값이 평균으로부터 표준편차의 몇 배 만큼 떨어져 있는가를 측정한다.&lt;/li&gt;
+  &lt;li&gt;Z = (변량(x) - 평균) / 표준편차 = STANDARIDZE(x, mean, standard_dev)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;■ 엑셀 내 해찾기 기능 유용&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;어떤특정 기준으로 특정 해를 구할 수 있음.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
+ MicroService  -&amp;gt; Contailer -&amp;gt; 많아지니까 클러스터 구성 -&amp;gt; 이런 환경을 클라우드 환경에서 구현함&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/msa-arch.png&quot; alt=&quot;https://www.s-core.co.kr/ 참조&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Monolith 한 시스템
+2. VMdnldp 가상환경 만들어 서비스
+3. VM 위에 작은  서비스 만듦
+    - 많아진다, 관리하기 어렵다. 
+    - 쿠버네티스 오픈 소스 제공(많은 서비스를 넣어 놓고 스케일업 할 수 있음)
+    - 결국 작은 서비스를 쉽고 빠르게 운용하기 위함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;msa-정의&quot;&gt;MSA 정의&lt;/h3&gt;
+
+&lt;h5 id=&quot;microservice-와-architecture-로-구분해서-이해해보자&quot;&gt;MicroService 와 Architecture 로 구분해서 이해해보자. &lt;/h5&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MicroService : 서비스를 가능한 작게, 도메인 기준으로, 독립적으로 동작 가능하게 하나는 개념
+Architecture :기술적으로 MicroService 를 어떻게 구현할 것지 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;주요-고려사항&quot;&gt;주요 고려사항&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 게이트웨이 :어느 서비스로 갈지를 정해야 하기 때문에 필요하다.(넷플릭스의 Zuul)
+    - 여러 서비스의 주소를 게이트웨이의 단일 주소로 관리(테스트 시 용이)
+2. 서비스 발견 : 어느 서비스로 갈지를 정해야 하기 때문에 필요하다.
+3. 레지스트리 :서비스 정보를 보관(넷플릭스의 Erueka)
+    - 많은 서비스의 상태, 주소기록/관리 : 서비스명만 알면 가능하도록 한다. 
+4. 서비스 간 통신 :타 서비스가 필요할 때 서비스끼리 활용할 수 있도록 한다.
+    - 다른 서비스한테 바로 알려줘, 또는 넣어놓을테니 필요할 때 처리해
+        - CircuitBreaker : 다른 서비스끼리 통신하다 하나의 서비스가 안될 때
+5. 로깅/모니터링 : 다수 서비스에 대한 로그 확인 필요 (오픈소스 예: Fluentd -&amp;gt; ElasticSearch -&amp;gt; Kibana)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;패턴화&quot;&gt;패턴화&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;실질적으로 어떻게 구현하고 무엇으로 개발해야 될지를 다이어그램으로 제공(CNCF)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/msa-cncf.jpg&quot; alt=&quot;generateFolder&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;주요-활용기업&quot;&gt;주요 활용기업&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 넷플릭스 : SpringBoot + SpringCloud library =&amp;gt; SpringCloud 로 Maven  Repository(Maven.org ) 검색
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;시연-내용-정리&quot;&gt;시연 내용 정리&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;각각의 서비스가 이클립스 상에서 각각의 Project 라고 보면 됨
+swagger : 개발된 API 를 테스트할 수 있는 화면
+재고 서비스가 죽더라도 다른 서비스들은 살아 있어야 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;서비스:         재고서비스         생산서비스          주문서비스
+                          |                           |                          |
+화면 :             swagger(1)    swagger(2)      swagger(3)
+                          |                          |                          | 
+DB:                RabbitMQ        MariaDB          MongoDB
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;호출-방법&quot;&gt;호출 방법&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;방법1. 다른 서비로 직접 호출하는 방법
+    -     1. HTTP REST API 호출 : 일반적으로 간단한 데이터
+    -     2 . 다른 서비스 죽었을 때 살아있는 서비스는 문제없이 된다. 단 복구 이후에 수량 안맞으면 맞춰준다.
+        - 보상트랜잭션:MSA 구성시 보상트랜잭션 설계가 중요하다.
+
+
+방법2) 간접적으로 다른 서비스의 큐(RabbitMQ) 를 활용한다.
+    - 간접 큐 호출 시에도 문제없이 작동하지만 살아있을 때 큐에 적재되었던 것을 그때 처리한다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;쿠버네티스-요약&quot;&gt;쿠버네티스 요약&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;          POD (서비스마다 하나씩 들어가 있음)
+                        |
+                     Service
+                        | 
+  Ingress (외부에서 접속할 수 있음, 쿠버네티스 안에서 네이밍 역할)
+   
+   
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>MSA 개요</title>
    <link href="https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic/"/>
    <updated>2021-09-05T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic</id>
    <content type="html">&lt;p&gt;단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
  MicroService  -&amp;gt; Contailer -&amp;gt; 많아지니까 클러스터 구성 -&amp;gt; 이런 환경을 클라우드 환경에서 구현함&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/msa-arch.png&quot; alt=&quot;https://www.s-core.co.kr/ 참조&quot; /&gt;&lt;/p&gt;
 
@@ -302,10 +463,12 @@ To https://github.com/dmjgr5/test.git
  
  <entry>
    <title>Django 웹사이트 구축</title>
-   <link href="https://dmjgr5.github.io/04_toyproject/2021/03/12/panabara/"/>
+   <link href="https://dmjgr5.github.io/05_toyproject/2021/03/12/panabara/"/>
    <updated>2021-03-12T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/04_toyproject/2021/03/12/panabara</id>
+   <id>https://dmjgr5.github.io/05_toyproject/2021/03/12/panabara</id>
    <content type="html">&lt;p&gt;분산된 투자 종목들을 한번에 관리하고 투자 유형별, 종목별로 자산 현황을 쉽게 파악하고자 아래와 같이 간단히 구성하였다.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
   &lt;li&gt;적용 항목
@@ -389,6 +552,8 @@ To https://github.com/dmjgr5/test.git
 클래스 선언 시 Comparable 을 이용하여 구현 가능하며, Comparator 의 클래스로도 사용할 수 있다. 본 장에서는 Comparable 를 활용한 예제를 나타내었다.
 동일 조건일 때는 return 이전에 if 문으로 분기하여 추가 구현 가능하다.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;ul&gt;
   &lt;li&gt;coding&lt;/li&gt;
 &lt;/ul&gt;
@@ -456,6 +621,8 @@ To https://github.com/dmjgr5/test.git
    <updated>2021-03-09T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/01_algorithm/2021/03/09/kmp</id>
    <content type="html">&lt;p&gt;문자열과 관련된 알고리즘 중 기본적으로 이해해야 할 KMP 문자열에 대해서 알아본다. 이해하긴 쉬울 순 있으나 처음 이해하는 과정이 다소 어려긴 하다. 문자열에서 특정 패턴을 검색할 수 있다.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
   &lt;li&gt;특이 사항으로는 실패함수를 생성하여 로직을 구현한다.&lt;/li&gt;
@@ -557,6 +724,8 @@ BCD -- 패턴 문자열
    <updated>2021-03-08T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/01_algorithm/2021/03/08/lca</id>
    <content type="html">&lt;p&gt;LCA 는 트리 노드에서 공통 조상을 찾는 로직이다. 로직 구성은 아래와 같다.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;ol&gt;
   &lt;li&gt;인접리스트 관계 매핑&lt;/li&gt;
@@ -722,9 +891,9 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
  
  <entry>
    <title>파이썬을 이용한 주식관리 프로그램</title>
-   <link href="https://dmjgr5.github.io/04_toyproject/2020/01/03/toy-creon/"/>
+   <link href="https://dmjgr5.github.io/05_toyproject/2020/01/03/toy-creon/"/>
    <updated>2020-01-03T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/04_toyproject/2020/01/03/toy-creon</id>
+   <id>https://dmjgr5.github.io/05_toyproject/2020/01/03/toy-creon</id>
    <content type="html">&lt;!-- ## 목차
 1. [프로젝트 목적](#1장.-프로젝트-목적)
 1. [프로젝트 개요](#프로젝트-개요)
@@ -1111,6 +1280,8 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
 - Virginica 
 - Versicolor
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h4 id=&quot;getting-set-up&quot;&gt;Getting set up&lt;/h4&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- git clone https://github.com/aayusharora/TensorflowJS-NeuralNet.git

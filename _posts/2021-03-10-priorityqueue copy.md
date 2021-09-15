@@ -9,7 +9,7 @@ tag: [Priority Queue]
 클래스 선언 시 Comparable 을 이용하여 구현 가능하며, Comparator 의 클래스로도 사용할 수 있다. 본 장에서는 Comparable 를 활용한 예제를 나타내었다.
 동일 조건일 때는 return 이전에 if 문으로 분기하여 추가 구현 가능하다.
 
-
+---
 
 - coding
 
