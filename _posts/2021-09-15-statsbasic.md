@@ -2,7 +2,7 @@
 layout: post
 title: 통계 분석 기초 용어 정리
 category: 04_Theoretical
-tag: [MSA, MicroService, Architecture]
+tag: [중앙값, 분산, IQR]
 ---
 
 
