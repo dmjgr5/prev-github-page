@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-09-16T23:38:46+09:00</updated>
+ <updated>2021-09-16T23:41:43+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -23,11 +23,13 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/5whys.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;#### 배경&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;배경&quot;&gt;배경&lt;/h3&gt;
 
 &lt;p&gt;5 Whys 는 도요타의 Taiichi Ohno 가 체계적인 문제를 위해 개발한 도구로, 어떠한 문제 상황에 대해 그러한 상황이 발생하게 된 원인을 ‘왜 그러한 상황이 발생했는가?’ 라는 질문을 여러 번 반복해 나가면 문제의 근본 원인에 도달할 수 있다는 방법론입니다.&lt;/p&gt;
 
-&lt;p&gt;#### 기법 사례&lt;/p&gt;
+&lt;h3 id=&quot;기법-사례&quot;&gt;기법 사례&lt;/h3&gt;
 
 &lt;p&gt;미국 제퍼슨 독립기념관의 대리석 기둥이 해마다 지속적으로 부식되자 많은 보수 비용이 발생하게 되고 기념관의 이미지가 훼손되었습니다. 5Whys 를 통해 이러한 문제를 해결한 사례를 들어보겠습니다.&lt;/p&gt;
 
@@ -63,10 +65,10 @@
   &lt;p&gt;이를 통해 도출된 근본 원인을 해결하기 위해서 제퍼슨 독립 기념관은 주변보다 2시간 늦게 전등을 밝히는 것으로 문제를 해결했다고 합니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;#### 정리&lt;/p&gt;
+&lt;h3 id=&quot;정리&quot;&gt;정리&lt;/h3&gt;
 
 &lt;p&gt;위와 같이 여러 단계를 거쳐 근본 원인을 도출할 수 있는데, 반드시 5개일 필요는 없다고 합니다. 단계를 거쳐가며 합리적인 원인을 찾아 나가며 근본 원인(root cause) 를 찾는 것으로도 충분하다고 생각합니다. 
-   자신의 고민거리나 상대방의 의견을 파악하는 등 평소 생활 속에서도 많은 도움이 될 것 같기도 하네요.&lt;/p&gt;
+자신의 고민거리나 상대방의 의견을 파악하는 등 평소 생활 속에서도 많은 도움이 될 것 같기도 하네요.&lt;/p&gt;
 </content>
  </entry>
  
