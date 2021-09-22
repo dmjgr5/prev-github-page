@@ -11,7 +11,7 @@
 
   <title>
     
-      tags &middot; Git Note
+      Cloud Vision API from a Kubernetes Cluster &middot; Git Note
     
   </title>
 
@@ -561,42 +561,125 @@
       </div>
 
       <div class="container content">
-        
+        <div class="post">
+  
+  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
+  <h2 class="post-title"> Cloud Vision API from a Kubernetes Cluster</h2>
+  <span class="post-date">   02 Jan 2021</span>
+   <p>This is for Cloud Vision API from a Kubernetes Cluster that  uses Kubernetes and Cloud Vision API. The guide is from Awwvision: Cloud Vision API from a Kubernetes Cluster</p>
+<blockquote>
+  <p>https://codelabs.developers.google.com/codelabs/awwvision-cloud-vision-api-from-a-kubernetes-cluster/index.html?index=..%2F..index#0</p>
+</blockquote>
+
+<hr />
+
+<p><img src="/assets/images/cloudVision.png" alt="lca-example" /></p>
+
+<h4 id="setup-and-requirements">Setup and Requirements</h4>
+<ul>
+  <li>Project ID : my-kubernetes-codedlab</li>
+  <li>To authenticate, type gcloud auth list</li>
+  <li>Then, gcloud config list project</li>
+  <li>Enable the Vision API by visiting the APIs &amp; Services Dashboard on the cloud console</li>
+</ul>
+
+<h4 id="create-a-container-engine-cluster">Create a Container Engine cluster</h4>
+<ul>
+  <li>gcloud config set compute/zone <code class="language-plaintext highlighter-rouge">us-central1-f</code></li>
+  <li>gcloud container clusters create awwvision 
+    <ul>
+      <li>num-nodes 2 \</li>
+      <li>scopes cloud-platform</li>
+    </ul>
+  </li>
+  <li>gcloud container clusters get-credentials awwvision</li>
+  <li>kubectl cluster-info</li>
+</ul>
+
+<h4 id="get-the-sample">Get the Sample</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/GoogleCloudPlatform/cloud-vision</code></li>
+</ul>
+
+<h4 id="deploy-the-sample">Deploy the sample</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">cd cloud-vision/python/awwvision</code></li>
+  <li><code class="language-plaintext highlighter-rouge">make all</code></li>
+</ul>
+
+<h4 id="check-the-kubernetes-resources-on-the-cluster">Check the Kubernetes resources on the cluster</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">kubectl get pods</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get pods
+NAME                                READY   STATUS    RESTARTS   AGE
+awwvision-webapp-5886b65c78-9bzkr   1/1     Running   1          115s
+awwvision-worker-f56647b49-4w6dp    1/1     Running   0          48s
+awwvision-worker-f56647b49-9qc6p    1/1     Running   0          48s
+awwvision-worker-f56647b49-f5sbk    1/1     Running   0          48s
+redis-master-7c9dc65556-ln25v       1/1     Running   0          3m47s
+</code></pre></div>    </div>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">kubectl get deployments -o wide</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get deployments -o wide
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS         IMAGES                                           SELECTOR
+awwvision-webapp   1/1     1            1           2m6s    awwvision-webapp   gcr.io/my-kubernetes-codedlab/awwvision-webapp   app=awwvision,role=frontend
+awwvision-worker   3/3     3            3           59s     awwvision-worker   gcr.io/my-kubernetes-codedlab/awwvision-worker   app=awwvision,role=worker
+redis-master       1/1     1            1           3m58s   redis-master       redis  
+</code></pre></div>    </div>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">kubectl get svc awwvision-webapp</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get svc awwvision-webapp
+NAME               TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
+awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   2m29s
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="visit-your-new-web-app-and-start-its-crawle">Visit your new web app and start its crawle</h4>
+<ul>
+  <li>Copy and paste the external IP of the awwvision-webapp service into a new browser to open the webapp, then click Start the Crawler button.</li>
+  <li>To delete your Kubernetes pods, replication controllers, and services, and to remove your auto-generated .yaml files, do: make delete</li>
+</ul>
 
 
-
-<div id="post-list">
-  <h1>tags</h1>
-  <hr>
-  <h2 id="">{{ hash }}</h2>
-  <ul>
-    <li v-for="p in posts" v-if="p.tags.indexOf(hash) != -1">
-      <time>
-        {{ p.date }}
-      </time>
-      <a v-bind:href="p.url">{{ p.title }}</a>
-    </li>
-  </ul>
 </div>
 
-<script>
-  var hash = decodeURI(window.location.hash.substr(1));
 
-  var postList = new Vue({
-    el: '#post-list',
-    data: {
-      posts: []
-    }
-  });
+ 
 
-  axios.get('/posts.json')
-  .then(function (response) {
-    postList.posts = response.data.posts;
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-</script>
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/04_theoretical/2021/09/16/5why/">
+            5 Whys 기법
+            <small>16 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/04_theoretical/2021/09/15/statsbasic/">
+            통계 분석 기초 용어 정리
+            <small>15 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic/">
+            MSA 개요
+            <small>05 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+  </ul>
+</div>
 
       </div>
     </div>

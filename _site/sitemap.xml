@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://dmjgr5.github.io/02_ai/2019/12/22/machineLearningTheory/</loc>
+<lastmod>2019-12-22T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://dmjgr5.github.io/03_cloud/2019/12/31/flaskdeploy/</loc>
+<lastmod>2019-12-31T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://dmjgr5.github.io/03_cloud/2019/12/31/nodejs/</loc>
+<lastmod>2019-12-31T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>https://dmjgr5.github.io/02_ai/2019/12/31/simpleneuralnetwork/</loc>
 <lastmod>2019-12-31T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://dmjgr5.github.io/05_toyproject/2020/01/03/toy-creon/</loc>
 <lastmod>2020-01-03T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://dmjgr5.github.io/03_cloud/2021/01/02/CloudVIsion/</loc>
+<lastmod>2021-01-02T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://dmjgr5.github.io/01_algorithm/2021/03/08/lca/</loc>

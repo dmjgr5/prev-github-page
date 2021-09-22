@@ -11,7 +11,7 @@
 
   <title>
     
-      tags &middot; Git Note
+      How to install Node.js on Windows 10 &middot; Git Note
     
   </title>
 
@@ -561,42 +561,105 @@
       </div>
 
       <div class="container content">
-        
+        <div class="post">
+  
+  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
+  <h2 class="post-title"> How to install Node.js on Windows 10</h2>
+  <span class="post-date">   31 Dec 2019</span>
+   <p>This is for installation for Node.js on Windows 10.</p>
+
+<hr />
+
+<p><img src="/assets/images/nodejs.jpg" alt="example" /></p>
+
+<ul>
+  <li>Go to https://nodejs.org/en/ then download the Nodejs file</li>
+  <li>How to check Nodejs Installation
+    <ul>
+      <li>node -v on command line, then we can check the version of Nodejs
+        <pre><code class="language-C:\Users\samsung1&gt;node">  Welcome to Node.js v12.14.0.
+  Type ".help" for more information.
+  &gt; var i = 1
+  undefined
+  &gt; var i = 1
+  undefined
+  &gt; var i =2
+  undefined
+  &gt; var j =3
+  undefined
+  &gt; i+j
+  5
+</code></pre>
+      </li>
+    </ul>
+  </li>
+  <li>Check sample code, save as Sample.js in C:\</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+
+});
+
+server.listen(port, hostname, () =&gt; {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+Colored by Color Scripter
+cs
+</code></pre></div></div>
+
+<ul>
+  <li>go to <code class="language-plaintext highlighter-rouge">C:\ , then c:\&gt;node Sample.js</code></li>
+  <li>Server running at http://127.0.0.1:3000/</li>
+  <li>On browser, we can check the Hello World.</li>
+</ul>
 
 
-
-<div id="post-list">
-  <h1>tags</h1>
-  <hr>
-  <h2 id="">{{ hash }}</h2>
-  <ul>
-    <li v-for="p in posts" v-if="p.tags.indexOf(hash) != -1">
-      <time>
-        {{ p.date }}
-      </time>
-      <a v-bind:href="p.url">{{ p.title }}</a>
-    </li>
-  </ul>
 </div>
 
-<script>
-  var hash = decodeURI(window.location.hash.substr(1));
 
-  var postList = new Vue({
-    el: '#post-list',
-    data: {
-      posts: []
-    }
-  });
+ 
 
-  axios.get('/posts.json')
-  .then(function (response) {
-    postList.posts = response.data.posts;
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-</script>
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/04_theoretical/2021/09/16/5why/">
+            5 Whys 기법
+            <small>16 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/04_theoretical/2021/09/15/statsbasic/">
+            통계 분석 기초 용어 정리
+            <small>15 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic/">
+            MSA 개요
+            <small>05 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+  </ul>
+</div>
 
       </div>
     </div>

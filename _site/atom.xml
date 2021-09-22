@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-09-22T13:56:32+09:00</updated>
+ <updated>2021-09-22T16:59:46+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -870,6 +870,89 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
  </entry>
  
  <entry>
+   <title>Cloud Vision API from a Kubernetes Cluster</title>
+   <link href="https://dmjgr5.github.io/03_cloud/2021/01/02/CloudVIsion/"/>
+   <updated>2021-01-02T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_cloud/2021/01/02/CloudVIsion</id>
+   <content type="html">&lt;p&gt;This is for Cloud Vision API from a Kubernetes Cluster that  uses Kubernetes and Cloud Vision API. The guide is from Awwvision: Cloud Vision API from a Kubernetes Cluster&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://codelabs.developers.google.com/codelabs/awwvision-cloud-vision-api-from-a-kubernetes-cluster/index.html?index=..%2F..index#0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cloudVision.png&quot; alt=&quot;lca-example&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;setup-and-requirements&quot;&gt;Setup and Requirements&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Project ID : my-kubernetes-codedlab&lt;/li&gt;
+  &lt;li&gt;To authenticate, type gcloud auth list&lt;/li&gt;
+  &lt;li&gt;Then, gcloud config list project&lt;/li&gt;
+  &lt;li&gt;Enable the Vision API by visiting the APIs &amp;amp; Services Dashboard on the cloud console&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;create-a-container-engine-cluster&quot;&gt;Create a Container Engine cluster&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;gcloud config set compute/zone &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;us-central1-f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;gcloud container clusters create awwvision 
+    &lt;ul&gt;
+      &lt;li&gt;num-nodes 2 \&lt;/li&gt;
+      &lt;li&gt;scopes cloud-platform&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;gcloud container clusters get-credentials awwvision&lt;/li&gt;
+  &lt;li&gt;kubectl cluster-info&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;get-the-sample&quot;&gt;Get the Sample&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone https://github.com/GoogleCloudPlatform/cloud-vision&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;deploy-the-sample&quot;&gt;Deploy the sample&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd cloud-vision/python/awwvision&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make all&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;check-the-kubernetes-resources-on-the-cluster&quot;&gt;Check the Kubernetes resources on the cluster&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl get pods&lt;/code&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get pods
+NAME                                READY   STATUS    RESTARTS   AGE
+awwvision-webapp-5886b65c78-9bzkr   1/1     Running   1          115s
+awwvision-worker-f56647b49-4w6dp    1/1     Running   0          48s
+awwvision-worker-f56647b49-9qc6p    1/1     Running   0          48s
+awwvision-worker-f56647b49-f5sbk    1/1     Running   0          48s
+redis-master-7c9dc65556-ln25v       1/1     Running   0          3m47s
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl get deployments -o wide&lt;/code&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get deployments -o wide
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS         IMAGES                                           SELECTOR
+awwvision-webapp   1/1     1            1           2m6s    awwvision-webapp   gcr.io/my-kubernetes-codedlab/awwvision-webapp   app=awwvision,role=frontend
+awwvision-worker   3/3     3            3           59s     awwvision-worker   gcr.io/my-kubernetes-codedlab/awwvision-worker   app=awwvision,role=worker
+redis-master       1/1     1            1           3m58s   redis-master       redis  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl get svc awwvision-webapp&lt;/code&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get svc awwvision-webapp
+NAME               TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
+awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   2m29s
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;visit-your-new-web-app-and-start-its-crawle&quot;&gt;Visit your new web app and start its crawle&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Copy and paste the external IP of the awwvision-webapp service into a new browser to open the webapp, then click Start the Crawler button.&lt;/li&gt;
+  &lt;li&gt;To delete your Kubernetes pods, replication controllers, and services, and to remove your auto-generated .yaml files, do: make delete&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>파이썬을 이용한 주식관리 프로그램</title>
    <link href="https://dmjgr5.github.io/05_toyproject/2020/01/03/toy-creon/"/>
    <updated>2020-01-03T00:00:00+09:00</updated>
@@ -1585,6 +1668,233 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
 66	Park
 66	Choi
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to install Node.js on Windows 10</title>
+   <link href="https://dmjgr5.github.io/03_cloud/2019/12/31/nodejs/"/>
+   <updated>2019-12-31T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_cloud/2019/12/31/nodejs</id>
+   <content type="html">&lt;p&gt;This is for installation for Node.js on Windows 10.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/nodejs.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Go to https://nodejs.org/en/ then download the Nodejs file&lt;/li&gt;
+  &lt;li&gt;How to check Nodejs Installation
+    &lt;ul&gt;
+      &lt;li&gt;node -v on command line, then we can check the version of Nodejs
+        &lt;pre&gt;&lt;code class=&quot;language-C:\Users\samsung1&amp;gt;node&quot;&gt;  Welcome to Node.js v12.14.0.
+  Type &quot;.help&quot; for more information.
+  &amp;gt; var i = 1
+  undefined
+  &amp;gt; var i = 1
+  undefined
+  &amp;gt; var i =2
+  undefined
+  &amp;gt; var j =3
+  undefined
+  &amp;gt; i+j
+  5
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Check sample code, save as Sample.js in C:\&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&amp;gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+
+});
+
+server.listen(port, hostname, () =&amp;gt; {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+Colored by Color Scripter
+cs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\ , then c:\&amp;gt;node Sample.js&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Server running at http://127.0.0.1:3000/&lt;/li&gt;
+  &lt;li&gt;On browser, we can check the Hello World.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Deploying a Python Flask Web Application using GCP</title>
+   <link href="https://dmjgr5.github.io/03_cloud/2019/12/31/flaskdeploy/"/>
+   <updated>2019-12-31T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_cloud/2019/12/31/flaskdeploy</id>
+   <content type="html">&lt;p&gt;This document have been referred to the guide from https://codelabs.developers.google.com/codelabs/cloud-vision-app-engine/index.html?index=..%2F..index#0&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/flask.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Access to console.cloud.google.com&lt;/li&gt;
+  &lt;li&gt;Make a new project&lt;/li&gt;
+  &lt;li&gt;Google Cloud Shell
+    &lt;ul&gt;
+      &lt;li&gt;` gcloud auth list`&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud config list project&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;` project = uplifted-time-263613`&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Get the Sample Code
+    &lt;ul&gt;
+      &lt;li&gt;clone git sample repository&lt;/li&gt;
+      &lt;li&gt;git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git `&lt;/li&gt;
+      &lt;li&gt;go to cd python-docs-samples/codelabs/flex_and_vision&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Enable APIs
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud services enable vision.googleapis.com&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud services enable storage-component.googleapis.com&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud services enable datastore.googleapis.com&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Authenticate API Requests
+    &lt;ul&gt;
+      &lt;li&gt;Enable Vision API
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud services enable vision.googleapis.com&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Generate Service Account Credentials
+export PROJECT_ID=[uplifted-time-263613]&lt;/li&gt;
+      &lt;li&gt;Access the Google Cloud APIs
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud iam service-accounts create codelab --display-name &quot;My Codelab Service Account&quot;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Give Permission
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud projects add-iam-policy-binding uplifted-time-263613 --member serviceAccount:codelab@uplifted-time-263613.iam.gserviceaccount.com  --role roles/owner&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;create a Service Account key:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud iam service-accounts keys create ~/key.json \&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt; --iam-account codelab@uplifted-time-263613.iam.gserviceaccount.com&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Set service account key in  environment variable
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export GOOGLE_APPLICATION_CREDENTIALS=&quot;/home/dcjames_park/key.json&quot;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Testing the Application Locally
+    &lt;ul&gt;
+      &lt;li&gt;Starting Your Virtual Environment and Installing Dependencies&lt;/li&gt;
+      &lt;li&gt;Create an isolated Python 3 environment named env with virtualenv:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv -p python3 env&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Enter your newly created virtualenv named env:
+source env/bin/activate&lt;/li&gt;
+      &lt;li&gt;Use pip to install dependencies for your project from the requirements.txt file:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Creating an App Engine App
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud app create&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Creating a Storage Bucket
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export CLOUD_STORAGE_BUCKET=uplifted-time-263613
+gsutil mb gs://uplifted-time-263613
+python main.py&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;choose “Preview on port 8080.”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Deploying the App to App Engine Flexible
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud app deploy&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://&amp;lt; PROJECT_ID &amp;gt;.appspot.com&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Clean Up GCP
+    &lt;ul&gt;
+      &lt;li&gt;Go to the Cloud Platform Console.&lt;/li&gt;
+      &lt;li&gt;Select the project you want to shut down, then click ‘Delete’ at the top: this schedules the project for deletion.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Machine Learning Theory</title>
+   <link href="https://dmjgr5.github.io/02_ai/2019/12/22/machineLearningTheory/"/>
+   <updated>2019-12-22T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/02_ai/2019/12/22/machineLearningTheory</id>
+   <content type="html">&lt;p&gt;This is the document written when I research the concept of Machine Learning.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;linear-regression-and-logistic-classification&quot;&gt;Linear Regression and Logistic Classification&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mltheory.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mltheory2.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;terms&quot;&gt;Terms&lt;/h4&gt;
+&lt;p&gt;epoch, batch size&lt;/p&gt;
+
+&lt;h4 id=&quot;initialization&quot;&gt;Initialization&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;RBM (2006) -&amp;gt; Xavier&lt;/li&gt;
+  &lt;li&gt;DropOut (2014)&lt;/li&gt;
+  &lt;li&gt;Ensemble : Merge learning model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;optimizer&quot;&gt;Optimizer&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;gradient decent, adam and other optimizers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;convolutional-neural-networks-cnn&quot;&gt;Convolutional Neural Networks (CNN)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;How to connect layers : Forward, Split &amp;amp; Merge, Recurrent Network(RNN)&lt;/li&gt;
+  &lt;li&gt;convolution, relu(2012), pooling, repeated.&lt;/li&gt;
+  &lt;li&gt;stride, convolution, sampling, padding, pooling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;recurrent-neural-network-rnn&quot;&gt;Recurrent Neural Network (RNN)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stacked RNN, Softmax&lt;/li&gt;
+  &lt;li&gt;Dynamic RNN&lt;/li&gt;
+  &lt;li&gt;Time Series RNN&lt;/li&gt;
+&lt;/ul&gt;
+
 </content>
  </entry>
  

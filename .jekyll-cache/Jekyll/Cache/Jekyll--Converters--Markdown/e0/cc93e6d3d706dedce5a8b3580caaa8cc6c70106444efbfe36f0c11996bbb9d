@@ -1,0 +1,30 @@
+I"»<p>This is the document written when I research the concept of Machine Learning.</p>
+
+<hr />
+
+<p><img src="/assets/images/mltheory.jpg" alt="example" /></p>
+
+<p>Linear Regression and Logistic Classification</p>
+
+<p>Terms
+epoch, batch size</p>
+
+<p>Initialization
+RBM (2006) -&gt; Xavier
+DropOut (2014) 
+Ensemble : Merge learning model</p>
+
+<p>Optimizer
+gradient decent, adam and other optimizers</p>
+
+<p>Convolutional Neural Networks (CNN)
+How to connect layers : Forward, Split &amp; Merge, Recurrent Network(RNN)
+convolution, relu(2012), pooling, repeated.
+stride, convolution, sampling, padding, pooling</p>
+
+<p>Recurrent Neural Network (RNN)
+Stacked RNN, Softmax
+Dynamic RNN
+Time Series RNN</p>
+
+:ET
