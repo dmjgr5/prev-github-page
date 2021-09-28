@@ -1,656 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-  <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title>
-    
-      What is Python &middot; Git Note
-    
-  </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/lanyon.css">
-  <link rel="stylesheet" href="/public/css/custom.css">
-  <link rel="stylesheet" href="/public/css/font.css">
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="https://dmjgr5.github.io/public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109898110-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-109898110-1', 'auto');
-</script>
-
-  
-
-  <script src="/js/vue.min.js"></script>
-  <script src="/js/axios.min.js"></script>
-</head>
-
-
-  <body>
-
-    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>One a day</p>
-  </div>
-
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://dmjgr5.github.io/">Home</a>
-
-    
-
-    <!-- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <a class="sidebar-nav-item" href="/about/">About</a>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     -->
-<!-- 
-    <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
-  </nav>
-  <div>
-    <div class="sidebar-nav-item">Category</div>
-    <nav class="content-ul">
-      
-
-
-      
-      <a href="/category/#01_Algorithm"
-         class="sidebar-nav-item pl-3rem">
-                            <span class="name">
-                                01_Algorithm
-                            </span>
-        <span class="badge">3</span>
-      </a>
-      
-      <a href="/category/#02_Programming"
-         class="sidebar-nav-item pl-3rem">
-                            <span class="name">
-                                02_Programming
-                            </span>
-        <span class="badge">3</span>
-      </a>
-      
-      <a href="/category/#03_Database"
-         class="sidebar-nav-item pl-3rem">
-                            <span class="name">
-                                03_Database
-                            </span>
-        <span class="badge">3</span>
-      </a>
-      
-      <a href="/category/#04_AI"
-         class="sidebar-nav-item pl-3rem">
-                            <span class="name">
-                                04_AI
-                            </span>
-        <span class="badge">2</span>
-      </a>
-      
-      <a href="/category/#05_Cloud"
-         class="sidebar-nav-item pl-3rem">
-                            <span class="name">
-                                05_Cloud
-                            </span>
-        <span class="badge">7</span>
-      </a>
-      
-      <a href="/category/#06_Theoretical"
-         class="sidebar-nav-item pl-3rem">
-                            <span class="name">
-                                06_Theoretical
-                            </span>
-        <span class="badge">2</span>
-      </a>
-      
-      <a href="/category/#07_ToyProject"
-         class="sidebar-nav-item pl-3rem">
-                            <span class="name">
-                                07_ToyProject
-                            </span>
-        <span class="badge">2</span>
-      </a>
-      
-    </nav>
-  </div>
-  <div>
-    <div class="sidebar-nav-item">Tags</div>
-    <div class="tags-cloud">
-      <div>
-        
-        
-        
-        
-
-        
-
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Python" style="font-size: 18pt; color: #eee;">Python</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#GitBash" style="font-size: 9pt; color: #555;">GitBash</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#MySQL" style="font-size: 9pt; color: #555;">MySQL</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#MySql" style="font-size: 9pt; color: #555;">MySql</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Connect" style="font-size: 9pt; color: #555;">Connect</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#JavaScript" style="font-size: 12pt; color: #888;">JavaScript</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#PHP" style="font-size: 9pt; color: #555;">PHP</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#MachineLearning" style="font-size: 9pt; color: #555;">MachineLearning</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#LinearRegression" style="font-size: 9pt; color: #555;">LinearRegression</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#LogisticClassification" style="font-size: 9pt; color: #555;">LogisticClassification</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Flask" style="font-size: 9pt; color: #555;">Flask</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#GCP" style="font-size: 9pt; color: #555;">GCP</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#NodeJs" style="font-size: 9pt; color: #555;">NodeJs</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#tensorflow" style="font-size: 9pt; color: #555;">tensorflow</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#주식" style="font-size: 9pt; color: #555;">주식</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#PyQt5" style="font-size: 9pt; color: #555;">PyQt5</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Kubernetes" style="font-size: 9pt; color: #555;">Kubernetes</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#CloudVision" style="font-size: 9pt; color: #555;">CloudVision</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#LCA" style="font-size: 9pt; color: #555;">LCA</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#SparseTable" style="font-size: 9pt; color: #555;">SparseTable</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#MST" style="font-size: 9pt; color: #555;">MST</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#BFS" style="font-size: 9pt; color: #555;">BFS</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#FailureFunction" style="font-size: 9pt; color: #555;">FailureFunction</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Priority Queue" style="font-size: 9pt; color: #555;">Priority Queue</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Django" style="font-size: 9pt; color: #555;">Django</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Git" style="font-size: 9pt; color: #555;">Git</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Github" style="font-size: 12pt; color: #888;">Github</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#깃허브페이지" style="font-size: 9pt; color: #555;">깃허브페이지</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Jekyll" style="font-size: 9pt; color: #555;">Jekyll</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#MSA" style="font-size: 9pt; color: #555;">MSA</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#MicroService" style="font-size: 9pt; color: #555;">MicroService</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#Architecture" style="font-size: 9pt; color: #555;">Architecture</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#중앙값" style="font-size: 9pt; color: #555;">중앙값</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#분산" style="font-size: 9pt; color: #555;">분산</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#IQR" style="font-size: 9pt; color: #555;">IQR</a>
-        
-        
-        
-        
-        
-        
-
-        
-        
-        <a href="/tag/#5Whys" style="font-size: 9pt; color: #555;">5Whys</a>
-        
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-  
-  <!-- <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <a class="sidebar-nav-item" href="/about/">About</a>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-  
-
-  <div class="sidebar-item">
-    <p>
-      &copy; 2021. All rights reserved.
-    </p>
-  </div>
-</div>
-
-<script>
-  window.addEventListener('hashchange', function(){
-    location.reload();
-  });
-</script>
-
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="https://dmjgr5.github.io/" title="Home">Git Note</a>
-            <small>Day by day, in Everyway, I am getting better and better</small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
-        <div class="post">
-  
-  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
-  <h2 class="post-title"> What is Python</h2>
-  <span class="post-date">   06 Dec 2019</span>
-   <p><img src="/assets/images/python.png" alt="example" /></p>
+I"~<p><img src="/assets/images/python.png" alt="example" /></p>
 
 <blockquote>
   <p>This is the document for Python, which is basic instruction like Python Installation, Data Types and so on. Let me explain briefly about Python language.</p>
@@ -1247,131 +595,160 @@ for i in con.iterdump():
 </code></pre></div></div>
 
 <ul>
-  <li>executemany example with tuple data</li>
+  <li>executemany example with tuple data
+```
+import sqlite3</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sqlite3
+<p>#generate connection object</p>
+<h1 id="con--sqlite3connectmemory--in-memory">con = sqlite3.connect(“:memory:”) # in memory</h1>
+<p>con = sqlite3.connect(“c:\work\sample.db”) # in file</p>
 
-#generate connection object
-# con = sqlite3.connect(":memory:") # in memory
-con = sqlite3.connect("c:\\work\\sample.db") # in file
+<p>#generate cursor
+cur = con.cursor()</p>
 
-#generate cursor
-cur = con.cursor()
+<h1 id="create--use-text-intead-of-varchar2-in-sqlite3">create ( use text intead of varchar2 in SQLite3)</h1>
+<p>cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)</p>
+<h1 id="insert">insert</h1>
+<p>cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)</p>
 
-# create ( use text intead of varchar2 in SQLite3)
-cur.execute("create table PhoneBook (Name text, PhoneNum text);")
-# insert
-cur.execute("insert into PhoneBook values ('derick', '010-111');")
+<h1 id="insert-using-variables">insert using variables</h1>
+<p>name = “gil dong”
+phoneNumber = “010-222”
+cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type</p>
 
-# insert using variables
-name = "gil dong"
-phoneNumber = "010-222"
-cur.execute("insert into PhoneBook values ( ?, ?);", (name, phoneNumber)) # input using Tuple type
+<h1 id="multiple-record">multiple record</h1>
+<p>datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
+cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function</p>
 
-# multiple record
-datalist = (("tom","010-123"),("dsp","010-567")) # tuple in tuple
-cur.executemany("insert into PhoneBook values ( ?, ?);", datalist) # input using Tuple type, with executemany function
-
-
-# search
-cur.execute("select * from PhoneBook;")
+<h1 id="search">search</h1>
+<p>cur.execute(“select * from PhoneBook;”)
 for row in cur:
-    print(row)
+    print(row)</p>
 
-# commit
-con.commit()
+<h1 id="commit">commit</h1>
+<p>con.commit()</p>
 
-# *** Result =&gt; results out as tuple type
-# ('derick', '010-111')
-# ('gil dong', '010-222')
-# ('tom', '010-123')
-# ('dsp', '010-567')
-
-</code></pre></div></div>
-
-<ul>
-  <li>Backup example</li>
-</ul>
-
+<h1 id="-result--results-out-as-tuple-type">*** Result =&gt; results out as tuple type</h1>
+<h1 id="derick-010-111">(‘derick’, ‘010-111’)</h1>
+<h1 id="gil-dong-010-222">(‘gil dong’, ‘010-222’)</h1>
+<h1 id="tom-010-123">(‘tom’, ‘010-123’)</h1>
+<h1 id="dsp-010-567">(‘dsp’, ‘010-567’)</h1>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-import sqlite3
+- Backup example
+</code></pre></div></div>
+<p>import sqlite3</p>
 
-#generate connection object
-con = sqlite3.connect(":memory:") # in memory
-# con = sqlite3.connect("test.db") # in file
+<p>#generate connection object
+con = sqlite3.connect(“:memory:”) # in memory</p>
+<h1 id="con--sqlite3connecttestdb--in-file">con = sqlite3.connect(“test.db”) # in file</h1>
 
-#generate cursor
-cur = con.cursor()
+<p>#generate cursor
+cur = con.cursor()</p>
 
-# create ( use text intead of varchar2 in SQLite3)
-cur.execute("create table PhoneBook (Name text, PhoneNum text);")
-# insert
-cur.execute("insert into PhoneBook values ('derick', '010-111');")
+<h1 id="create--use-text-intead-of-varchar2-in-sqlite3-1">create ( use text intead of varchar2 in SQLite3)</h1>
+<p>cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)</p>
+<h1 id="insert-1">insert</h1>
+<p>cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)</p>
 
-# insert using variables
-name = "gil dong"
-phoneNumber = "010-222"
-cur.execute("insert into PhoneBook values ( ?, ?);", (name, phoneNumber)) # input using Tuple type
+<h1 id="insert-using-variables-1">insert using variables</h1>
+<p>name = “gil dong”
+phoneNumber = “010-222”
+cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type</p>
 
-# multiple record
-datalist = (("tom","010-123"),("dsp","010-567")) # tuple in tuple
-cur.executemany("insert into PhoneBook values ( ?, ?);", datalist) # input using Tuple type, with executemany function
+<h1 id="multiple-record-1">multiple record</h1>
+<p>datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
+cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function</p>
 
-
-
-# database dump
-with open("c:\\work\\dump.sql","wt") as f:
-    for item in con.iterdump():    
+<h1 id="database-dump">database dump</h1>
+<p>with open(“c:\work\dump.sql”,”wt”) as f:
+    for item in con.iterdump():  <br />
         print(item)
-        f.write("{0}\n".format(item))
+        f.write(“{0}\n”.format(item))</p>
 
-print("backup completed")
+<p>print(“backup completed”)</p>
 
-
-# *** Result =&gt; results out as tuple type
-# BEGIN TRANSACTION;
-# CREATE TABLE PhoneBook (Name text, PhoneNum text);
-# INSERT INTO "PhoneBook" VALUES('derick','010-111');
-# INSERT INTO "PhoneBook" VALUES('gil dong','010-222');
-# INSERT INTO "PhoneBook" VALUES('tom','010-123');
-# INSERT INTO "PhoneBook" VALUES('dsp','010-567');
-# COMMIT;
-# backup completed
-
-</code></pre></div></div>
-
-<ul>
-  <li>Restore example</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># open new dump
-&gt;&gt;&gt; con = sqlite3.connect("c:\\work\\demo.db")
-
-# read old dump
-&gt;&gt;&gt; with open("c:\\work\\dump.sql") as f:
- SQLScript = f.read()
-
-# check dump script
-&gt;&gt;&gt; SQLScript
-'BEGIN TRANSACTION;\nCREATE TABLE PhoneBook (Name text, PhoneNum text);\nINSERT INTO "PhoneBook" VALUES(\'derick\',\'010-111\');\nINSERT INTO "PhoneBook" VALUES(\'gil dong\',\'010-222\');\nINSERT INTO "PhoneBook" VALUES(\'tom\',\'010-123\');\nINSERT INTO "PhoneBook" VALUES(\'dsp\',\'010-567\');\nCOMMIT;\n'
-
-# create cursor
-&gt;&gt;&gt; cur = con.cursor()
-
-# execute script
-&gt;&gt;&gt; cur.executescript(SQLScript)
-&lt;sqlite3.Cursor object at 0x03F4B7E0&gt;
-
-# select
-&gt;&gt;&gt; cur.execute("select * from PhoneBook;")
-&lt;sqlite3.Cursor object at 0x03F4B7E0&gt;
-
-# fetch all
-&gt;&gt;&gt; cur.fetchall()
-[('derick', '010-111'), ('gil dong', '010-222'), ('tom', '010-123'), ('dsp', '010-567')]
+<h1 id="-result--results-out-as-tuple-type-1">*** Result =&gt; results out as tuple type</h1>
+<h1 id="begin-transaction">BEGIN TRANSACTION;</h1>
+<h1 id="create-table-phonebook-name-text-phonenum-text">CREATE TABLE PhoneBook (Name text, PhoneNum text);</h1>
+<h1 id="insert-into-phonebook-valuesderick010-111">INSERT INTO “PhoneBook” VALUES(‘derick’,’010-111’);</h1>
+<h1 id="insert-into-phonebook-valuesgil-dong010-222">INSERT INTO “PhoneBook” VALUES(‘gil dong’,’010-222’);</h1>
+<h1 id="insert-into-phonebook-valuestom010-123">INSERT INTO “PhoneBook” VALUES(‘tom’,’010-123’);</h1>
+<h1 id="insert-into-phonebook-valuesdsp010-567">INSERT INTO “PhoneBook” VALUES(‘dsp’,’010-567’);</h1>
+<h1 id="commit-1">COMMIT;</h1>
+<h1 id="backup-completed">backup completed</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Restore example
 
 </code></pre></div></div>
+<h1 id="open-new-dump">open new dump</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>con = sqlite3.connect(“c:\work\demo.db”)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="read-old-dump">read old dump</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>with open(“c:\work\dump.sql”) as f:
+ SQLScript = f.read()</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="check-dump-script">check dump script</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>SQLScript
+‘BEGIN TRANSACTION;\nCREATE TABLE PhoneBook (Name text, PhoneNum text);\nINSERT INTO “PhoneBook” VALUES('derick','010-111');\nINSERT INTO “PhoneBook” VALUES('gil dong','010-222');\nINSERT INTO “PhoneBook” VALUES('tom','010-123');\nINSERT INTO “PhoneBook” VALUES('dsp','010-567');\nCOMMIT;\n’</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="create-cursor">create cursor</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur = con.cursor()</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="execute-script">execute script</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur.executescript(SQLScript)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>&lt;sqlite3.Cursor object at 0x03F4B7E0&gt;</p>
+
+<h1 id="select">select</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur.execute(“select * from PhoneBook;”)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>&lt;sqlite3.Cursor object at 0x03F4B7E0&gt;</p>
+
+<h1 id="fetch-all">fetch all</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur.fetchall()
+[(‘derick’, ‘010-111’), (‘gil dong’, ‘010-222’), (‘tom’, ‘010-123’), (‘dsp’, ‘010-567’)]
+```</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
 
 <h3 id="web-crawling-with-beautifulsoup">Web Crawling with BeautifulSoup</h3>
 <ul>
@@ -1381,179 +758,160 @@ print("backup completed")
   <li>
     <p><code class="language-plaintext highlighter-rouge">pip list</code></p>
   </li>
-  <li>Example of Webcrawling</li>
+  <li>Example of Webcrawling
+```
+    <h1 id="request-webserver">request webserver</h1>
+    <p>import urllib.request
+from bs4 import BeautifulSoup</p>
+  </li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># request webserver
-import urllib.request
-from bs4 import BeautifulSoup
+<p>data = urllib.request.urlopen(“http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;weekday=fri”)</p>
 
-data = urllib.request.urlopen("http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;weekday=fri")
+<p>soup = BeautifulSoup(data, “html.parser”)</p>
 
-soup = BeautifulSoup(data, "html.parser")
+<p>cartoons = soup.find_all(“td”, class_=”title”)</p>
 
-cartoons = soup.find_all("td", class_="title")
+<p>title = cartoons[0].find(‘a’).text
+link = cartoons[0].find(‘a’)[“href”]</p>
 
-title = cartoons[0].find('a').text
-link = cartoons[0].find('a')["href"]
+<h1 id="printtitle">print(title)</h1>
+<h1 id="printlink">print(link)</h1>
 
-# print(title)
-# print(link)
-
-for item in cartoons:
-    title = item.find("a").text
-    print(title.strip())
-
+<p>for item in cartoons:
+    title = item.find(“a”).text
+    print(title.strip())</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Save file and web crawling for all pages
 </code></pre></div></div>
-
-<ul>
-  <li>Save file and web crawling for all pages</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-# coding:utf-8
-from bs4 import BeautifulSoup
+<h1 id="codingutf-8">coding:utf-8</h1>
+<p>from bs4 import BeautifulSoup
 import urllib.request
-import re 
+import re</p>
 
-for n in range(0,10):
+<p>for n in range(0,10):
         #address of clien
-        data ='https://www.clien.net/service/board/sold?&amp;od=T31&amp;po=' + str(n)
+        data =’https://www.clien.net/service/board/sold?&amp;od=T31&amp;po=’ + str(n)
         req = urllib.request.Request(data)
         data = urllib.request.urlopen(req).read()
-        page = data.decode('utf-8', 'ignore')
-        soup = BeautifulSoup(page, 'html.parser')
-        list = soup.find_all('span', attrs={'data-role':'list-title-text'})
+        page = data.decode(‘utf-8’, ‘ignore’)
+        soup = BeautifulSoup(page, ‘html.parser’)
+        list = soup.find_all(‘span’, attrs={‘data-role’:’list-title-text’})</p>
 
-        f = open("C:\\work\\clien.txt", "a+", encoding="utf-8") # incase of new, use wt
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    f = open("C:\\work\\clien.txt", "a+", encoding="utf-8") # incase of new, use wt
 
-        for item in list:
-                try:
-                        title = item.text
-                        if (re.search('갤럭시', title)):
-                                print(title.strip())
-                                f.write(title.strip() + "\n")
-                except:
-                        pass
-        
-f.close()
-print("end of web crawling")
+    for item in list:
+            try:
+                    title = item.text
+                    if (re.search('갤럭시', title)):
+                            print(title.strip())
+                            f.write(title.strip() + "\n")
+            except:
+                    pass
 </code></pre></div></div>
 
-<ul>
-  <li>Add user-agent in header</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># coding:utf-8
-from bs4 import BeautifulSoup
+<p>f.close()
+print(“end of web crawling”)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Add user-agent in header
+</code></pre></div></div>
+<h1 id="codingutf-8-1">coding:utf-8</h1>
+<p>from bs4 import BeautifulSoup
 import urllib.request
-import re 
+import re</p>
 
-#User-Agent add
-hdr = {'User-agent':'Mozila/5.0 (compatible; MSIE 5.5; Windows NT)'} # make request by adding client info with Internet explorer
+<p>#User-Agent add
+hdr = {‘User-agent’:’Mozila/5.0 (compatible; MSIE 5.5; Windows NT)’} # make request by adding client info with Internet explorer</p>
 
-for n in range(1,11):
-        data ='https://dvdprime.com/g2/bbs/board.php?bo_table=comm&amp;page=' + str(n)
-        req = urllib.request.Request(data, \
+<p>for n in range(1,11):
+        data =’https://dvdprime.com/g2/bbs/board.php?bo_table=comm&amp;page=’ + str(n)
+        req = urllib.request.Request(data, <br />
                                           headers = hdr)
         data = urllib.request.urlopen(req).read()
-        page = data.decode('utf-8', 'ignore')
-        soup = BeautifulSoup(page, 'html.parser')
+        page = data.decode(‘utf-8’, ‘ignore’)
+        soup = BeautifulSoup(page, ‘html.parser’)</p>
 
-        # &lt;span class='list_subject_span_pc'&gt;contents&lt;/span&gt;
-        list = soup.find_all('span', attrs={'class':'list_subject_span_pc'})
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    # &lt;span class='list_subject_span_pc'&gt;contents&lt;/span&gt;
+    list = soup.find_all('span', attrs={'class':'list_subject_span_pc'})
 
-        for item in list:
-                try:
-                        title = item.text
-                        if (re.search('회사', title)):
-                                print(title.strip())
-                except:
-                        pass
-        
+    for item in list:
+            try:
+                    title = item.text
+                    if (re.search('회사', title)):
+                            print(title.strip())
+            except:
+                    pass
 </code></pre></div></div>
 
-<h3 id="pyqt5-gui">PyQt5 GUI</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### PyQt5 GUI
 
-<p>Install <code class="language-plaintext highlighter-rouge">PyQt5-5.6-gpl-Py3.5-Qt5.6.0-x32-2.exe</code>, make sure same version with python</p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">.ui</code> file
-    <ul>
-      <li>XML format</li>
-      <li>Make mapping signal and slot in Signal/Slot Editor on Qt designer</li>
-    </ul>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">.py</code> file
-    <ul>
-      <li>Add login in py file</li>
-    </ul>
-  </li>
-</ul>
+Install `PyQt5-5.6-gpl-Py3.5-Qt5.6.0-x32-2.exe`, make sure same version with python
+- `.ui` file
+  - XML format
+  - Make mapping signal and slot in Signal/Slot Editor on Qt designer
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># demo.ui (display) + demo.py(logic)
+- `.py` file
+  - Add login in py file
 
-import sys
+</code></pre></div></div>
+<h1 id="demoui-display--demopylogic">demo.ui (display) + demo.py(logic)</h1>
+
+<p>import sys
 from PyQt5.QtWidgets import *
-from PyQt5 import uic
+from PyQt5 import uic</p>
 
-import urllib.request
-from bs4 import BeautifulSoup
+<p>import urllib.request
+from bs4 import BeautifulSoup</p>
 
+<p>form_class = uic.loadUiType(“demo2.ui”)[0]</p>
 
-form_class = uic.loadUiType("demo2.ui")[0]
-
-#parent class((QMainWindow))
+<p>#parent class((QMainWindow))
 class DemoForm(QMainWindow, form_class):
-    def __init__(self):
-        super().__init__()
+    def <strong>init</strong>(self):
+        super().<strong>init</strong>()
         self.setupUi(self)
-    def firstClick(self):
-        
-        
+    def firstClick(self):</p>
 
-        data = urllib.request.urlopen("http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;weekday=fri")
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    data = urllib.request.urlopen("http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;weekday=fri")
 
-        soup = BeautifulSoup(data, "html.parser")
+    soup = BeautifulSoup(data, "html.parser")
 
-        cartoons = soup.find_all("td", class_="title")
+    cartoons = soup.find_all("td", class_="title")
 
-        # title = cartoons[0].find('a').text
-        # link = cartoons[0].find('a')["href"]
+    # title = cartoons[0].find('a').text
+    # link = cartoons[0].find('a')["href"]
 
-        # print(title)
-        # print(link)
+    # print(title)
+    # print(link)
 
-        for item in cartoons:
-            title = item.find("a").text
-            print(title.strip())
+    for item in cartoons:
+        title = item.find("a").text
+        print(title.strip())
 
 
 
 
 
 
-    def secondClick(self):
-        self.label.setText("clicked second")
-    def thirdClick(self):
-        self.label.setText("clicked third")    
+def secondClick(self):
+    self.label.setText("clicked second")
+def thirdClick(self):
+    self.label.setText("clicked third")    
+</code></pre></div></div>
 
-
-if __name__ == "__main__":
+<p>if <strong>name</strong> == “<strong>main</strong>”:
     app = QApplication(sys.argv)
     demoWindow = DemoForm()
     demoWindow.show()
-    app.exec_()
+    app.exec_()</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Get data and show table and link to browser.
 </code></pre></div></div>
-<ul>
-  <li>Get data and show table and link to browser.
-```
-import sys
+<p>import sys
 from PyQt5.QtWidgets import *
 import urllib.request
 from bs4 import BeautifulSoup
 import webbrowser  <br />
-import re</li>
-</ul>
+import re</p>
 
 <p>class Form(QMainWindow):
     def <strong>init</strong>(self):
@@ -1675,67 +1033,4 @@ columns = [“name”, “sex”, “births”]</p>
 ```</p>
 
 <p><img src="/assets/images/pyplot.png" alt="example" /></p>
-
-</div>
-
-
- 
-
-<div class="related">
-  <h3>Related Posts</h3>
-  <ul class="related-posts">
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/06_theoretical/2021/09/16/5why/">
-            5 Whys 기법
-            <small>16 Sep 2021</small>
-          </a>
-        </h4>
-      </li>
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/06_theoretical/2021/09/15/statsbasic/">
-            통계 분석 기초 용어 정리
-            <small>15 Sep 2021</small>
-          </a>
-        </h4>
-      </li>
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/05_cloud/2021/09/05/msabasic/">
-            MSA 개요
-            <small>05 Sep 2021</small>
-          </a>
-        </h4>
-      </li>
-    
-  </ul>
-</div>
-
-      </div>
-    </div>
-
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
-
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
-  </body>
-</html>
+:ET

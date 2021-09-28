@@ -33,6 +33,7 @@ tag: [Python]
 ### Shallow Copy and Deep Copy
 
 - Shallow Copy
+
 ```
 a = [1,2,3]
 b =a
@@ -41,6 +42,7 @@ import copy
 
 a = [1,2,3]
 b = copy.copy(a)
+
 ```
 
 - Deep Copy
@@ -54,6 +56,7 @@ import copy
 
 a = [1,2,3]
 b = copy.deepcopy(a)   
+
 ```
 
 
@@ -61,6 +64,7 @@ b = copy.deepcopy(a)
 - The data type of int, float, complex, String and tuple are immutable, therefore if the variable is updated, it make another new object, so old object which is not used, garbage collection executed. Mostly list and dictionary used because it is mutable type.
 The immutable type and global variable should be used with 'global' to update its value.
 - Test
+
 ```
 >>> g = 1
 >>> def testScope(a):
@@ -70,12 +74,18 @@ The immutable type and global variable should be used with 'global' to update it
 
 print("testScoope(1) : ", testScoope(1))
 print("g : ",g)
+
 ```
+
 - Output
+
 ```
+
 testScoope(1) :  3
 g :  1
+
 ```
+
 
 ### Variable Parameter
 - Any number of parameters can be used by adding * (different a pointer from C)in front of parameters
@@ -105,6 +115,7 @@ g :  1
 
 - Any number of parameters (key-value type) can be used by adding ** in front of parameters.
 It is option where it requires or not. Option parameter is handled as a dictionary type.
+
 ```
 >>> def userURIBuilder(server, port, **user):
     str = "http://" + server + ":" + port + "/?"
@@ -117,12 +128,14 @@ It is option where it requires or not. Option parameter is handled as a dictiona
 'http://test.com:8080/?passwd=1234&id=userid&'
 >>> userURIBuilder("test.com", "8080", id='userid', passwd='1234', name='mike', age='20')
 'http://test.com:8080/?passwd=1234&age=20&id=userid&name=mike&' 
+
 ```
 
 
 ### Lambda Function
 - There is no name, anonymous function. In case of sample function, it is better to use lambda function.
 - Example : lambda <parameters> : <phrase>
+
 ```
 >>> g = lambda x, y : x * y
 >>> g(2,3)
@@ -133,6 +146,7 @@ It is option where it requires or not. Option parameter is handled as a dictiona
 
 ### yield
 - returns value in real time, used in RANGE phrase.
+
 ```
 >>> def reverse(data):
     for index in range(len(data) - 1, -1, -1):
@@ -149,6 +163,7 @@ g
 
 ### Private Member
 - `Add __<member variable>, changed _<className>__<memberName>`
+
 ```
 class BankAccount:
 def __init__(self, id, name, balance):
@@ -167,6 +182,7 @@ def __str__(self):
 
 ### Inheritance
 - Example : Class Student(Person):
+
 ```
 class Person:
   …
@@ -186,6 +202,7 @@ class Student(Person):
 Classes and Functions can be defined in Module.
 
 - Module example
+
 ```
 from functools import *
 
@@ -216,6 +233,7 @@ def union(*ar):
                 setList.append(x)
     return setList
 ```
+
 - Module Importing Style
   - import simpleset
     - get from global namespace, get all functions
@@ -238,6 +256,7 @@ Pyinstaller is useful for this case :
 
 
 ### Exception
+
 ```
 def divide(a,b):
     return a/b
@@ -259,6 +278,7 @@ finally:
 
 ### Input and Output
 - Output
+
 ```
 import sys
 
@@ -266,6 +286,7 @@ f = open("C:\\work\\test.txt", "wt")
 print("file write", file=f)
 f.close()
 ```
+
 - read() : returns string all from a file
 - readline() : returns string line by line
 - readlines() : returns a list with line by line at once
@@ -530,6 +551,8 @@ for i in con.iterdump():
 ```
 
 - executemany example with tuple data
+
+
 ```
 import sqlite3
 
@@ -568,10 +591,14 @@ con.commit()
 # ('gil dong', '010-222')
 # ('tom', '010-123')
 # ('dsp', '010-567')
+
 ```
 
+
 - Backup example
+
 ```
+
 import sqlite3
 
 #generate connection object
@@ -615,6 +642,7 @@ print("backup completed")
 # INSERT INTO "PhoneBook" VALUES('dsp','010-567');
 # COMMIT;
 # backup completed
+
 ```
 
 - Restore example
@@ -645,6 +673,7 @@ print("backup completed")
 # fetch all
 >>> cur.fetchall()
 [('derick', '010-111'), ('gil dong', '010-222'), ('tom', '010-123'), ('dsp', '010-567')]
+
 ```
 
 
@@ -655,6 +684,7 @@ print("backup completed")
 - `pip list`
 
 - Example of Webcrawling
+
 ```
 # request webserver
 import urllib.request
@@ -675,9 +705,13 @@ link = cartoons[0].find('a')["href"]
 for item in cartoons:
     title = item.find("a").text
     print(title.strip())
+
 ```
+
 - Save file and web crawling for all pages
+
 ```
+
 # coding:utf-8
 from bs4 import BeautifulSoup
 import urllib.request
@@ -708,6 +742,7 @@ print("end of web crawling")
 ```
 
 - Add user-agent in header
+
 ```
 # coding:utf-8
 from bs4 import BeautifulSoup

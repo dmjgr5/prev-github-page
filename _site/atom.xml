@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-09-28T11:16:21+09:00</updated>
+ <updated>2021-09-28T11:22:56+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -2399,213 +2399,173 @@ Switched to branch 'master'
 &lt;h3 id=&quot;shallow-copy-and-deep-copy&quot;&gt;Shallow Copy and Deep Copy&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Shallow Copy
-```
-a = [1,2,3]
-b =a&lt;/li&gt;
+  &lt;li&gt;Shallow Copy&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;import copy&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a = [1,2,3]
+b =a
 
-&lt;p&gt;a = [1,2,3]
-b = copy.copy(a)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-- Deep Copy
+import copy
+
+a = [1,2,3]
+b = copy.copy(a)
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;a = [1,2,3]
-b = a[:]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Deep Copy&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;import copy&lt;/p&gt;
-
-&lt;p&gt;a = [1,2,3]
-b = copy.deepcopy(a)&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+a = [1,2,3]
+b = a[:]  
 
-### Garbage Collection
-- The data type of int, float, complex, String and tuple are immutable, therefore if the variable is updated, it make another new object, so old object which is not used, garbage collection executed. Mostly list and dictionary used because it is mutable type.
-The immutable type and global variable should be used with 'global' to update its value.
-- Test
+import copy
+
+a = [1,2,3]
+b = copy.deepcopy(a)   
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;g = 1
-def testScope(a):
+
+&lt;h3 id=&quot;garbage-collection&quot;&gt;Garbage Collection&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The data type of int, float, complex, String and tuple are immutable, therefore if the variable is updated, it make another new object, so old object which is not used, garbage collection executed. Mostly list and dictionary used because it is mutable type.
+The immutable type and global variable should be used with ‘global’ to update its value.&lt;/li&gt;
+  &lt;li&gt;Test&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; g = 1
+&amp;gt;&amp;gt;&amp;gt; def testScope(a):
     global g
     g = 2
-    return g + a&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+    return g + a
 
-&lt;p&gt;print(“testScoope(1) : “, testScoope(1))
-print(“g : “,g)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Output
+print(&quot;testScoope(1) : &quot;, testScoope(1))
+print(&quot;g : &quot;,g)
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;testScoope(1) :  3
-g :  1&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Output&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### Variable Parameter
-- Any number of parameters can be used by adding * (different a pointer from C)in front of parameters
-
+testScoope(1) :  3
+g :  1
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;def test(*args):
-    print(type(args))&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;test(1, 2)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;lt;type ‘tuple’&amp;gt; # tuple type&lt;/p&gt;
+&lt;h3 id=&quot;variable-parameter&quot;&gt;Variable Parameter&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Any number of parameters can be used by adding * (different a pointer from C)in front of parameters&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;def union(*ar):
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; def test(*args):
+    print(type(args))
+
+&amp;gt;&amp;gt;&amp;gt; test(1, 2)
+&amp;lt;type 'tuple'&amp;gt; # tuple type
+
+&amp;gt;&amp;gt;&amp;gt; def union(*ar):
     res = []
     for item in ar:
         for x in item:
             if not x in res:
                 res.append(x)
-    return res&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+    return res
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;union(“HAM”, “EGG”, “SPAM”)
-[‘H’, ‘A’, ‘M’, ‘E’, ‘G’, ‘S’, ‘P’]&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&amp;gt;&amp;gt;&amp;gt; union(&quot;HAM&quot;, &quot;EGG&quot;, &quot;SPAM&quot;)
+['H', 'A', 'M', 'E', 'G', 'S', 'P']
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;union(“gir”, “generation”, “gee”)
-[‘g’, ‘i’, ‘r’, ‘e’, ‘n’, ‘a’, ‘t’, ‘o’]
-```&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&amp;gt;&amp;gt;&amp;gt; union(&quot;gir&quot;, &quot;generation&quot;, &quot;gee&quot;)
+['g', 'i', 'r', 'e', 'n', 'a', 't', 'o']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Any number of parameters (key-value type) can be used by adding ** in front of parameters.
-It is option where it requires or not. Option parameter is handled as a dictionary type.
-```
-    &lt;blockquote&gt;
-      &lt;blockquote&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;def userURIBuilder(server, port, **user):
-  str = “http://” + server + “:” + port + “/?”
-  for key in user.keys():
-      str += key + “=” + user[key] + “&amp;amp;”
-  return str&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
+It is option where it requires or not. Option parameter is handled as a dictionary type.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;userURIBuilder(“test.com”, “8080”, id=’userid’, passwd=’1234’)
-‘http://test.com:8080/?passwd=1234&amp;amp;id=userid&amp;amp;’
-userURIBuilder(“test.com”, “8080”, id=’userid’, passwd=’1234’, name=’mike’, age=’20’)
-‘http://test.com:8080/?passwd=1234&amp;amp;age=20&amp;amp;id=userid&amp;amp;name=mike&amp;amp;’
-```&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; def userURIBuilder(server, port, **user):
+    str = &quot;http://&quot; + server + &quot;:&quot; + port + &quot;/?&quot;
+    for key in user.keys():
+        str += key + &quot;=&quot; + user[key] + &quot;&amp;amp;&quot;
+    return str
+
+
+&amp;gt;&amp;gt;&amp;gt; userURIBuilder(&quot;test.com&quot;, &quot;8080&quot;, id='userid', passwd='1234')
+'http://test.com:8080/?passwd=1234&amp;amp;id=userid&amp;amp;'
+&amp;gt;&amp;gt;&amp;gt; userURIBuilder(&quot;test.com&quot;, &quot;8080&quot;, id='userid', passwd='1234', name='mike', age='20')
+'http://test.com:8080/?passwd=1234&amp;amp;age=20&amp;amp;id=userid&amp;amp;name=mike&amp;amp;' 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;lambda-function&quot;&gt;Lambda Function&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;There is no name, anonymous function. In case of sample function, it is better to use lambda function.&lt;/li&gt;
-  &lt;li&gt;Example : lambda &lt;parameters&gt; : &lt;phrase&gt;
-&lt;/phrase&gt;&lt;/parameters&gt;    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; g = lambda x, y : x * y
+  &lt;li&gt;Example : lambda &lt;parameters&gt; : &lt;phrase&gt;&lt;/phrase&gt;&lt;/parameters&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; g = lambda x, y : x * y
 &amp;gt;&amp;gt;&amp;gt; g(2,3)
 6
 &amp;gt;&amp;gt;&amp;gt; (lambda x: x * x)(3)
 9
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;yield&quot;&gt;yield&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;returns value in real time, used in RANGE phrase.
-```
-    &lt;blockquote&gt;
-      &lt;blockquote&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;def reverse(data):
-  for index in range(len(data) - 1, -1, -1):
-      yield data[index]&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
+  &lt;li&gt;returns value in real time, used in RANGE phrase.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;for char in reverse(‘gold’):
-    print(char)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; def reverse(data):
+    for index in range(len(data) - 1, -1, -1):
+        yield data[index]
 
-&lt;p&gt;d
+&amp;gt;&amp;gt;&amp;gt; for char in reverse('gold'):
+    print(char)
+    
+d
 l
 o
-g&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### Private Member
-- `Add __&amp;lt;member variable&amp;gt;, changed _&amp;lt;className&amp;gt;__&amp;lt;memberName&amp;gt;`
+g 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;class BankAccount:
-def &lt;strong&gt;init&lt;/strong&gt;(self, id, name, balance):&lt;/p&gt;
 
-&lt;p&gt;self. __ id = id
+&lt;h3 id=&quot;private-member&quot;&gt;Private Member&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add __&amp;lt;member variable&amp;gt;, changed _&amp;lt;className&amp;gt;__&amp;lt;memberName&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class BankAccount:
+def __init__(self, id, name, balance):
+
+self. __ id = id
 self. __ name = name 
 self. __ balance = balance 
 def deposit(self, amount):
  self. __ balance += amount 
 def withdraw(self, amount):
  self. __ balance -= amount
-def &lt;strong&gt;str&lt;/strong&gt;(self):
- return “{0}, {1}, {2}”.format(self.__id, self.__name, &lt;br /&gt;
-         self.__balance)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### Inheritance
-- Example : Class Student(Person):
+def __str__(self):
+ return &quot;{0}, {1}, {2}&quot;.format(self.__id, self.__name, \
+         self.__balance)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;class Person:
-  …&lt;/p&gt;
 
-&lt;p&gt;class Student(Person):
-    “&quot;”sub class”””
-    def &lt;strong&gt;init&lt;/strong&gt;(self, name, phoneNumber, subject, studentID):&lt;/p&gt;
+&lt;h3 id=&quot;inheritance&quot;&gt;Inheritance&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Example : Class Student(Person):&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Person.__init__(self, name, phoneNumber) # Call Person Init 
-    self.subject = subject
-    self.studentID = studentID ```
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Person:
+  …
+
+class Student(Person):
+    &quot;&quot;&quot;sub class&quot;&quot;&quot;
+    def __init__(self, name, phoneNumber, subject, studentID):
+       
+        Person.__init__(self, name, phoneNumber) # Call Person Init 
+        self.subject = subject
+        self.studentID = studentID
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;pythonpath-in-system-variables&quot;&gt;PYTHONPATH in System Variables&lt;/h3&gt;
@@ -2615,135 +2575,155 @@ def &lt;strong&gt;str&lt;/strong&gt;(self):
 Classes and Functions can be defined in Module.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Module example
-```
-from functools import *&lt;/p&gt;
+    &lt;p&gt;Module example&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;def intersect(*ar):
-    return reduce(__intersectSC,ar)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from functools import *
 
-&lt;p&gt;def __intersectSC(listX, listY):
+def intersect(*ar):
+    return reduce(__intersectSC,ar)
+
+def __intersectSC(listX, listY):
     setList = []
     for x in listX:
         if x in listY:
             setList.append(x)
-    return setList&lt;/p&gt;
+    return setList
 
-&lt;p&gt;def difference(&lt;em&gt;ar):
+def difference(*ar):
     setList = []
-    intersectSet = intersect(&lt;/em&gt;ar)
+    intersectSet = intersect(*ar)
     unionSet = union(*ar)
     for x in unionSet:
         if not x in intersectSet:
             setList.append(x)
-    return setList&lt;/p&gt;
+    return setList
 
-&lt;p&gt;def union(*ar):
+def union(*ar):
     setList = []
     for item in ar:
         for x in item:
             if not x in setList:
                 setList.append(x)
-    return setList&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Module Importing Style
-  - import simpleset
-    - get from global namespace, get all functions
-    - check with command like dir()
-  - from simpleset import union
-    - specific functions, ex) union function Only
-    - check with command like dir(union)
-  - from simpleset import * 
-    - all functions, except the function start with __(double-underlined)
-    - check with command like dir()
-  - import simpleset as test1
-    - make alias named as test1
-
-### `__pycache__` folder
-- After compile a pyc file, it is generated in `__pycache__`, as well we can share this file to others as a module, not to show the source code.
-Pyinstaller is useful for this case :
-  - pip3 install pyinstaller
-  - python BankAccout.py
-  - BankAccount in 'dist' folder
-
-
-### Exception
+    return setList
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;def divide(a,b):
-    return a/b&lt;/p&gt;
 
-&lt;p&gt;try:
+&lt;ul&gt;
+  &lt;li&gt;Module Importing Style
+    &lt;ul&gt;
+      &lt;li&gt;import simpleset
+        &lt;ul&gt;
+          &lt;li&gt;get from global namespace, get all functions&lt;/li&gt;
+          &lt;li&gt;check with command like dir()&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;from simpleset import union
+        &lt;ul&gt;
+          &lt;li&gt;specific functions, ex) union function Only&lt;/li&gt;
+          &lt;li&gt;check with command like dir(union)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;from simpleset import *
+        &lt;ul&gt;
+          &lt;li&gt;all functions, except the function start with __(double-underlined)&lt;/li&gt;
+          &lt;li&gt;check with command like dir()&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;import simpleset as test1
+        &lt;ul&gt;
+          &lt;li&gt;make alias named as test1&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;__pycache__-folder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__pycache__&lt;/code&gt; folder&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;After compile a pyc file, it is generated in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__pycache__&lt;/code&gt;, as well we can share this file to others as a module, not to show the source code.
+Pyinstaller is useful for this case :
+    &lt;ul&gt;
+      &lt;li&gt;pip3 install pyinstaller&lt;/li&gt;
+      &lt;li&gt;python BankAccout.py&lt;/li&gt;
+      &lt;li&gt;BankAccount in ‘dist’ folder&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;exception&quot;&gt;Exception&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def divide(a,b):
+    return a/b
+
+try:
     c = divide(5, 2)
 except ZeroDivisionError:
-    print(‘0 is not allowed’)
+    print('0 is not allowed')
 except TypeError:
-    print(“All parameters must be numbers”)
+    print(&quot;All parameters must be numbers&quot;)
 except:
-    print(“Not defined”)
+    print(&quot;Not defined&quot;)
 else:
-    print(“Result : {0}”, c)&lt;/p&gt;
+    print(&quot;Result : {0}&quot;, c)
 
-&lt;p&gt;finally:
-    print(“do anything”)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### Input and Output
-- Output
+finally:
+    print(&quot;do anything&quot;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;import sys&lt;/p&gt;
 
-&lt;p&gt;f = open(“C:\work\test.txt”, “wt”)
-print(“file write”, file=f)
-f.close()&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- read() : returns string all from a file
-- readline() : returns string line by line
-- readlines() : returns a list with line by line at once
+&lt;h3 id=&quot;input-and-output&quot;&gt;Input and Output&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Output&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import sys
+
+f = open(&quot;C:\\work\\test.txt&quot;, &quot;wt&quot;)
+print(&quot;file write&quot;, file=f)
+f.close()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;f = open(“c:\work\demo.txt”)
-result = f.read()
-result
-‘qqqq\nabcd\n1234\n’
-print(result)
+
+&lt;ul&gt;
+  &lt;li&gt;read() : returns string all from a file&lt;/li&gt;
+  &lt;li&gt;readline() : returns string line by line&lt;/li&gt;
+  &lt;li&gt;readlines() : returns a list with line by line at once&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; f = open(&quot;c:\\work\\demo.txt&quot;)
+&amp;gt;&amp;gt;&amp;gt; result = f.read()
+&amp;gt;&amp;gt;&amp;gt; result
+'qqqq\nabcd\n1234\n'
+&amp;gt;&amp;gt;&amp;gt; print(result)
 qqqq
 abcd
-1234&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+1234
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;f.tell()
+&amp;gt;&amp;gt;&amp;gt; f.tell()
 25
-f.seek(0)
+&amp;gt;&amp;gt;&amp;gt; f.seek(0)
 0
-f.tell()
+&amp;gt;&amp;gt;&amp;gt; f.tell()
 0
-f.readline()
-‘qqqq\n’
-f.readline()
-‘abcd\n’
-f.readline()
-‘1234\n’
-f.seek(0)
+&amp;gt;&amp;gt;&amp;gt; f.readline()
+'qqqq\n'
+&amp;gt;&amp;gt;&amp;gt; f.readline()
+'abcd\n'
+&amp;gt;&amp;gt;&amp;gt; f.readline()
+'1234\n'
+&amp;gt;&amp;gt;&amp;gt; f.seek(0)
 0
-lst = f.readlines()
-lst
-[‘qqqq\n’, ‘abcd\n’, ‘1234\n’]&lt;/p&gt;
-      &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Input
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
-      &lt;p&gt;f = open(“c:\work\demo1.txt”, “wt”)
-f.write(“qqqq\nabcd\n1234\n”)
+&amp;gt;&amp;gt;&amp;gt; lst = f.readlines()
+&amp;gt;&amp;gt;&amp;gt; lst
+['qqqq\n', 'abcd\n', '1234\n']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Input
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;f = open(&quot;c:\\work\\demo1.txt&quot;, &quot;wt&quot;)
+f.write(&quot;qqqq\nabcd\n1234\n&quot;)
 f.close()
-```&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;pickle&quot;&gt;Pickle&lt;/h3&gt;
 &lt;ul&gt;
@@ -2973,160 +2953,131 @@ for i in con.iterdump():
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;executemany example with tuple data
-```
-import sqlite3&lt;/li&gt;
+  &lt;li&gt;executemany example with tuple data&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;#generate connection object&lt;/p&gt;
-&lt;h1 id=&quot;con--sqlite3connectmemory--in-memory&quot;&gt;con = sqlite3.connect(“:memory:”) # in memory&lt;/h1&gt;
-&lt;p&gt;con = sqlite3.connect(“c:\work\sample.db”) # in file&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import sqlite3
 
-&lt;p&gt;#generate cursor
-cur = con.cursor()&lt;/p&gt;
+#generate connection object
+# con = sqlite3.connect(&quot;:memory:&quot;) # in memory
+con = sqlite3.connect(&quot;c:\\work\\sample.db&quot;) # in file
 
-&lt;h1 id=&quot;create--use-text-intead-of-varchar2-in-sqlite3&quot;&gt;create ( use text intead of varchar2 in SQLite3)&lt;/h1&gt;
-&lt;p&gt;cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)&lt;/p&gt;
-&lt;h1 id=&quot;insert&quot;&gt;insert&lt;/h1&gt;
-&lt;p&gt;cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)&lt;/p&gt;
+#generate cursor
+cur = con.cursor()
 
-&lt;h1 id=&quot;insert-using-variables&quot;&gt;insert using variables&lt;/h1&gt;
-&lt;p&gt;name = “gil dong”
-phoneNumber = “010-222”
-cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type&lt;/p&gt;
+# create ( use text intead of varchar2 in SQLite3)
+cur.execute(&quot;create table PhoneBook (Name text, PhoneNum text);&quot;)
+# insert
+cur.execute(&quot;insert into PhoneBook values ('derick', '010-111');&quot;)
 
-&lt;h1 id=&quot;multiple-record&quot;&gt;multiple record&lt;/h1&gt;
-&lt;p&gt;datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
-cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function&lt;/p&gt;
+# insert using variables
+name = &quot;gil dong&quot;
+phoneNumber = &quot;010-222&quot;
+cur.execute(&quot;insert into PhoneBook values ( ?, ?);&quot;, (name, phoneNumber)) # input using Tuple type
 
-&lt;h1 id=&quot;search&quot;&gt;search&lt;/h1&gt;
-&lt;p&gt;cur.execute(“select * from PhoneBook;”)
+# multiple record
+datalist = ((&quot;tom&quot;,&quot;010-123&quot;),(&quot;dsp&quot;,&quot;010-567&quot;)) # tuple in tuple
+cur.executemany(&quot;insert into PhoneBook values ( ?, ?);&quot;, datalist) # input using Tuple type, with executemany function
+
+
+# search
+cur.execute(&quot;select * from PhoneBook;&quot;)
 for row in cur:
-    print(row)&lt;/p&gt;
+    print(row)
 
-&lt;h1 id=&quot;commit&quot;&gt;commit&lt;/h1&gt;
-&lt;p&gt;con.commit()&lt;/p&gt;
+# commit
+con.commit()
 
-&lt;h1 id=&quot;-result--results-out-as-tuple-type&quot;&gt;*** Result =&amp;gt; results out as tuple type&lt;/h1&gt;
-&lt;h1 id=&quot;derick-010-111&quot;&gt;(‘derick’, ‘010-111’)&lt;/h1&gt;
-&lt;h1 id=&quot;gil-dong-010-222&quot;&gt;(‘gil dong’, ‘010-222’)&lt;/h1&gt;
-&lt;h1 id=&quot;tom-010-123&quot;&gt;(‘tom’, ‘010-123’)&lt;/h1&gt;
-&lt;h1 id=&quot;dsp-010-567&quot;&gt;(‘dsp’, ‘010-567’)&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-- Backup example
+# *** Result =&amp;gt; results out as tuple type
+# ('derick', '010-111')
+# ('gil dong', '010-222')
+# ('tom', '010-123')
+# ('dsp', '010-567')
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;import sqlite3&lt;/p&gt;
 
-&lt;p&gt;#generate connection object
-con = sqlite3.connect(“:memory:”) # in memory&lt;/p&gt;
-&lt;h1 id=&quot;con--sqlite3connecttestdb--in-file&quot;&gt;con = sqlite3.connect(“test.db”) # in file&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Backup example&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;#generate cursor
-cur = con.cursor()&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+import sqlite3
 
-&lt;h1 id=&quot;create--use-text-intead-of-varchar2-in-sqlite3-1&quot;&gt;create ( use text intead of varchar2 in SQLite3)&lt;/h1&gt;
-&lt;p&gt;cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)&lt;/p&gt;
-&lt;h1 id=&quot;insert-1&quot;&gt;insert&lt;/h1&gt;
-&lt;p&gt;cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)&lt;/p&gt;
+#generate connection object
+con = sqlite3.connect(&quot;:memory:&quot;) # in memory
+# con = sqlite3.connect(&quot;test.db&quot;) # in file
 
-&lt;h1 id=&quot;insert-using-variables-1&quot;&gt;insert using variables&lt;/h1&gt;
-&lt;p&gt;name = “gil dong”
-phoneNumber = “010-222”
-cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type&lt;/p&gt;
+#generate cursor
+cur = con.cursor()
 
-&lt;h1 id=&quot;multiple-record-1&quot;&gt;multiple record&lt;/h1&gt;
-&lt;p&gt;datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
-cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function&lt;/p&gt;
+# create ( use text intead of varchar2 in SQLite3)
+cur.execute(&quot;create table PhoneBook (Name text, PhoneNum text);&quot;)
+# insert
+cur.execute(&quot;insert into PhoneBook values ('derick', '010-111');&quot;)
 
-&lt;h1 id=&quot;database-dump&quot;&gt;database dump&lt;/h1&gt;
-&lt;p&gt;with open(“c:\work\dump.sql”,”wt”) as f:
-    for item in con.iterdump():  &lt;br /&gt;
+# insert using variables
+name = &quot;gil dong&quot;
+phoneNumber = &quot;010-222&quot;
+cur.execute(&quot;insert into PhoneBook values ( ?, ?);&quot;, (name, phoneNumber)) # input using Tuple type
+
+# multiple record
+datalist = ((&quot;tom&quot;,&quot;010-123&quot;),(&quot;dsp&quot;,&quot;010-567&quot;)) # tuple in tuple
+cur.executemany(&quot;insert into PhoneBook values ( ?, ?);&quot;, datalist) # input using Tuple type, with executemany function
+
+
+
+# database dump
+with open(&quot;c:\\work\\dump.sql&quot;,&quot;wt&quot;) as f:
+    for item in con.iterdump():    
         print(item)
-        f.write(“{0}\n”.format(item))&lt;/p&gt;
+        f.write(&quot;{0}\n&quot;.format(item))
 
-&lt;p&gt;print(“backup completed”)&lt;/p&gt;
+print(&quot;backup completed&quot;)
 
-&lt;h1 id=&quot;-result--results-out-as-tuple-type-1&quot;&gt;*** Result =&amp;gt; results out as tuple type&lt;/h1&gt;
-&lt;h1 id=&quot;begin-transaction&quot;&gt;BEGIN TRANSACTION;&lt;/h1&gt;
-&lt;h1 id=&quot;create-table-phonebook-name-text-phonenum-text&quot;&gt;CREATE TABLE PhoneBook (Name text, PhoneNum text);&lt;/h1&gt;
-&lt;h1 id=&quot;insert-into-phonebook-valuesderick010-111&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘derick’,’010-111’);&lt;/h1&gt;
-&lt;h1 id=&quot;insert-into-phonebook-valuesgil-dong010-222&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘gil dong’,’010-222’);&lt;/h1&gt;
-&lt;h1 id=&quot;insert-into-phonebook-valuestom010-123&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘tom’,’010-123’);&lt;/h1&gt;
-&lt;h1 id=&quot;insert-into-phonebook-valuesdsp010-567&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘dsp’,’010-567’);&lt;/h1&gt;
-&lt;h1 id=&quot;commit-1&quot;&gt;COMMIT;&lt;/h1&gt;
-&lt;h1 id=&quot;backup-completed&quot;&gt;backup completed&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-- Restore example
+
+# *** Result =&amp;gt; results out as tuple type
+# BEGIN TRANSACTION;
+# CREATE TABLE PhoneBook (Name text, PhoneNum text);
+# INSERT INTO &quot;PhoneBook&quot; VALUES('derick','010-111');
+# INSERT INTO &quot;PhoneBook&quot; VALUES('gil dong','010-222');
+# INSERT INTO &quot;PhoneBook&quot; VALUES('tom','010-123');
+# INSERT INTO &quot;PhoneBook&quot; VALUES('dsp','010-567');
+# COMMIT;
+# backup completed
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;open-new-dump&quot;&gt;open new dump&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;con = sqlite3.connect(“c:\work\demo.db”)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
 
-&lt;h1 id=&quot;read-old-dump&quot;&gt;read old dump&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;with open(“c:\work\dump.sql”) as f:
- SQLScript = f.read()&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;Restore example&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;check-dump-script&quot;&gt;check dump script&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;SQLScript
-‘BEGIN TRANSACTION;\nCREATE TABLE PhoneBook (Name text, PhoneNum text);\nINSERT INTO “PhoneBook” VALUES('derick','010-111');\nINSERT INTO “PhoneBook” VALUES('gil dong','010-222');\nINSERT INTO “PhoneBook” VALUES('tom','010-123');\nINSERT INTO “PhoneBook” VALUES('dsp','010-567');\nCOMMIT;\n’&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# open new dump
+&amp;gt;&amp;gt;&amp;gt; con = sqlite3.connect(&quot;c:\\work\\demo.db&quot;)
 
-&lt;h1 id=&quot;create-cursor&quot;&gt;create cursor&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;cur = con.cursor()&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+# read old dump
+&amp;gt;&amp;gt;&amp;gt; with open(&quot;c:\\work\\dump.sql&quot;) as f:
+ SQLScript = f.read()
 
-&lt;h1 id=&quot;execute-script&quot;&gt;execute script&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;cur.executescript(SQLScript)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;lt;sqlite3.Cursor object at 0x03F4B7E0&amp;gt;&lt;/p&gt;
+# check dump script
+&amp;gt;&amp;gt;&amp;gt; SQLScript
+'BEGIN TRANSACTION;\nCREATE TABLE PhoneBook (Name text, PhoneNum text);\nINSERT INTO &quot;PhoneBook&quot; VALUES(\'derick\',\'010-111\');\nINSERT INTO &quot;PhoneBook&quot; VALUES(\'gil dong\',\'010-222\');\nINSERT INTO &quot;PhoneBook&quot; VALUES(\'tom\',\'010-123\');\nINSERT INTO &quot;PhoneBook&quot; VALUES(\'dsp\',\'010-567\');\nCOMMIT;\n'
 
-&lt;h1 id=&quot;select&quot;&gt;select&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;cur.execute(“select * from PhoneBook;”)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;lt;sqlite3.Cursor object at 0x03F4B7E0&amp;gt;&lt;/p&gt;
+# create cursor
+&amp;gt;&amp;gt;&amp;gt; cur = con.cursor()
 
-&lt;h1 id=&quot;fetch-all&quot;&gt;fetch all&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;cur.fetchall()
-[(‘derick’, ‘010-111’), (‘gil dong’, ‘010-222’), (‘tom’, ‘010-123’), (‘dsp’, ‘010-567’)]
-```&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+# execute script
+&amp;gt;&amp;gt;&amp;gt; cur.executescript(SQLScript)
+&amp;lt;sqlite3.Cursor object at 0x03F4B7E0&amp;gt;
+
+# select
+&amp;gt;&amp;gt;&amp;gt; cur.execute(&quot;select * from PhoneBook;&quot;)
+&amp;lt;sqlite3.Cursor object at 0x03F4B7E0&amp;gt;
+
+# fetch all
+&amp;gt;&amp;gt;&amp;gt; cur.fetchall()
+[('derick', '010-111'), ('gil dong', '010-222'), ('tom', '010-123'), ('dsp', '010-567')]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;web-crawling-with-beautifulsoup&quot;&gt;Web Crawling with BeautifulSoup&lt;/h3&gt;
 &lt;ul&gt;
@@ -3136,160 +3087,179 @@ cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input u
   &lt;li&gt;
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip list&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Example of Webcrawling
-```
-    &lt;h1 id=&quot;request-webserver&quot;&gt;request webserver&lt;/h1&gt;
-    &lt;p&gt;import urllib.request
-from bs4 import BeautifulSoup&lt;/p&gt;
+  &lt;li&gt;Example of Webcrawling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# request webserver
+import urllib.request
+from bs4 import BeautifulSoup
+
+data = urllib.request.urlopen(&quot;http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;amp;weekday=fri&quot;)
+
+soup = BeautifulSoup(data, &quot;html.parser&quot;)
+
+cartoons = soup.find_all(&quot;td&quot;, class_=&quot;title&quot;)
+
+title = cartoons[0].find('a').text
+link = cartoons[0].find('a')[&quot;href&quot;]
+
+# print(title)
+# print(link)
+
+for item in cartoons:
+    title = item.find(&quot;a&quot;).text
+    print(title.strip())
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Save file and web crawling for all pages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+# coding:utf-8
+from bs4 import BeautifulSoup
+import urllib.request
+import re 
+
+for n in range(0,10):
+        #address of clien
+        data ='https://www.clien.net/service/board/sold?&amp;amp;od=T31&amp;amp;po=' + str(n)
+        req = urllib.request.Request(data)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode('utf-8', 'ignore')
+        soup = BeautifulSoup(page, 'html.parser')
+        list = soup.find_all('span', attrs={'data-role':'list-title-text'})
+
+        f = open(&quot;C:\\work\\clien.txt&quot;, &quot;a+&quot;, encoding=&quot;utf-8&quot;) # incase of new, use wt
+
+        for item in list:
+                try:
+                        title = item.text
+                        if (re.search('갤럭시', title)):
+                                print(title.strip())
+                                f.write(title.strip() + &quot;\n&quot;)
+                except:
+                        pass
+        
+f.close()
+print(&quot;end of web crawling&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add user-agent in header&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# coding:utf-8
+from bs4 import BeautifulSoup
+import urllib.request
+import re 
+
+#User-Agent add
+hdr = {'User-agent':'Mozila/5.0 (compatible; MSIE 5.5; Windows NT)'} # make request by adding client info with Internet explorer
+
+for n in range(1,11):
+        data ='https://dvdprime.com/g2/bbs/board.php?bo_table=comm&amp;amp;page=' + str(n)
+        req = urllib.request.Request(data, \
+                                          headers = hdr)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode('utf-8', 'ignore')
+        soup = BeautifulSoup(page, 'html.parser')
+
+        # &amp;lt;span class='list_subject_span_pc'&amp;gt;contents&amp;lt;/span&amp;gt;
+        list = soup.find_all('span', attrs={'class':'list_subject_span_pc'})
+
+        for item in list:
+                try:
+                        title = item.text
+                        if (re.search('회사', title)):
+                                print(title.strip())
+                except:
+                        pass
+        
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pyqt5-gui&quot;&gt;PyQt5 GUI&lt;/h3&gt;
+
+&lt;p&gt;Install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PyQt5-5.6-gpl-Py3.5-Qt5.6.0-x32-2.exe&lt;/code&gt;, make sure same version with python&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.ui&lt;/code&gt; file
+    &lt;ul&gt;
+      &lt;li&gt;XML format&lt;/li&gt;
+      &lt;li&gt;Make mapping signal and slot in Signal/Slot Editor on Qt designer&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.py&lt;/code&gt; file
+    &lt;ul&gt;
+      &lt;li&gt;Add login in py file&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;data = urllib.request.urlopen(“http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;amp;weekday=fri”)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# demo.ui (display) + demo.py(logic)
 
-&lt;p&gt;soup = BeautifulSoup(data, “html.parser”)&lt;/p&gt;
-
-&lt;p&gt;cartoons = soup.find_all(“td”, class_=”title”)&lt;/p&gt;
-
-&lt;p&gt;title = cartoons[0].find(‘a’).text
-link = cartoons[0].find(‘a’)[“href”]&lt;/p&gt;
-
-&lt;h1 id=&quot;printtitle&quot;&gt;print(title)&lt;/h1&gt;
-&lt;h1 id=&quot;printlink&quot;&gt;print(link)&lt;/h1&gt;
-
-&lt;p&gt;for item in cartoons:
-    title = item.find(“a”).text
-    print(title.strip())&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Save file and web crawling for all pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;codingutf-8&quot;&gt;coding:utf-8&lt;/h1&gt;
-&lt;p&gt;from bs4 import BeautifulSoup
-import urllib.request
-import re&lt;/p&gt;
-
-&lt;p&gt;for n in range(0,10):
-        #address of clien
-        data =’https://www.clien.net/service/board/sold?&amp;amp;od=T31&amp;amp;po=’ + str(n)
-        req = urllib.request.Request(data)
-        data = urllib.request.urlopen(req).read()
-        page = data.decode(‘utf-8’, ‘ignore’)
-        soup = BeautifulSoup(page, ‘html.parser’)
-        list = soup.find_all(‘span’, attrs={‘data-role’:’list-title-text’})&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    f = open(&quot;C:\\work\\clien.txt&quot;, &quot;a+&quot;, encoding=&quot;utf-8&quot;) # incase of new, use wt
-
-    for item in list:
-            try:
-                    title = item.text
-                    if (re.search('갤럭시', title)):
-                            print(title.strip())
-                            f.write(title.strip() + &quot;\n&quot;)
-            except:
-                    pass
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;f.close()
-print(“end of web crawling”)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-- Add user-agent in header
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;codingutf-8-1&quot;&gt;coding:utf-8&lt;/h1&gt;
-&lt;p&gt;from bs4 import BeautifulSoup
-import urllib.request
-import re&lt;/p&gt;
-
-&lt;p&gt;#User-Agent add
-hdr = {‘User-agent’:’Mozila/5.0 (compatible; MSIE 5.5; Windows NT)’} # make request by adding client info with Internet explorer&lt;/p&gt;
-
-&lt;p&gt;for n in range(1,11):
-        data =’https://dvdprime.com/g2/bbs/board.php?bo_table=comm&amp;amp;page=’ + str(n)
-        req = urllib.request.Request(data, &lt;br /&gt;
-                                          headers = hdr)
-        data = urllib.request.urlopen(req).read()
-        page = data.decode(‘utf-8’, ‘ignore’)
-        soup = BeautifulSoup(page, ‘html.parser’)&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    # &amp;lt;span class='list_subject_span_pc'&amp;gt;contents&amp;lt;/span&amp;gt;
-    list = soup.find_all('span', attrs={'class':'list_subject_span_pc'})
-
-    for item in list:
-            try:
-                    title = item.text
-                    if (re.search('회사', title)):
-                            print(title.strip())
-            except:
-                    pass
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### PyQt5 GUI
-
-Install `PyQt5-5.6-gpl-Py3.5-Qt5.6.0-x32-2.exe`, make sure same version with python
-- `.ui` file
-  - XML format
-  - Make mapping signal and slot in Signal/Slot Editor on Qt designer
-
-- `.py` file
-  - Add login in py file
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;demoui-display--demopylogic&quot;&gt;demo.ui (display) + demo.py(logic)&lt;/h1&gt;
-
-&lt;p&gt;import sys
+import sys
 from PyQt5.QtWidgets import *
-from PyQt5 import uic&lt;/p&gt;
+from PyQt5 import uic
 
-&lt;p&gt;import urllib.request
-from bs4 import BeautifulSoup&lt;/p&gt;
+import urllib.request
+from bs4 import BeautifulSoup
 
-&lt;p&gt;form_class = uic.loadUiType(“demo2.ui”)[0]&lt;/p&gt;
 
-&lt;p&gt;#parent class((QMainWindow))
+form_class = uic.loadUiType(&quot;demo2.ui&quot;)[0]
+
+#parent class((QMainWindow))
 class DemoForm(QMainWindow, form_class):
-    def &lt;strong&gt;init&lt;/strong&gt;(self):
-        super().&lt;strong&gt;init&lt;/strong&gt;()
+    def __init__(self):
+        super().__init__()
         self.setupUi(self)
-    def firstClick(self):&lt;/p&gt;
+    def firstClick(self):
+        
+        
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    data = urllib.request.urlopen(&quot;http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;amp;weekday=fri&quot;)
+        data = urllib.request.urlopen(&quot;http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;amp;weekday=fri&quot;)
 
-    soup = BeautifulSoup(data, &quot;html.parser&quot;)
+        soup = BeautifulSoup(data, &quot;html.parser&quot;)
 
-    cartoons = soup.find_all(&quot;td&quot;, class_=&quot;title&quot;)
+        cartoons = soup.find_all(&quot;td&quot;, class_=&quot;title&quot;)
 
-    # title = cartoons[0].find('a').text
-    # link = cartoons[0].find('a')[&quot;href&quot;]
+        # title = cartoons[0].find('a').text
+        # link = cartoons[0].find('a')[&quot;href&quot;]
 
-    # print(title)
-    # print(link)
+        # print(title)
+        # print(link)
 
-    for item in cartoons:
-        title = item.find(&quot;a&quot;).text
-        print(title.strip())
-
-
-
-
+        for item in cartoons:
+            title = item.find(&quot;a&quot;).text
+            print(title.strip())
 
 
-def secondClick(self):
-    self.label.setText(&quot;clicked second&quot;)
-def thirdClick(self):
-    self.label.setText(&quot;clicked third&quot;)    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;if &lt;strong&gt;name&lt;/strong&gt; == “&lt;strong&gt;main&lt;/strong&gt;”:
+
+
+
+    def secondClick(self):
+        self.label.setText(&quot;clicked second&quot;)
+    def thirdClick(self):
+        self.label.setText(&quot;clicked third&quot;)    
+
+
+if __name__ == &quot;__main__&quot;:
     app = QApplication(sys.argv)
     demoWindow = DemoForm()
     demoWindow.show()
-    app.exec_()&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Get data and show table and link to browser.
+    app.exec_()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;import sys
+&lt;ul&gt;
+  &lt;li&gt;Get data and show table and link to browser.
+```
+import sys
 from PyQt5.QtWidgets import *
 import urllib.request
 from bs4 import BeautifulSoup
 import webbrowser  &lt;br /&gt;
-import re&lt;/p&gt;
+import re&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;class Form(QMainWindow):
     def &lt;strong&gt;init&lt;/strong&gt;(self):
