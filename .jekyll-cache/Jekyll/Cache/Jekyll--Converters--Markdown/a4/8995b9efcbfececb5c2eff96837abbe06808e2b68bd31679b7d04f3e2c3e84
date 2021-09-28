@@ -1,0 +1,94 @@
+I"
+<blockquote>
+  <p>It is recommended to use mysqli and PDO_MySQL. In this tutorial, mysqli is used.</p>
+</blockquote>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 
+&lt;?php
+
+$conn = mysqli_connect(
+
+  'localhost',
+
+  'root',
+
+  '11111',
+
+  'opentutorials');
+
+$sql = "SELECT * FROM topic";
+
+$result = mysqli_query($conn, $sql);
+
+$list = '';
+
+while($row = mysqli_fetch_array($result)) {
+
+  $escaped_title = htmlspecialchars($row['title']);
+
+  $list = $list."&lt;li&gt;&lt;a href=\"index.php?id={$row['id']}\"&gt;{$escaped_title}&lt;/a&gt;&lt;/li&gt;";
+
+}
+
+$article = array(
+
+  'title'=&gt;'Welcome',
+
+  'description'=&gt;'Hello, web'
+
+);
+
+if(isset($_GET['id'])) {
+
+  $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
+
+  $sql = "SELECT * FROM topic WHERE id={$filtered_id}";
+
+  $result = mysqli_query($conn, $sql);
+
+  $row = mysqli_fetch_array($result);
+
+  $article['title'] = htmlspecialchars($row['title']);
+
+  $article['description'] = htmlspecialchars($row['description']);
+
+}
+
+?&gt;
+
+&lt;!doctype html&gt;
+
+&lt;html&gt;a
+
+  &lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;WEB&lt;/title&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;h1&gt;&lt;a href="index.php"&gt;WEB&lt;/a&gt;&lt;/h1&gt;
+
+    &lt;ol&gt;
+
+      &lt;?=$list?&gt;
+
+    &lt;/ol&gt;
+
+    &lt;a href="create.php"&gt;create&lt;/a&gt;
+
+    &lt;h2&gt;&lt;?=$article['title']?&gt;&lt;/h2&gt;
+
+    &lt;?=$article['description']?&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre></div></div>
+
+:ET

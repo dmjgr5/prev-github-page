@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Machine Learning Theory
-category: 02_AI
-tag: [MachineLearning, LinearRegression, LogisticClassification]
+title: What is PHP
+category: 02_Programming
+tag: [PHP]
 ---
 
 
@@ -32,4 +32,4 @@ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open so
 ```
 #### Example Source
 
-관련 소스 : https://www.php.net/manual/en/intro-whatis.php
+관련 소스 : [https://www.php.net/manual/en/intro-whatis.php](https://www.php.net/manual/en/intro-whatis.php)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cloud Vision API from a Kubernetes Cluster
-category: 03_Cloud
+category: 05_Cloud
 tag: [Kubernetes, CloudVision]
 ---
 

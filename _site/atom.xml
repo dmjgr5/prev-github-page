@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-09-28T10:10:21+09:00</updated>
+ <updated>2021-09-28T11:16:21+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>5 Whys 기법</title>
-   <link href="https://dmjgr5.github.io/04_theoretical/2021/09/16/5why/"/>
+   <link href="https://dmjgr5.github.io/06_theoretical/2021/09/16/5why/"/>
    <updated>2021-09-16T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/04_theoretical/2021/09/16/5why</id>
+   <id>https://dmjgr5.github.io/06_theoretical/2021/09/16/5why</id>
    <content type="html">&lt;p&gt;한 플랫폼 기업에서는 장애 원인 분석을 찾기 위한 기법으로 5 Whys 기법을 활용한다고 합니다. 5 Whys 기법는 장애 분석 기법이 아닌 어떠한 상황이 발생했을 때 그에 대한 원인을 파악하기 위해 착안한 방법의 일종이라고 합니다. 일상 생활에서도 특정 원인을 분석할 때 좋을 것 같아 아래와 같이 정리하고자 합니다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -74,9 +74,9 @@
  
  <entry>
    <title>통계 분석 기초 용어 정리</title>
-   <link href="https://dmjgr5.github.io/04_theoretical/2021/09/15/statsbasic/"/>
+   <link href="https://dmjgr5.github.io/06_theoretical/2021/09/15/statsbasic/"/>
    <updated>2021-09-15T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/04_theoretical/2021/09/15/statsbasic</id>
+   <id>https://dmjgr5.github.io/06_theoretical/2021/09/15/statsbasic</id>
    <content type="html">&lt;p&gt;빅데이터를 학습하기 전에 가장 먼저 맞닥뜨리는 것이 아무래도 통계일 것입니다. 수집된 자료를 정리, 분석하고 일정한 패턴 분석 및 인과관계를 파악하기 위해서는 기본이 되는 통계 개념을 이해하고 넘어가고자 아래와 같이 정리합니다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -153,9 +153,9 @@
  
  <entry>
    <title>MSA 개요</title>
-   <link href="https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic/"/>
+   <link href="https://dmjgr5.github.io/05_cloud/2021/09/05/msabasic/"/>
    <updated>2021-09-05T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_cloud/2021/09/05/msabasic</id>
+   <id>https://dmjgr5.github.io/05_cloud/2021/09/05/msabasic</id>
    <content type="html">&lt;p&gt;단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
  MicroService  -&amp;gt; Contailer -&amp;gt; 많아지니까 클러스터 구성 -&amp;gt; 이런 환경을 클라우드 환경에서 구현함&lt;/p&gt;
 
@@ -244,9 +244,9 @@ DB:                RabbitMQ        MariaDB          MongoDB
  
  <entry>
    <title>깃허브페이지 로컬에서 실행하기 - Jekyll</title>
-   <link href="https://dmjgr5.github.io/03_cloud/2021/08/11/githubpageJekyll/"/>
+   <link href="https://dmjgr5.github.io/05_cloud/2021/08/11/githubpageJekyll/"/>
    <updated>2021-08-11T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_cloud/2021/08/11/githubpageJekyll</id>
+   <id>https://dmjgr5.github.io/05_cloud/2021/08/11/githubpageJekyll</id>
    <content type="html">&lt;p&gt;깃허브 페이지를 작성 후 로컬에서 테스트할 수 있는 환경을 구성하고자 한다. 깃허브에 Push 후 확인할 수 있지만, 오타가 기타 오류가 발생할 경우 재업로드 해야 하는 불편함이 따르므로 Push 이전에 항상 로컬에서 테스트를 하면 이러한 불편함을 없앨 수 있다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -344,9 +344,9 @@ DB:                RabbitMQ        MariaDB          MongoDB
  
  <entry>
    <title>Github 원격 저장소와 로컬 저장소 연동하기</title>
-   <link href="https://dmjgr5.github.io/03_cloud/2021/07/07/githubsetting/"/>
+   <link href="https://dmjgr5.github.io/05_cloud/2021/07/07/githubsetting/"/>
    <updated>2021-07-07T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_cloud/2021/07/07/githubsetting</id>
+   <id>https://dmjgr5.github.io/05_cloud/2021/07/07/githubsetting</id>
    <content type="html">&lt;p&gt;로컬에 있는 데이터 및 소스들을 Github 에 올리기 위해 필요한 절차 및 명령어를 간단히 정리해 보고자 한다. 기본적인 내용이지만 가끔 생성할 때마다 기억이 잘 안나 구글링을 다시 해보곤 해서 이참에 정리하고자 한다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -443,9 +443,9 @@ To https://github.com/dmjgr5/test.git
  
  <entry>
    <title>Django 웹사이트 구축</title>
-   <link href="https://dmjgr5.github.io/05_toyproject/2021/03/12/panabara/"/>
+   <link href="https://dmjgr5.github.io/07_toyproject/2021/03/12/panabara/"/>
    <updated>2021-03-12T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_toyproject/2021/03/12/panabara</id>
+   <id>https://dmjgr5.github.io/07_toyproject/2021/03/12/panabara</id>
    <content type="html">&lt;p&gt;분산된 투자 종목들을 한번에 관리하고 투자 유형별, 종목별로 자산 현황을 쉽게 파악하고자 아래와 같이 간단히 구성하였다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -871,9 +871,9 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
  
  <entry>
    <title>Cloud Vision API from a Kubernetes Cluster</title>
-   <link href="https://dmjgr5.github.io/03_cloud/2021/01/02/CloudVIsion/"/>
+   <link href="https://dmjgr5.github.io/05_cloud/2021/01/02/CloudVIsion/"/>
    <updated>2021-01-02T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_cloud/2021/01/02/CloudVIsion</id>
+   <id>https://dmjgr5.github.io/05_cloud/2021/01/02/CloudVIsion</id>
    <content type="html">&lt;p&gt;This is for Cloud Vision API from a Kubernetes Cluster that  uses Kubernetes and Cloud Vision API. The guide is from Awwvision: Cloud Vision API from a Kubernetes Cluster&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;https://codelabs.developers.google.com/codelabs/awwvision-cloud-vision-api-from-a-kubernetes-cluster/index.html?index=..%2F..index#0&lt;/p&gt;
@@ -954,9 +954,9 @@ awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   
  
  <entry>
    <title>파이썬을 이용한 주식관리 프로그램</title>
-   <link href="https://dmjgr5.github.io/05_toyproject/2020/01/03/toy-creon/"/>
+   <link href="https://dmjgr5.github.io/07_toyproject/2020/01/03/toy-creon/"/>
    <updated>2020-01-03T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_toyproject/2020/01/03/toy-creon</id>
+   <id>https://dmjgr5.github.io/07_toyproject/2020/01/03/toy-creon</id>
    <content type="html">&lt;!-- ## 목차
 1. [프로젝트 목적](#1장.-프로젝트-목적)
 1. [프로젝트 개요](#프로젝트-개요)
@@ -1331,9 +1331,9 @@ awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   
  
  <entry>
    <title>Simple Neural Network</title>
-   <link href="https://dmjgr5.github.io/02_ai/2019/12/31/simpleneuralnetwork/"/>
+   <link href="https://dmjgr5.github.io/04_ai/2019/12/31/simpleneuralnetwork/"/>
    <updated>2019-12-31T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_ai/2019/12/31/simpleneuralnetwork</id>
+   <id>https://dmjgr5.github.io/04_ai/2019/12/31/simpleneuralnetwork</id>
    <content type="html">&lt;h4 id=&quot;this-is-from-codelab-where-located-in-httpscodelabsdevelopersgooglecomcodelabsneural-tensorflow-jsindexhtmlindex2findex0&quot;&gt;This is from codelab where located in &lt;a href=&quot;https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0&quot;&gt;https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/neuralsample.jpeg&quot; /&gt;&lt;/p&gt;
@@ -1673,9 +1673,9 @@ awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   
  
  <entry>
    <title>How to install Node.js on Windows 10</title>
-   <link href="https://dmjgr5.github.io/03_cloud/2019/12/31/nodejs/"/>
+   <link href="https://dmjgr5.github.io/05_cloud/2019/12/31/nodejs/"/>
    <updated>2019-12-31T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_cloud/2019/12/31/nodejs</id>
+   <id>https://dmjgr5.github.io/05_cloud/2019/12/31/nodejs</id>
    <content type="html">&lt;p&gt;This is for installation for Node.js on Windows 10.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -1736,9 +1736,9 @@ cs
  
  <entry>
    <title>Deploying a Python Flask Web Application using GCP</title>
-   <link href="https://dmjgr5.github.io/03_cloud/2019/12/31/flaskdeploy/"/>
+   <link href="https://dmjgr5.github.io/05_cloud/2019/12/31/flaskdeploy/"/>
    <updated>2019-12-31T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_cloud/2019/12/31/flaskdeploy</id>
+   <id>https://dmjgr5.github.io/05_cloud/2019/12/31/flaskdeploy</id>
    <content type="html">&lt;p&gt;This document have been referred to the guide from https://codelabs.developers.google.com/codelabs/cloud-vision-app-engine/index.html?index=..%2F..index#0&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -1853,9 +1853,9 @@ python main.py&lt;/code&gt;&lt;/li&gt;
  
  <entry>
    <title>Machine Learning Theory</title>
-   <link href="https://dmjgr5.github.io/02_ai/2019/12/22/machineLearningTheory/"/>
+   <link href="https://dmjgr5.github.io/04_ai/2019/12/22/machineLearningTheory/"/>
    <updated>2019-12-22T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_ai/2019/12/22/machineLearningTheory</id>
+   <id>https://dmjgr5.github.io/04_ai/2019/12/22/machineLearningTheory</id>
    <content type="html">&lt;p&gt;This is the document written when I research the concept of Machine Learning.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -1899,10 +1899,10 @@ python main.py&lt;/code&gt;&lt;/li&gt;
  </entry>
  
  <entry>
-   <title>Machine Learning Theory</title>
-   <link href="https://dmjgr5.github.io/02_ai/2019/12/21/whatisphp/"/>
+   <title>What is PHP</title>
+   <link href="https://dmjgr5.github.io/02_programming/2019/12/21/whatisphp/"/>
    <updated>2019-12-21T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_ai/2019/12/21/whatisphp</id>
+   <id>https://dmjgr5.github.io/02_programming/2019/12/21/whatisphp</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/php.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML&lt;/p&gt;
@@ -1924,7 +1924,1493 @@ python main.py&lt;/code&gt;&lt;/li&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h4 id=&quot;example-source&quot;&gt;Example Source&lt;/h4&gt;
 
-&lt;p&gt;관련 소스 : https://www.php.net/manual/en/intro-whatis.php&lt;/p&gt;
+&lt;p&gt;관련 소스 : &lt;a href=&quot;https://www.php.net/manual/en/intro-whatis.php&quot;&gt;https://www.php.net/manual/en/intro-whatis.php&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is JavaScript</title>
+   <link href="https://dmjgr5.github.io/02_programming/2019/12/21/whatisjavascript/"/>
+   <updated>2019-12-21T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/02_programming/2019/12/21/whatisjavascript</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/javascript.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;JavaScript is the Programming Language for the Web&lt;/li&gt;
+    &lt;li&gt;JavaScript can calculate, manipulate and validate data&lt;/li&gt;
+    &lt;li&gt;JavaScript can update and change both HTML and CSS&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;related-source--trial&quot;&gt;Related Source &amp;amp; Trial&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.w3schools.com/whatis/whatis_js.asp&quot;&gt;https://www.w3schools.com/whatis/whatis_js.asp&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to Build edgedb on Windows 10</title>
+   <link href="https://dmjgr5.github.io/03_database/2019/12/21/howtobuildedgedbonwindows10/"/>
+   <updated>2019-12-21T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_database/2019/12/21/howtobuildedgedbonwindows10</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/edgedb.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;after-installation-of-dockertoolbox-follow-as-below&quot;&gt;After Installation of DockerToolbox, follow as below;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pull edgedb&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ docker pull edgedb/edgedb&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Stop docker env first&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stop : $ docker-machine stop&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setting folder share&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;share c: driver on VirtualBox setting if required.&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Start docker env&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start: $ docker-machine start&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to SHH to enjoy docker&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh : $ docker-machine ssh&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Run Container
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -d --name=edgedb-server -p &quot;5656:5656&quot; -p &quot;8888:8888&quot; -p &quot;8889:8889&quot; -v /c/dev:/var/lib/edgedb/data edgedb/edgedb&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Go into Container Shell
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker@default:~$ docker exec -it bd4 bash&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.w3schools.com/whatis/whatis_js.asp&quot;&gt;https://www.w3schools.com/whatis/whatis_js.asp&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to Connect PHP to MySQL</title>
+   <link href="https://dmjgr5.github.io/03_database/2019/12/20/howtoconnectphptomysql/"/>
+   <updated>2019-12-20T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_database/2019/12/20/howtoconnectphptomysql</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;It is recommended to use mysqli and PDO_MySQL. In this tutorial, mysqli is used.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
+$conn = mysqli_connect(
+  'localhost',
+  'root',
+  '11111',
+  'opentutorials');
+
+$sql = &quot;SELECT * FROM topic&quot;;
+$result = mysqli_query($conn, $sql);
+$list = '';
+
+while($row = mysqli_fetch_array($result)) {
+  $escaped_title = htmlspecialchars($row['title']);
+  $list = $list.&quot;&amp;lt;li&amp;gt;&amp;lt;a href=\&quot;index.php?id={$row['id']}\&quot;&amp;gt;{$escaped_title}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&quot;;
+
+}
+
+$article = array(
+  'title'=&amp;gt;'Welcome',
+  'description'=&amp;gt;'Hello, web'
+);
+
+if(isset($_GET['id'])) {
+  $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
+  $sql = &quot;SELECT * FROM topic WHERE id={$filtered_id}&quot;;
+  $result = mysqli_query($conn, $sql);
+  $row = mysqli_fetch_array($result);
+  $article['title'] = htmlspecialchars($row['title']);
+  $article['description'] = htmlspecialchars($row['description']);
+}
+
+?&amp;gt;
+
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;a
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;
+    &amp;lt;title&amp;gt;WEB&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+
+  &amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;&amp;lt;a href=&quot;index.php&quot;&amp;gt;WEB&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
+    &amp;lt;ol&amp;gt;
+      &amp;lt;?=$list?&amp;gt;
+    &amp;lt;/ol&amp;gt;
+    &amp;lt;a href=&quot;create.php&quot;&amp;gt;create&amp;lt;/a&amp;gt;
+    &amp;lt;h2&amp;gt;&amp;lt;?=$article['title']?&amp;gt;&amp;lt;/h2&amp;gt;
+    &amp;lt;?=$article['description']?&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to Use MySQL</title>
+   <link href="https://dmjgr5.github.io/03_database/2019/12/16/howtousemysql/"/>
+   <updated>2019-12-16T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_database/2019/12/16/howtousemysql</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/mysql.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mysql-installation&quot;&gt;MySQL Installation&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;In this turotial, Bitnami APM used.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;access-mysql-using-mysql-monitor&quot;&gt;Access MySQL using MySQL Monitor&lt;/h3&gt;
+&lt;p&gt;To access MySQL, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Bitnami\wampstack-7.3.11-0\mysql\bin&lt;/code&gt; in CMD, then command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mysql -uroot -p&lt;/code&gt;. After input password, you can access MySQL server.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-schema-database&quot;&gt;Create Schema (Database)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;create : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE DATABASE openturorials;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;check database list : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHOW DATABASES;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;use and select database, command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;USE openturorials;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;delete : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DROP DATABASE openturorials;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;create-table&quot;&gt;Create Table&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; CREATE TABLE topic(
+    -&amp;gt;   id INT(11) NOT NULL AUTO_INCREMENT,
+    -&amp;gt;   title VARCHAR(100) NOT NULL,
+    -&amp;gt;   description TEXT NULL,
+    -&amp;gt;   created DATETIME NOT NULL,
+    -&amp;gt;   author VARCHAR(30) NULL,
+    -&amp;gt;   profile VARCHAR(100) NULL,
+    -&amp;gt;   PRIMARY KEY(id));
+Query OK, 0 rows affected, 1 warning (0.18 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;show-table&quot;&gt;Show Table&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; SHOW tables;
++-------------------------+
+| Tables_in_openturorials |
++-------------------------+
+| topic                   |
++-------------------------+
+1 row in set (0.02 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;desc-table&quot;&gt;Desc Table&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; DESC topic;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
+| title       | varchar(100) | NO   |     | NULL    |                |
+| description | text         | YES  |     | NULL    |                |
+| created     | datetime     | NO   |     | NULL    |                |
+| author      | varchar(30)  | YES  |     | NULL    |                |
+| profile     | varchar(100) | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.01 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;crud&quot;&gt;CRUD&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; INSERT INTO topic (title, description, created, author, profile) VALUES ('MySQL','MySQL is ...', NOW(), 'egoing', 'developer' )
+    -&amp;gt; ;
+Query OK, 1 row affected (0.02 sec)
+
+mysql&amp;gt; SELECT * FROM topic;
++----+-------+--------------+---------------------+--------+-----------+
+| id | title     | description  | created                  | author  | profile     |
++----+-------+--------------+---------------------+--------+-----------+
+|  1 | MySQL | MySQL is ... | 2019-12-16 23:08:25 | egoing | developer |
++----+-------+--------------+---------------------+--------+-----------+
+1 row in set (0.00 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; UPDATE topic SET description='Oracle is ...', title = 'Oracle' where id = 2;
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; DELETE FROM topic WHERE id = 5;
+Query OK, 1 row affected (0.02 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;limit&quot;&gt;LIMIT&lt;/h3&gt;
+
+&lt;p&gt;To limit output size, add LIMIT at the end of SQL&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; SELECT * from topic;
++----+------------+-------------------+---------------------+--------+---------------------------+
+| id | title      | description       | created             | author | profile                   |
++----+------------+-------------------+---------------------+--------+---------------------------+
+|  1 | MySQL      | MySQL is ...      | 2019-12-16 23:08:25 | egoing | developer                 |
+|  2 | ORACLE     | ORACLE is ...     | 2019-12-16 23:09:47 | egoing | developer                 |
+|  3 | SQL Server | SQL SERVER is ... | 2019-12-16 23:10:44 | duru   | data administrator        |
+|  4 | PostgreSQL | POSTgreSQL is ... | 2019-12-16 23:11:31 | taeho  | data scientist, developer |
+|  5 | MongoDB    | MongoDB is ...    | 2019-12-16 23:12:05 | egoing | developer                 |
++----+------------+-------------------+---------------------+--------+---------------------------+
+5 rows in set (0.00 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; SELECT * from topic LIMIT 2;
++----+--------+---------------+---------------------+--------+-----------+
+| id | title  | description   | created             | author | profile   |
++----+--------+---------------+---------------------+--------+-----------+
+|  1 | MySQL  | MySQL is ...  | 2019-12-16 23:08:25 | egoing | developer |
+|  2 | ORACLE | ORACLE is ... | 2019-12-16 23:09:47 | egoing | developer |
++----+--------+---------------+---------------------+--------+-----------+
+2 rows in set (0.00 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;join&quot;&gt;Join&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; SELECT * FROM topic LEFT JOIN author ON topic.author_id = author.id;
++----+------------+-------------------+---------------------+-----------+------+--------+---------------------------+
+| id | title      | description       | created             | author_id | id   | name   | profile                   |
++----+------------+-------------------+---------------------+-----------+------+--------+---------------------------+
+|  1 | MySQL      | MySQL is...       | 2018-01-01 12:10:11 |         1 |    1 | egoing | developer                 |
+|  2 | Oracle     | Oracle is ...     | 2018-01-03 13:01:10 |         1 |    1 | egoing | developer                 |
+|  3 | SQL Server | SQL Server is ... | 2018-01-20 11:01:10 |         2 |    2 | duru   | database administrator    |
+|  4 | PostgreSQL | PostgreSQL is ... | 2018-01-23 01:03:03 |         3 |    3 | taeho  | data scientist, developer |
+|  5 | MongoDB    | MongoDB is ...    | 2018-01-30 12:31:03 |         1 |    1 | egoing | developer                 |
++----+------------+-------------------+---------------------+-----------+------+--------+---------------------------+
+5 rows in set (0.00 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;mysql-client&quot;&gt;MySQL Client&lt;/h3&gt;
+&lt;p&gt;Mostly MySQL WORKBENCH recommended. It is easy to use SQL because it is GUI.
+&lt;a href=&quot;https://dev.mysql.com/downloads/file/?id=490464&quot;&gt;https://dev.mysql.com/downloads/file/?id=490464&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to Use Git CLI Using Git Bash</title>
+   <link href="https://dmjgr5.github.io/05_cloud/2019/12/11/howtousegitcliusinggitbash/"/>
+   <updated>2019-12-11T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/05_cloud/2019/12/11/howtousegitcliusinggitbash</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/gitbash.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;First install Git Bash from &lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;https://git-scm.com/download/win&lt;/a&gt;]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;procedures&quot;&gt;Procedures&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;go to the folder to make git managed
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git init .&lt;/code&gt; : initialize .git called git repository&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;register user information
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git config --global user.name &quot;myname&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git config --global user.email &quot;abc@gmail.com&quot;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; : working tree status&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add &amp;lt;filename&amp;gt;&lt;/code&gt; : add to Staging Area
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add . &lt;/code&gt;: all files added in current folder, but at least add FIRST&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit -m &quot;history comment&quot; &lt;/code&gt;: goes to Repository, create version&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit -am &quot;filename&quot;&lt;/code&gt; : add &amp;amp; commit at once&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt; : shows file version&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log stat&lt;/code&gt; : show file version history&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git diff&lt;/code&gt;  : shows differences&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git checkout &amp;lt;[VersionNumber]&amp;gt;&lt;/code&gt; : go back to previous version&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git checkout master&lt;/code&gt; : go to latest version&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git reset --hard [VersionNumber]&lt;/code&gt; : reset to [VersionNumber] version, strongly deleted.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; : ignore fires listed in .gitignore file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;branch-and-conflict&quot;&gt;Branch and Conflict&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;git branch : make branch&lt;/li&gt;
+  &lt;li&gt;git checkout : go to the branch name, changes HEAD&lt;/li&gt;
+  &lt;li&gt;base : common ancestor between branches&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+
+$
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+
+$ git log --graph --oneline  # shows oneline
+* 8f928c8 (HEAD -&amp;gt; master) work 3
+* 185a6da work 2
+* d06d25d work 1
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git branch
+* master
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git branch apple # make apple branch
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git branch
+  apple
+* master
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git branch
+  apple
+* master
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git log --graph --oneline
+* 8f928c8 (HEAD -&amp;gt; master, apple) work 3
+* 185a6da work 2
+* d06d25d work 1
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git branch google
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git branch
+  apple
+  google
+* master
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git branch ms
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git log --graph --oneline
+* 8f928c8 (HEAD -&amp;gt; master, ms, google, apple) work 3
+* 185a6da work 2
+* d06d25d work 1
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ nano work.txt
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git commit -am &quot;master work 4&quot;
+warning: LF will be replaced by CRLF in work.txt.
+The file will have its original line endings in your working directory
+[master 375e49a] master work 4
+ 1 file changed, 1 insertion(+)
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git log --graph --oneline
+* 375e49a (HEAD -&amp;gt; master) master work 4
+* 8f928c8 (ms, google, apple) work 3
+* 185a6da work 2
+* d06d25d work 1
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (master)
+$ git checkout apple
+Switched to branch 'apple'
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (apple)
+$ git log --graph --oneline
+* 8f928c8 (HEAD -&amp;gt; apple, ms, google) work 3
+* 185a6da work 2
+* d06d25d work 1
+
+samsung1@samsung MINGW64 ~/Desktop/gitStudyFolder/manual (apple)
+$ git checkout master
+Switched to branch 'master'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is Python</title>
+   <link href="https://dmjgr5.github.io/02_programming/2019/12/06/whatispython/"/>
+   <updated>2019-12-06T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/02_programming/2019/12/06/whatispython</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/python.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is the document for Python, which is basic instruction like Python Installation, Data Types and so on. Let me explain briefly about Python language.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;python-installation&quot;&gt;Python Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using python IDLE &lt;a href=&quot;https://www.python.org/&quot;&gt;https://www.python.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Using Visual Studio Code after extension installation [https://code.visualstudio.com] (https://code.visualstudio.com/)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;python-type&quot;&gt;Python Type&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;List [ ]
+    &lt;ul&gt;
+      &lt;li&gt;Ordered List&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Tuple ( )
+    &lt;ul&gt;
+      &lt;li&gt;Ordered List, not changed&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Set { }
+    &lt;ul&gt;
+      &lt;li&gt;Type with Set (used with Union, Intersection, Difference)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Dictionary {“key”:”value”}
+    &lt;ul&gt;
+      &lt;li&gt;Paired with Key and Value, No ordered list&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;shallow-copy-and-deep-copy&quot;&gt;Shallow Copy and Deep Copy&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shallow Copy
+```
+a = [1,2,3]
+b =a&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;import copy&lt;/p&gt;
+
+&lt;p&gt;a = [1,2,3]
+b = copy.copy(a)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- Deep Copy
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;a = [1,2,3]
+b = a[:]&lt;/p&gt;
+
+&lt;p&gt;import copy&lt;/p&gt;
+
+&lt;p&gt;a = [1,2,3]
+b = copy.deepcopy(a)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+### Garbage Collection
+- The data type of int, float, complex, String and tuple are immutable, therefore if the variable is updated, it make another new object, so old object which is not used, garbage collection executed. Mostly list and dictionary used because it is mutable type.
+The immutable type and global variable should be used with 'global' to update its value.
+- Test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;g = 1
+def testScope(a):
+    global g
+    g = 2
+    return g + a&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;print(“testScoope(1) : “, testScoope(1))
+print(“g : “,g)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Output
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;testScoope(1) :  3
+g :  1&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### Variable Parameter
+- Any number of parameters can be used by adding * (different a pointer from C)in front of parameters
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;def test(*args):
+    print(type(args))&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;test(1, 2)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;lt;type ‘tuple’&amp;gt; # tuple type&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;def union(*ar):
+    res = []
+    for item in ar:
+        for x in item:
+            if not x in res:
+                res.append(x)
+    return res&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;union(“HAM”, “EGG”, “SPAM”)
+[‘H’, ‘A’, ‘M’, ‘E’, ‘G’, ‘S’, ‘P’]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;union(“gir”, “generation”, “gee”)
+[‘g’, ‘i’, ‘r’, ‘e’, ‘n’, ‘a’, ‘t’, ‘o’]
+```&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Any number of parameters (key-value type) can be used by adding ** in front of parameters.
+It is option where it requires or not. Option parameter is handled as a dictionary type.
+```
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;def userURIBuilder(server, port, **user):
+  str = “http://” + server + “:” + port + “/?”
+  for key in user.keys():
+      str += key + “=” + user[key] + “&amp;amp;”
+  return str&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;userURIBuilder(“test.com”, “8080”, id=’userid’, passwd=’1234’)
+‘http://test.com:8080/?passwd=1234&amp;amp;id=userid&amp;amp;’
+userURIBuilder(“test.com”, “8080”, id=’userid’, passwd=’1234’, name=’mike’, age=’20’)
+‘http://test.com:8080/?passwd=1234&amp;amp;age=20&amp;amp;id=userid&amp;amp;name=mike&amp;amp;’
+```&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;lambda-function&quot;&gt;Lambda Function&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;There is no name, anonymous function. In case of sample function, it is better to use lambda function.&lt;/li&gt;
+  &lt;li&gt;Example : lambda &lt;parameters&gt; : &lt;phrase&gt;
+&lt;/phrase&gt;&lt;/parameters&gt;    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; g = lambda x, y : x * y
+&amp;gt;&amp;gt;&amp;gt; g(2,3)
+6
+&amp;gt;&amp;gt;&amp;gt; (lambda x: x * x)(3)
+9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;yield&quot;&gt;yield&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns value in real time, used in RANGE phrase.
+```
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;def reverse(data):
+  for index in range(len(data) - 1, -1, -1):
+      yield data[index]&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;for char in reverse(‘gold’):
+    print(char)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;d
+l
+o
+g&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### Private Member
+- `Add __&amp;lt;member variable&amp;gt;, changed _&amp;lt;className&amp;gt;__&amp;lt;memberName&amp;gt;`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;class BankAccount:
+def &lt;strong&gt;init&lt;/strong&gt;(self, id, name, balance):&lt;/p&gt;
+
+&lt;p&gt;self. __ id = id
+self. __ name = name 
+self. __ balance = balance 
+def deposit(self, amount):
+ self. __ balance += amount 
+def withdraw(self, amount):
+ self. __ balance -= amount
+def &lt;strong&gt;str&lt;/strong&gt;(self):
+ return “{0}, {1}, {2}”.format(self.__id, self.__name, &lt;br /&gt;
+         self.__balance)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### Inheritance
+- Example : Class Student(Person):
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;class Person:
+  …&lt;/p&gt;
+
+&lt;p&gt;class Student(Person):
+    “&quot;”sub class”””
+    def &lt;strong&gt;init&lt;/strong&gt;(self, name, phoneNumber, subject, studentID):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Person.__init__(self, name, phoneNumber) # Call Person Init 
+    self.subject = subject
+    self.studentID = studentID ```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pythonpath-in-system-variables&quot;&gt;PYTHONPATH in System Variables&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;When creating module, we can allocate the module location in specific folder using system properties path named as PYTHONPATH and the absolute path.
+Classes and Functions can be defined in Module.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Module example
+```
+from functools import *&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;def intersect(*ar):
+    return reduce(__intersectSC,ar)&lt;/p&gt;
+
+&lt;p&gt;def __intersectSC(listX, listY):
+    setList = []
+    for x in listX:
+        if x in listY:
+            setList.append(x)
+    return setList&lt;/p&gt;
+
+&lt;p&gt;def difference(&lt;em&gt;ar):
+    setList = []
+    intersectSet = intersect(&lt;/em&gt;ar)
+    unionSet = union(*ar)
+    for x in unionSet:
+        if not x in intersectSet:
+            setList.append(x)
+    return setList&lt;/p&gt;
+
+&lt;p&gt;def union(*ar):
+    setList = []
+    for item in ar:
+        for x in item:
+            if not x in setList:
+                setList.append(x)
+    return setList&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Module Importing Style
+  - import simpleset
+    - get from global namespace, get all functions
+    - check with command like dir()
+  - from simpleset import union
+    - specific functions, ex) union function Only
+    - check with command like dir(union)
+  - from simpleset import * 
+    - all functions, except the function start with __(double-underlined)
+    - check with command like dir()
+  - import simpleset as test1
+    - make alias named as test1
+
+### `__pycache__` folder
+- After compile a pyc file, it is generated in `__pycache__`, as well we can share this file to others as a module, not to show the source code.
+Pyinstaller is useful for this case :
+  - pip3 install pyinstaller
+  - python BankAccout.py
+  - BankAccount in 'dist' folder
+
+
+### Exception
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;def divide(a,b):
+    return a/b&lt;/p&gt;
+
+&lt;p&gt;try:
+    c = divide(5, 2)
+except ZeroDivisionError:
+    print(‘0 is not allowed’)
+except TypeError:
+    print(“All parameters must be numbers”)
+except:
+    print(“Not defined”)
+else:
+    print(“Result : {0}”, c)&lt;/p&gt;
+
+&lt;p&gt;finally:
+    print(“do anything”)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### Input and Output
+- Output
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;import sys&lt;/p&gt;
+
+&lt;p&gt;f = open(“C:\work\test.txt”, “wt”)
+print(“file write”, file=f)
+f.close()&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- read() : returns string all from a file
+- readline() : returns string line by line
+- readlines() : returns a list with line by line at once
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;f = open(“c:\work\demo.txt”)
+result = f.read()
+result
+‘qqqq\nabcd\n1234\n’
+print(result)
+qqqq
+abcd
+1234&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;f.tell()
+25
+f.seek(0)
+0
+f.tell()
+0
+f.readline()
+‘qqqq\n’
+f.readline()
+‘abcd\n’
+f.readline()
+‘1234\n’
+f.seek(0)
+0
+lst = f.readlines()
+lst
+[‘qqqq\n’, ‘abcd\n’, ‘1234\n’]&lt;/p&gt;
+      &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Input
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
+      &lt;p&gt;f = open(“c:\work\demo1.txt”, “wt”)
+f.write(“qqqq\nabcd\n1234\n”)
+f.close()
+```&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;pickle&quot;&gt;Pickle&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Save information temporarily&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import pickle
+
+colors = [&quot;red&quot;, &quot;blue&quot;, &quot;gree&quot;]
+
+# Write
+f = open(&quot;c:\\work\\colors&quot;,&quot;wb&quot;) # write binary
+pickle.dump(colors,f) # back up with .dump function
+f.close()
+
+# Read
+f = open(&quot;c:\\work\\colors&quot;,&quot;rb&quot;) # read binary
+colors = pickle.load(f) # open with .load function
+print(colors)
+f.close()
+
+del colors # delete list
+
+import os 
+os.remove(&quot;c:\\work\\colors&quot;)  # delete file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;regular-expression&quot;&gt;Regular Expression&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import re 
+
+f=open('c:\\work\\PV3.txt','rt')
+g=open('c:\\work\\PV3_copy.txt','wt')
+
+ 
+line = f.readline()
+while (line != ''):
+    if (re.search(&quot;\d{4}&quot;, line)):
+        g.write(line + &quot;\n&quot;)
+    line = f.readline()
+
+f.close() 
+g.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;time-math-and-random&quot;&gt;Time, Math and Random&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import random
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.35173868090650484
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.5306281074635111
+&amp;gt;&amp;gt;&amp;gt; random.uniform(3,4) 
+3.5888882103413913
+&amp;gt;&amp;gt;&amp;gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&amp;gt;&amp;gt;&amp;gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&amp;gt;&amp;gt;&amp;gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import random
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.35173868090650484
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.5306281074635111
+&amp;gt;&amp;gt;&amp;gt; random.uniform(3,4) 
+3.5888882103413913
+&amp;gt;&amp;gt;&amp;gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&amp;gt;&amp;gt;&amp;gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&amp;gt;&amp;gt;&amp;gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import random
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.35173868090650484
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.5306281074635111
+&amp;gt;&amp;gt;&amp;gt; random.uniform(3,4) 
+3.5888882103413913
+&amp;gt;&amp;gt;&amp;gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&amp;gt;&amp;gt;&amp;gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&amp;gt;&amp;gt;&amp;gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import random
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.35173868090650484
+&amp;gt;&amp;gt;&amp;gt; random.random()
+0.5306281074635111
+&amp;gt;&amp;gt;&amp;gt; random.uniform(3,4) 
+3.5888882103413913
+&amp;gt;&amp;gt;&amp;gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&amp;gt;&amp;gt;&amp;gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&amp;gt;&amp;gt;&amp;gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;os&quot;&gt;OS&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; from os.path import *
+&amp;gt;&amp;gt;&amp;gt; abspath('tmp')  
+'C:\\Python35\\tmp'
+&amp;gt;&amp;gt;&amp;gt; basename('c:\\python35\\tmp')  
+'tmp'
+&amp;gt;&amp;gt;&amp;gt; basename('c:\\python35\\tmp\\test.txt')
+'test.txt'
+&amp;gt;&amp;gt;&amp;gt; commonprefix(['c:\\python35\\lib', 'c:\\python35\tools', 'c:\\python35']) 
+'c:\\python35'
+&amp;gt;&amp;gt;&amp;gt; exists('c:\\python35\\tmp') 
+False
+&amp;gt;&amp;gt;&amp;gt; exists('c:\\python35')
+True
+&amp;gt;&amp;gt;&amp;gt; getsize('c:\\python35\\python.exe') 
+26624
+&amp;gt;&amp;gt;&amp;gt; isfile('c:\\python35\\python.exe') 
+True
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;database-with-sqlite3&quot;&gt;Database with SQLite3&lt;/h3&gt;
+&lt;p&gt;SQLite3 is an opensource, which is embedded in Python library.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sqlite3.connect(database[, timeout, isolation_level, detect_types, factory])&lt;/li&gt;
+  &lt;li&gt;sqlite3.complete_statement(sql)&lt;/li&gt;
+  &lt;li&gt;sqlite3.register_adapter(type, callable)&lt;/li&gt;
+  &lt;li&gt;sqlite3.register_converter(typename, callable)
+    &lt;ul&gt;
+      &lt;li&gt;Connection Class&lt;/li&gt;
+      &lt;li&gt;Connection.cursor()&lt;/li&gt;
+      &lt;li&gt;Connection.rollback()&lt;/li&gt;
+      &lt;li&gt;Connection.close()&lt;/li&gt;
+      &lt;li&gt;Connection.isolation_level&lt;/li&gt;
+      &lt;li&gt;Connection.execute(sql[, parameters])&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cursor Class
+    &lt;ul&gt;
+      &lt;li&gt;Cursor.execute(sql[, parameters])&lt;/li&gt;
+      &lt;li&gt;Cursor.executemany(sql, seq_of_parameters)&lt;/li&gt;
+      &lt;li&gt;Cursor.executescript(sql_script)&lt;/li&gt;
+      &lt;li&gt;Cursor.fetchone()&lt;/li&gt;
+      &lt;li&gt;Cursor.fetchmany([size=cursor.arraysize])&lt;/li&gt;
+      &lt;li&gt;Cursor.fetchall()&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Connection.iterdump()&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CRUD example&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import sqlite3
+
+#generate connection object
+con = sqlite3.connect(&quot;:memory:&quot;) # in memory
+# con = sqlite3.connect(&quot;test.db&quot;) # in file
+
+#generate cursor
+cur = con.cursor()
+
+# create ( use text intead of varchar2 in SQLite3)
+cur.execute(&quot;create table PhoneBook (Name text, PhoneNum text);&quot;)
+# insert
+cur.execute(&quot;insert into PhoneBook values ('derick', '010-111');&quot;)
+
+# insert using variables
+name = &quot;gil dong&quot;
+phoneNumber = &quot;010-222&quot;
+cur.execute(&quot;insert into PhoneBook values ( ?, ?);&quot;, (name, phoneNumber)) # input using Tuple type
+
+# multiple record
+datalist = ((&quot;tom&quot;,&quot;010-123&quot;),(&quot;dsp&quot;,&quot;010-567&quot;)) # tuple in tuple
+cur.executemany(&quot;insert into PhoneBook values ( ?, ?);&quot;, datalist) # input using Tuple type, with executemany function
+
+
+# search
+cur.execute(&quot;select * from PhoneBook;&quot;)
+
+print(cur.fetchone())
+print(cur.fetchmany(2))
+cur.execute(&quot;select * from PhoneBook;&quot;)
+print(cur.fetchall())
+
+# dump
+print(&quot;--------- db dump ---------&quot;)
+for i in con.iterdump():
+    print(i)
+
+
+# *** Result =&amp;gt; results out as tuple type
+# ('derick', '010-111')
+# [('gil dong', '010-222'), ('tom', '010-123')]
+# [('derick', '010-111'), ('gil dong', '010-222'), ('tom', '010-123'), ('dsp', '010-567')]
+# --------- db dump ---------
+# BEGIN TRANSACTION;
+# CREATE TABLE PhoneBook (Name text, PhoneNum text);
+# INSERT INTO &quot;PhoneBook&quot; VALUES('derick','010-111');
+# INSERT INTO &quot;PhoneBook&quot; VALUES('gil dong','010-222');
+# INSERT INTO &quot;PhoneBook&quot; VALUES('tom','010-123');
+# INSERT INTO &quot;PhoneBook&quot; VALUES('dsp','010-567');
+# COMMIT;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;executemany example with tuple data
+```
+import sqlite3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;#generate connection object&lt;/p&gt;
+&lt;h1 id=&quot;con--sqlite3connectmemory--in-memory&quot;&gt;con = sqlite3.connect(“:memory:”) # in memory&lt;/h1&gt;
+&lt;p&gt;con = sqlite3.connect(“c:\work\sample.db”) # in file&lt;/p&gt;
+
+&lt;p&gt;#generate cursor
+cur = con.cursor()&lt;/p&gt;
+
+&lt;h1 id=&quot;create--use-text-intead-of-varchar2-in-sqlite3&quot;&gt;create ( use text intead of varchar2 in SQLite3)&lt;/h1&gt;
+&lt;p&gt;cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)&lt;/p&gt;
+&lt;h1 id=&quot;insert&quot;&gt;insert&lt;/h1&gt;
+&lt;p&gt;cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)&lt;/p&gt;
+
+&lt;h1 id=&quot;insert-using-variables&quot;&gt;insert using variables&lt;/h1&gt;
+&lt;p&gt;name = “gil dong”
+phoneNumber = “010-222”
+cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type&lt;/p&gt;
+
+&lt;h1 id=&quot;multiple-record&quot;&gt;multiple record&lt;/h1&gt;
+&lt;p&gt;datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
+cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function&lt;/p&gt;
+
+&lt;h1 id=&quot;search&quot;&gt;search&lt;/h1&gt;
+&lt;p&gt;cur.execute(“select * from PhoneBook;”)
+for row in cur:
+    print(row)&lt;/p&gt;
+
+&lt;h1 id=&quot;commit&quot;&gt;commit&lt;/h1&gt;
+&lt;p&gt;con.commit()&lt;/p&gt;
+
+&lt;h1 id=&quot;-result--results-out-as-tuple-type&quot;&gt;*** Result =&amp;gt; results out as tuple type&lt;/h1&gt;
+&lt;h1 id=&quot;derick-010-111&quot;&gt;(‘derick’, ‘010-111’)&lt;/h1&gt;
+&lt;h1 id=&quot;gil-dong-010-222&quot;&gt;(‘gil dong’, ‘010-222’)&lt;/h1&gt;
+&lt;h1 id=&quot;tom-010-123&quot;&gt;(‘tom’, ‘010-123’)&lt;/h1&gt;
+&lt;h1 id=&quot;dsp-010-567&quot;&gt;(‘dsp’, ‘010-567’)&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- Backup example
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;import sqlite3&lt;/p&gt;
+
+&lt;p&gt;#generate connection object
+con = sqlite3.connect(“:memory:”) # in memory&lt;/p&gt;
+&lt;h1 id=&quot;con--sqlite3connecttestdb--in-file&quot;&gt;con = sqlite3.connect(“test.db”) # in file&lt;/h1&gt;
+
+&lt;p&gt;#generate cursor
+cur = con.cursor()&lt;/p&gt;
+
+&lt;h1 id=&quot;create--use-text-intead-of-varchar2-in-sqlite3-1&quot;&gt;create ( use text intead of varchar2 in SQLite3)&lt;/h1&gt;
+&lt;p&gt;cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)&lt;/p&gt;
+&lt;h1 id=&quot;insert-1&quot;&gt;insert&lt;/h1&gt;
+&lt;p&gt;cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)&lt;/p&gt;
+
+&lt;h1 id=&quot;insert-using-variables-1&quot;&gt;insert using variables&lt;/h1&gt;
+&lt;p&gt;name = “gil dong”
+phoneNumber = “010-222”
+cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type&lt;/p&gt;
+
+&lt;h1 id=&quot;multiple-record-1&quot;&gt;multiple record&lt;/h1&gt;
+&lt;p&gt;datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
+cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function&lt;/p&gt;
+
+&lt;h1 id=&quot;database-dump&quot;&gt;database dump&lt;/h1&gt;
+&lt;p&gt;with open(“c:\work\dump.sql”,”wt”) as f:
+    for item in con.iterdump():  &lt;br /&gt;
+        print(item)
+        f.write(“{0}\n”.format(item))&lt;/p&gt;
+
+&lt;p&gt;print(“backup completed”)&lt;/p&gt;
+
+&lt;h1 id=&quot;-result--results-out-as-tuple-type-1&quot;&gt;*** Result =&amp;gt; results out as tuple type&lt;/h1&gt;
+&lt;h1 id=&quot;begin-transaction&quot;&gt;BEGIN TRANSACTION;&lt;/h1&gt;
+&lt;h1 id=&quot;create-table-phonebook-name-text-phonenum-text&quot;&gt;CREATE TABLE PhoneBook (Name text, PhoneNum text);&lt;/h1&gt;
+&lt;h1 id=&quot;insert-into-phonebook-valuesderick010-111&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘derick’,’010-111’);&lt;/h1&gt;
+&lt;h1 id=&quot;insert-into-phonebook-valuesgil-dong010-222&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘gil dong’,’010-222’);&lt;/h1&gt;
+&lt;h1 id=&quot;insert-into-phonebook-valuestom010-123&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘tom’,’010-123’);&lt;/h1&gt;
+&lt;h1 id=&quot;insert-into-phonebook-valuesdsp010-567&quot;&gt;INSERT INTO “PhoneBook” VALUES(‘dsp’,’010-567’);&lt;/h1&gt;
+&lt;h1 id=&quot;commit-1&quot;&gt;COMMIT;&lt;/h1&gt;
+&lt;h1 id=&quot;backup-completed&quot;&gt;backup completed&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- Restore example
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;open-new-dump&quot;&gt;open new dump&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;con = sqlite3.connect(“c:\work\demo.db”)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;read-old-dump&quot;&gt;read old dump&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;with open(“c:\work\dump.sql”) as f:
+ SQLScript = f.read()&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;check-dump-script&quot;&gt;check dump script&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;SQLScript
+‘BEGIN TRANSACTION;\nCREATE TABLE PhoneBook (Name text, PhoneNum text);\nINSERT INTO “PhoneBook” VALUES('derick','010-111');\nINSERT INTO “PhoneBook” VALUES('gil dong','010-222');\nINSERT INTO “PhoneBook” VALUES('tom','010-123');\nINSERT INTO “PhoneBook” VALUES('dsp','010-567');\nCOMMIT;\n’&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;create-cursor&quot;&gt;create cursor&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;cur = con.cursor()&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;execute-script&quot;&gt;execute script&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;cur.executescript(SQLScript)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;lt;sqlite3.Cursor object at 0x03F4B7E0&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;select&quot;&gt;select&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;cur.execute(“select * from PhoneBook;”)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;lt;sqlite3.Cursor object at 0x03F4B7E0&amp;gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;fetch-all&quot;&gt;fetch all&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;cur.fetchall()
+[(‘derick’, ‘010-111’), (‘gil dong’, ‘010-222’), (‘tom’, ‘010-123’), (‘dsp’, ‘010-567’)]
+```&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;web-crawling-with-beautifulsoup&quot;&gt;Web Crawling with BeautifulSoup&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip3 list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip3 install BeautifulSoup4&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip install requests &lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip list&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Example of Webcrawling
+```
+    &lt;h1 id=&quot;request-webserver&quot;&gt;request webserver&lt;/h1&gt;
+    &lt;p&gt;import urllib.request
+from bs4 import BeautifulSoup&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;data = urllib.request.urlopen(“http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;amp;weekday=fri”)&lt;/p&gt;
+
+&lt;p&gt;soup = BeautifulSoup(data, “html.parser”)&lt;/p&gt;
+
+&lt;p&gt;cartoons = soup.find_all(“td”, class_=”title”)&lt;/p&gt;
+
+&lt;p&gt;title = cartoons[0].find(‘a’).text
+link = cartoons[0].find(‘a’)[“href”]&lt;/p&gt;
+
+&lt;h1 id=&quot;printtitle&quot;&gt;print(title)&lt;/h1&gt;
+&lt;h1 id=&quot;printlink&quot;&gt;print(link)&lt;/h1&gt;
+
+&lt;p&gt;for item in cartoons:
+    title = item.find(“a”).text
+    print(title.strip())&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Save file and web crawling for all pages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;codingutf-8&quot;&gt;coding:utf-8&lt;/h1&gt;
+&lt;p&gt;from bs4 import BeautifulSoup
+import urllib.request
+import re&lt;/p&gt;
+
+&lt;p&gt;for n in range(0,10):
+        #address of clien
+        data =’https://www.clien.net/service/board/sold?&amp;amp;od=T31&amp;amp;po=’ + str(n)
+        req = urllib.request.Request(data)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode(‘utf-8’, ‘ignore’)
+        soup = BeautifulSoup(page, ‘html.parser’)
+        list = soup.find_all(‘span’, attrs={‘data-role’:’list-title-text’})&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    f = open(&quot;C:\\work\\clien.txt&quot;, &quot;a+&quot;, encoding=&quot;utf-8&quot;) # incase of new, use wt
+
+    for item in list:
+            try:
+                    title = item.text
+                    if (re.search('갤럭시', title)):
+                            print(title.strip())
+                            f.write(title.strip() + &quot;\n&quot;)
+            except:
+                    pass
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;f.close()
+print(“end of web crawling”)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- Add user-agent in header
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;codingutf-8-1&quot;&gt;coding:utf-8&lt;/h1&gt;
+&lt;p&gt;from bs4 import BeautifulSoup
+import urllib.request
+import re&lt;/p&gt;
+
+&lt;p&gt;#User-Agent add
+hdr = {‘User-agent’:’Mozila/5.0 (compatible; MSIE 5.5; Windows NT)’} # make request by adding client info with Internet explorer&lt;/p&gt;
+
+&lt;p&gt;for n in range(1,11):
+        data =’https://dvdprime.com/g2/bbs/board.php?bo_table=comm&amp;amp;page=’ + str(n)
+        req = urllib.request.Request(data, &lt;br /&gt;
+                                          headers = hdr)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode(‘utf-8’, ‘ignore’)
+        soup = BeautifulSoup(page, ‘html.parser’)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    # &amp;lt;span class='list_subject_span_pc'&amp;gt;contents&amp;lt;/span&amp;gt;
+    list = soup.find_all('span', attrs={'class':'list_subject_span_pc'})
+
+    for item in list:
+            try:
+                    title = item.text
+                    if (re.search('회사', title)):
+                            print(title.strip())
+            except:
+                    pass
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### PyQt5 GUI
+
+Install `PyQt5-5.6-gpl-Py3.5-Qt5.6.0-x32-2.exe`, make sure same version with python
+- `.ui` file
+  - XML format
+  - Make mapping signal and slot in Signal/Slot Editor on Qt designer
+
+- `.py` file
+  - Add login in py file
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;demoui-display--demopylogic&quot;&gt;demo.ui (display) + demo.py(logic)&lt;/h1&gt;
+
+&lt;p&gt;import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic&lt;/p&gt;
+
+&lt;p&gt;import urllib.request
+from bs4 import BeautifulSoup&lt;/p&gt;
+
+&lt;p&gt;form_class = uic.loadUiType(“demo2.ui”)[0]&lt;/p&gt;
+
+&lt;p&gt;#parent class((QMainWindow))
+class DemoForm(QMainWindow, form_class):
+    def &lt;strong&gt;init&lt;/strong&gt;(self):
+        super().&lt;strong&gt;init&lt;/strong&gt;()
+        self.setupUi(self)
+    def firstClick(self):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    data = urllib.request.urlopen(&quot;http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;amp;weekday=fri&quot;)
+
+    soup = BeautifulSoup(data, &quot;html.parser&quot;)
+
+    cartoons = soup.find_all(&quot;td&quot;, class_=&quot;title&quot;)
+
+    # title = cartoons[0].find('a').text
+    # link = cartoons[0].find('a')[&quot;href&quot;]
+
+    # print(title)
+    # print(link)
+
+    for item in cartoons:
+        title = item.find(&quot;a&quot;).text
+        print(title.strip())
+
+
+
+
+
+
+def secondClick(self):
+    self.label.setText(&quot;clicked second&quot;)
+def thirdClick(self):
+    self.label.setText(&quot;clicked third&quot;)    
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;if &lt;strong&gt;name&lt;/strong&gt; == “&lt;strong&gt;main&lt;/strong&gt;”:
+    app = QApplication(sys.argv)
+    demoWindow = DemoForm()
+    demoWindow.show()
+    app.exec_()&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Get data and show table and link to browser.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;import sys
+from PyQt5.QtWidgets import *
+import urllib.request
+from bs4 import BeautifulSoup
+import webbrowser  &lt;br /&gt;
+import re&lt;/p&gt;
+
+&lt;p&gt;class Form(QMainWindow):
+    def &lt;strong&gt;init&lt;/strong&gt;(self):
+        super().&lt;strong&gt;init&lt;/strong&gt;()
+        self.setupUI()&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def setupUI(self):
+    # (x,y,width,height) 
+    self.setGeometry(200, 200, 800, 800)
+    
+    # INPUT
+    self.lineEdit = QLineEdit(&quot;&quot;, self)
+    self.lineEdit.move(20, 20)
+
+    #BUTTON
+    self.btn = QPushButton(&quot;검색&quot;, self)
+    self.btn.move(120, 20)
+    self.btn.clicked.connect(self.setTableWidgetData)
+
+    self.tableWidget = QTableWidget(self)
+    self.tableWidget.move(20, 70)
+    self.tableWidget.resize(800, 600)
+    self.tableWidget.setRowCount(50)  
+    self.tableWidget.setColumnCount(2)  
+    
+    self.tableWidget.setColumnWidth(0, 300)
+    self.tableWidget.setColumnWidth(1, 300)
+    
+  
+    self.tableWidget.doubleClicked.connect(self.doubleClicked)
+
+
+def setTableWidgetData(self):
+    row = 0
+    for n in range(0,5):
+
+        data ='https://www.clien.net/service/board/sold?&amp;amp;od=T31&amp;amp;po=' + str(n)
+        req = urllib.request.Request(data)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode('utf-8', 'ignore')
+        soup = BeautifulSoup(page, 'html.parser')
+        list = soup.find_all('a', attrs={'class':'list_subject'})
+
+        f = open(&quot;clien.txt&quot;, &quot;a+&quot;, encoding=&quot;utf-8&quot;)
+        for item in list:
+            try:
+                span = item.contents[3]
+                title = item.text.strip()
+ 
+                if (re.search(self.lineEdit.text(), title)):
+                    title = title.replace(&quot;\t&quot;, &quot;&quot;)
+                    title = title.replace(&quot;\n&quot;, &quot;&quot;)
+                    print(title)
+                    link = 'https://www.clien.net'  + item['href'] 
+                    print(link.strip())
+                    f.write(title+&quot;\n&quot;)
+                    f.write(link + &quot;\n&quot;)
+        
+                    self.tableWidget.setItem(row, 0, QTableWidgetItem(title))
+                    self.tableWidget.setItem(row, 1, QTableWidgetItem(link))
+                    row += 1
+                    print(&quot;row: &quot;, row) 
+            except:
+                pass
+         
+        f.close()
+
+def doubleClicked(self):
+    url = self.tableWidget.item(self.tableWidget.currentRow(), 1).text()
+    webbrowser.open(url) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;if &lt;strong&gt;name&lt;/strong&gt; == “&lt;strong&gt;main&lt;/strong&gt;”:
+    app = QApplication(sys.argv)
+    mywindow = Form()
+    mywindow.show()
+    app.exec_()&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### Pandas
+
+  - Import type
+    - from pandas import Series, DataFrame  
+    - import pandas as pd
+  - Datatypes
+    - Series
+      - It is similar to list
+    - Dataframe
+      - 2 array list
+  - Read function
+    - read_csv : based on csv from DB mainly
+    - read_table : based on tab key
+    - read_fwf : based on fixed width
+    - read_excel : based on excel
+  - Functions
+    - plt.plot
+    - plt.scatter
+    - plt.bar
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;make-one-frame&quot;&gt;make one frame&lt;/h1&gt;
+&lt;p&gt;years = range(1880,2011)
+pieces = []
+columns = [“name”, “sex”, “births”]&lt;/p&gt;
+
+&lt;p&gt;for year in years:
+    path = “c:\work\yob%d.txt” % year
+    frame = pd.read_csv(path, names = columns)
+    frame[“year”] = year
+    pieces.append(frame)
+    names = pd.concat(pieces, ignore_index=True)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- Summary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;total_births = names.pivot_table(“births”, index = ‘year’, columns=’sex’, aggfunc=sum)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Plot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;total_births.plot(title=”년도별 성별 출생 숫자”)
+```&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pyplot.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 </content>
  </entry>
  

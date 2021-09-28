@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github 원격 저장소와 로컬 저장소 연동하기
-category: 03_Cloud
+category: 05_Cloud
 tag: [Git, Github]
 ---
 

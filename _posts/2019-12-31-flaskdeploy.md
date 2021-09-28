@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploying a Python Flask Web Application using GCP
-category: 03_Cloud
+category: 05_Cloud
 tag: [Flask, GCP, Python]
 ---
 This document have been referred to the guide from https://codelabs.developers.google.com/codelabs/cloud-vision-app-engine/index.html?index=..%2F..index#0

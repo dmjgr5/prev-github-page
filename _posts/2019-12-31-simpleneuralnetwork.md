@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simple Neural Network
-category: 02_AI
+category: 04_AI
 tag: [tensorflow]
 ---
 

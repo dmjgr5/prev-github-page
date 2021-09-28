@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 통계 분석 기초 용어 정리
-category: 04_Theoretical
+category: 06_Theoretical
 tag: [중앙값, 분산, IQR]
 ---
 

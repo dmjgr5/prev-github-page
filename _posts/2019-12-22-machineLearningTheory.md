@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Machine Learning Theory
-category: 02_AI
+category: 04_AI
 tag: [MachineLearning, LinearRegression, LogisticClassification]
 ---
 This is the document written when I research the concept of Machine Learning.

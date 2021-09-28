@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      What is Python &middot; Git Note
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/font.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="https://dmjgr5.github.io/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109898110-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109898110-1', 'auto');
+</script>
+
+  
+
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>One a day</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="https://dmjgr5.github.io/">Home</a>
+
+    
+
+    <!-- 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     -->
+<!-- 
+    <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+  </nav>
+  <div>
+    <div class="sidebar-nav-item">Category</div>
+    <nav class="content-ul">
+      
+
+
+      
+      <a href="/category/#01_Algorithm"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                01_Algorithm
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#02_Programming"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                02_Programming
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#03_Database"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                03_Database
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#04_AI"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                04_AI
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#05_Cloud"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                05_Cloud
+                            </span>
+        <span class="badge">7</span>
+      </a>
+      
+      <a href="/category/#06_Theoretical"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                06_Theoretical
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#07_ToyProject"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                07_ToyProject
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+    </nav>
+  </div>
+  <div>
+    <div class="sidebar-nav-item">Tags</div>
+    <div class="tags-cloud">
+      <div>
+        
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Python" style="font-size: 18pt; color: #eee;">Python</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GitBash" style="font-size: 9pt; color: #555;">GitBash</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySQL" style="font-size: 9pt; color: #555;">MySQL</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySql" style="font-size: 9pt; color: #555;">MySql</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Connect" style="font-size: 9pt; color: #555;">Connect</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#JavaScript" style="font-size: 12pt; color: #888;">JavaScript</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PHP" style="font-size: 9pt; color: #555;">PHP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MachineLearning" style="font-size: 9pt; color: #555;">MachineLearning</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LinearRegression" style="font-size: 9pt; color: #555;">LinearRegression</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LogisticClassification" style="font-size: 9pt; color: #555;">LogisticClassification</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Flask" style="font-size: 9pt; color: #555;">Flask</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GCP" style="font-size: 9pt; color: #555;">GCP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#NodeJs" style="font-size: 9pt; color: #555;">NodeJs</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#tensorflow" style="font-size: 9pt; color: #555;">tensorflow</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#주식" style="font-size: 9pt; color: #555;">주식</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PyQt5" style="font-size: 9pt; color: #555;">PyQt5</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Kubernetes" style="font-size: 9pt; color: #555;">Kubernetes</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#CloudVision" style="font-size: 9pt; color: #555;">CloudVision</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LCA" style="font-size: 9pt; color: #555;">LCA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SparseTable" style="font-size: 9pt; color: #555;">SparseTable</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MST" style="font-size: 9pt; color: #555;">MST</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#BFS" style="font-size: 9pt; color: #555;">BFS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#FailureFunction" style="font-size: 9pt; color: #555;">FailureFunction</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Priority Queue" style="font-size: 9pt; color: #555;">Priority Queue</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Django" style="font-size: 9pt; color: #555;">Django</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Git" style="font-size: 9pt; color: #555;">Git</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Github" style="font-size: 12pt; color: #888;">Github</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#깃허브페이지" style="font-size: 9pt; color: #555;">깃허브페이지</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Jekyll" style="font-size: 9pt; color: #555;">Jekyll</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MSA" style="font-size: 9pt; color: #555;">MSA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MicroService" style="font-size: 9pt; color: #555;">MicroService</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Architecture" style="font-size: 9pt; color: #555;">Architecture</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#중앙값" style="font-size: 9pt; color: #555;">중앙값</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#분산" style="font-size: 9pt; color: #555;">분산</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#IQR" style="font-size: 9pt; color: #555;">IQR</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#5Whys" style="font-size: 9pt; color: #555;">5Whys</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a class="sidebar-nav-item" href="/about/">About</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2021. All rights reserved.
+    </p>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('hashchange', function(){
+    location.reload();
+  });
+</script>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="https://dmjgr5.github.io/" title="Home">Git Note</a>
+            <small>Day by day, in Everyway, I am getting better and better</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
+  <h2 class="post-title"> What is Python</h2>
+  <span class="post-date">   06 Dec 2019</span>
+   <p><img src="/assets/images/python.png" alt="example" /></p>
+
+<blockquote>
+  <p>This is the document for Python, which is basic instruction like Python Installation, Data Types and so on. Let me explain briefly about Python language.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="python-installation">Python Installation</h3>
+
+<ul>
+  <li>Using python IDLE <a href="https://www.python.org/">https://www.python.org</a></li>
+  <li>Using Visual Studio Code after extension installation [https://code.visualstudio.com] (https://code.visualstudio.com/)</li>
+</ul>
+
+<h3 id="python-type">Python Type</h3>
+
+<ul>
+  <li>List [ ]
+    <ul>
+      <li>Ordered List</li>
+    </ul>
+  </li>
+  <li>Tuple ( )
+    <ul>
+      <li>Ordered List, not changed</li>
+    </ul>
+  </li>
+  <li>Set { }
+    <ul>
+      <li>Type with Set (used with Union, Intersection, Difference)</li>
+    </ul>
+  </li>
+  <li>Dictionary {“key”:”value”}
+    <ul>
+      <li>Paired with Key and Value, No ordered list</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="shallow-copy-and-deep-copy">Shallow Copy and Deep Copy</h3>
+
+<ul>
+  <li>Shallow Copy
+```
+a = [1,2,3]
+b =a</li>
+</ul>
+
+<p>import copy</p>
+
+<p>a = [1,2,3]
+b = copy.copy(a)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Deep Copy
+
+</code></pre></div></div>
+
+<p>a = [1,2,3]
+b = a[:]</p>
+
+<p>import copy</p>
+
+<p>a = [1,2,3]
+b = copy.deepcopy(a)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+### Garbage Collection
+- The data type of int, float, complex, String and tuple are immutable, therefore if the variable is updated, it make another new object, so old object which is not used, garbage collection executed. Mostly list and dictionary used because it is mutable type.
+The immutable type and global variable should be used with 'global' to update its value.
+- Test
+</code></pre></div></div>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>g = 1
+def testScope(a):
+    global g
+    g = 2
+    return g + a</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>print(“testScoope(1) : “, testScoope(1))
+print(“g : “,g)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Output
+</code></pre></div></div>
+<p>testScoope(1) :  3
+g :  1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Variable Parameter
+- Any number of parameters can be used by adding * (different a pointer from C)in front of parameters
+
+
+</code></pre></div></div>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>def test(*args):
+    print(type(args))</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>test(1, 2)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>&lt;type ‘tuple’&gt; # tuple type</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>def union(*ar):
+    res = []
+    for item in ar:
+        for x in item:
+            if not x in res:
+                res.append(x)
+    return res</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>union(“HAM”, “EGG”, “SPAM”)
+[‘H’, ‘A’, ‘M’, ‘E’, ‘G’, ‘S’, ‘P’]</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>union(“gir”, “generation”, “gee”)
+[‘g’, ‘i’, ‘r’, ‘e’, ‘n’, ‘a’, ‘t’, ‘o’]
+```</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<ul>
+  <li>Any number of parameters (key-value type) can be used by adding ** in front of parameters.
+It is option where it requires or not. Option parameter is handled as a dictionary type.
+```
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p>def userURIBuilder(server, port, **user):
+  str = “http://” + server + “:” + port + “/?”
+  for key in user.keys():
+      str += key + “=” + user[key] + “&amp;”
+  return str</p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>userURIBuilder(“test.com”, “8080”, id=’userid’, passwd=’1234’)
+‘http://test.com:8080/?passwd=1234&amp;id=userid&amp;’
+userURIBuilder(“test.com”, “8080”, id=’userid’, passwd=’1234’, name=’mike’, age=’20’)
+‘http://test.com:8080/?passwd=1234&amp;age=20&amp;id=userid&amp;name=mike&amp;’
+```</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h3 id="lambda-function">Lambda Function</h3>
+<ul>
+  <li>There is no name, anonymous function. In case of sample function, it is better to use lambda function.</li>
+  <li>Example : lambda <parameters> : <phrase>
+</phrase></parameters>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; g = lambda x, y : x * y
+&gt;&gt;&gt; g(2,3)
+6
+&gt;&gt;&gt; (lambda x: x * x)(3)
+9
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="yield">yield</h3>
+<ul>
+  <li>returns value in real time, used in RANGE phrase.
+```
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p>def reverse(data):
+  for index in range(len(data) - 1, -1, -1):
+      yield data[index]</p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>for char in reverse(‘gold’):
+    print(char)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>d
+l
+o
+g</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Private Member
+- `Add __&lt;member variable&gt;, changed _&lt;className&gt;__&lt;memberName&gt;`
+</code></pre></div></div>
+<p>class BankAccount:
+def <strong>init</strong>(self, id, name, balance):</p>
+
+<p>self. __ id = id
+self. __ name = name 
+self. __ balance = balance 
+def deposit(self, amount):
+ self. __ balance += amount 
+def withdraw(self, amount):
+ self. __ balance -= amount
+def <strong>str</strong>(self):
+ return “{0}, {1}, {2}”.format(self.__id, self.__name, <br />
+         self.__balance)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Inheritance
+- Example : Class Student(Person):
+</code></pre></div></div>
+<p>class Person:
+  …</p>
+
+<p>class Student(Person):
+    “"”sub class”””
+    def <strong>init</strong>(self, name, phoneNumber, subject, studentID):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Person.__init__(self, name, phoneNumber) # Call Person Init 
+    self.subject = subject
+    self.studentID = studentID ```
+</code></pre></div></div>
+
+<h3 id="pythonpath-in-system-variables">PYTHONPATH in System Variables</h3>
+<ul>
+  <li>
+    <p>When creating module, we can allocate the module location in specific folder using system properties path named as PYTHONPATH and the absolute path.
+Classes and Functions can be defined in Module.</p>
+  </li>
+  <li>
+    <p>Module example
+```
+from functools import *</p>
+  </li>
+</ul>
+
+<p>def intersect(*ar):
+    return reduce(__intersectSC,ar)</p>
+
+<p>def __intersectSC(listX, listY):
+    setList = []
+    for x in listX:
+        if x in listY:
+            setList.append(x)
+    return setList</p>
+
+<p>def difference(<em>ar):
+    setList = []
+    intersectSet = intersect(</em>ar)
+    unionSet = union(*ar)
+    for x in unionSet:
+        if not x in intersectSet:
+            setList.append(x)
+    return setList</p>
+
+<p>def union(*ar):
+    setList = []
+    for item in ar:
+        for x in item:
+            if not x in setList:
+                setList.append(x)
+    return setList</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Module Importing Style
+  - import simpleset
+    - get from global namespace, get all functions
+    - check with command like dir()
+  - from simpleset import union
+    - specific functions, ex) union function Only
+    - check with command like dir(union)
+  - from simpleset import * 
+    - all functions, except the function start with __(double-underlined)
+    - check with command like dir()
+  - import simpleset as test1
+    - make alias named as test1
+
+### `__pycache__` folder
+- After compile a pyc file, it is generated in `__pycache__`, as well we can share this file to others as a module, not to show the source code.
+Pyinstaller is useful for this case :
+  - pip3 install pyinstaller
+  - python BankAccout.py
+  - BankAccount in 'dist' folder
+
+
+### Exception
+</code></pre></div></div>
+<p>def divide(a,b):
+    return a/b</p>
+
+<p>try:
+    c = divide(5, 2)
+except ZeroDivisionError:
+    print(‘0 is not allowed’)
+except TypeError:
+    print(“All parameters must be numbers”)
+except:
+    print(“Not defined”)
+else:
+    print(“Result : {0}”, c)</p>
+
+<p>finally:
+    print(“do anything”)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Input and Output
+- Output
+</code></pre></div></div>
+<p>import sys</p>
+
+<p>f = open(“C:\work\test.txt”, “wt”)
+print(“file write”, file=f)
+f.close()</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- read() : returns string all from a file
+- readline() : returns string line by line
+- readlines() : returns a list with line by line at once
+
+</code></pre></div></div>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>f = open(“c:\work\demo.txt”)
+result = f.read()
+result
+‘qqqq\nabcd\n1234\n’
+print(result)
+qqqq
+abcd
+1234</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>f.tell()
+25
+f.seek(0)
+0
+f.tell()
+0
+f.readline()
+‘qqqq\n’
+f.readline()
+‘abcd\n’
+f.readline()
+‘1234\n’
+f.seek(0)
+0
+lst = f.readlines()
+lst
+[‘qqqq\n’, ‘abcd\n’, ‘1234\n’]</p>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Input
+</code></pre></div>      </div>
+      <p>f = open(“c:\work\demo1.txt”, “wt”)
+f.write(“qqqq\nabcd\n1234\n”)
+f.close()
+```</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h3 id="pickle">Pickle</h3>
+<ul>
+  <li>Save information temporarily</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import pickle
+
+colors = ["red", "blue", "gree"]
+
+# Write
+f = open("c:\\work\\colors","wb") # write binary
+pickle.dump(colors,f) # back up with .dump function
+f.close()
+
+# Read
+f = open("c:\\work\\colors","rb") # read binary
+colors = pickle.load(f) # open with .load function
+print(colors)
+f.close()
+
+del colors # delete list
+
+import os 
+os.remove("c:\\work\\colors")  # delete file
+</code></pre></div></div>
+
+<h3 id="regular-expression">Regular Expression</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import re 
+
+f=open('c:\\work\\PV3.txt','rt')
+g=open('c:\\work\\PV3_copy.txt','wt')
+
+ 
+line = f.readline()
+while (line != ''):
+    if (re.search("\d{4}", line)):
+        g.write(line + "\n")
+    line = f.readline()
+
+f.close() 
+g.close()
+</code></pre></div></div>
+
+<h3 id="time-math-and-random">Time, Math and Random</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.random()
+0.35173868090650484
+&gt;&gt;&gt; random.random()
+0.5306281074635111
+&gt;&gt;&gt; random.uniform(3,4) 
+3.5888882103413913
+&gt;&gt;&gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&gt;&gt;&gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&gt;&gt;&gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.random()
+0.35173868090650484
+&gt;&gt;&gt; random.random()
+0.5306281074635111
+&gt;&gt;&gt; random.uniform(3,4) 
+3.5888882103413913
+&gt;&gt;&gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&gt;&gt;&gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&gt;&gt;&gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.random()
+0.35173868090650484
+&gt;&gt;&gt; random.random()
+0.5306281074635111
+&gt;&gt;&gt; random.uniform(3,4) 
+3.5888882103413913
+&gt;&gt;&gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&gt;&gt;&gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&gt;&gt;&gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.random()
+0.35173868090650484
+&gt;&gt;&gt; random.random()
+0.5306281074635111
+&gt;&gt;&gt; random.uniform(3,4) 
+3.5888882103413913
+&gt;&gt;&gt; for i in range(3):  
+ random.gauss(1, 1.0)
+
+ 
+0.9384305864119867
+1.8460570340312912
+1.3857190077793522
+&gt;&gt;&gt; [random.randrange(20) for i in range(10)] 
+[12, 2, 4, 11, 2, 15, 7, 13, 17, 15]
+&gt;&gt;&gt; random.sample(range(20), 10) 
+[8, 6, 0, 7, 2, 4, 10, 11, 12, 18]
+</code></pre></div></div>
+<h3 id="os">OS</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; from os.path import *
+&gt;&gt;&gt; abspath('tmp')  
+'C:\\Python35\\tmp'
+&gt;&gt;&gt; basename('c:\\python35\\tmp')  
+'tmp'
+&gt;&gt;&gt; basename('c:\\python35\\tmp\\test.txt')
+'test.txt'
+&gt;&gt;&gt; commonprefix(['c:\\python35\\lib', 'c:\\python35\tools', 'c:\\python35']) 
+'c:\\python35'
+&gt;&gt;&gt; exists('c:\\python35\\tmp') 
+False
+&gt;&gt;&gt; exists('c:\\python35')
+True
+&gt;&gt;&gt; getsize('c:\\python35\\python.exe') 
+26624
+&gt;&gt;&gt; isfile('c:\\python35\\python.exe') 
+True
+</code></pre></div></div>
+
+<h3 id="database-with-sqlite3">Database with SQLite3</h3>
+<p>SQLite3 is an opensource, which is embedded in Python library.</p>
+
+<ul>
+  <li>sqlite3.connect(database[, timeout, isolation_level, detect_types, factory])</li>
+  <li>sqlite3.complete_statement(sql)</li>
+  <li>sqlite3.register_adapter(type, callable)</li>
+  <li>sqlite3.register_converter(typename, callable)
+    <ul>
+      <li>Connection Class</li>
+      <li>Connection.cursor()</li>
+      <li>Connection.rollback()</li>
+      <li>Connection.close()</li>
+      <li>Connection.isolation_level</li>
+      <li>Connection.execute(sql[, parameters])</li>
+    </ul>
+  </li>
+  <li>Cursor Class
+    <ul>
+      <li>Cursor.execute(sql[, parameters])</li>
+      <li>Cursor.executemany(sql, seq_of_parameters)</li>
+      <li>Cursor.executescript(sql_script)</li>
+      <li>Cursor.fetchone()</li>
+      <li>Cursor.fetchmany([size=cursor.arraysize])</li>
+      <li>Cursor.fetchall()</li>
+    </ul>
+  </li>
+  <li>
+    <p>Connection.iterdump()</p>
+  </li>
+  <li>CRUD example</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sqlite3
+
+#generate connection object
+con = sqlite3.connect(":memory:") # in memory
+# con = sqlite3.connect("test.db") # in file
+
+#generate cursor
+cur = con.cursor()
+
+# create ( use text intead of varchar2 in SQLite3)
+cur.execute("create table PhoneBook (Name text, PhoneNum text);")
+# insert
+cur.execute("insert into PhoneBook values ('derick', '010-111');")
+
+# insert using variables
+name = "gil dong"
+phoneNumber = "010-222"
+cur.execute("insert into PhoneBook values ( ?, ?);", (name, phoneNumber)) # input using Tuple type
+
+# multiple record
+datalist = (("tom","010-123"),("dsp","010-567")) # tuple in tuple
+cur.executemany("insert into PhoneBook values ( ?, ?);", datalist) # input using Tuple type, with executemany function
+
+
+# search
+cur.execute("select * from PhoneBook;")
+
+print(cur.fetchone())
+print(cur.fetchmany(2))
+cur.execute("select * from PhoneBook;")
+print(cur.fetchall())
+
+# dump
+print("--------- db dump ---------")
+for i in con.iterdump():
+    print(i)
+
+
+# *** Result =&gt; results out as tuple type
+# ('derick', '010-111')
+# [('gil dong', '010-222'), ('tom', '010-123')]
+# [('derick', '010-111'), ('gil dong', '010-222'), ('tom', '010-123'), ('dsp', '010-567')]
+# --------- db dump ---------
+# BEGIN TRANSACTION;
+# CREATE TABLE PhoneBook (Name text, PhoneNum text);
+# INSERT INTO "PhoneBook" VALUES('derick','010-111');
+# INSERT INTO "PhoneBook" VALUES('gil dong','010-222');
+# INSERT INTO "PhoneBook" VALUES('tom','010-123');
+# INSERT INTO "PhoneBook" VALUES('dsp','010-567');
+# COMMIT;
+</code></pre></div></div>
+
+<ul>
+  <li>executemany example with tuple data
+```
+import sqlite3</li>
+</ul>
+
+<p>#generate connection object</p>
+<h1 id="con--sqlite3connectmemory--in-memory">con = sqlite3.connect(“:memory:”) # in memory</h1>
+<p>con = sqlite3.connect(“c:\work\sample.db”) # in file</p>
+
+<p>#generate cursor
+cur = con.cursor()</p>
+
+<h1 id="create--use-text-intead-of-varchar2-in-sqlite3">create ( use text intead of varchar2 in SQLite3)</h1>
+<p>cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)</p>
+<h1 id="insert">insert</h1>
+<p>cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)</p>
+
+<h1 id="insert-using-variables">insert using variables</h1>
+<p>name = “gil dong”
+phoneNumber = “010-222”
+cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type</p>
+
+<h1 id="multiple-record">multiple record</h1>
+<p>datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
+cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function</p>
+
+<h1 id="search">search</h1>
+<p>cur.execute(“select * from PhoneBook;”)
+for row in cur:
+    print(row)</p>
+
+<h1 id="commit">commit</h1>
+<p>con.commit()</p>
+
+<h1 id="-result--results-out-as-tuple-type">*** Result =&gt; results out as tuple type</h1>
+<h1 id="derick-010-111">(‘derick’, ‘010-111’)</h1>
+<h1 id="gil-dong-010-222">(‘gil dong’, ‘010-222’)</h1>
+<h1 id="tom-010-123">(‘tom’, ‘010-123’)</h1>
+<h1 id="dsp-010-567">(‘dsp’, ‘010-567’)</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Backup example
+</code></pre></div></div>
+<p>import sqlite3</p>
+
+<p>#generate connection object
+con = sqlite3.connect(“:memory:”) # in memory</p>
+<h1 id="con--sqlite3connecttestdb--in-file">con = sqlite3.connect(“test.db”) # in file</h1>
+
+<p>#generate cursor
+cur = con.cursor()</p>
+
+<h1 id="create--use-text-intead-of-varchar2-in-sqlite3-1">create ( use text intead of varchar2 in SQLite3)</h1>
+<p>cur.execute(“create table PhoneBook (Name text, PhoneNum text);”)</p>
+<h1 id="insert-1">insert</h1>
+<p>cur.execute(“insert into PhoneBook values (‘derick’, ‘010-111’);”)</p>
+
+<h1 id="insert-using-variables-1">insert using variables</h1>
+<p>name = “gil dong”
+phoneNumber = “010-222”
+cur.execute(“insert into PhoneBook values ( ?, ?);”, (name, phoneNumber)) # input using Tuple type</p>
+
+<h1 id="multiple-record-1">multiple record</h1>
+<p>datalist = ((“tom”,”010-123”),(“dsp”,”010-567”)) # tuple in tuple
+cur.executemany(“insert into PhoneBook values ( ?, ?);”, datalist) # input using Tuple type, with executemany function</p>
+
+<h1 id="database-dump">database dump</h1>
+<p>with open(“c:\work\dump.sql”,”wt”) as f:
+    for item in con.iterdump():  <br />
+        print(item)
+        f.write(“{0}\n”.format(item))</p>
+
+<p>print(“backup completed”)</p>
+
+<h1 id="-result--results-out-as-tuple-type-1">*** Result =&gt; results out as tuple type</h1>
+<h1 id="begin-transaction">BEGIN TRANSACTION;</h1>
+<h1 id="create-table-phonebook-name-text-phonenum-text">CREATE TABLE PhoneBook (Name text, PhoneNum text);</h1>
+<h1 id="insert-into-phonebook-valuesderick010-111">INSERT INTO “PhoneBook” VALUES(‘derick’,’010-111’);</h1>
+<h1 id="insert-into-phonebook-valuesgil-dong010-222">INSERT INTO “PhoneBook” VALUES(‘gil dong’,’010-222’);</h1>
+<h1 id="insert-into-phonebook-valuestom010-123">INSERT INTO “PhoneBook” VALUES(‘tom’,’010-123’);</h1>
+<h1 id="insert-into-phonebook-valuesdsp010-567">INSERT INTO “PhoneBook” VALUES(‘dsp’,’010-567’);</h1>
+<h1 id="commit-1">COMMIT;</h1>
+<h1 id="backup-completed">backup completed</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Restore example
+
+</code></pre></div></div>
+<h1 id="open-new-dump">open new dump</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>con = sqlite3.connect(“c:\work\demo.db”)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="read-old-dump">read old dump</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>with open(“c:\work\dump.sql”) as f:
+ SQLScript = f.read()</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="check-dump-script">check dump script</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>SQLScript
+‘BEGIN TRANSACTION;\nCREATE TABLE PhoneBook (Name text, PhoneNum text);\nINSERT INTO “PhoneBook” VALUES('derick','010-111');\nINSERT INTO “PhoneBook” VALUES('gil dong','010-222');\nINSERT INTO “PhoneBook” VALUES('tom','010-123');\nINSERT INTO “PhoneBook” VALUES('dsp','010-567');\nCOMMIT;\n’</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="create-cursor">create cursor</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur = con.cursor()</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="execute-script">execute script</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur.executescript(SQLScript)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>&lt;sqlite3.Cursor object at 0x03F4B7E0&gt;</p>
+
+<h1 id="select">select</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur.execute(“select * from PhoneBook;”)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>&lt;sqlite3.Cursor object at 0x03F4B7E0&gt;</p>
+
+<h1 id="fetch-all">fetch all</h1>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cur.fetchall()
+[(‘derick’, ‘010-111’), (‘gil dong’, ‘010-222’), (‘tom’, ‘010-123’), (‘dsp’, ‘010-567’)]
+```</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h3 id="web-crawling-with-beautifulsoup">Web Crawling with BeautifulSoup</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">pip3 list</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pip3 install BeautifulSoup4</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pip install requests </code></li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">pip list</code></p>
+  </li>
+  <li>Example of Webcrawling
+```
+    <h1 id="request-webserver">request webserver</h1>
+    <p>import urllib.request
+from bs4 import BeautifulSoup</p>
+  </li>
+</ul>
+
+<p>data = urllib.request.urlopen(“http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;weekday=fri”)</p>
+
+<p>soup = BeautifulSoup(data, “html.parser”)</p>
+
+<p>cartoons = soup.find_all(“td”, class_=”title”)</p>
+
+<p>title = cartoons[0].find(‘a’).text
+link = cartoons[0].find(‘a’)[“href”]</p>
+
+<h1 id="printtitle">print(title)</h1>
+<h1 id="printlink">print(link)</h1>
+
+<p>for item in cartoons:
+    title = item.find(“a”).text
+    print(title.strip())</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Save file and web crawling for all pages
+</code></pre></div></div>
+<h1 id="codingutf-8">coding:utf-8</h1>
+<p>from bs4 import BeautifulSoup
+import urllib.request
+import re</p>
+
+<p>for n in range(0,10):
+        #address of clien
+        data =’https://www.clien.net/service/board/sold?&amp;od=T31&amp;po=’ + str(n)
+        req = urllib.request.Request(data)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode(‘utf-8’, ‘ignore’)
+        soup = BeautifulSoup(page, ‘html.parser’)
+        list = soup.find_all(‘span’, attrs={‘data-role’:’list-title-text’})</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    f = open("C:\\work\\clien.txt", "a+", encoding="utf-8") # incase of new, use wt
+
+    for item in list:
+            try:
+                    title = item.text
+                    if (re.search('갤럭시', title)):
+                            print(title.strip())
+                            f.write(title.strip() + "\n")
+            except:
+                    pass
+</code></pre></div></div>
+
+<p>f.close()
+print(“end of web crawling”)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Add user-agent in header
+</code></pre></div></div>
+<h1 id="codingutf-8-1">coding:utf-8</h1>
+<p>from bs4 import BeautifulSoup
+import urllib.request
+import re</p>
+
+<p>#User-Agent add
+hdr = {‘User-agent’:’Mozila/5.0 (compatible; MSIE 5.5; Windows NT)’} # make request by adding client info with Internet explorer</p>
+
+<p>for n in range(1,11):
+        data =’https://dvdprime.com/g2/bbs/board.php?bo_table=comm&amp;page=’ + str(n)
+        req = urllib.request.Request(data, <br />
+                                          headers = hdr)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode(‘utf-8’, ‘ignore’)
+        soup = BeautifulSoup(page, ‘html.parser’)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    # &lt;span class='list_subject_span_pc'&gt;contents&lt;/span&gt;
+    list = soup.find_all('span', attrs={'class':'list_subject_span_pc'})
+
+    for item in list:
+            try:
+                    title = item.text
+                    if (re.search('회사', title)):
+                            print(title.strip())
+            except:
+                    pass
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### PyQt5 GUI
+
+Install `PyQt5-5.6-gpl-Py3.5-Qt5.6.0-x32-2.exe`, make sure same version with python
+- `.ui` file
+  - XML format
+  - Make mapping signal and slot in Signal/Slot Editor on Qt designer
+
+- `.py` file
+  - Add login in py file
+
+</code></pre></div></div>
+<h1 id="demoui-display--demopylogic">demo.ui (display) + demo.py(logic)</h1>
+
+<p>import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic</p>
+
+<p>import urllib.request
+from bs4 import BeautifulSoup</p>
+
+<p>form_class = uic.loadUiType(“demo2.ui”)[0]</p>
+
+<p>#parent class((QMainWindow))
+class DemoForm(QMainWindow, form_class):
+    def <strong>init</strong>(self):
+        super().<strong>init</strong>()
+        self.setupUi(self)
+    def firstClick(self):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    data = urllib.request.urlopen("http://comic.naver.com/webtoon/list.nhn?titleId=20853&amp;weekday=fri")
+
+    soup = BeautifulSoup(data, "html.parser")
+
+    cartoons = soup.find_all("td", class_="title")
+
+    # title = cartoons[0].find('a').text
+    # link = cartoons[0].find('a')["href"]
+
+    # print(title)
+    # print(link)
+
+    for item in cartoons:
+        title = item.find("a").text
+        print(title.strip())
+
+
+
+
+
+
+def secondClick(self):
+    self.label.setText("clicked second")
+def thirdClick(self):
+    self.label.setText("clicked third")    
+</code></pre></div></div>
+
+<p>if <strong>name</strong> == “<strong>main</strong>”:
+    app = QApplication(sys.argv)
+    demoWindow = DemoForm()
+    demoWindow.show()
+    app.exec_()</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Get data and show table and link to browser.
+</code></pre></div></div>
+<p>import sys
+from PyQt5.QtWidgets import *
+import urllib.request
+from bs4 import BeautifulSoup
+import webbrowser  <br />
+import re</p>
+
+<p>class Form(QMainWindow):
+    def <strong>init</strong>(self):
+        super().<strong>init</strong>()
+        self.setupUI()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def setupUI(self):
+    # (x,y,width,height) 
+    self.setGeometry(200, 200, 800, 800)
+    
+    # INPUT
+    self.lineEdit = QLineEdit("", self)
+    self.lineEdit.move(20, 20)
+
+    #BUTTON
+    self.btn = QPushButton("검색", self)
+    self.btn.move(120, 20)
+    self.btn.clicked.connect(self.setTableWidgetData)
+
+    self.tableWidget = QTableWidget(self)
+    self.tableWidget.move(20, 70)
+    self.tableWidget.resize(800, 600)
+    self.tableWidget.setRowCount(50)  
+    self.tableWidget.setColumnCount(2)  
+    
+    self.tableWidget.setColumnWidth(0, 300)
+    self.tableWidget.setColumnWidth(1, 300)
+    
+  
+    self.tableWidget.doubleClicked.connect(self.doubleClicked)
+
+
+def setTableWidgetData(self):
+    row = 0
+    for n in range(0,5):
+
+        data ='https://www.clien.net/service/board/sold?&amp;od=T31&amp;po=' + str(n)
+        req = urllib.request.Request(data)
+        data = urllib.request.urlopen(req).read()
+        page = data.decode('utf-8', 'ignore')
+        soup = BeautifulSoup(page, 'html.parser')
+        list = soup.find_all('a', attrs={'class':'list_subject'})
+
+        f = open("clien.txt", "a+", encoding="utf-8")
+        for item in list:
+            try:
+                span = item.contents[3]
+                title = item.text.strip()
+ 
+                if (re.search(self.lineEdit.text(), title)):
+                    title = title.replace("\t", "")
+                    title = title.replace("\n", "")
+                    print(title)
+                    link = 'https://www.clien.net'  + item['href'] 
+                    print(link.strip())
+                    f.write(title+"\n")
+                    f.write(link + "\n")
+        
+                    self.tableWidget.setItem(row, 0, QTableWidgetItem(title))
+                    self.tableWidget.setItem(row, 1, QTableWidgetItem(link))
+                    row += 1
+                    print("row: ", row) 
+            except:
+                pass
+         
+        f.close()
+
+def doubleClicked(self):
+    url = self.tableWidget.item(self.tableWidget.currentRow(), 1).text()
+    webbrowser.open(url) 
+</code></pre></div></div>
+
+<p>if <strong>name</strong> == “<strong>main</strong>”:
+    app = QApplication(sys.argv)
+    mywindow = Form()
+    mywindow.show()
+    app.exec_()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Pandas
+
+  - Import type
+    - from pandas import Series, DataFrame  
+    - import pandas as pd
+  - Datatypes
+    - Series
+      - It is similar to list
+    - Dataframe
+      - 2 array list
+  - Read function
+    - read_csv : based on csv from DB mainly
+    - read_table : based on tab key
+    - read_fwf : based on fixed width
+    - read_excel : based on excel
+  - Functions
+    - plt.plot
+    - plt.scatter
+    - plt.bar
+
+</code></pre></div></div>
+<h1 id="make-one-frame">make one frame</h1>
+<p>years = range(1880,2011)
+pieces = []
+columns = [“name”, “sex”, “births”]</p>
+
+<p>for year in years:
+    path = “c:\work\yob%d.txt” % year
+    frame = pd.read_csv(path, names = columns)
+    frame[“year”] = year
+    pieces.append(frame)
+    names = pd.concat(pieces, ignore_index=True)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Summary
+</code></pre></div></div>
+<p>total_births = names.pivot_table(“births”, index = ‘year’, columns=’sex’, aggfunc=sum)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Plot
+</code></pre></div></div>
+<p>total_births.plot(title=”년도별 성별 출생 숫자”)
+```</p>
+
+<p><img src="/assets/images/pyplot.png" alt="example" /></p>
+
+</div>
+
+
+ 
+
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/06_theoretical/2021/09/16/5why/">
+            5 Whys 기법
+            <small>16 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/06_theoretical/2021/09/15/statsbasic/">
+            통계 분석 기초 용어 정리
+            <small>15 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/05_cloud/2021/09/05/msabasic/">
+            MSA 개요
+            <small>05 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
