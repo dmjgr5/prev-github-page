@@ -36,6 +36,7 @@ pre.highlight {
   overflow-x: scroll;
   white-space: pre;
 }
+
 #search-bar {
   margin: 32px auto;
   border: 1px solid #ccc;
@@ -44,11 +45,12 @@ pre.highlight {
 }
 #search-bar #search {
   width: calc(100% - 30px);
-  border: none;
+  border: none none!important;
   line-height: 44px;
   outline: none;
-  border-style: none;
+  border-style: none; 
 }
+
 #search-bar #search-result {
   display: none;
   position: absolute;
