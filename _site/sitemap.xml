@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://dmjgr5.github.io/02_programming/2019/12/02/whatiscss/</loc>
+<lastmod>2019-12-02T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://dmjgr5.github.io/02_programming/2019/12/02/whatishtml/</loc>
+<lastmod>2019-12-02T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>https://dmjgr5.github.io/02_programming/2019/12/06/whatispython/</loc>
 <lastmod>2019-12-06T00:00:00+09:00</lastmod>
 </url>

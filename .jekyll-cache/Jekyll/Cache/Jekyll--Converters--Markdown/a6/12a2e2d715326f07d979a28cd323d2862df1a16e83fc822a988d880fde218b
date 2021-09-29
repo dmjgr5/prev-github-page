@@ -1,0 +1,65 @@
+I"ž<p><img src="/assets/images/css.png" alt="example" /></p>
+
+<blockquote>
+  <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="main-poperties">Main Poperties</h3>
+
+<ul>
+  <li>Basic usage : <TAGNAME style=""></TAGNAME></li>
+  <li>color</li>
+  <li>backbround-color</li>
+  <li>width</li>
+  <li>font-align</li>
+  <li>font-size</li>
+  <li>font-weight</li>
+  <li>border</li>
+  <li>
+    <div></div>
+    <p>: define an area</p>
+  </li>
+</ul>
+
+<h3 id="3-way-to-design-css">3 way to design CSS</h3>
+
+<ul>
+  <li>External Style Sheet
+    <ul>
+      <li>link style sheet file with css format</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;head&gt;
+    &lt;link rel="stylename" type="text/css" href="style.css"&gt;
+  &lt;/head&gt;
+</code></pre></div>    </div>
+    <ul>
+      <li>It is easy to maintain if there are some updates.</li>
+    </ul>
+  </li>
+  <li>Internal Style Sheet
+    <ul>
+      <li>Insert <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> between <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;/head&gt;</code></li>
+      <li>It is better to use for one HTML page.</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;head&gt;
+  &lt;style type="text/css"&gt;
+      Selector {property: value;}
+      ex) h1 {color:red} 
+  &lt;/style&gt;
+&lt;/head&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Inline Style
+    <ul>
+      <li>Insert style format directly</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p style="font-size: 15px;"&gt;this is 15pixel&lt;/p&gt;
+</code></pre></div>    </div>
+  </li>
+</ul>
+:ET

@@ -11,7 +11,7 @@
 
   <title>
     
-      Cloud Vision API from a Kubernetes Cluster &middot; Git Note
+      What is CSS &middot; Git Note
     
   </title>
 
@@ -690,83 +690,72 @@
         <div class="post">
   
   <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
-  <h2 class="post-title"> Cloud Vision API from a Kubernetes Cluster</h2>
-  <span class="post-date">   02 Jan 2021</span>
-   <p>This is for Cloud Vision API from a Kubernetes Cluster that  uses Kubernetes and Cloud Vision API. The guide is from Awwvision: Cloud Vision API from a Kubernetes Cluster</p>
+  <h2 class="post-title"> What is CSS</h2>
+  <span class="post-date">   02 Dec 2019</span>
+   <p><img src="/assets/images/css.png" alt="example" /></p>
+
 <blockquote>
-  <p>https://codelabs.developers.google.com/codelabs/awwvision-cloud-vision-api-from-a-kubernetes-cluster/index.html?index=..%2F..index#0</p>
+  <p>CSS is Cascading Style Sheets that make more beautiful HTML. There are some cases to configure CSS for HTML.</p>
 </blockquote>
 
 <hr />
 
-<p><img src="/assets/images/cloudVision.png" alt="lca-example" /></p>
+<h3 id="main-poperties">Main Poperties</h3>
 
-<h4 id="setup-and-requirements">Setup and Requirements</h4>
 <ul>
-  <li>Project ID : my-kubernetes-codedlab</li>
-  <li>To authenticate, type gcloud auth list</li>
-  <li>Then, gcloud config list project</li>
-  <li>Enable the Vision API by visiting the APIs &amp; Services Dashboard on the cloud console</li>
+  <li>Basic usage : <TAGNAME style=""></TAGNAME></li>
+  <li>color</li>
+  <li>backbround-color</li>
+  <li>width</li>
+  <li>font-align</li>
+  <li>font-size</li>
+  <li>font-weight</li>
+  <li>border</li>
+  <li>
+    <div></div>
+    <p>: define an area</p>
+  </li>
 </ul>
 
-<h4 id="create-a-container-engine-cluster">Create a Container Engine cluster</h4>
+<h3 id="3-way-to-design-css">3 way to design CSS</h3>
+
 <ul>
-  <li>gcloud config set compute/zone <code class="language-plaintext highlighter-rouge">us-central1-f</code></li>
-  <li>gcloud container clusters create awwvision 
+  <li>External Style Sheet
     <ul>
-      <li>num-nodes 2 \</li>
-      <li>scopes cloud-platform</li>
+      <li>link style sheet file with css format</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;head&gt;
+    &lt;link rel="stylename" type="text/css" href="style.css"&gt;
+  &lt;/head&gt;
+</code></pre></div>    </div>
+    <ul>
+      <li>It is easy to maintain if there are some updates.</li>
     </ul>
   </li>
-  <li>gcloud container clusters get-credentials awwvision</li>
-  <li>kubectl cluster-info</li>
-</ul>
+  <li>Internal Style Sheet
+    <ul>
+      <li>Insert <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> between <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;/head&gt;</code></li>
+      <li>It is better to use for one HTML page.</li>
+    </ul>
 
-<h4 id="get-the-sample">Get the Sample</h4>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/GoogleCloudPlatform/cloud-vision</code></li>
-</ul>
-
-<h4 id="deploy-the-sample">Deploy the sample</h4>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">cd cloud-vision/python/awwvision</code></li>
-  <li><code class="language-plaintext highlighter-rouge">make all</code></li>
-</ul>
-
-<h4 id="check-the-kubernetes-resources-on-the-cluster">Check the Kubernetes resources on the cluster</h4>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">kubectl get pods</code>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get pods
-NAME                                READY   STATUS    RESTARTS   AGE
-awwvision-webapp-5886b65c78-9bzkr   1/1     Running   1          115s
-awwvision-worker-f56647b49-4w6dp    1/1     Running   0          48s
-awwvision-worker-f56647b49-9qc6p    1/1     Running   0          48s
-awwvision-worker-f56647b49-f5sbk    1/1     Running   0          48s
-redis-master-7c9dc65556-ln25v       1/1     Running   0          3m47s
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;head&gt;
+  &lt;style type="text/css"&gt;
+      Selector {property: value;}
+      ex) h1 {color:red} 
+  &lt;/style&gt;
+&lt;/head&gt;
 </code></pre></div>    </div>
   </li>
-  <li><code class="language-plaintext highlighter-rouge">kubectl get deployments -o wide</code>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get deployments -o wide
-NAME               READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS         IMAGES                                           SELECTOR
-awwvision-webapp   1/1     1            1           2m6s    awwvision-webapp   gcr.io/my-kubernetes-codedlab/awwvision-webapp   app=awwvision,role=frontend
-awwvision-worker   3/3     3            3           59s     awwvision-worker   gcr.io/my-kubernetes-codedlab/awwvision-worker   app=awwvision,role=worker
-redis-master       1/1     1            1           3m58s   redis-master       redis  
-</code></pre></div>    </div>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">kubectl get svc awwvision-webapp</code>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmjgr5@cloudshell:~/cloud-vision/python/awwvision (my-kubernetes-codedlab)$ kubectl get svc awwvision-webapp
-NAME               TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
-awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   2m29s
+  <li>Inline Style
+    <ul>
+      <li>Insert style format directly</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p style="font-size: 15px;"&gt;this is 15pixel&lt;/p&gt;
 </code></pre></div>    </div>
   </li>
 </ul>
-
-<h4 id="visit-your-new-web-app-and-start-its-crawle">Visit your new web app and start its crawle</h4>
-<ul>
-  <li>Copy and paste the external IP of the awwvision-webapp service into a new browser to open the webapp, then click Start the Crawler button.</li>
-  <li>To delete your Kubernetes pods, replication controllers, and services, and to remove your auto-generated .yaml files, do: make delete</li>
-</ul>
-
 
 </div>
 

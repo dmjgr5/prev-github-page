@@ -945,6 +945,7 @@ if __name__ == "__main__":
     - plt.scatter
     - plt.bar
 
+
 ```
 # make one frame
 years = range(1880,2011)
@@ -959,11 +960,15 @@ for year in years:
     names = pd.concat(pieces, ignore_index=True)
 ```
 
+
 - Summary
+
 ```
 total_births = names.pivot_table("births", index = 'year', columns='sex', aggfunc=sum)
 ```
+
 - Plot
+
 ```
 total_births.plot(title="년도별 성별 출생 숫자")
 ```

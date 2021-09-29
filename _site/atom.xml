@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-09-28T14:12:27+09:00</updated>
+ <updated>2021-09-29T10:03:44+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -3359,6 +3359,7 @@ def doubleClicked(self):
     - plt.scatter
     - plt.bar
 
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h1 id=&quot;make-one-frame&quot;&gt;make one frame&lt;/h1&gt;
 &lt;p&gt;years = range(1880,2011)
@@ -3372,15 +3373,157 @@ columns = [“name”, “sex”, “births”]&lt;/p&gt;
     pieces.append(frame)
     names = pd.concat(pieces, ignore_index=True)&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
 - Summary
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;total_births = names.pivot_table(“births”, index = ‘year’, columns=’sex’, aggfunc=sum)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Plot
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- Plot
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;total_births.plot(title=”년도별 성별 출생 숫자”)
 ```&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/pyplot.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is HTML</title>
+   <link href="https://dmjgr5.github.io/02_programming/2019/12/02/whatishtml/"/>
+   <updated>2019-12-02T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/02_programming/2019/12/02/whatishtml</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/html.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;html-code-is-a-static-html-not-dynamic&quot;&gt;HTML code is a static HTML, not dynamic.&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;title&amp;gt;WEB1 - html&amp;lt;/title&amp;gt;
+&amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;h1&amp;gt;&amp;lt;a href=&quot;index.html&quot;&amp;gt;WdEB&amp;lt;/a&amp;gt;&amp;lt;h1&amp;gt;
+  &amp;lt;ol&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;1.html&quot;&amp;gt;HTML&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;2.html&quot;&amp;gt;CSS&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;3.html&quot;&amp;gt;JavaScript&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;/ol&amp;gt;
+  &amp;lt;h2&amp;gt;HTML&amp;lt;/h2&amp;gt;
+&amp;lt;a href=&quot;https://www.w3.org/auto/&quot; target=&quot;_blank&quot; title=&quot;tooltip&quot;&amp;gt;hypertest land langeuse&amp;lt;/a&amp;gt;
+1.41.0
+Release notes
+Windows
+For 64-bit Windows 7 or later
+Download
+&amp;lt;Strong&amp;gt;By downloading,&amp;lt;u&amp;gt; you agree to the Terms&amp;lt;/u&amp;gt;and Conditions.&amp;lt;/strong&amp;gt;
+roposals from outside vendors to redesign the existing W3C website. Our organization, which celebrated its 25th anniversary this year, produces open and royalty-free Web Standards and guidelines that make the Web work, for everyone.&amp;lt;br&amp;gt;
+&amp;lt;img src=&quot;img.jpg&quot; width=&quot;222&quot;&amp;gt;
+&amp;lt;p style=&quot;margin-top:22px;&quot;&amp;gt;ther platforms Try Atom Beta Try Atom Nightly&amp;lt;/p&amp;gt;
+We believe that by implementing current web best practices and technologies, revising the information architecture, creating a content strategy and revamping the visual design, we can provide our audiences with the best information in a more user-friendly fashion, motivate participation in the organization, and communicate the nature and impact of the W3C more effectively.
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;On Browser is ..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/htmlsample.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;wamp-installation&quot;&gt;WAMP installation&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wamp is a Server for free by Bitnami. A Windows Web development environment for Apache, MySQL, PHP databases. Download and install from https://bitnami.com/stack/wamp/installer.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;managed by manager-windows.exe in C:\Bitnami\wampstack-7.3.11-0&lt;/li&gt;
+      &lt;li&gt;HTML file is located at C:\Bitnami\wampstack-7.3.11-0\apache2\htdocs\&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is CSS</title>
+   <link href="https://dmjgr5.github.io/02_programming/2019/12/02/whatiscss/"/>
+   <updated>2019-12-02T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/02_programming/2019/12/02/whatiscss</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/css.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;CSS is Cascading Style Sheets that make more beautiful HTML. There are some cases to configure CSS for HTML.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;main-poperties&quot;&gt;Main Poperties&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Basic usage : &lt;TAGNAME style=&quot;&quot;&gt;&lt;/TAGNAME&gt;&lt;/li&gt;
+  &lt;li&gt;color&lt;/li&gt;
+  &lt;li&gt;backbround-color&lt;/li&gt;
+  &lt;li&gt;width&lt;/li&gt;
+  &lt;li&gt;font-align&lt;/li&gt;
+  &lt;li&gt;font-size&lt;/li&gt;
+  &lt;li&gt;font-weight&lt;/li&gt;
+  &lt;li&gt;border&lt;/li&gt;
+  &lt;li&gt;
+    &lt;div&gt;&lt;/div&gt;
+    &lt;p&gt;: define an area&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-way-to-design-css&quot;&gt;3 way to design CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;External Style Sheet
+    &lt;ul&gt;
+      &lt;li&gt;link style sheet file with css format&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;head&amp;gt;
+    &amp;lt;link rel=&quot;stylename&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&amp;gt;
+  &amp;lt;/head&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;It is easy to maintain if there are some updates.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Internal Style Sheet
+    &lt;ul&gt;
+      &lt;li&gt;Insert &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt; between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;/head&amp;gt;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;It is better to use for one HTML page.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+  &amp;lt;style type=&quot;text/css&quot;&amp;gt;
+      Selector {property: value;}
+      ex) h1 {color:red} 
+  &amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Inline Style
+    &lt;ul&gt;
+      &lt;li&gt;Insert style format directly&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p style=&quot;font-size: 15px;&quot;&amp;gt;this is 15pixel&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
