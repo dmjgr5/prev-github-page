@@ -838,7 +838,10 @@ if __name__ == "__main__":
     demoWindow.show()
     app.exec_()
 ```
+
 - Get data and show table and link to browser.
+
+
 ```
 import sys
 from PyQt5.QtWidgets import *
@@ -946,32 +949,32 @@ if __name__ == "__main__":
     - plt.bar
 
 
-```
-# make one frame
-years = range(1880,2011)
-pieces = []
-columns = ["name", "sex", "births"]
+    ```
+    # make one frame
+    years = range(1880,2011)
+    pieces = []
+    columns = ["name", "sex", "births"]
 
-for year in years:
-    path = "c:\\work\\yob%d.txt" % year
-    frame = pd.read_csv(path, names = columns)
-    frame["year"] = year
-    pieces.append(frame)
-    names = pd.concat(pieces, ignore_index=True)
-```
+    for year in years:
+        path = "c:\\work\\yob%d.txt" % year
+        frame = pd.read_csv(path, names = columns)
+        frame["year"] = year
+        pieces.append(frame)
+        names = pd.concat(pieces, ignore_index=True)
+    ```
 
 
 - Summary
 
-```
-total_births = names.pivot_table("births", index = 'year', columns='sex', aggfunc=sum)
-```
+    ```
+    total_births = names.pivot_table("births", index = 'year', columns='sex', aggfunc=sum)
+    ```
 
 - Plot
 
-```
-total_births.plot(title="년도별 성별 출생 숫자")
-```
+    ```
+    total_births.plot(title="년도별 성별 출생 숫자")
+    ```
 
 
-![example](/assets/images/pyplot.png)
+    ![example](/assets/images/pyplot.png)

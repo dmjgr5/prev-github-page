@@ -46,7 +46,7 @@ pre.highlight {
 #search-bar #search {
   width: calc(100% - 30px);
   border: none none!important;
-  line-height: 44px;
+  line-height: 88px;
   outline: none;
   border-style: none; 
 }

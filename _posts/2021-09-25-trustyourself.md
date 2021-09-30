@@ -1,0 +1,36 @@
+---
+layout: post
+title: 자신을 믿으세요
+category: 08_Life
+tag: [Life]
+---
+
+ 
+
+> 우연히 어느 게시글을 보고 기억에 남아 흔적을 남기고자 합니다. 직장 생활에 회의감을 느끼는 요즘 읽어보니 외부 조건이나 상황에 의지하지 않고 신념을 가지고 계획한 일을 꾸준히 한다면 언젠가는 빛을 볼 수 있다는 확신이 드는 글입니다. 한 번 읽어 보시고 곰곰히 생각해 보시죠..
+
+[출처: [https://www.instagram.com/p/CULmQT5hVFY](https://www.instagram.com/p/CULmQT5hVFY/)]
+
+
+----
+
+![](/assets/images/trustyourself_1.jpg) 
+![](/assets/images/trustyourself_2.jpg) 
+![](/assets/images/trustyourself_3.jpg) 
+![](/assets/images/trustyourself_4.jpg) 
+![](/assets/images/trustyourself_5.jpg) 
+![](/assets/images/trustyourself_6.jpg) 
+![](/assets/images/trustyourself_7.jpg) 
+![](/assets/images/trustyourself_8.jpg) 
+![](/assets/images/trustyourself_9.jpg) 
+![](/assets/images/trustyourself_10.jpg) 
+
+
+### 인맥이 필요할까..
+짧은 글이지만 많은 생각이 드는 문구입니다. 사회 생활을 하면서 인맥이라는 것은 무시못할 중요한 것이라 할 수 있습니다. 누구는 인맥을 위해 가정을 등진 채 인맥 활동에 치중하는 반면, 어느 누구는 인맥에 관심없이 오로지 자기가 원하는 것을 하는 사람도 있겠죠. 물론 둘다 좋다거나 나쁘다는 건 아니라고 생각합니다.
+
+### 시간이 흐르면..
+이 삽화에서의 의미는 인맥이라는 것에 너무 종속되어 자기 계발을 등한 시 하지 말라는 것 같습니다. 물론 인맥을 통해 수월하게 조직에 투입될 수 있겠지만, 어느 정도 기간이 지나다 보면 결국 실력으로서 평가받게 될테니까요.
+
+### 나를 중심으로 사람이 모인다.
+인맥을 쌓기 위한 시간과 노력 대신 본인의 실력을 쌓는데 투자한다면 결국은 언제 어디에선가 나를 부르는 곳이 있으리라 생각합니다. 위 문구 그대로 '나를 중심으로 사람이 모인다' 이 말이 키워드인 것 같습니다.

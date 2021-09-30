@@ -177,6 +177,14 @@
         <span class="badge">2</span>
       </a>
       
+      <a href="/category/#08_Life"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                08_Life
+                            </span>
+        <span class="badge">1</span>
+      </a>
+      
     </nav>
   </div>
   <div>
@@ -570,6 +578,16 @@
         
         
         <a href="/tag/#5Whys" style="font-size: 9pt; color: #555;">5Whys</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Life" style="font-size: 9pt; color: #555;">Life</a>
         
       </div>
     </div>
@@ -1582,142 +1600,162 @@ if __name__ == "__main__":
     demoWindow.show()
     app.exec_()
 </code></pre></div></div>
+
 <ul>
-  <li>Get data and show table and link to browser.
-```
-import sys
+  <li>Get data and show table and link to browser.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sys
 from PyQt5.QtWidgets import *
 import urllib.request
 from bs4 import BeautifulSoup
-import webbrowser  <br />
-import re</li>
-</ul>
+import webbrowser    
+import re 
 
-<p>class Form(QMainWindow):
-    def <strong>init</strong>(self):
-        super().<strong>init</strong>()
-        self.setupUI()</p>
+class Form(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setupUI()
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def setupUI(self):
-    # (x,y,width,height) 
-    self.setGeometry(200, 200, 800, 800)
-    
-    # INPUT
-    self.lineEdit = QLineEdit("", self)
-    self.lineEdit.move(20, 20)
-
-    #BUTTON
-    self.btn = QPushButton("검색", self)
-    self.btn.move(120, 20)
-    self.btn.clicked.connect(self.setTableWidgetData)
-
-    self.tableWidget = QTableWidget(self)
-    self.tableWidget.move(20, 70)
-    self.tableWidget.resize(800, 600)
-    self.tableWidget.setRowCount(50)  
-    self.tableWidget.setColumnCount(2)  
-    
-    self.tableWidget.setColumnWidth(0, 300)
-    self.tableWidget.setColumnWidth(1, 300)
-    
-  
-    self.tableWidget.doubleClicked.connect(self.doubleClicked)
-
-
-def setTableWidgetData(self):
-    row = 0
-    for n in range(0,5):
-
-        data ='https://www.clien.net/service/board/sold?&amp;od=T31&amp;po=' + str(n)
-        req = urllib.request.Request(data)
-        data = urllib.request.urlopen(req).read()
-        page = data.decode('utf-8', 'ignore')
-        soup = BeautifulSoup(page, 'html.parser')
-        list = soup.find_all('a', attrs={'class':'list_subject'})
-
-        f = open("clien.txt", "a+", encoding="utf-8")
-        for item in list:
-            try:
-                span = item.contents[3]
-                title = item.text.strip()
- 
-                if (re.search(self.lineEdit.text(), title)):
-                    title = title.replace("\t", "")
-                    title = title.replace("\n", "")
-                    print(title)
-                    link = 'https://www.clien.net'  + item['href'] 
-                    print(link.strip())
-                    f.write(title+"\n")
-                    f.write(link + "\n")
+    def setupUI(self):
+        # (x,y,width,height) 
+        self.setGeometry(200, 200, 800, 800)
         
-                    self.tableWidget.setItem(row, 0, QTableWidgetItem(title))
-                    self.tableWidget.setItem(row, 1, QTableWidgetItem(link))
-                    row += 1
-                    print("row: ", row) 
-            except:
-                pass
-         
-        f.close()
+        # INPUT
+        self.lineEdit = QLineEdit("", self)
+        self.lineEdit.move(20, 20)
 
-def doubleClicked(self):
-    url = self.tableWidget.item(self.tableWidget.currentRow(), 1).text()
-    webbrowser.open(url) 
-</code></pre></div></div>
+        #BUTTON
+        self.btn = QPushButton("검색", self)
+        self.btn.move(120, 20)
+        self.btn.clicked.connect(self.setTableWidgetData)
 
-<p>if <strong>name</strong> == “<strong>main</strong>”:
+        self.tableWidget = QTableWidget(self)
+        self.tableWidget.move(20, 70)
+        self.tableWidget.resize(800, 600)
+        self.tableWidget.setRowCount(50)  
+        self.tableWidget.setColumnCount(2)  
+        
+        self.tableWidget.setColumnWidth(0, 300)
+        self.tableWidget.setColumnWidth(1, 300)
+        
+      
+        self.tableWidget.doubleClicked.connect(self.doubleClicked)
+
+
+    def setTableWidgetData(self):
+        row = 0
+        for n in range(0,5):
+    
+            data ='https://www.clien.net/service/board/sold?&amp;od=T31&amp;po=' + str(n)
+            req = urllib.request.Request(data)
+            data = urllib.request.urlopen(req).read()
+            page = data.decode('utf-8', 'ignore')
+            soup = BeautifulSoup(page, 'html.parser')
+            list = soup.find_all('a', attrs={'class':'list_subject'})
+
+            f = open("clien.txt", "a+", encoding="utf-8")
+            for item in list:
+                try:
+                    span = item.contents[3]
+                    title = item.text.strip()
+     
+                    if (re.search(self.lineEdit.text(), title)):
+                        title = title.replace("\t", "")
+                        title = title.replace("\n", "")
+                        print(title)
+                        link = 'https://www.clien.net'  + item['href'] 
+                        print(link.strip())
+                        f.write(title+"\n")
+                        f.write(link + "\n")
+            
+                        self.tableWidget.setItem(row, 0, QTableWidgetItem(title))
+                        self.tableWidget.setItem(row, 1, QTableWidgetItem(link))
+                        row += 1
+                        print("row: ", row) 
+                except:
+                    pass
+             
+            f.close()
+
+    def doubleClicked(self):
+        url = self.tableWidget.item(self.tableWidget.currentRow(), 1).text()
+        webbrowser.open(url) 
+
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     mywindow = Form()
     mywindow.show()
-    app.exec_()</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-### Pandas
-
-  - Import type
-    - from pandas import Series, DataFrame  
-    - import pandas as pd
-  - Datatypes
-    - Series
-      - It is similar to list
-    - Dataframe
-      - 2 array list
-  - Read function
-    - read_csv : based on csv from DB mainly
-    - read_table : based on tab key
-    - read_fwf : based on fixed width
-    - read_excel : based on excel
-  - Functions
-    - plt.plot
-    - plt.scatter
-    - plt.bar
-
+    app.exec_()
 
 </code></pre></div></div>
-<h1 id="make-one-frame">make one frame</h1>
-<p>years = range(1880,2011)
+
+<h3 id="pandas">Pandas</h3>
+
+<ul>
+  <li>Import type
+    <ul>
+      <li>from pandas import Series, DataFrame</li>
+      <li>import pandas as pd</li>
+    </ul>
+  </li>
+  <li>Datatypes
+    <ul>
+      <li>Series
+        <ul>
+          <li>It is similar to list</li>
+        </ul>
+      </li>
+      <li>Dataframe
+        <ul>
+          <li>2 array list</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Read function
+    <ul>
+      <li>read_csv : based on csv from DB mainly</li>
+      <li>read_table : based on tab key</li>
+      <li>read_fwf : based on fixed width</li>
+      <li>read_excel : based on excel</li>
+    </ul>
+  </li>
+  <li>Functions
+    <ul>
+      <li>plt.plot</li>
+      <li>plt.scatter</li>
+      <li>plt.bar</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># make one frame
+years = range(1880,2011)
 pieces = []
-columns = [“name”, “sex”, “births”]</p>
+columns = ["name", "sex", "births"]
 
-<p>for year in years:
-    path = “c:\work\yob%d.txt” % year
+for year in years:
+    path = "c:\\work\\yob%d.txt" % year
     frame = pd.read_csv(path, names = columns)
-    frame[“year”] = year
+    frame["year"] = year
     pieces.append(frame)
-    names = pd.concat(pieces, ignore_index=True)</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    names = pd.concat(pieces, ignore_index=True)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Summary</p>
 
-- Summary
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  total_births = names.pivot_table("births", index = 'year', columns='sex', aggfunc=sum)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Plot</p>
 
-</code></pre></div></div>
-<p>total_births = names.pivot_table(“births”, index = ‘year’, columns=’sex’, aggfunc=sum)</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-- Plot
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  total_births.plot(title="년도별 성별 출생 숫자")
+</code></pre></div>    </div>
 
-</code></pre></div></div>
-<p>total_births.plot(title=”년도별 성별 출생 숫자”)
-```</p>
-
-<p><img src="/assets/images/pyplot.png" alt="example" /></p>
+    <p><img src="/assets/images/pyplot.png" alt="example" /></p>
+  </li>
+</ul>
 
 </div>
 
@@ -1727,6 +1765,15 @@ columns = [“name”, “sex”, “births”]</p>
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/08_life/2021/09/25/trustyourself/">
+            자신을 믿으세요
+            <small>25 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
     
       <li>
         <h4>
@@ -1742,15 +1789,6 @@ columns = [“name”, “sex”, “births”]</p>
           <a href="https://dmjgr5.github.io/06_theoretical/2021/09/15/statsbasic/">
             통계 분석 기초 용어 정리
             <small>15 Sep 2021</small>
-          </a>
-        </h4>
-      </li>
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/05_cloud/2021/09/05/msabasic/">
-            MSA 개요
-            <small>05 Sep 2021</small>
           </a>
         </h4>
       </li>
