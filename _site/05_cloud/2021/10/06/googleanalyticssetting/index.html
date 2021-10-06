@@ -732,15 +732,16 @@
 
 <p>위의 측정ID를 참조하여 tracking_id 값에 넣어 세팅한다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>google_analytics:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+google_analytics:
   tracking_id: '측정ID'
-</code></pre></div></div>
 
-<hr />
+</code></pre></div></div>
 
 <h4 id="google_analyticshtml-in-_includes-folder"><code class="language-plaintext highlighter-rouge">google_analytics.html</code> in <code class="language-plaintext highlighter-rouge">_includes</code> folder</h4>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id="&gt;&lt;/script&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id="&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -748,13 +749,13 @@
 
   gtag('config', 'G-VEHRJDYDE5');
 &lt;/script&gt;
-</code></pre></div></div>
 
-<hr />
+</code></pre></div></div>
 
 <h4 id="headhtml-in-_includes-folder"><code class="language-plaintext highlighter-rouge">head.html</code> in <code class="language-plaintext highlighter-rouge">_includes</code> folder</h4>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+   
   &lt;script async src="https://www.googletagmanager.com/gtag/js?id="&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
@@ -764,7 +765,10 @@
   gtag('config', 'G-VEHRJDYDE5');
 &lt;/script&gt;
   
+
 </code></pre></div></div>
+
+<hr />
 
 <h3 id="google-analytics">Google Analytics</h3>
 

@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-06T22:40:39+09:00</updated>
+ <updated>2021-10-07T00:13:12+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -35,15 +35,16 @@
 
 &lt;p&gt;위의 측정ID를 참조하여 tracking_id 값에 넣어 세팅한다.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;google_analytics:
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+google_analytics:
   tracking_id: '측정ID'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;hr /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;google_analyticshtml-in-_includes-folder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google_analytics.html&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder&lt;/h4&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&amp;lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script&amp;gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -51,13 +52,13 @@
 
   gtag('config', 'G-VEHRJDYDE5');
 &amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;hr /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;headhtml-in-_includes-folder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head.html&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder&lt;/h4&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+   
   &amp;lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script&amp;gt;
   window.dataLayer = window.dataLayer || [];
@@ -67,7 +68,10 @@
   gtag('config', 'G-VEHRJDYDE5');
 &amp;lt;/script&amp;gt;
   
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;google-analytics&quot;&gt;Google Analytics&lt;/h3&gt;
 

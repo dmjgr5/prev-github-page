@@ -25,15 +25,18 @@ tag: [GoogleAnalytics]
 위의 측정ID를 참조하여 tracking_id 값에 넣어 세팅한다.
 
 ```
+
 google_analytics:
   tracking_id: '측정ID'
+
 ```
 
-----
+
 
 #### `google_analytics.html` in `_includes` folder
 
 ```
+
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytic.tracking_id }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -42,18 +45,23 @@ google_analytics:
 
   gtag('config', '{{ site.google_analytics.tracking_id }}');
 </script>
+
 ```
 
-----
+
 
 #### `head.html` in `_includes` folder
 
 ```
-  {% if site.google_analytics != null %}
+
+  {% if site.google_analytics != null %} 
   {% include google_analytics.html %}
   {% endif %}
+
 ```
  
+---
+
 ### Google Analytics
 
 - 아래와 같이 사용자 수 및 위치 등의 각종 현황을 확인할 수 있다.
