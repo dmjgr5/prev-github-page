@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-06T22:39:13+09:00</updated>
+ <updated>2021-10-06T22:40:39+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -29,7 +29,7 @@
 
 &lt;hr /&gt;
 
-&lt;h4 id=&quot;-_configyml&quot;&gt;` _config.yml`&lt;/h4&gt;
+&lt;h4 id=&quot;_configyml&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/ga2.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 

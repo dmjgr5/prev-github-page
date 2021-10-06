@@ -17,7 +17,7 @@ tag: [GoogleAnalytics]
  
 ----
 
-#### ` _config.yml`
+#### `_config.yml`
 
 
 ![example](/assets/images/ga2.jpg)
