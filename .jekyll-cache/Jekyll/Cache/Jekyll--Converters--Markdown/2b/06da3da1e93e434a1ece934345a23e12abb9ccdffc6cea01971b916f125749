@@ -1,0 +1,60 @@
+I"�<p><img src="/assets/images/ga1.jpg" alt="example" /></p>
+
+<blockquote>
+  <p>Jekyll 기반으로 된 Github page 를 구글 어날리틱스에서 조회할 수 있게 세팅하는 방법을 정리하고자 합니다.</p>
+</blockquote>
+
+<hr />
+
+<p>설정은 간단하며 아래와 같이 각 파일에 세팅함으로서 실시간으로 접속자의 현황을 파악할 수 있습니다.</p>
+
+<hr />
+
+<h4 id="-_configyml">` _config.yml`</h4>
+
+<p><img src="/assets/images/ga2.jpg" alt="example" /></p>
+
+<p>위의 측정ID를 참조하여 tracking_id 값에 넣어 세팅한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>google_analytics:
+  tracking_id: '측정ID'
+</code></pre></div></div>
+
+<hr />
+
+<h4 id="google_analyticshtml-in-_includes-folder"><code class="language-plaintext highlighter-rouge">google_analytics.html</code> in <code class="language-plaintext highlighter-rouge">_includes</code> folder</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id="&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VEHRJDYDE5');
+&lt;/script&gt;
+</code></pre></div></div>
+
+<hr />
+
+<h4 id="headhtml-in-_includes-folder"><code class="language-plaintext highlighter-rouge">head.html</code> in <code class="language-plaintext highlighter-rouge">_includes</code> folder</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+  &lt;script async src="https://www.googletagmanager.com/gtag/js?id="&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VEHRJDYDE5');
+&lt;/script&gt;
+  
+</code></pre></div></div>
+
+<h3 id="google-analytics">Google Analytics</h3>
+
+<ul>
+  <li>아래와 같이 사용자 수 및 위치 등 여러 가지 현황을 확인할 수 있다.</li>
+</ul>
+
+<p><img src="/assets/images/ga3.jpg" alt="example" /></p>
+:ET

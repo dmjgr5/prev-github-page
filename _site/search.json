@@ -1,6 +1,14 @@
 [
     
      {
+       "title"    : "Jekyll 기반 Github Page 의 Google Analytics 환경 설정하기",
+       "category" : "05_Cloud",
+       "tags"     : "GoogleAnalytics",
+       "url"      : "/05_cloud/2021/10/06/googleanalyticssetting/",
+       "date"     : "2021-10-06 00:00:00 +0900"
+     } ,
+    
+     {
        "title"    : "자신을 믿으세요",
        "category" : "08_Life",
        "tags"     : "Life",

@@ -4,13 +4,82 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-06T22:11:21+09:00</updated>
+ <updated>2021-10-06T22:39:13+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
    <email>dmjgr5@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Jekyll 기반 Github Page 의 Google Analytics 환경 설정하기</title>
+   <link href="https://dmjgr5.github.io/05_cloud/2021/10/06/googleanalyticssetting/"/>
+   <updated>2021-10-06T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/05_cloud/2021/10/06/googleanalyticssetting</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/ga1.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll 기반으로 된 Github page 를 구글 어날리틱스에서 조회할 수 있게 세팅하는 방법을 정리하고자 합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;설정은 간단하며 아래와 같이 각 파일에 세팅함으로서 실시간으로 접속자의 현황을 파악할 수 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;-_configyml&quot;&gt;` _config.yml`&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/ga2.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;위의 측정ID를 참조하여 tracking_id 값에 넣어 세팅한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;google_analytics:
+  tracking_id: '측정ID'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;google_analyticshtml-in-_includes-folder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google_analytics.html&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VEHRJDYDE5');
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;headhtml-in-_includes-folder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head.html&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  
+  &amp;lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VEHRJDYDE5');
+&amp;lt;/script&amp;gt;
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;google-analytics&quot;&gt;Google Analytics&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;아래와 같이 사용자 수 및 위치 등의 각종 현황을 확인할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/ga3.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/ga4.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>자신을 믿으세요</title>
