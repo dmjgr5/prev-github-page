@@ -77,3 +77,8 @@ $ sh post_upload.sh
 C:\dcjames.park.github.io>git add .
 C:\dcjames.park.github.io>git commit -m "3rd blog page test"
 C:\dcjames.park.github.io>git push -u origin master
+
+
+
+### googleSearchConsole 세팅 주소
+https://velog.io/@eona1301/Github-Blog-%EA%B2%80%EC%83%89%EC%B0%BD-%EB%85%B8%EC%B6%9C%EC%8B%9C%ED%82%A4%EA%B8%B0
