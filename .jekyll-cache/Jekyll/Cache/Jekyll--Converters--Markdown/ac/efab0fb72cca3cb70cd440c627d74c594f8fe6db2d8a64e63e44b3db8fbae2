@@ -1,0 +1,62 @@
+I"l	<p><img src="/assets/images/proc.png" alt="example" /></p>
+
+<blockquote>
+  <p>ProC is a uncommon programming language. I have known the language only with C and C# related to series of C world. ProC could be available to use with SQL in application sources, let me summarize the basic commands and a few samples.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="declare">DECLARE</h3>
+<p>DECLARE section be used between BEGIN and END.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EXEC SQL BEGIN DECLARE SECTION
+    /***********************
+
+       declare host variables                                     
+
+    ***********************/ 
+EXEC SQL END DECLARE SECTION;
+
+</code></pre></div></div>
+
+<h3 id="select">SELECT</h3>
+<p>The variable number of SELECT and INTO section should be identical.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+EXEC SQL SELECT name, age, addr
+               INTO :names, :ages, :addrs    //requries : in case of using SELECT
+               FROM ex
+               where key = :key;
+
+</code></pre></div></div>
+
+<h3 id="dml---insert-update-delete">DML - INSERT, UPDATE, DELETE</h3>
+<p>DML types are easy to use by adding EXEC SQL before normal SQL queries.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+EXEC SQL INSERT INTO ex (name, age) VALUES (:names, :ages);
+EXEC SQL UPDATE ex SET name = :names WHERE key = :key;
+EXEC SQL DELETE FROM ex WHERE key = :key;
+
+</code></pre></div></div>
+
+<h3 id="cursor---declare-open-fetch-close">CURSOR - DECLARE, OPEN, FETCH, CLOSE</h3>
+<p>It is mandatory not to use INTO phrase in SELECT section. FETCH is used with FOR section normally, therefore we can use a condition like WHENEVER to escape FOR section. In order to do release the resource after FETCH, CLOSE should be used.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+EXEC SQL DECLARE ex_s CURSOR FOR // declare a cursor
+        SELECT name, age
+        FROM ex
+        WHERE key = :key
+        ORDER BY key;
+
+EXEC SQL OPEN ex_s;              // open with cursor name
+
+EXEC SQL FETCH ex_s              // fetch data, same the number of SELECT and FETCH INTO phrase
+        INTO :name, :age;
+
+EXEC SQL CLOSE ex_s;             // 
+
+</code></pre></div></div>
+
+:ET

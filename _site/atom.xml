@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-07T22:17:07+09:00</updated>
+ <updated>2021-10-07T22:33:22+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -3652,6 +3652,75 @@ We believe that by implementing current web best practices and technologies, rev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to use Pro*C</title>
+   <link href="https://dmjgr5.github.io/03_database/2019/11/02/howtouseproc/"/>
+   <updated>2019-11-02T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/03_database/2019/11/02/howtouseproc</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/proc.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ProC is a uncommon programming language. I have known the language only with C and C# related to series of C world. ProC could be available to use with SQL in application sources, let me summarize the basic commands and a few samples.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;declare&quot;&gt;DECLARE&lt;/h3&gt;
+&lt;p&gt;DECLARE section be used between BEGIN and END.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;EXEC SQL BEGIN DECLARE SECTION
+    /***********************
+
+       declare host variables                                     
+
+    ***********************/ 
+EXEC SQL END DECLARE SECTION;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;select&quot;&gt;SELECT&lt;/h3&gt;
+&lt;p&gt;The variable number of SELECT and INTO section should be identical.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+EXEC SQL SELECT name, age, addr
+               INTO :names, :ages, :addrs    //requries : in case of using SELECT
+               FROM ex
+               where key = :key;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;dml---insert-update-delete&quot;&gt;DML - INSERT, UPDATE, DELETE&lt;/h3&gt;
+&lt;p&gt;DML types are easy to use by adding EXEC SQL before normal SQL queries.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+EXEC SQL INSERT INTO ex (name, age) VALUES (:names, :ages);
+EXEC SQL UPDATE ex SET name = :names WHERE key = :key;
+EXEC SQL DELETE FROM ex WHERE key = :key;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;cursor---declare-open-fetch-close&quot;&gt;CURSOR - DECLARE, OPEN, FETCH, CLOSE&lt;/h3&gt;
+&lt;p&gt;It is mandatory not to use INTO phrase in SELECT section. FETCH is used with FOR section normally, therefore we can use a condition like WHENEVER to escape FOR section. In order to do release the resource after FETCH, CLOSE should be used.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+EXEC SQL DECLARE ex_s CURSOR FOR // declare a cursor
+        SELECT name, age
+        FROM ex
+        WHERE key = :key
+        ORDER BY key;
+
+EXEC SQL OPEN ex_s;              // open with cursor name
+
+EXEC SQL FETCH ex_s              // fetch data, same the number of SELECT and FETCH INTO phrase
+        INTO :name, :age;
+
+EXEC SQL CLOSE ex_s;             // 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 </content>
  </entry>
  

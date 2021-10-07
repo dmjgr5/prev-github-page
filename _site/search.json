@@ -206,6 +206,14 @@
        "tags"     : "CSS",
        "url"      : "/02_programming/2019/12/02/whatiscss/",
        "date"     : "2019-12-02 00:00:00 +0900"
+     } ,
+    
+     {
+       "title"    : "How to use Pro*C",
+       "category" : "03_Database",
+       "tags"     : "Pro*C, SQL",
+       "url"      : "/03_database/2019/11/02/howtouseproc/",
+       "date"     : "2019-11-02 00:00:00 +0900"
      } 
     
 ]
