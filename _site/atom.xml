@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-07T00:13:12+09:00</updated>
+ <updated>2021-10-07T22:17:07+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -43,7 +43,7 @@ google_analytics:
 
 &lt;h4 id=&quot;google_analyticshtml-in-_includes-folder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google_analytics.html&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder&lt;/h4&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &amp;lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script&amp;gt;
   window.dataLayer = window.dataLayer || [];
@@ -57,7 +57,7 @@ google_analytics:
 
 &lt;h4 id=&quot;headhtml-in-_includes-folder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head.html&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder&lt;/h4&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
    
   &amp;lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script&amp;gt;
