@@ -59,7 +59,7 @@ $ git remote add origin [git address]
 
 - Working directory 데이터를 git Repository 로 옮기기 위해 아래 명령이 필요하다.
 
-```
+```shell
 dc@ MINGW64 /c/gitShare (master)
 $ git add .
 
@@ -73,7 +73,7 @@ $ git commit -m "init"
 
 - 이후 Push 명령어를 통해 Github repository 에 올릴 수 있다.
 
-```
+```shell
 dc@MINGW64 /c/gitShare (master)
 $ git push origin master
 Enumerating objects: 3, done.

@@ -35,7 +35,7 @@ google_analytics:
 
 #### `google_analytics.html` in `_includes` folder
 
-```text
+```html
 
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytic.tracking_id }}"></script>
 <script>
@@ -52,7 +52,7 @@ google_analytics:
 
 #### `head.html` in `_includes` folder
 
-```text
+```html
 
   {% if site.google_analytics != null %} 
   {% include google_analytics.html %}

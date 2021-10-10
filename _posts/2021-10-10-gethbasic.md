@@ -36,7 +36,7 @@ tag: [geth, Ethereum]
 
     - `# geth --datadir . account new ` 는 특정 경로를 지정하는데 사용됩니다.
 
-``` 
+```
 
 PS D:\3_blockChainStudy> geth account new
 INFO [10-10|16:33:56.382] Maximum peer count                       ETH=50 LES=0 total=50

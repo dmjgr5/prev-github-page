@@ -58,7 +58,8 @@ tag: [Github, 깃허브페이지, Jekyll]
 
 - 쉘스크립트
     - 프로젝트 폴더에 post_upload.sh 파일을 만들고 다음과 같이 내용을 입력한다.
-        ```
+
+        ```sh
         echo `git status`
         echo `git add _posts/*`
         echo `git commit -m "post upload"`
@@ -66,12 +67,14 @@ tag: [Github, 깃허브페이지, Jekyll]
         ```
 
     - 실행 명령어는 다음과 같다.
-        ```
+
+        ```shell
         $ sh post_upload.sh
         ```
 
 - 로컬 실행 : C:\park.github.io>bundle exec jekyll serve
-    ```
+
+    ```shell
     C:\park.github.io>git add .
 
     C:\park.github.io>git commit -m "3rd blog page test"

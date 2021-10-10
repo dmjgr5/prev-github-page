@@ -32,7 +32,7 @@ tag: [CSS]
 - External Style Sheet
   - link style sheet file with css format
 
-  ```
+  ```html
     <head>
       <link rel="stylename" type="text/css" href="style.css">
     </head>
@@ -45,7 +45,7 @@ tag: [CSS]
   - Insert `<style>` between `<head>` and `</head>`
   - It is better to use for one HTML page.
 
-  ```
+  ```html
   <head>
     <style type="text/css">
         Selector {property: value;}

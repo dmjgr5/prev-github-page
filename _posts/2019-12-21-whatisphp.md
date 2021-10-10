@@ -16,7 +16,7 @@ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open so
 
 
 
- ```
+ ```html
 <!DOCTYPE html>
 <html>
     <head>

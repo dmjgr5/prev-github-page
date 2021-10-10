@@ -949,7 +949,7 @@ if __name__ == "__main__":
     - plt.bar
 
 
-    ```
+    ```python
     # make one frame
     years = range(1880,2011)
     pieces = []
