@@ -41,8 +41,8 @@ tag: [geth, Ethereum]
 PS D:\3_blockChainStudy> geth account new
 INFO [10-10|16:33:56.382] Maximum peer count                       ETH=50 LES=0 total=50
 Your new account is locked with a password. Please give a password. Do not forget this password.
-Password: sj2853
-Repeat password: sj2853
+Password: aabbbb
+Repeat password: aabbbb
 
 Your new key was generated
 
