@@ -1,6 +1,14 @@
 [
     
      {
+       "title"    : "geth 설치 및 기본 활용하기",
+       "category" : "06_BlockChain",
+       "tags"     : "geth, Ethereum",
+       "url"      : "/06_blockchain/2021/10/10/gethbasic/",
+       "date"     : "2021-10-10 00:00:00 +0900"
+     } ,
+    
+     {
        "title"    : "Jekyll 기반 Github Page 의 Google Analytics 환경 설정하기",
        "category" : "05_Cloud",
        "tags"     : "GoogleAnalytics",
@@ -10,25 +18,25 @@
     
      {
        "title"    : "자신을 믿으세요",
-       "category" : "08_Life",
+       "category" : "09_Life",
        "tags"     : "Life",
-       "url"      : "/08_life/2021/09/25/trustyourself/",
+       "url"      : "/09_life/2021/09/25/trustyourself/",
        "date"     : "2021-09-25 00:00:00 +0900"
      } ,
     
      {
        "title"    : "5 Whys 기법",
-       "category" : "06_Theoretical",
+       "category" : "07_Theoretical",
        "tags"     : "5Whys",
-       "url"      : "/06_theoretical/2021/09/16/5why/",
+       "url"      : "/07_theoretical/2021/09/16/5why/",
        "date"     : "2021-09-16 00:00:00 +0900"
      } ,
     
      {
        "title"    : "통계 분석 기초 용어 정리",
-       "category" : "06_Theoretical",
+       "category" : "07_Theoretical",
        "tags"     : "중앙값, 분산, IQR",
-       "url"      : "/06_theoretical/2021/09/15/statsbasic/",
+       "url"      : "/07_theoretical/2021/09/15/statsbasic/",
        "date"     : "2021-09-15 00:00:00 +0900"
      } ,
     
@@ -58,9 +66,9 @@
     
      {
        "title"    : "Django 웹사이트 구축",
-       "category" : "07_ToyProject",
+       "category" : "08_ToyProject",
        "tags"     : "Django, Python",
-       "url"      : "/07_toyproject/2021/03/12/panabara/",
+       "url"      : "/08_toyproject/2021/03/12/panabara/",
        "date"     : "2021-03-12 00:00:00 +0900"
      } ,
     
@@ -98,9 +106,9 @@
     
      {
        "title"    : "파이썬을 이용한 주식관리 프로그램",
-       "category" : "07_ToyProject",
+       "category" : "08_ToyProject",
        "tags"     : "주식, Python, PyQt5",
-       "url"      : "/07_toyproject/2020/01/03/toy-creon/",
+       "url"      : "/08_toyproject/2020/01/03/toy-creon/",
        "date"     : "2020-01-03 00:00:00 +0900"
      } ,
     

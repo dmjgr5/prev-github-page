@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 자신을 믿으세요
-category: 08_Life
+category: 09_Life
 tag: [Life]
 ---
 

@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://dmjgr5.github.io/06_blockchain/2021/10/10/gethbasic/</loc>
+        
+        <lastmod>2021-10-10T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://dmjgr5.github.io/05_cloud/2021/10/06/googleanalyticssetting/</loc>
         
         <lastmod>2021-10-06T00:00:00+09:00</lastmod>
@@ -20,7 +36,7 @@
     </url>
     
     <url>
-        <loc>https://dmjgr5.github.io/08_life/2021/09/25/trustyourself/</loc>
+        <loc>https://dmjgr5.github.io/09_life/2021/09/25/trustyourself/</loc>
         
         <lastmod>2021-09-25T00:00:00+09:00</lastmod>
         
@@ -36,7 +52,7 @@
     </url>
     
     <url>
-        <loc>https://dmjgr5.github.io/06_theoretical/2021/09/16/5why/</loc>
+        <loc>https://dmjgr5.github.io/07_theoretical/2021/09/16/5why/</loc>
         
         <lastmod>2021-09-16T00:00:00+09:00</lastmod>
         
@@ -52,7 +68,7 @@
     </url>
     
     <url>
-        <loc>https://dmjgr5.github.io/06_theoretical/2021/09/15/statsbasic/</loc>
+        <loc>https://dmjgr5.github.io/07_theoretical/2021/09/15/statsbasic/</loc>
         
         <lastmod>2021-09-15T00:00:00+09:00</lastmod>
         
@@ -116,7 +132,7 @@
     </url>
     
     <url>
-        <loc>https://dmjgr5.github.io/07_toyproject/2021/03/12/panabara/</loc>
+        <loc>https://dmjgr5.github.io/08_toyproject/2021/03/12/panabara/</loc>
         
         <lastmod>2021-03-12T00:00:00+09:00</lastmod>
         
@@ -196,7 +212,7 @@
     </url>
     
     <url>
-        <loc>https://dmjgr5.github.io/07_toyproject/2020/01/03/toy-creon/</loc>
+        <loc>https://dmjgr5.github.io/08_toyproject/2020/01/03/toy-creon/</loc>
         
         <lastmod>2020-01-03T00:00:00+09:00</lastmod>
         
