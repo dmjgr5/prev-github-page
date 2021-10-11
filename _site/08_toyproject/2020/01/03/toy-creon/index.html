@@ -65,7 +65,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://dmjgr5.github.io/">Home</a>
+    <a class="sidebar-nav-item" href="/home/">Homaaae</a>
 
     
 
@@ -82,6 +82,8 @@
     
     
     <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
     
     
     
@@ -713,6 +715,8 @@
   
   
   
+  
+  
 
 
 
@@ -978,6 +982,7 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">day_info</span><span class="p">.</span><span class="n">reverse</span><span class="p">()</span>
 </code></pre></div></div>
 <p>이동 평균선의 경우, 아래와 같이 rolling 속성을 이용하여 MA5 컬럼에 넣을 수 있다.</p>
+
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_data</span><span class="p">[</span><span class="s">'MA5'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s">'close'</span><span class="p">].</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">).</span><span class="n">mean</span><span class="p">()</span>
 </code></pre></div></div>
 

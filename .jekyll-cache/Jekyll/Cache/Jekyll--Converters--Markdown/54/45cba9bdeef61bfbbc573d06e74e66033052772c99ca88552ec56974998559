@@ -1,4 +1,4 @@
-I"«v<p><img src="/assets/images/python.png" alt="example" /></p>
+I"}<p><img src="/assets/images/python.png" alt="example" /></p>
 
 <blockquote>
   <p>This is the document for Python, which is basic instruction like Python Installation, Data Types and so on. Let me explain briefly about Python language.</p>
@@ -1020,17 +1020,17 @@ if __name__ == "__main__":
       <li>plt.bar</li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># make one frame
-years = range(1880,2011)
-pieces = []
-columns = ["name", "sex", "births"]
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># make one frame
+</span><span class="n">years</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1880</span><span class="p">,</span><span class="mi">2011</span><span class="p">)</span>
+<span class="n">pieces</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">"name"</span><span class="p">,</span> <span class="s">"sex"</span><span class="p">,</span> <span class="s">"births"</span><span class="p">]</span>
 
-for year in years:
-    path = "c:\\work\\yob%d.txt" % year
-    frame = pd.read_csv(path, names = columns)
-    frame["year"] = year
-    pieces.append(frame)
-    names = pd.concat(pieces, ignore_index=True)
+<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s">"c:</span><span class="se">\\</span><span class="s">work</span><span class="se">\\</span><span class="s">yob%d.txt"</span> <span class="o">%</span> <span class="n">year</span>
+    <span class="n">frame</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">columns</span><span class="p">)</span>
+    <span class="n">frame</span><span class="p">[</span><span class="s">"year"</span><span class="p">]</span> <span class="o">=</span> <span class="n">year</span>
+    <span class="n">pieces</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+    <span class="n">names</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">concat</span><span class="p">(</span><span class="n">pieces</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div>    </div>
   </li>
   <li>

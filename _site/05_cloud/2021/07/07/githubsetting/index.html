@@ -65,7 +65,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://dmjgr5.github.io/">Home</a>
+    <a class="sidebar-nav-item" href="/home/">Homaaae</a>
 
     
 
@@ -82,6 +82,8 @@
     
     
     <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
     
     
     
@@ -713,6 +715,8 @@
   
   
   
+  
+  
 
 
 
@@ -819,13 +823,13 @@ $ git remote add origin [git address]
   <li>Working directory 데이터를 git Repository 로 옮기기 위해 아래 명령이 필요하다.</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@ MINGW64 /c/gitShare (master)
-$ git add .
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@ MINGW64 /c/gitShare <span class="o">(</span>master<span class="o">)</span>
+<span class="nv">$ </span>git add <span class="nb">.</span>
 
-dc@ MINGW64 /c/gitShare (master)
-$ git commit -m "init"
-[master (root-commit) 97d2ae3] init
- 1 file changed, 0 insertions(+), 0 deletions(-)
+dc@ MINGW64 /c/gitShare <span class="o">(</span>master<span class="o">)</span>
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"init"</span>
+<span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 97d2ae3] init
+ 1 file changed, 0 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
  create mode 100644 test.txt
 </code></pre></div></div>
 
@@ -833,18 +837,18 @@ $ git commit -m "init"
   <li>이후 Push 명령어를 통해 Github repository 에 올릴 수 있다.</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@MINGW64 /c/gitShare (master)
-$ git push origin master
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 203 bytes | 67.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@MINGW64 /c/gitShare <span class="o">(</span>master<span class="o">)</span>
+<span class="nv">$ </span>git push origin master
+Enumerating objects: 3, <span class="k">done</span><span class="nb">.</span>
+Counting objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 203 bytes | 67.00 KiB/s, <span class="k">done</span><span class="nb">.</span>
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>, pack-reused 0
 remote:
-remote: Create a pull request for 'master' on GitHub by visiting:
+remote: Create a pull request <span class="k">for</span> <span class="s1">'master'</span> on GitHub by visiting:
 remote:      https://github.com/dmjgr5/test/pull/new/master
 remote:
 To https://github.com/dmjgr5/test.git
- * [new branch]      master -&gt; master
+ <span class="k">*</span> <span class="o">[</span>new branch]      master -&gt; master
 </code></pre></div></div>
 
 <ul>

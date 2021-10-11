@@ -65,7 +65,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://dmjgr5.github.io/">Home</a>
+    <a class="sidebar-nav-item" href="/home/">Homaaae</a>
 
     
 
@@ -82,6 +82,8 @@
     
     
     <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
     
     
     
@@ -713,6 +715,8 @@
   
   
   
+  
+  
 
 
 
@@ -831,25 +835,31 @@
 <ul>
   <li>쉘스크립트
     <ul>
-      <li>프로젝트 폴더에 post_upload.sh 파일을 만들고 다음과 같이 내용을 입력한다.
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  echo `git status`
-  echo `git add _posts/*`
-  echo `git commit -m "post upload"`
-  echo `git push origin master`
+      <li>
+        <p>프로젝트 폴더에 post_upload.sh 파일을 만들고 다음과 같이 내용을 입력한다.</p>
+
+        <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">echo</span> <span class="sb">`</span>git status<span class="sb">`</span>
+  <span class="nb">echo</span> <span class="sb">`</span>git add _posts/<span class="k">*</span><span class="sb">`</span>
+  <span class="nb">echo</span> <span class="sb">`</span>git commit <span class="nt">-m</span> <span class="s2">"post upload"</span><span class="sb">`</span>
+  <span class="nb">echo</span> <span class="sb">`</span>git push origin master<span class="sb">`</span>
 </code></pre></div>        </div>
       </li>
-      <li>실행 명령어는 다음과 같다.
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sh post_upload.sh
+      <li>
+        <p>실행 명령어는 다음과 같다.</p>
+
+        <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>sh post_upload.sh
 </code></pre></div>        </div>
       </li>
     </ul>
   </li>
-  <li>로컬 실행 : C:\park.github.io&gt;bundle exec jekyll serve
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  C:\park.github.io&gt;git add .
+  <li>
+    <p>로컬 실행 : C:\park.github.io&gt;bundle exec jekyll serve</p>
 
-  C:\park.github.io&gt;git commit -m "3rd blog page test"
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  C:<span class="se">\p</span>ark.github.io&gt;git add <span class="nb">.</span>
 
-  C:\park.github.io&gt;git push -u origin master
+  C:<span class="se">\p</span>ark.github.io&gt;git commit <span class="nt">-m</span> <span class="s2">"3rd blog page test"</span>
+
+  C:<span class="se">\p</span>ark.github.io&gt;git push <span class="nt">-u</span> origin master
 </code></pre></div>    </div>
   </li>
 </ul>

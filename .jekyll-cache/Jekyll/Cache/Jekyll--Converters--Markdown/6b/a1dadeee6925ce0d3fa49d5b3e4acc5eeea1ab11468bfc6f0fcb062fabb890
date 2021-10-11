@@ -1,4 +1,4 @@
-I"�<p>단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
+I"�<p>단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
  MicroService  -&gt; Contailer -&gt; 많아지니까 클러스터 구성 -&gt; 이런 환경을 클라우드 환경에서 구현함</p>
 
 <hr />
@@ -51,7 +51,7 @@ swagger : 개발된 API 를 테스트할 수 있는 화면
 재고 서비스가 죽더라도 다른 서비스들은 살아 있어야 한다.</p>
 </blockquote>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>서비스:         재고서비스         생산서비스          주문서비스
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>서비스:         재고서비스         생산서비스          주문서비스
                           |                           |                          |
 화면 :             swagger(1)    swagger(2)      swagger(3)
                           |                          |                          | 
