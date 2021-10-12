@@ -4,7 +4,7 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-12T21:42:49+09:00</updated>
+ <updated>2021-10-12T21:46:01+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Remix 도구를 이용한 Solidity 이해하기</title>
+   <title>리믹스(Remix) 도구를 이용한 Solidity 이해하기</title>
    <link href="https://dmjgr5.github.io/06_blockchain/2021/10/12/soliditybasic/"/>
    <updated>2021-10-12T00:00:00+09:00</updated>
    <id>https://dmjgr5.github.io/06_blockchain/2021/10/12/soliditybasic</id>

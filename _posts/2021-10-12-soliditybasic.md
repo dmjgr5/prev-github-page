@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remix 도구를 이용한 Solidity 이해하기
+title: 리믹스(Remix) 도구를 이용한 Solidity 이해하기
 category: 06_BlockChain
 tag: [Remix, Solidity]
 ---
