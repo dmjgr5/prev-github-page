@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remix 를 이용한 Solidity 개발 환경 이해하기
+title: Remix 도구를 이용한 Solidity 이해하기
 category: 06_BlockChain
 tag: [Remix, Solidity]
 ---
