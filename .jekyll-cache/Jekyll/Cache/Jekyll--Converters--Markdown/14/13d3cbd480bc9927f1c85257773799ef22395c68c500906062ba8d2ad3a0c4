@@ -1,0 +1,82 @@
+I"_<p><img src="/assets/images/solidity0.png" alt="example" /></p>
+
+<blockquote>
+  <p>Rimix 는 스마트 계약 개발을 위한 솔리디티 언어를 이용하여 계약의 제작, 개발, 배포 등을 할 수 있는 통합 개발 환경으로서 이전에는 <code class="language-plaintext highlighter-rouge">browser-solidity </code>라고 불려졌습니다. 현재는 별도 설치 없이 브라우저 환경에서 손쉽게 개발환경을 구축할 수 있으며, 간단 예제를 통해 솔리디티 개발 환경을 이해하고자 합니다.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="1-리믹스-접속">1. 리믹스 접속</h3>
+
+<p>아래 주소를 접속하여 리믹스에 접근합니다.</p>
+
+<ul>
+  <li><a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a></li>
+</ul>
+
+<h3 id="2-개발-환경-접속-및-파일-생성">2. 개발 환경 접속 및 파일 생성</h3>
+<p>아래와 같이 개발 환경 화면을 확인할 수 있으며, 새 파일을 클릭하여 <code class="language-plaintext highlighter-rouge">HellowWorld.sol</code> 파일을 생성합니다.</p>
+
+<p><img src="/assets/images/solidity1.png" alt="example" /></p>
+
+<h3 id="3-예제-소스-작성">3. 예제 소스 작성</h3>
+
+<p>예제 소스를 작성합니다. 
+소스 내용은 아래를 참조하여 주세요.</p>
+
+<details>
+<summary>HellowWorld.sol</summary>
+<div>
+
+    <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">pragma</span> <span class="n">solidity</span> <span class="o">^</span><span class="mf">0.6</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span> 
+
+<span class="k">contract</span> <span class="n">HelloWorld</span> <span class="p">{</span> 
+    <span class="kt">uint</span> <span class="n">count</span><span class="p">;</span>
+    
+    <span class="k">constructor</span><span class="p">()</span> <span class="k">public</span> <span class="p">{</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">function</span> <span class="n">getCount</span><span class="p">()</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span><span class="p">(</span><span class="kt">uint</span><span class="p">){</span>
+        <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">function</span> <span class="n">incrementCount</span><span class="p">()</span> <span class="k">public</span><span class="p">{</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </div>
+</details>
+
+<p><img src="/assets/images/solidity2.png" alt="example" /></p>
+
+<h3 id="4-compile">4. Compile</h3>
+
+<p>Compiler Version 을 소스의 버전과 맞추고 <code class="language-plaintext highlighter-rouge">Compile HellowWorld.sol</code> 을 클릭합니다.</p>
+
+<p><img src="/assets/images/solidity3.png" alt="example" /></p>
+
+<p>노란색 버튼(<code class="language-plaintext highlighter-rouge">ABI</code>, <code class="language-plaintext highlighter-rouge">Bytecode</code>) 를 복사한 후 메모장에서 확인하여 아래와 같은 내용을 확인할 수 있습니다.</p>
+
+<p><img src="/assets/images/solidity4.png" alt="example" /></p>
+
+<h3 id="5-compile">5. Compile</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Deployed Contracts</code> 를 클릭하여 현재 생성된 컨트랙트 내 함수들을 확인 할수 있습니다.</p>
+
+<p><img src="/assets/images/solidity5.png" alt="example" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Deployed Contracts</code> 를 클릭하여 현재 생성된 컨트랙트 내 함수들을 확인 할수 있습니다.</p>
+
+<h3 id="6-excute">6. Excute</h3>
+
+<p><code class="language-plaintext highlighter-rouge">getCount</code> 를 클릭하면 <code class="language-plaintext highlighter-rouge">count</code> 변수를 초기화 했던 0 값을 확인할 수 있습니다.</p>
+
+<p><img src="/assets/images/solidity6.png" alt="example" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">incrementCount</code> 클릭 후, <code class="language-plaintext highlighter-rouge">getCount</code> 를 클릭하면 <code class="language-plaintext highlighter-rouge">uint256</code> 값이 1 증가한 것을 확인할 수 있습니다.</p>
+
+<p><img src="/assets/images/solidity7.png" alt="example" /></p>
+
+:ET

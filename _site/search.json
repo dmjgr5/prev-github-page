@@ -1,6 +1,14 @@
 [
     
      {
+       "title"    : "Remix 를 이용한 Solidity 개발 환경 이해하기",
+       "category" : "06_BlockChain",
+       "tags"     : "Remix, Solidity",
+       "url"      : "/06_blockchain/2021/10/12/soliditybasic/",
+       "date"     : "2021-10-12 00:00:00 +0900"
+     } ,
+    
+     {
        "title"    : "geth 설치 및 기본 활용하기",
        "category" : "06_BlockChain",
        "tags"     : "geth, Ethereum",

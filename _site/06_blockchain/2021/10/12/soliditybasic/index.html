@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Remix 를 이용한 Solidity 개발 환경 이해하기 &middot; Git Note
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/font.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="https://dmjgr5.github.io/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VEHRJDYDE5');
+</script>
+  
+
+
+  
+
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>One a day</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/home/">Home</a>
+
+    
+
+    <!-- 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     -->
+<!-- 
+    <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+  </nav>
+  <div>
+    <div class="sidebar-nav-item">Category</div>
+    <nav class="content-ul">
+      
+
+
+      
+      <a href="/category/#01_Algorithm"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                01_Algorithm
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#02_Programming"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                02_Programming
+                            </span>
+        <span class="badge">5</span>
+      </a>
+      
+      <a href="/category/#03_Database"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                03_Database
+                            </span>
+        <span class="badge">4</span>
+      </a>
+      
+      <a href="/category/#04_AI"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                04_AI
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#05_Cloud"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                05_Cloud
+                            </span>
+        <span class="badge">8</span>
+      </a>
+      
+      <a href="/category/#06_BlockChain"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                06_BlockChain
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#07_Theoretical"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                07_Theoretical
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#08_ToyProject"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                08_ToyProject
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#09_Life"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                09_Life
+                            </span>
+        <span class="badge">1</span>
+      </a>
+      
+    </nav>
+  </div>
+  <div>
+    <div class="sidebar-nav-item">Tags</div>
+    <div class="tags-cloud">
+      <div>
+        
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Pro*C" style="font-size: 9pt; color: #555;">Pro*C</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SQL" style="font-size: 9pt; color: #555;">SQL</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#CSS" style="font-size: 9pt; color: #555;">CSS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#HTML" style="font-size: 9pt; color: #555;">HTML</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Python" style="font-size: 18pt; color: #eee;">Python</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GitBash" style="font-size: 9pt; color: #555;">GitBash</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySQL" style="font-size: 9pt; color: #555;">MySQL</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySql" style="font-size: 9pt; color: #555;">MySql</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Connect" style="font-size: 9pt; color: #555;">Connect</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#JavaScript" style="font-size: 12pt; color: #888;">JavaScript</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PHP" style="font-size: 9pt; color: #555;">PHP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MachineLearning" style="font-size: 9pt; color: #555;">MachineLearning</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LinearRegression" style="font-size: 9pt; color: #555;">LinearRegression</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LogisticClassification" style="font-size: 9pt; color: #555;">LogisticClassification</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Flask" style="font-size: 9pt; color: #555;">Flask</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GCP" style="font-size: 9pt; color: #555;">GCP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#NodeJs" style="font-size: 9pt; color: #555;">NodeJs</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#tensorflow" style="font-size: 9pt; color: #555;">tensorflow</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#주식" style="font-size: 9pt; color: #555;">주식</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PyQt5" style="font-size: 9pt; color: #555;">PyQt5</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Kubernetes" style="font-size: 9pt; color: #555;">Kubernetes</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#CloudVision" style="font-size: 9pt; color: #555;">CloudVision</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LCA" style="font-size: 9pt; color: #555;">LCA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SparseTable" style="font-size: 9pt; color: #555;">SparseTable</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MST" style="font-size: 9pt; color: #555;">MST</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#BFS" style="font-size: 9pt; color: #555;">BFS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#FailureFunction" style="font-size: 9pt; color: #555;">FailureFunction</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Priority Queue" style="font-size: 9pt; color: #555;">Priority Queue</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Django" style="font-size: 9pt; color: #555;">Django</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Git" style="font-size: 9pt; color: #555;">Git</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Github" style="font-size: 12pt; color: #888;">Github</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#깃허브페이지" style="font-size: 9pt; color: #555;">깃허브페이지</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Jekyll" style="font-size: 9pt; color: #555;">Jekyll</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MSA" style="font-size: 9pt; color: #555;">MSA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MicroService" style="font-size: 9pt; color: #555;">MicroService</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Architecture" style="font-size: 9pt; color: #555;">Architecture</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#중앙값" style="font-size: 9pt; color: #555;">중앙값</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#분산" style="font-size: 9pt; color: #555;">분산</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#IQR" style="font-size: 9pt; color: #555;">IQR</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#5Whys" style="font-size: 9pt; color: #555;">5Whys</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Life" style="font-size: 9pt; color: #555;">Life</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GoogleAnalytics" style="font-size: 9pt; color: #555;">GoogleAnalytics</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#geth" style="font-size: 9pt; color: #555;">geth</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Ethereum" style="font-size: 9pt; color: #555;">Ethereum</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Remix" style="font-size: 9pt; color: #555;">Remix</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Solidity" style="font-size: 9pt; color: #555;">Solidity</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a class="sidebar-nav-item" href="/about/">About</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2021. All rights reserved.
+    </p>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('hashchange', function(){
+    location.reload();
+  });
+</script>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="https://dmjgr5.github.io/" title="Home">Git Note</a>
+            <small>Day by day, in Everyway, I am getting better and better</small>
+
+            <a href="/search/"><i class="fa fa-search  " aria-hidden="true" style ="float:right;" ></i></a> 
+          </h3>
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
+  <h2 class="post-title"> Remix 를 이용한 Solidity 개발 환경 이해하기</h2>
+  <span class="post-date">   12 Oct 2021</span>
+   <p><img src="/assets/images/solidity0.png" alt="example" /></p>
+
+<blockquote>
+  <p>Remix 는 스마트 계약 개발을 위한 솔리디티 언어를 이용하여 계약의 제작, 개발, 배포 등을 할 수 있는 통합 개발 환경으로서 이전에는 <code class="language-plaintext highlighter-rouge">browser-solidity </code>라고 불려졌습니다. 현재는 별도 설치 없이 브라우저 환경에서 손쉽게 개발환경을 구축할 수 있으며, 간단 예제를 통해 솔리디티 개발 환경을 이해하고자 합니다.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="1-리믹스-접속">1. 리믹스 접속</h3>
+
+<p>아래 주소를 접속하여 리믹스에 접근합니다.</p>
+
+<ul>
+  <li><a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a></li>
+</ul>
+
+<h3 id="2-개발-환경-접속-및-파일-생성">2. 개발 환경 접속 및 파일 생성</h3>
+<p>아래와 같이 개발 환경 화면을 확인할 수 있으며, 새 파일을 클릭하여 <code class="language-plaintext highlighter-rouge">HellowWorld.sol</code> 파일을 생성합니다.</p>
+
+<p><img src="/assets/images/solidity1.png" alt="example" /></p>
+
+<h3 id="3-예제-소스-작성">3. 예제 소스 작성</h3>
+
+<p>예제 소스를 작성합니다. 
+소스 내용은 아래를 클릭하여 확인하여 주세요.</p>
+
+<details>
+<summary>HellowWorld.sol</summary>
+<div>
+
+    <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">pragma</span> <span class="n">solidity</span> <span class="o">^</span><span class="mf">0.6</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span> 
+
+<span class="k">contract</span> <span class="n">HelloWorld</span> <span class="p">{</span> 
+    <span class="kt">uint</span> <span class="n">count</span><span class="p">;</span>
+    
+    <span class="k">constructor</span><span class="p">()</span> <span class="k">public</span> <span class="p">{</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">function</span> <span class="n">getCount</span><span class="p">()</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span><span class="p">(</span><span class="kt">uint</span><span class="p">){</span>
+        <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">function</span> <span class="n">incrementCount</span><span class="p">()</span> <span class="k">public</span><span class="p">{</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </div>
+</details>
+
+<p><img src="/assets/images/solidity2.png" alt="example" /></p>
+
+<h3 id="4-compile">4. Compile</h3>
+
+<p>Compiler Version 을 소스의 버전과 맞추고 <code class="language-plaintext highlighter-rouge">Compile HellowWorld.sol</code> 을 클릭합니다.</p>
+
+<p><img src="/assets/images/solidity3.png" alt="example" /></p>
+
+<p>노란색 버튼(<code class="language-plaintext highlighter-rouge">ABI</code>, <code class="language-plaintext highlighter-rouge">Bytecode</code>) 를 복사한 후 메모장에서 확인하여 아래와 같은 내용을 확인할 수 있습니다.</p>
+
+<p><img src="/assets/images/solidity4.png" alt="example" /></p>
+
+<h3 id="5-deploy">5. Deploy</h3>
+
+<p>좌측 탭 메뉴 중 Deploy 메뉴로 이동하여 <code class="language-plaintext highlighter-rouge">Deployed Contracts</code> 를 클릭하면 현재 생성된 컨트랙트 내 함수들을 확인 할수 있습니다.</p>
+
+<p><img src="/assets/images/solidity5.png" alt="example" /></p>
+
+<h3 id="6-excute">6. Excute</h3>
+
+<p><code class="language-plaintext highlighter-rouge">getCount</code> 를 클릭하면 <code class="language-plaintext highlighter-rouge">count</code> 변수를 초기화 했던 <code class="language-plaintext highlighter-rouge">0</code> 값을 확인할 수 있습니다.</p>
+
+<p><img src="/assets/images/solidity6.png" alt="example" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">incrementCount</code> 클릭 후, <code class="language-plaintext highlighter-rouge">getCount</code> 를 클릭하면 <code class="language-plaintext highlighter-rouge">uint256</code> 값이 1 증가한 것을 확인할 수 있습니다.</p>
+
+<p><img src="/assets/images/solidity7.png" alt="example" /></p>
+
+
+</div>
+
+
+ 
+
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/06_blockchain/2021/10/10/gethbasic/">
+            geth 설치 및 기본 활용하기
+            <small>10 Oct 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/05_cloud/2021/10/06/googleanalyticssetting/">
+            Jekyll 기반 Github Page 의 Google Analytics 환경 설정하기
+            <small>06 Oct 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/09_life/2021/09/25/trustyourself/">
+            자신을 믿으세요
+            <small>25 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
