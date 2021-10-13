@@ -1,6 +1,14 @@
 [
     
      {
+       "title"    : "블록체인(BlockChain) 이해하기",
+       "category" : "06_BlockChain",
+       "tags"     : "블록체인",
+       "url"      : "/06_blockchain/2021/10/13/blockchainbasic/",
+       "date"     : "2021-10-13 00:00:00 +0900"
+     } ,
+    
+     {
        "title"    : "리믹스(Remix) 도구를 이용한 Solidity 이해하기",
        "category" : "06_BlockChain",
        "tags"     : "Remix, Solidity",
