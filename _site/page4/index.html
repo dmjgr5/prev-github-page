@@ -11,7 +11,7 @@
 
   <title>
     
-      How to Use MySQL &middot; Git Note
+      Git Note &middot; Day by day, in Everyway, I am getting better and better
     
   </title>
 
@@ -799,174 +799,39 @@
       </div>
 
       <div class="container content">
-        <div class="post">
-  
-  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
-  <h2 class="post-title"> How to Use MySQL</h2>
-  <span class="post-date">   16 Dec 2019</span>
-   <p><img src="/assets/images/mysql.png" alt="example" /></p>
-
-<hr />
-
-<h3 id="mysql-installation">MySQL Installation</h3>
-<ul>
-  <li>In this turotial, Bitnami APM used.</li>
-</ul>
-
-<h3 id="access-mysql-using-mysql-monitor">Access MySQL using MySQL Monitor</h3>
-<p>To access MySQL, go to <code class="language-plaintext highlighter-rouge">C:\Bitnami\wampstack-7.3.11-0\mysql\bin</code> in CMD, then command <code class="language-plaintext highlighter-rouge">mysql -uroot -p</code>. After input password, you can access MySQL server.</p>
-
-<h3 id="create-schema-database">Create Schema (Database)</h3>
-<ul>
-  <li>create : <code class="language-plaintext highlighter-rouge">CREATE DATABASE openturorials;</code></li>
-  <li>check database list : <code class="language-plaintext highlighter-rouge">SHOW DATABASES;</code></li>
-  <li>use and select database, command <code class="language-plaintext highlighter-rouge">USE openturorials;</code></li>
-  <li>delete : <code class="language-plaintext highlighter-rouge">DROP DATABASE openturorials;</code></li>
-</ul>
-
-<h3 id="create-table">Create Table</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; CREATE TABLE topic(
-    -&gt;   id INT(11) NOT NULL AUTO_INCREMENT,
-    -&gt;   title VARCHAR(100) NOT NULL,
-    -&gt;   description TEXT NULL,
-    -&gt;   created DATETIME NOT NULL,
-    -&gt;   author VARCHAR(30) NULL,
-    -&gt;   profile VARCHAR(100) NULL,
-    -&gt;   PRIMARY KEY(id));
-Query OK, 0 rows affected, 1 warning (0.18 sec)
-</code></pre></div></div>
-
-<h3 id="show-table">Show Table</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; SHOW tables;
-+-------------------------+
-| Tables_in_openturorials |
-+-------------------------+
-| topic                   |
-+-------------------------+
-1 row in set (0.02 sec)
-</code></pre></div></div>
-
-<h3 id="desc-table">Desc Table</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; DESC topic;
-+-------------+--------------+------+-----+---------+----------------+
-| Field       | Type         | Null | Key | Default | Extra          |
-+-------------+--------------+------+-----+---------+----------------+
-| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
-| title       | varchar(100) | NO   |     | NULL    |                |
-| description | text         | YES  |     | NULL    |                |
-| created     | datetime     | NO   |     | NULL    |                |
-| author      | varchar(30)  | YES  |     | NULL    |                |
-| profile     | varchar(100) | YES  |     | NULL    |                |
-+-------------+--------------+------+-----+---------+----------------+
-6 rows in set (0.01 sec)
-</code></pre></div></div>
-
-<h3 id="crud">CRUD</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; INSERT INTO topic (title, description, created, author, profile) VALUES ('MySQL','MySQL is ...', NOW(), 'egoing', 'developer' )
-    -&gt; ;
-Query OK, 1 row affected (0.02 sec)
-
-mysql&gt; SELECT * FROM topic;
-+----+-------+--------------+---------------------+--------+-----------+
-| id | title     | description  | created                  | author  | profile     |
-+----+-------+--------------+---------------------+--------+-----------+
-|  1 | MySQL | MySQL is ... | 2019-12-16 23:08:25 | egoing | developer |
-+----+-------+--------------+---------------------+--------+-----------+
-1 row in set (0.00 sec)
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; UPDATE topic SET description='Oracle is ...', title = 'Oracle' where id = 2;
-Query OK, 1 row affected (0.02 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; DELETE FROM topic WHERE id = 5;
-Query OK, 1 row affected (0.02 sec)
-</code></pre></div></div>
-
-<h3 id="limit">LIMIT</h3>
-
-<p>To limit output size, add LIMIT at the end of SQL</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; SELECT * from topic;
-+----+------------+-------------------+---------------------+--------+---------------------------+
-| id | title      | description       | created             | author | profile                   |
-+----+------------+-------------------+---------------------+--------+---------------------------+
-|  1 | MySQL      | MySQL is ...      | 2019-12-16 23:08:25 | egoing | developer                 |
-|  2 | ORACLE     | ORACLE is ...     | 2019-12-16 23:09:47 | egoing | developer                 |
-|  3 | SQL Server | SQL SERVER is ... | 2019-12-16 23:10:44 | duru   | data administrator        |
-|  4 | PostgreSQL | POSTgreSQL is ... | 2019-12-16 23:11:31 | taeho  | data scientist, developer |
-|  5 | MongoDB    | MongoDB is ...    | 2019-12-16 23:12:05 | egoing | developer                 |
-+----+------------+-------------------+---------------------+--------+---------------------------+
-5 rows in set (0.00 sec)
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; SELECT * from topic LIMIT 2;
-+----+--------+---------------+---------------------+--------+-----------+
-| id | title  | description   | created             | author | profile   |
-+----+--------+---------------+---------------------+--------+-----------+
-|  1 | MySQL  | MySQL is ...  | 2019-12-16 23:08:25 | egoing | developer |
-|  2 | ORACLE | ORACLE is ... | 2019-12-16 23:09:47 | egoing | developer |
-+----+--------+---------------+---------------------+--------+-----------+
-2 rows in set (0.00 sec)
-</code></pre></div></div>
-
-<h3 id="join">Join</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; SELECT * FROM topic LEFT JOIN author ON topic.author_id = author.id;
-+----+------------+-------------------+---------------------+-----------+------+--------+---------------------------+
-| id | title      | description       | created             | author_id | id   | name   | profile                   |
-+----+------------+-------------------+---------------------+-----------+------+--------+---------------------------+
-|  1 | MySQL      | MySQL is...       | 2018-01-01 12:10:11 |         1 |    1 | egoing | developer                 |
-|  2 | Oracle     | Oracle is ...     | 2018-01-03 13:01:10 |         1 |    1 | egoing | developer                 |
-|  3 | SQL Server | SQL Server is ... | 2018-01-20 11:01:10 |         2 |    2 | duru   | database administrator    |
-|  4 | PostgreSQL | PostgreSQL is ... | 2018-01-23 01:03:03 |         3 |    3 | taeho  | data scientist, developer |
-|  5 | MongoDB    | MongoDB is ...    | 2018-01-30 12:31:03 |         1 |    1 | egoing | developer                 |
-+----+------------+-------------------+---------------------+-----------+------+--------+---------------------------+
-5 rows in set (0.00 sec)
-</code></pre></div></div>
-
-<h3 id="mysql-client">MySQL Client</h3>
-<p>Mostly MySQL WORKBENCH recommended. It is easy to use SQL because it is GUI.
-<a href="https://dev.mysql.com/downloads/file/?id=490464">https://dev.mysql.com/downloads/file/?id=490464</a></p>
-
-
-</div>
-
-
+        <div class="posts">
  
 
-<div class="related">
-  <h3>Related Posts</h3>
-  <ul class="related-posts">
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/05_cloud/2021/10/14/githubprofile/">
-            Github 프로필 꾸미기
-            <small>14 Oct 2021</small>
-          </a>
-        </h4>
-      </li>
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/06_blockchain/2021/10/13/blockchainbasic/">
-            블록체인(BlockChain) 이해하기
-            <small>13 Oct 2021</small>
-          </a>
-        </h4>
-      </li>
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/06_blockchain/2021/10/12/soliditybasic/">
-            리믹스(Remix) 도구를 이용한 Solidity 이해하기
-            <small>12 Oct 2021</small>
-          </a>
-        </h4>
-      </li>
-    
-  </ul>
+  
+  <div class="post">
+    <h3 class="post-title">
+      <a href="/03_database/2019/11/02/howtouseproc/">
+        How to use Pro*C
+      </a>
+    </h3>
+    <span class="post-date">02 Nov 2019</span>
+   <p><img src="/assets/images/proc.png" alt="example" /></p> <blockquote> <p>ProC is a uncommon programming language. I have known the language only with C and...  
+
+   <p class="text-left"><a href="/03_database/2019/11/02/howtouseproc/">Read more</a></p>
+
+  </div>
+
+  
+  
+ 
+
 </div>
+<div class="pagination">
+  
+  <span class="pagination-item older">Older</span>
+  
+  
+  
+  <a class="pagination-item newer" href="https://dmjgr5.github.io/page3">Newer</a>
+  
+  
+</div>
+
 
       </div>
     </div>

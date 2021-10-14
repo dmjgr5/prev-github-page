@@ -4,13 +4,89 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-13T22:52:04+09:00</updated>
+ <updated>2021-10-14T23:12:16+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
    <email>dmjgr5@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Github 프로필 꾸미기</title>
+   <link href="https://dmjgr5.github.io/05_cloud/2021/10/14/githubprofile/"/>
+   <updated>2021-10-14T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/05_cloud/2021/10/14/githubprofile</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/gp0.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;자신을 소개하는 프로필용으로 깃허브를 사용하는 분들이 많아지고 있습니다. 단순한 텍스트 형태 보다는 좀 더 보기 쉽고 예쁘게 만들면 더 좋게죠. 이를 위한 참조 사이트 및 예제를 공유하고자 합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;repository-생성&quot;&gt;Repository 생성&lt;/h3&gt;
+
+&lt;p&gt;아래와 같이 자신의 github 명과 동일한 이름의 repository 를 생성합니다. 일반적으로 깃허브 첫 페이지에는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[githubid].md&lt;/code&gt; 파일이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;profile&lt;/code&gt; 란에 표시됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/gp1.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;편집 모드에서 아래에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markdown&lt;/code&gt; 형식으로 작성한 후 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Commit Changes&lt;/code&gt; 버튼을 클릭하면 바로 반영이 가능할 것입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/gp2.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;참조-사이트&quot;&gt;참조 사이트&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;hits--httpshitsseeyoufarmcom&quot;&gt;HITS : &lt;em&gt;&lt;a href=&quot;https://hits.seeyoufarm.com/&quot;&gt;https://hits.seeyoufarm.com/&lt;/a&gt;&lt;/em&gt;&lt;/h4&gt;
+&lt;p&gt;방문자 수를 보여주는 참조사이트로 아래와 같이 자신의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github&lt;/code&gt; URL 입력한 후, 하단의 마크다운 형태의 텍스트를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;copy&lt;/code&gt; 하여 붙여넣기 하면 조회수 이모지를 넣을 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/gp3.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;emoji--httpswwwwebfxcomtoolsemoji-cheat-sheet&quot;&gt;Emoji : &lt;em&gt;&lt;a href=&quot;https://www.webfx.com/tools/emoji-cheat-sheet/&quot;&gt;https://www.webfx.com/tools/emoji-cheat-sheet/&lt;/a&gt;&lt;/em&gt;&lt;/h4&gt;
+
+&lt;p&gt;다양한 이모지가 있어 필요한 이모지를 검색하여 손쉽게 가져다 쓸 수 있겠네요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/gp4.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;아이콘 위에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;copy&lt;/code&gt; 버튼을 클릭하여 마크다운에 붙여넣기 하면 되겠습니다.
+예로서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:clap:&lt;/code&gt; 는 :clap: 로 보여지네요.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;shieldsio--httpsshieldsio&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shields.io&lt;/code&gt; : &lt;em&gt;&lt;a href=&quot;https://shields.io/&quot;&gt;https://shields.io/&lt;/a&gt;&lt;/em&gt;&lt;/h4&gt;
+
+&lt;p&gt;아래를 참조하여 작성하시면 이해하기 수월할 것 같습니다..&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;mailto:dmjgr@gmail.com&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Gmail-d14836?style=flat-square&amp;amp;logo=Gmail&amp;amp;logoColor=white&amp;amp;link=mailto:dmjgr@gmail.com&quot; alt=&quot;Gmail Badge&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&amp;amp;logo=Gmail&amp;amp;logoColor=white&amp;amp;link=mailto:dmjgr@gmail.com)](mailto:dmjgr@gmail.com)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&amp;amp;logo=Python&amp;amp;logoColor=white&quot; alt=&quot;PYTHON&quot; /&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ![PYTHON](https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&amp;amp;logo=Python&amp;amp;logoColor=white) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;tables-generator--httpswwwtablesgeneratorcommarkdown_tables&quot;&gt;Tables Generator : &lt;em&gt;&lt;a href=&quot;https://www.tablesgenerator.com/markdown_tables&quot;&gt;https://www.tablesgenerator.com/markdown_tables&lt;/a&gt;&lt;/em&gt;&lt;/h4&gt;
+
+&lt;p&gt;Markdown형식의 표를 만들어주는 사이트입니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markdown&lt;/code&gt; 으로 작성하기 어려운 표를 에디터에서 편집한 후 붙여넣기 하면 수월하게 작성할 수 있겠네요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/gp5.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
  
  <entry>
    <title>블록체인(BlockChain) 이해하기</title>
