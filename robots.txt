@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dmjgr5.github.io/sitemap.xml
+Sitemap: http://dmjgr5.github.io/sitemap.xml
