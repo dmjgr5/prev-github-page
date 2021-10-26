@@ -4,13 +4,51 @@
  <title>Git Note</title>
  <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
  <link href="https://dmjgr5.github.io/"/>
- <updated>2021-10-25T21:42:59+09:00</updated>
+ <updated>2021-10-26T11:25:03+09:00</updated>
  <id>https://dmjgr5.github.io</id>
  <author>
    <name>dcp</name>
    <email>dmjgr5@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>도서리뷰 - 블록체인 무엇인가</title>
+   <link href="https://dmjgr5.github.io/06_blockchain/2021/10/26/whatisblockchain/"/>
+   <updated>2021-10-26T00:00:00+09:00</updated>
+   <id>https://dmjgr5.github.io/06_blockchain/2021/10/26/whatisblockchain</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/bcw.jpg&quot; alt=&quot;example&quot; /&gt;
+&lt;em&gt;다니엘 드레셔 저/이병욱 역 | 이지스퍼블리싱 | 2018년 02월 19일&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;의도적으로 전문 용어가 아닌 쉬운 용어로 이해하기 쉽게 설명한 책으로 입문자에게 가볍게 이해할 수 있고 거부감이 없는 책으로 추천할 만하다.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;블록체인은-p2p-시스템을-기반으로-한다&quot;&gt;블록체인은 P2P 시스템을 기반으로 한다.&lt;/h3&gt;
+&lt;p&gt;P2P 네트워크를 기반으로 하여 모든 노드 간의 블록 체인 데이터를 공유한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;해싱값을-사용한다&quot;&gt;해싱값을 사용한다.&lt;/h3&gt;
+&lt;p&gt;데이터를 해싱하여 고유의 데이터로 만듦으로서 이전 체인과의 무결성을 확보한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;비대칭-암호화-기법&quot;&gt;비대칭 암호화 기법&lt;/h3&gt;
+&lt;p&gt;개인키에서 공개키, 또는 공개키에서 개인키로의 암호화/ 복호화를 통하여 소유권을 확보하고 인증/승인을 가능케 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;해시-퍼즐&quot;&gt;해시 퍼즐&lt;/h3&gt;
+&lt;p&gt;난이도를 동적으로 하여 해싱퍼즐을 푸는 노드에게 보상을 하게 끔 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;트랜잭션-데이터&quot;&gt;트랜잭션 데이터&lt;/h3&gt;
+&lt;p&gt;일반적인 블록체인의 구저는 아래와 같으며, 기본 개념을 익힌다. 특히, 블록헤더와 헤드의 차이점을 이해하자.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;각각의 Transaction 데이터는 병합 해슁의 형태로 머클트리로 구성되며, 이와 함께 TimeStamp, 이전 블록의 해쉬, Nonce 등을 블록 헤더로 가진다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Head&lt;/code&gt; 는 가장 최근에 추가된 데이터를 참조하는 값이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bcws.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Github 프로필 꾸미기</title>

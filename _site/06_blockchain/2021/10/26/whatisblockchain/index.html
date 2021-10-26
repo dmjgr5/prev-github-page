@@ -11,7 +11,7 @@
 
   <title>
     
-      Github 원격 저장소와 로컬 저장소 연동하기 &middot; Git Note
+      도서리뷰 - 블록체인 무엇인가 &middot; Git Note
     
   </title>
 
@@ -812,99 +812,38 @@
         <div class="post">
   
   <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
-  <h2 class="post-title"> Github 원격 저장소와 로컬 저장소 연동하기</h2>
-  <span class="post-date">   07 Jul 2021</span>
-   <p>로컬에 있는 데이터 및 소스들을 Github 에 올리기 위해 필요한 절차 및 명령어를 간단히 정리해 보고자 한다. 기본적인 내용이지만 가끔 생성할 때마다 기억이 잘 안나 구글링을 다시 해보곤 해서 이참에 정리하고자 한다.</p>
+  <h2 class="post-title"> 도서리뷰 - 블록체인 무엇인가</h2>
+  <span class="post-date">   26 Oct 2021</span>
+   <p><img src="/assets/images/bcw.jpg" alt="example" />
+<em>다니엘 드레셔 저/이병욱 역 | 이지스퍼블리싱 | 2018년 02월 19일</em></p>
+<blockquote>
+
+  <p>의도적으로 전문 용어가 아닌 쉬운 용어로 이해하기 쉽게 설명한 책으로 입문자에게 가볍게 이해할 수 있고 거부감이 없는 책으로 추천할 만하다.</p>
+
+</blockquote>
 
 <hr />
 
-<h2 id="1-local-directory-생성">1. Local Directory 생성</h2>
+<h3 id="블록체인은-p2p-시스템을-기반으로-한다">블록체인은 P2P 시스템을 기반으로 한다.</h3>
+<p>P2P 네트워크를 기반으로 하여 모든 노드 간의 블록 체인 데이터를 공유한다.</p>
 
-<p><img src="/assets/images/gitset1.jpg" alt="generateFolder" /></p>
+<h3 id="해싱값을-사용한다">해싱값을 사용한다.</h3>
+<p>데이터를 해싱하여 고유의 데이터로 만듦으로서 이전 체인과의 무결성을 확보한다.</p>
 
+<h3 id="비대칭-암호화-기법">비대칭 암호화 기법</h3>
+<p>개인키에서 공개키, 또는 공개키에서 개인키로의 암호화/ 복호화를 통하여 소유권을 확보하고 인증/승인을 가능케 한다.</p>
+
+<h3 id="해시-퍼즐">해시 퍼즐</h3>
+<p>난이도를 동적으로 하여 해싱퍼즐을 푸는 노드에게 보상을 하게 끔 한다.</p>
+
+<h3 id="트랜잭션-데이터">트랜잭션 데이터</h3>
+<p>일반적인 블록체인의 구저는 아래와 같으며, 기본 개념을 익힌다. 특히, 블록헤더와 헤드의 차이점을 이해하자.</p>
 <ul>
-  <li>위 C:\gitShare 폴더에 Github 에 올리고자하는 폴더 및 파일들이 있다고 가정하다. 먼저 gitBash 에서 아래와 같이 .git repository 를 생성하기 위해 아래 명령어가 필요하다.</li>
+  <li>각각의 Transaction 데이터는 병합 해슁의 형태로 머클트리로 구성되며, 이와 함께 TimeStamp, 이전 블록의 해쉬, Nonce 등을 블록 헤더로 가진다.</li>
+  <li><code class="language-plaintext highlighter-rouge">Head</code> 는 가장 최근에 추가된 데이터를 참조하는 값이다.</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@ MINGW64 /c/gitShare
-$ git init
-</code></pre></div></div>
-
-<ul>
-  <li>아래와 같이 .git 디렉토리가 생성된 것을 확인할 수 있다.
-<img src="/assets/images/gitset2.jpg" alt="generateFolder" /></li>
-</ul>
-
-<hr />
-
-<h2 id="2-git-repository-생성">2. Git Repository 생성</h2>
-
-<ul>
-  <li>
-    <p>Github 에서 push 할 저장소인 원격 repository 를 아래 메뉴를 통해 생성한다.
-<img src="/assets/images/gitset3.jpg" alt="generateFolder" /></p>
-  </li>
-  <li>
-    <p>Repository 생성 후, 아래 주소를 복사한다.
-<img src="/assets/images/gitset4.jpg" alt="generateFolder" /></p>
-  </li>
-</ul>
-
-<hr />
-
-<h2 id="3-github-연결-설정">3. Github 연결 설정</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@ MINGW64 /c/gitShare (master) 
-$ git remote add origin [git address]
-</code></pre></div></div>
-
-<ul>
-  <li>위와 같이 복사한 주소를 git remote add origin [복사 주소] 명령어를 통해 Local Repository 를 원격 저장소와 동기화 한다.
-필요 시, Github 계정을 통해 인증한다.</li>
-</ul>
-
-<hr />
-
-<h2 id="4-commit-and-push">4. Commit and Push</h2>
-
-<ul>
-  <li>Working directory 데이터를 git Repository 로 옮기기 위해 아래 명령이 필요하다.</li>
-</ul>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@ MINGW64 /c/gitShare <span class="o">(</span>master<span class="o">)</span>
-<span class="nv">$ </span>git add <span class="nb">.</span>
-
-dc@ MINGW64 /c/gitShare <span class="o">(</span>master<span class="o">)</span>
-<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"init"</span>
-<span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 97d2ae3] init
- 1 file changed, 0 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
- create mode 100644 test.txt
-</code></pre></div></div>
-
-<ul>
-  <li>이후 Push 명령어를 통해 Github repository 에 올릴 수 있다.</li>
-</ul>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dc@MINGW64 /c/gitShare <span class="o">(</span>master<span class="o">)</span>
-<span class="nv">$ </span>git push origin master
-Enumerating objects: 3, <span class="k">done</span><span class="nb">.</span>
-Counting objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
-Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 203 bytes | 67.00 KiB/s, <span class="k">done</span><span class="nb">.</span>
-Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>, pack-reused 0
-remote:
-remote: Create a pull request <span class="k">for</span> <span class="s1">'master'</span> on GitHub by visiting:
-remote:      https://github.com/dmjgr5/test/pull/new/master
-remote:
-To https://github.com/dmjgr5/test.git
- <span class="k">*</span> <span class="o">[</span>new branch]      master -&gt; master
-</code></pre></div></div>
-
-<ul>
-  <li>Github 에서 아래와 같이 해당 데이터가 올라온 것을 확인할 수 있다.</li>
-</ul>
-
-<p><img src="/assets/images/gitset5.jpg" alt="generateFolder" /></p>
-
+<p><img src="/assets/images/bcws.png" alt="example" /></p>
 
 </div>
 
@@ -914,15 +853,6 @@ To https://github.com/dmjgr5/test.git
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
-    
-      <li>
-        <h4>
-          <a href="https://dmjgr5.github.io/06_blockchain/2021/10/26/whatisblockchain/">
-            도서리뷰 - 블록체인 무엇인가
-            <small>26 Oct 2021</small>
-          </a>
-        </h4>
-      </li>
     
       <li>
         <h4>
@@ -938,6 +868,15 @@ To https://github.com/dmjgr5/test.git
           <a href="https://dmjgr5.github.io/06_blockchain/2021/10/13/blockchainbasic/">
             블록체인(BlockChain) 이해하기
             <small>13 Oct 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="https://dmjgr5.github.io/06_blockchain/2021/10/12/soliditybasic/">
+            리믹스(Remix) 도구를 이용한 Solidity 이해하기
+            <small>12 Oct 2021</small>
           </a>
         </h4>
       </li>
