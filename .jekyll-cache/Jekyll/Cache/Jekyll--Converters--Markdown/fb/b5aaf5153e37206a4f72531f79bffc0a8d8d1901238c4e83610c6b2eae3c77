@@ -1,0 +1,56 @@
+I"@<p><img src="/assets/images/edgedb.jpg" alt="example" /></p>
+
+<hr />
+
+<h4 id="after-installation-of-dockertoolbox-follow-as-below">After Installation of DockerToolbox, follow as below;</h4>
+
+<ul>
+  <li>
+    <p>Pull edgedb</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$ docker pull edgedb/edgedb</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Stop docker env first</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">stop : $ docker-machine stop</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Setting folder share</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">share c: driver on VirtualBox setting if required.</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Start docker env</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">start: $ docker-machine start</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Go to SHH to enjoy docker</p>
+
+    <ul>
+      <li>go to <code class="language-plaintext highlighter-rouge">ssh : $ docker-machine ssh</code></li>
+    </ul>
+  </li>
+  <li>Run Container
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">docker run -d --name=edgedb-server -p "5656:5656" -p "8888:8888" -p "8889:8889" -v /c/dev:/var/lib/edgedb/data edgedb/edgedb</code></li>
+    </ul>
+  </li>
+  <li>Go into Container Shell
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">docker@default:~$ docker exec -it bd4 bash</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="https://www.w3schools.com/whatis/whatis_js.asp">https://www.w3schools.com/whatis/whatis_js.asp</a></p>
+:ET

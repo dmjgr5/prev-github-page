@@ -1,0 +1,40 @@
+I"R<p>This is the document written when I research the concept of Machine Learning.</p>
+
+<hr />
+
+<h3 id="linear-regression-and-logistic-classification">Linear Regression and Logistic Classification</h3>
+
+<p><img src="/assets/images/mltheory.jpg" alt="example" /></p>
+
+<p><img src="/assets/images/mltheory2.jpg" alt="example" /></p>
+
+<h4 id="terms">Terms</h4>
+<p>epoch, batch size</p>
+
+<h4 id="initialization">Initialization</h4>
+<ul>
+  <li>RBM (2006) -&gt; Xavier</li>
+  <li>DropOut (2014)</li>
+  <li>Ensemble : Merge learning model</li>
+</ul>
+
+<h4 id="optimizer">Optimizer</h4>
+<ul>
+  <li>gradient decent, adam and other optimizers</li>
+</ul>
+
+<h4 id="convolutional-neural-networks-cnn">Convolutional Neural Networks (CNN)</h4>
+<ul>
+  <li>How to connect layers : Forward, Split &amp; Merge, Recurrent Network(RNN)</li>
+  <li>convolution, relu(2012), pooling, repeated.</li>
+  <li>stride, convolution, sampling, padding, pooling</li>
+</ul>
+
+<h4 id="recurrent-neural-network-rnn">Recurrent Neural Network (RNN)</h4>
+<ul>
+  <li>Stacked RNN, Softmax</li>
+  <li>Dynamic RNN</li>
+  <li>Time Series RNN</li>
+</ul>
+
+:ET

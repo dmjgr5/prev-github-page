@@ -1,0 +1,99 @@
+I"�<p>깃허브 페이지를 작성 후 로컬에서 테스트할 수 있는 환경을 구성하고자 한다. 깃허브에 Push 후 확인할 수 있지만, 오타가 기타 오류가 발생할 경우 재업로드 해야 하는 불편함이 따르므로 Push 이전에 항상 로컬에서 테스트를 하면 이러한 불편함을 없앨 수 있다.</p>
+
+<hr />
+
+<h2 id="1-루비ruby-설치">1. 루비(Ruby) 설치</h2>
+
+<ul>
+  <li>URL : https://rubyinstaller.org/downloads/
+    <ul>
+      <li>Ruby+Devkit 2.7.4-1 (x64) : 3.0 지원안하므로 2.X 로 설치한다.</li>
+    </ul>
+  </li>
+  <li>버전 확인 : ruby -v</li>
+</ul>
+
+<hr />
+
+<h2 id="2-지킬jekyll-설치">2. 지킬(Jekyll) 설치</h2>
+
+<ul>
+  <li>Command Prompt with Ruby를 실행
+    <ul>
+      <li>gem install jekyll</li>
+      <li>gem install bundler</li>
+    </ul>
+  </li>
+  <li>샘플블로그 체크
+    <ul>
+      <li>jekyll new HelloBlog</li>
+      <li>cd HelloBlog</li>
+      <li>bundle exec jekyll serve
+        <ul>
+          <li>http://127.0.0.1:4000/</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="3-로컬-환경-접속">3. 로컬 환경 접속</h2>
+
+<ul>
+  <li>깃허브 페이지 폴더로 이동한다.</li>
+  <li>인코딩 에러 발생시 다음의 코드를 실행한다.
+    <ul>
+      <li>chcp 65001</li>
+    </ul>
+  </li>
+  <li>지킬을 실행한다.
+    <ul>
+      <li>jekyll serve</li>
+      <li>브라우저를 열어 http://127.0.0.1:4000/로 접속하면 로컬 상에서 블로그가 구현된 결과를 살펴 볼 수 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="4-업로드">4. 업로드</h2>
+
+<blockquote>
+  <p>포스트 업로드하는 것은 일반적인 소스코드 업로드하는 것과 동일하다. VSCODE 에서 직접 업로드 하는 방법이 있으며, 작업의 반복적인 부분이 있어 쉘 스크립트로 자동화가 가능하며 자동화하는 방법은 다음과 같다.</p>
+</blockquote>
+
+<ul>
+  <li>쉘스크립트
+    <ul>
+      <li>
+        <p>프로젝트 폴더에 post_upload.sh 파일을 만들고 다음과 같이 내용을 입력한다.</p>
+
+        <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">echo</span> <span class="sb">`</span>git status<span class="sb">`</span>
+  <span class="nb">echo</span> <span class="sb">`</span>git add _posts/<span class="k">*</span><span class="sb">`</span>
+  <span class="nb">echo</span> <span class="sb">`</span>git commit <span class="nt">-m</span> <span class="s2">"post upload"</span><span class="sb">`</span>
+  <span class="nb">echo</span> <span class="sb">`</span>git push origin master<span class="sb">`</span>
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>실행 명령어는 다음과 같다.</p>
+
+        <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>sh post_upload.sh
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>로컬 실행 : C:\park.github.io&gt;bundle exec jekyll serve</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  C:<span class="se">\p</span>ark.github.io&gt;git add <span class="nb">.</span>
+
+  C:<span class="se">\p</span>ark.github.io&gt;git commit <span class="nt">-m</span> <span class="s2">"3rd blog page test"</span>
+
+  C:<span class="se">\p</span>ark.github.io&gt;git push <span class="nt">-u</span> origin master
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+:ET

@@ -1,0 +1,56 @@
+I"è<p>This is for installation for Node.js on Windows 10.</p>
+
+<hr />
+
+<p><img src="/assets/images/nodejs.jpg" alt="example" /></p>
+
+<ul>
+  <li>Go to https://nodejs.org/en/ then download the Nodejs file</li>
+  <li>How to check Nodejs Installation
+    <ul>
+      <li>node -v on command line, then we can check the version of Nodejs
+        <pre><code class="language-C:\Users\samsung1&gt;node">  Welcome to Node.js v12.14.0.
+  Type ".help" for more information.
+  &gt; var i = 1
+  undefined
+  &gt; var i = 1
+  undefined
+  &gt; var i =2
+  undefined
+  &gt; var j =3
+  undefined
+  &gt; i+j
+  5
+</code></pre>
+      </li>
+    </ul>
+  </li>
+  <li>Check sample code, save as Sample.js in C:\</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+
+});
+
+server.listen(port, hostname, () =&gt; {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+Colored by Color Scripter
+cs
+</code></pre></div></div>
+
+<ul>
+  <li>go to <code class="language-plaintext highlighter-rouge">C:\ , then c:\&gt;node Sample.js</code></li>
+  <li>Server running at http://127.0.0.1:3000/</li>
+  <li>On browser, we can check the Hello World.</li>
+</ul>
+
+:ET
