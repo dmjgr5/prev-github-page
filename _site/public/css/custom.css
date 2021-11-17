@@ -85,7 +85,7 @@ pre.highlight {
 }
 
 img.emoji {
-  display: inline-block;
+  display: inline;
   left: 0;
   transform: none;
   width: 20px;

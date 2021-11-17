@@ -8,17 +8,19 @@ title: About
 </p> -->
 
 
- [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdmjgr5)](https://hits.seeyoufarm.com) ![Hits](https://img.shields.io/github/followers/dmjgr5?label=Follow)
+ [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdmjgr5)](https://hits.seeyoufarm.com)
+ 
+  <!-- ![Hits](https://img.shields.io/github/followers/dmjgr5?label=Follow) -->
 
-:wave: Hello My name is dcpark, Deep Learning Research Engineer working at ![Intel](https://img.shields.io/badge/-Intel-0071C5?style=plastic&logo=intel&logoColor=white)
+:wave: Hello My name is dmjgr, Prgramming Developer working at ![Samsung](https://img.shields.io/badge/Samsung-%231428A0.svg?style=for-the-badge&logo=samsung&logoColor=white)
 
-### :bulb: Current Interests
-- Computer Vision
-- Semi Supervised Learning for Classification, Detection, Segmentation
-- Generative Model
-- Various ideas (If you have any research or project you want to share with me, please contact me!)
+### :bulb: **Current Interests**
+- Programming Languages
+- AI & Block Chain fields
+- Prediction Models for the Path Loss in Radio Frequency
+- Various theory such as technical trends
 
-### :purple_heart: Career
+### :purple_heart: **Career**
 
 - **생산 자동화 위한 백엔드 서버 설계 및 개발**
 
@@ -51,11 +53,12 @@ title: About
 | **Research activities** | 2021. 1 ~ 4 | Team leader of IVADL, 8th Open-Lab | **Korea AI Lab** |
 | **:office:Employment** | 2021. 6 ~ | Deeplearning Engineer | **Intel** | -->
 
-### :cyclone: Languages
+### :cyclone: **Languages**
 ![JAVA](https://img.shields.io/badge/JAVA-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-3DDC84?style=plastic&logo=android&logoColor=white) ![PYTHON](https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&logo=Python&logoColor=white)
 
+<!-- 
+[![Tensorflow Developer Certificate](https://img.shields.io/badge/Tensorflow%20Developer%20Certificate-FF6F00?logo=tensorflow&logoColor=white)](https://www.credential.net/28bacf68-2290-412e-a7cb-8b12ce42e04de) -->
 
-[![Tensorflow Developer Certificate](https://img.shields.io/badge/Tensorflow%20Developer%20Certificate-FF6F00?logo=tensorflow&logoColor=white)](https://www.credential.net/28bacf68-2290-412e-a7cb-8b12ce42e04de)
-
-### :mailbox_with_mail: Contacts
-[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:dmjgr5@gmail.com)](mailto:dmjgr5@gmail.com) [![Facebook Badge](https://img.shields.io/badge/facebook-1877f2?style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/dmjgr5.kang)](https://www.facebook.com/dmjgr5.dmjgr5) [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dmjgr5-kang-1bb974179)](https://www.linkedin.com/in/dmjgr5-dmjgr5-1bb974179) [![Tech Blog Badge](http://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github&link=https://davinci-ai.tistory.com/)](https://davinci-ai.dmjgr5.com/) 
+### :mailbox_with_mail: **Contacts**
+[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:dmjgr5@gmail.com)](mailto:dmjgr5@gmail.com)
+ <!-- [![Facebook Badge](https://img.shields.io/badge/facebook-1877f2?style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/dmjgr5.kang)](https://www.facebook.com/dmjgr5.dmjgr5) [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dmjgr5-kang-1bb974179)](https://www.linkedin.com/in/dmjgr5-dmjgr5-1bb974179) [![Tech Blog Badge](http://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github&link=https://davinci-ai.tistory.com/)](https://davinci-ai.dmjgr5.com/)  -->
