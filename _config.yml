@@ -23,6 +23,7 @@ version:             1.0.0
 
 plugins:
   - jekyll-paginate
+  - jemoji
   # - jekyll-sitemap
 
 # Tag setting

@@ -1,6 +1,7 @@
-I"�<p class="message">
+I"�<!-- 
+<p class="message">
   안녕하세요. 업데이트 예정입니다.
-</p>
+</p> -->
 
 <p><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdmjgr5" alt="Hits" /></a> <img src="https://img.shields.io/github/followers/dmjgr5?label=Follow" alt="Hits" /></p>
 
@@ -44,69 +45,19 @@
   </li>
 </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"><strong>Type</strong></th>
-      <th style="text-align: center"><strong>Date</strong></th>
-      <th style="text-align: center"><strong>Contents</strong></th>
-      <th style="text-align: center"><strong>Organization</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><strong>:mortar_board: Education</strong></td>
-      <td style="text-align: center">2014. 3 ~ 2020. 2</td>
-      <td style="text-align: center">Department of Mathematics, Software</td>
-      <td style="text-align: center"><strong>ss University</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>Research activities</strong></td>
-      <td style="text-align: center">2018. 12 ~ 2019. 6</td>
-      <td style="text-align: center">Undergraduate Research Students</td>
-      <td style="text-align: center"><strong>aae Univ. SE Lab</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>External activities</strong></td>
-      <td style="text-align: center">2019. 6 ~ 8</td>
-      <td style="text-align: center">Global Start-up Challenge (Start-up in Australia)</td>
-      <td style="text-align: center"><strong>EndorFin</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>Research activities</strong></td>
-      <td style="text-align: center">2020. 1 ~ 7</td>
-      <td style="text-align: center">Team leader of Mevia, 6th Open-Lab</td>
-      <td style="text-align: center"><strong>Korea AI Lab</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>:office:Employment</strong></td>
-      <td style="text-align: center">2020. 5 ~ 2021. 5</td>
-      <td style="text-align: center">QA, SW Engineer</td>
-      <td style="text-align: center"><strong>Intel</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>External activities</strong></td>
-      <td style="text-align: center">2020. 10 ~ 2021. 1</td>
-      <td style="text-align: center">Google MachineLearning BootCamp</td>
-      <td style="text-align: center"><strong>Google Developers</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>Research activities</strong></td>
-      <td style="text-align: center">2021. 1 ~ 4</td>
-      <td style="text-align: center">Team leader of IVADL, 8th Open-Lab</td>
-      <td style="text-align: center"><strong>Korea AI Lab</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>:office:Employment</strong></td>
-      <td style="text-align: center">2021. 6 ~</td>
-      <td style="text-align: center">Deeplearning Engineer</td>
-      <td style="text-align: center"><strong>Intel</strong></td>
-    </tr>
-  </tbody>
-</table>
+<!-- | **Type** | **Date** | **Contents** | **Organization** |
+|:--------:|:--------:|:--------:|:--------:|
+| **:mortar_board: Education** | 2014. 3 ~ 2020. 2 | Department of Mathematics, Software | **ss University** |
+| **Research activities** | 2018. 12 ~ 2019. 6 | Undergraduate Research Students | **aae Univ. SE Lab** |
+| **External activities** | 2019. 6 ~ 8 | Global Start-up Challenge (Start-up in Australia) | **EndorFin** |
+| **Research activities** | 2020. 1 ~ 7 | Team leader of Mevia, 6th Open-Lab | **Korea AI Lab** |
+| **:office:Employment** | 2020. 5 ~ 2021. 5 | QA, SW Engineer | **Intel** |
+| **External activities** | 2020. 10 ~ 2021. 1 | Google MachineLearning BootCamp | **Google Developers** |
+| **Research activities** | 2021. 1 ~ 4 | Team leader of IVADL, 8th Open-Lab | **Korea AI Lab** |
+| **:office:Employment** | 2021. 6 ~ | Deeplearning Engineer | **Intel** | -->
 
 <h3 id="cyclone-languages">:cyclone: Languages</h3>
-<p><img src="https://img.shields.io/badge/JAVA-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-3DDC84?style=plastic&amp;logo=android&amp;logoColor=white" alt="JAVA" /><img src="https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&amp;logo=Python&amp;logoColor=white" alt="PYTHON" /></p>
+<p><img src="https://img.shields.io/badge/JAVA-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-3DDC84?style=plastic&amp;logo=android&amp;logoColor=white" alt="JAVA" /> <img src="https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&amp;logo=Python&amp;logoColor=white" alt="PYTHON" /></p>
 
 <p><a href="https://www.credential.net/28bacf68-2290-412e-a7cb-8b12ce42e04de"><img src="https://img.shields.io/badge/Tensorflow%20Developer%20Certificate-FF6F00?logo=tensorflow&amp;logoColor=white" alt="Tensorflow Developer Certificate" /></a></p>
 

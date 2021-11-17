@@ -2,10 +2,10 @@
 layout: page
 title: About
 ---
-
+<!-- 
 <p class="message">
   안녕하세요. 업데이트 예정입니다.
-</p>
+</p> -->
 
 
  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdmjgr5)](https://hits.seeyoufarm.com) ![Hits](https://img.shields.io/github/followers/dmjgr5?label=Follow)
@@ -52,7 +52,7 @@ title: About
 | **:office:Employment** | 2021. 6 ~ | Deeplearning Engineer | **Intel** | -->
 
 ### :cyclone: Languages
-![JAVA](https://img.shields.io/badge/JAVA-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-3DDC84?style=plastic&logo=android&logoColor=white)![PYTHON](https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&logo=Python&logoColor=white)
+![JAVA](https://img.shields.io/badge/JAVA-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-3DDC84?style=plastic&logo=android&logoColor=white) ![PYTHON](https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&logo=Python&logoColor=white)
 
 
 [![Tensorflow Developer Certificate](https://img.shields.io/badge/Tensorflow%20Developer%20Certificate-FF6F00?logo=tensorflow&logoColor=white)](https://www.credential.net/28bacf68-2290-412e-a7cb-8b12ce42e04de)

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Git Note</title>
- <link href="https://dmjgr5.github.io/atom.xml" rel="self"/>
- <link href="https://dmjgr5.github.io/"/>
- <updated>2021-11-17T20:33:52+09:00</updated>
- <id>https://dmjgr5.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2021-11-17T20:59:30+09:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>dcp</name>
    <email>dmjgr5@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>도서리뷰 - 블록체인 무엇인가</title>
-   <link href="https://dmjgr5.github.io/06_blockchain/2021/10/26/whatisblockchain/"/>
+   <link href="http://localhost:4000/06_blockchain/2021/10/26/whatisblockchain/"/>
    <updated>2021-10-26T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/06_blockchain/2021/10/26/whatisblockchain</id>
+   <id>http://localhost:4000/06_blockchain/2021/10/26/whatisblockchain</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/bcw.jpg&quot; alt=&quot;example&quot; /&gt;
 &lt;em&gt;다니엘 드레셔 저/이병욱 역 | 이지스퍼블리싱 | 2018년 02월 19일&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -52,9 +52,9 @@
  
  <entry>
    <title>Github 프로필 꾸미기</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2021/10/14/githubprofile/"/>
+   <link href="http://localhost:4000/05_cloud/2021/10/14/githubprofile/"/>
    <updated>2021-10-14T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2021/10/14/githubprofile</id>
+   <id>http://localhost:4000/05_cloud/2021/10/14/githubprofile</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/gp0.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -128,9 +128,9 @@
  
  <entry>
    <title>블록체인(BlockChain) 이해하기</title>
-   <link href="https://dmjgr5.github.io/06_blockchain/2021/10/13/blockchainbasic/"/>
+   <link href="http://localhost:4000/06_blockchain/2021/10/13/blockchainbasic/"/>
    <updated>2021-10-13T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/06_blockchain/2021/10/13/blockchainbasic</id>
+   <id>http://localhost:4000/06_blockchain/2021/10/13/blockchainbasic</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/bc0.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -231,9 +231,9 @@
  
  <entry>
    <title>리믹스(Remix) 도구를 이용한 Solidity 이해하기</title>
-   <link href="https://dmjgr5.github.io/06_blockchain/2021/10/12/soliditybasic/"/>
+   <link href="http://localhost:4000/06_blockchain/2021/10/12/soliditybasic/"/>
    <updated>2021-10-12T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/06_blockchain/2021/10/12/soliditybasic</id>
+   <id>http://localhost:4000/06_blockchain/2021/10/12/soliditybasic</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/solidity0.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -318,9 +318,9 @@
  
  <entry>
    <title>geth 설치 및 기본 활용하기</title>
-   <link href="https://dmjgr5.github.io/06_blockchain/2021/10/10/gethbasic/"/>
+   <link href="http://localhost:4000/06_blockchain/2021/10/10/gethbasic/"/>
    <updated>2021-10-10T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/06_blockchain/2021/10/10/gethbasic</id>
+   <id>http://localhost:4000/06_blockchain/2021/10/10/gethbasic</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/geth.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -392,9 +392,9 @@ Account #0: {e51d1ad2afd68a71a04b6ecd8efb0c522f032fb9} keystore://C:\Users\dcjam
  
  <entry>
    <title>Jekyll 기반 Github Page 의 Google Analytics 환경 설정하기</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2021/10/06/googleanalyticssetting/"/>
+   <link href="http://localhost:4000/05_cloud/2021/10/06/googleanalyticssetting/"/>
    <updated>2021-10-06T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2021/10/06/googleanalyticssetting</id>
+   <id>http://localhost:4000/05_cloud/2021/10/06/googleanalyticssetting</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/ga1.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -465,9 +465,9 @@ google_analytics:
  
  <entry>
    <title>자신을 믿으세요</title>
-   <link href="https://dmjgr5.github.io/09_life/2021/09/25/trustyourself/"/>
+   <link href="http://localhost:4000/09_life/2021/09/25/trustyourself/"/>
    <updated>2021-09-25T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/09_life/2021/09/25/trustyourself</id>
+   <id>http://localhost:4000/09_life/2021/09/25/trustyourself</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;우연히 어느 게시글을 보고 기억에 남아 흔적을 남기고자 합니다. 직장 생활에 회의감을 느끼는 요즘 읽어보니 외부 조건이나 상황에 의지하지 않고 신념을 가지고 계획한 일을 꾸준히 한다면 언젠가는 빛을 볼 수 있다는 확신이 드는 글입니다. 한 번 읽어 보시고 곰곰히 생각해 보시죠..&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -500,9 +500,9 @@ google_analytics:
  
  <entry>
    <title>5 Whys 기법</title>
-   <link href="https://dmjgr5.github.io/07_theoretical/2021/09/16/5why/"/>
+   <link href="http://localhost:4000/07_theoretical/2021/09/16/5why/"/>
    <updated>2021-09-16T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/07_theoretical/2021/09/16/5why</id>
+   <id>http://localhost:4000/07_theoretical/2021/09/16/5why</id>
    <content type="html">&lt;p&gt;한 플랫폼 기업에서는 장애 원인 분석을 찾기 위한 기법으로 5 Whys 기법을 활용한다고 합니다. 5 Whys 기법는 장애 분석 기법이 아닌 어떠한 상황이 발생했을 때 그에 대한 원인을 파악하기 위해 착안한 방법의 일종이라고 합니다. 일상 생활에서도 특정 원인을 분석할 때 좋을 것 같아 아래와 같이 정리하고자 합니다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -560,9 +560,9 @@ google_analytics:
  
  <entry>
    <title>통계 분석 기초 용어 정리</title>
-   <link href="https://dmjgr5.github.io/07_theoretical/2021/09/15/statsbasic/"/>
+   <link href="http://localhost:4000/07_theoretical/2021/09/15/statsbasic/"/>
    <updated>2021-09-15T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/07_theoretical/2021/09/15/statsbasic</id>
+   <id>http://localhost:4000/07_theoretical/2021/09/15/statsbasic</id>
    <content type="html">&lt;p&gt;빅데이터를 학습하기 전에 가장 먼저 맞닥뜨리는 것이 아무래도 통계일 것입니다. 수집된 자료를 정리, 분석하고 일정한 패턴 분석 및 인과관계를 파악하기 위해서는 기본이 되는 통계 개념을 이해하고 넘어가고자 아래와 같이 정리합니다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -639,9 +639,9 @@ google_analytics:
  
  <entry>
    <title>MSA 개요</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2021/09/05/msabasic/"/>
+   <link href="http://localhost:4000/05_cloud/2021/09/05/msabasic/"/>
    <updated>2021-09-05T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2021/09/05/msabasic</id>
+   <id>http://localhost:4000/05_cloud/2021/09/05/msabasic</id>
    <content type="html">&lt;p&gt;단일 서버에서 서비스 하던 것에서 벗어나 가능한 작은 서비스들로 나눈어 클라우드 환경에서 구성하기 위함이다. 
  MicroService  -&amp;gt; Contailer -&amp;gt; 많아지니까 클러스터 구성 -&amp;gt; 이런 환경을 클라우드 환경에서 구현함&lt;/p&gt;
 
@@ -730,9 +730,9 @@ DB:                RabbitMQ        MariaDB          MongoDB
  
  <entry>
    <title>깃허브페이지 로컬에서 실행하기 - Jekyll</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2021/08/11/githubpageJekyll/"/>
+   <link href="http://localhost:4000/05_cloud/2021/08/11/githubpageJekyll/"/>
    <updated>2021-08-11T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2021/08/11/githubpageJekyll</id>
+   <id>http://localhost:4000/05_cloud/2021/08/11/githubpageJekyll</id>
    <content type="html">&lt;p&gt;깃허브 페이지를 작성 후 로컬에서 테스트할 수 있는 환경을 구성하고자 한다. 깃허브에 Push 후 확인할 수 있지만, 오타가 기타 오류가 발생할 경우 재업로드 해야 하는 불편함이 따르므로 Push 이전에 항상 로컬에서 테스트를 하면 이러한 불편함을 없앨 수 있다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -836,9 +836,9 @@ DB:                RabbitMQ        MariaDB          MongoDB
  
  <entry>
    <title>Github 원격 저장소와 로컬 저장소 연동하기</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2021/07/07/githubsetting/"/>
+   <link href="http://localhost:4000/05_cloud/2021/07/07/githubsetting/"/>
    <updated>2021-07-07T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2021/07/07/githubsetting</id>
+   <id>http://localhost:4000/05_cloud/2021/07/07/githubsetting</id>
    <content type="html">&lt;p&gt;로컬에 있는 데이터 및 소스들을 Github 에 올리기 위해 필요한 절차 및 명령어를 간단히 정리해 보고자 한다. 기본적인 내용이지만 가끔 생성할 때마다 기억이 잘 안나 구글링을 다시 해보곤 해서 이참에 정리하고자 한다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -935,9 +935,9 @@ To https://github.com/dmjgr5/test.git
  
  <entry>
    <title>Django 웹사이트 구축</title>
-   <link href="https://dmjgr5.github.io/08_toyproject/2021/03/12/panabara/"/>
+   <link href="http://localhost:4000/08_toyproject/2021/03/12/panabara/"/>
    <updated>2021-03-12T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/08_toyproject/2021/03/12/panabara</id>
+   <id>http://localhost:4000/08_toyproject/2021/03/12/panabara</id>
    <content type="html">&lt;p&gt;분산된 투자 종목들을 한번에 관리하고 투자 유형별, 종목별로 자산 현황을 쉽게 파악하고자 아래와 같이 간단히 구성하였다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -1017,9 +1017,9 @@ To https://github.com/dmjgr5/test.git
  
  <entry>
    <title>우선순위큐 (Priority Queue)</title>
-   <link href="https://dmjgr5.github.io/01_algorithm/2021/03/10/priorityqueue-copy/"/>
+   <link href="http://localhost:4000/01_algorithm/2021/03/10/priorityqueue-copy/"/>
    <updated>2021-03-10T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/01_algorithm/2021/03/10/priorityqueue copy</id>
+   <id>http://localhost:4000/01_algorithm/2021/03/10/priorityqueue copy</id>
    <content type="html">&lt;p&gt;우선순위는 일반적으로 먼저 들어간 데이터가 먼저 나오는 큐와는 다른, 별도로 정의된 규칙에 따른 우선순위대로 나오는 큐를 말한다.
 클래스 선언 시 Comparable 을 이용하여 구현 가능하며, Comparator 의 클래스로도 사용할 수 있다. 본 장에서는 Comparable 를 활용한 예제를 나타내었다.
 동일 조건일 때는 return 이전에 if 문으로 분기하여 추가 구현 가능하다.&lt;/p&gt;
@@ -1089,9 +1089,9 @@ To https://github.com/dmjgr5/test.git
  
  <entry>
    <title>KMP 알고리즘</title>
-   <link href="https://dmjgr5.github.io/01_algorithm/2021/03/09/kmp/"/>
+   <link href="http://localhost:4000/01_algorithm/2021/03/09/kmp/"/>
    <updated>2021-03-09T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/01_algorithm/2021/03/09/kmp</id>
+   <id>http://localhost:4000/01_algorithm/2021/03/09/kmp</id>
    <content type="html">&lt;p&gt;문자열과 관련된 알고리즘 중 기본적으로 이해해야 할 KMP 문자열에 대해서 알아본다. 이해하긴 쉬울 순 있으나 처음 이해하는 과정이 다소 어려긴 하다. 문자열에서 특정 패턴을 검색할 수 있다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -1192,9 +1192,9 @@ BCD -- 패턴 문자열
  
  <entry>
    <title>LCA (Low Common Ancestor)</title>
-   <link href="https://dmjgr5.github.io/01_algorithm/2021/03/08/lca/"/>
+   <link href="http://localhost:4000/01_algorithm/2021/03/08/lca/"/>
    <updated>2021-03-08T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/01_algorithm/2021/03/08/lca</id>
+   <id>http://localhost:4000/01_algorithm/2021/03/08/lca</id>
    <content type="html">&lt;p&gt;LCA 는 트리 노드에서 공통 조상을 찾는 로직이다. 로직 구성은 아래와 같다.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -1363,9 +1363,9 @@ a 에서 b 로 갈 경우, 공통조상은 반드시 거치므로 비용은 a �
  
  <entry>
    <title>Cloud Vision API from a Kubernetes Cluster</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2021/01/02/CloudVIsion/"/>
+   <link href="http://localhost:4000/05_cloud/2021/01/02/CloudVIsion/"/>
    <updated>2021-01-02T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2021/01/02/CloudVIsion</id>
+   <id>http://localhost:4000/05_cloud/2021/01/02/CloudVIsion</id>
    <content type="html">&lt;p&gt;This is for Cloud Vision API from a Kubernetes Cluster that  uses Kubernetes and Cloud Vision API. The guide is from Awwvision: Cloud Vision API from a Kubernetes Cluster&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;https://codelabs.developers.google.com/codelabs/awwvision-cloud-vision-api-from-a-kubernetes-cluster/index.html?index=..%2F..index#0&lt;/p&gt;
@@ -1446,9 +1446,9 @@ awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   
  
  <entry>
    <title>파이썬을 이용한 주식관리 프로그램</title>
-   <link href="https://dmjgr5.github.io/08_toyproject/2020/01/03/toy-creon/"/>
+   <link href="http://localhost:4000/08_toyproject/2020/01/03/toy-creon/"/>
    <updated>2020-01-03T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/08_toyproject/2020/01/03/toy-creon</id>
+   <id>http://localhost:4000/08_toyproject/2020/01/03/toy-creon</id>
    <content type="html">&lt;!-- ## 목차
 1. [프로젝트 목적](#1장.-프로젝트-목적)
 1. [프로젝트 개요](#프로젝트-개요)
@@ -1824,9 +1824,9 @@ awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   
  
  <entry>
    <title>Simple Neural Network</title>
-   <link href="https://dmjgr5.github.io/04_ai/2019/12/31/simpleneuralnetwork/"/>
+   <link href="http://localhost:4000/04_ai/2019/12/31/simpleneuralnetwork/"/>
    <updated>2019-12-31T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/04_ai/2019/12/31/simpleneuralnetwork</id>
+   <id>http://localhost:4000/04_ai/2019/12/31/simpleneuralnetwork</id>
    <content type="html">&lt;h4 id=&quot;this-is-from-codelab-where-located-in-httpscodelabsdevelopersgooglecomcodelabsneural-tensorflow-jsindexhtmlindex2findex0&quot;&gt;This is from codelab where located in &lt;a href=&quot;https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0&quot;&gt;https://codelabs.developers.google.com/codelabs/neural-tensorflow-js/index.html?index=..%2F..index#0&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/neuralsample.jpeg&quot; /&gt;&lt;/p&gt;
@@ -2108,9 +2108,9 @@ awwvision-webapp   LoadBalancer   10.31.252.91   34.67.220.234   80:30166/TCP   
  
  <entry>
    <title>How to install Node.js on Windows 10</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2019/12/31/nodejs/"/>
+   <link href="http://localhost:4000/05_cloud/2019/12/31/nodejs/"/>
    <updated>2019-12-31T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2019/12/31/nodejs</id>
+   <id>http://localhost:4000/05_cloud/2019/12/31/nodejs</id>
    <content type="html">&lt;p&gt;This is for installation for Node.js on Windows 10.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -2171,9 +2171,9 @@ cs
  
  <entry>
    <title>Deploying a Python Flask Web Application using GCP</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2019/12/31/flaskdeploy/"/>
+   <link href="http://localhost:4000/05_cloud/2019/12/31/flaskdeploy/"/>
    <updated>2019-12-31T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2019/12/31/flaskdeploy</id>
+   <id>http://localhost:4000/05_cloud/2019/12/31/flaskdeploy</id>
    <content type="html">&lt;p&gt;This document have been referred to the guide from https://codelabs.developers.google.com/codelabs/cloud-vision-app-engine/index.html?index=..%2F..index#0&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -2288,9 +2288,9 @@ python main.py&lt;/code&gt;&lt;/li&gt;
  
  <entry>
    <title>Machine Learning Theory</title>
-   <link href="https://dmjgr5.github.io/04_ai/2019/12/22/machineLearningTheory/"/>
+   <link href="http://localhost:4000/04_ai/2019/12/22/machineLearningTheory/"/>
    <updated>2019-12-22T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/04_ai/2019/12/22/machineLearningTheory</id>
+   <id>http://localhost:4000/04_ai/2019/12/22/machineLearningTheory</id>
    <content type="html">&lt;p&gt;This is the document written when I research the concept of Machine Learning.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -2335,9 +2335,9 @@ python main.py&lt;/code&gt;&lt;/li&gt;
  
  <entry>
    <title>What is PHP</title>
-   <link href="https://dmjgr5.github.io/02_programming/2019/12/21/whatisphp/"/>
+   <link href="http://localhost:4000/02_programming/2019/12/21/whatisphp/"/>
    <updated>2019-12-21T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_programming/2019/12/21/whatisphp</id>
+   <id>http://localhost:4000/02_programming/2019/12/21/whatisphp</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/php.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML&lt;/p&gt;
@@ -2365,9 +2365,9 @@ python main.py&lt;/code&gt;&lt;/li&gt;
  
  <entry>
    <title>What is JavaScript</title>
-   <link href="https://dmjgr5.github.io/02_programming/2019/12/21/whatisjavascript/"/>
+   <link href="http://localhost:4000/02_programming/2019/12/21/whatisjavascript/"/>
    <updated>2019-12-21T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_programming/2019/12/21/whatisjavascript</id>
+   <id>http://localhost:4000/02_programming/2019/12/21/whatisjavascript</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/javascript.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -2387,9 +2387,9 @@ python main.py&lt;/code&gt;&lt;/li&gt;
  
  <entry>
    <title>How to Build edgedb on Windows 10</title>
-   <link href="https://dmjgr5.github.io/03_database/2019/12/21/howtobuildedgedbonwindows10/"/>
+   <link href="http://localhost:4000/03_database/2019/12/21/howtobuildedgedbonwindows10/"/>
    <updated>2019-12-21T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_database/2019/12/21/howtobuildedgedbonwindows10</id>
+   <id>http://localhost:4000/03_database/2019/12/21/howtobuildedgedbonwindows10</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/edgedb.jpg&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -2450,9 +2450,9 @@ python main.py&lt;/code&gt;&lt;/li&gt;
  
  <entry>
    <title>How to Connect PHP to MySQL</title>
-   <link href="https://dmjgr5.github.io/03_database/2019/12/20/howtoconnectphptomysql/"/>
+   <link href="http://localhost:4000/03_database/2019/12/20/howtoconnectphptomysql/"/>
    <updated>2019-12-20T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_database/2019/12/20/howtoconnectphptomysql</id>
+   <id>http://localhost:4000/03_database/2019/12/20/howtoconnectphptomysql</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;It is recommended to use mysqli and PDO_MySQL. In this tutorial, mysqli is used.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2515,9 +2515,9 @@ if(isset($_GET['id'])) {
  
  <entry>
    <title>How to Use MySQL</title>
-   <link href="https://dmjgr5.github.io/03_database/2019/12/16/howtousemysql/"/>
+   <link href="http://localhost:4000/03_database/2019/12/16/howtousemysql/"/>
    <updated>2019-12-16T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_database/2019/12/16/howtousemysql</id>
+   <id>http://localhost:4000/03_database/2019/12/16/howtousemysql</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/mysql.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -2647,9 +2647,9 @@ Query OK, 1 row affected (0.02 sec)
  
  <entry>
    <title>How to Use Git CLI Using Git Bash</title>
-   <link href="https://dmjgr5.github.io/05_cloud/2019/12/11/howtousegitcliusinggitbash/"/>
+   <link href="http://localhost:4000/05_cloud/2019/12/11/howtousegitcliusinggitbash/"/>
    <updated>2019-12-11T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/05_cloud/2019/12/11/howtousegitcliusinggitbash</id>
+   <id>http://localhost:4000/05_cloud/2019/12/11/howtousegitcliusinggitbash</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/gitbash.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -2788,9 +2788,9 @@ Switched to branch 'master'
  
  <entry>
    <title>What is Python</title>
-   <link href="https://dmjgr5.github.io/02_programming/2019/12/06/whatispython/"/>
+   <link href="http://localhost:4000/02_programming/2019/12/06/whatispython/"/>
    <updated>2019-12-06T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_programming/2019/12/06/whatispython</id>
+   <id>http://localhost:4000/02_programming/2019/12/06/whatispython</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/python.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3846,9 +3846,9 @@ if __name__ == &quot;__main__&quot;:
  
  <entry>
    <title>What is HTML</title>
-   <link href="https://dmjgr5.github.io/02_programming/2019/12/02/whatishtml/"/>
+   <link href="http://localhost:4000/02_programming/2019/12/02/whatishtml/"/>
    <updated>2019-12-02T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_programming/2019/12/02/whatishtml</id>
+   <id>http://localhost:4000/02_programming/2019/12/02/whatishtml</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/html.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3912,9 +3912,9 @@ We believe that by implementing current web best practices and technologies, rev
  
  <entry>
    <title>What is CSS</title>
-   <link href="https://dmjgr5.github.io/02_programming/2019/12/02/whatiscss/"/>
+   <link href="http://localhost:4000/02_programming/2019/12/02/whatiscss/"/>
    <updated>2019-12-02T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/02_programming/2019/12/02/whatiscss</id>
+   <id>http://localhost:4000/02_programming/2019/12/02/whatiscss</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/css.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3984,9 +3984,9 @@ We believe that by implementing current web best practices and technologies, rev
  
  <entry>
    <title>How to use Pro*C</title>
-   <link href="https://dmjgr5.github.io/03_database/2019/11/02/howtouseproc/"/>
+   <link href="http://localhost:4000/03_database/2019/11/02/howtouseproc/"/>
    <updated>2019-11-02T00:00:00+09:00</updated>
-   <id>https://dmjgr5.github.io/03_database/2019/11/02/howtouseproc</id>
+   <id>http://localhost:4000/03_database/2019/11/02/howtouseproc</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/proc.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
