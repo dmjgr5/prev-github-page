@@ -22,16 +22,24 @@ title: About
 
 ### :purple_heart: **Career**
 
-- **생산 자동화 위한 백엔드 서버 설계 및 개발**
 
+<details>
+<summary>생산 자동화 위한 백엔드 서버 설계 및 개발</summary>
+ 
+<div markdown="1">
   - 2021/03 : 삼성SDI 전 사업장 MES 시스템 통합 설계
   - 2020/03 : 삼성전기 물류 자동화 시스템 개발 (1년)
   - 2019/08 : 삼성전자 물류 자동화 시스템 신규 전환 서버 설계 및 개발 (6개월)
   - 2018/02 : 삼성전기 MES 시스템 설계 및 개발 (1년)
   - 2017/10 : 삼성전기 생산 추적 시스템 백엔드 설계 및 구축 (3개월)
+</div>
+</details>
 
-- **무선 통신망 제안 및 설계,  측정 신호 전파 모델 분석**
 
+<details>
+<summary>무선 통신망 제안 및 설계,  측정 신호 전파 모델 분석</summary>
+ 
+<div markdown="1">
   - 2017/05 : 소사-원시 LTE-R 승강장, 터널 내 무선 환경 측정 및 분석 (2개월)
   - 2016/01 : 말레이시아 YTL 사업자 LTE 무선망 설계 및 확정 (5개월)
   - 2014/07 : 삼성전자 서천연수원, 우면 R&D 센터 FMC AP 위치 및 수량 설계 (2개월)
@@ -40,7 +48,8 @@ title: About
   - 2009/05 : 말레이시아 YTL 사업자 WiMAX 무선 통신망 기본 설계 및 제안 (2년)
   - 2007/04 : 사우디아라비아 Bayanat 사업자 WiMAX 무선 통신망 사이트 확정 (3개월)
   - 2006/03 : 인천공항 2터미널 내 TRS 신호 품질 측정 (6개월)
-
+</div>
+</details>
 
 <!-- | **Type** | **Date** | **Contents** | **Organization** |
 |:--------:|:--------:|:--------:|:--------:|
@@ -54,8 +63,10 @@ title: About
 | **:office:Employment** | 2021. 6 ~ | Deeplearning Engineer | **Intel** | -->
 
 ### :cyclone: **Languages**
-![JAVA](https://img.shields.io/badge/JAVA-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-3DDC84?style=plastic&logo=android&logoColor=white) ![PYTHON](https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&logo=Python&logoColor=white)
-
+![JAVA](https://img.shields.io/badge/JAVA-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-3DDC84?style=plastic&logo=android&logoColor=white) 
+![PYTHON](https://img.shields.io/badge/PYTHON-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-0696D7?style=plastic&logo=Python&logoColor=white)
+![C](https://img.shields.io/badge/C-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-129337?style=plastic&logo=C&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%86-46D633?style=plastic&logo=C#&logoColor=white)
 <!-- 
 [![Tensorflow Developer Certificate](https://img.shields.io/badge/Tensorflow%20Developer%20Certificate-FF6F00?logo=tensorflow&logoColor=white)](https://www.credential.net/28bacf68-2290-412e-a7cb-8b12ce42e04de) -->
 
