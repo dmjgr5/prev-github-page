@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 마크다운 이해하기
+title: 마크다운(Markdown) 문법 정리
 category: 02_Programming
 tag: [Markdown]
 ---
