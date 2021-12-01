@@ -11,7 +11,7 @@
 
   <title>
     
-      KMP 알고리즘 &middot; Git Note
+      Django 로컬에서 실행하기 &middot; Git Note
     
   </title>
 
@@ -827,103 +827,86 @@
         <div class="post">
   
   <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
-  <h2 class="post-title"> KMP 알고리즘</h2>
-  <span class="post-date">   09 Mar 2021</span>
-   <p>문자열과 관련된 알고리즘 중 기본적으로 이해해야 할 KMP 문자열에 대해서 알아본다. 이해하긴 쉬울 순 있으나 처음 이해하는 과정이 다소 어려긴 하다. 문자열에서 특정 패턴을 검색할 수 있다.</p>
+  <h2 class="post-title"> Django 로컬에서 실행하기</h2>
+  <span class="post-date">   30 Nov 2021</span>
+   <p><img src="/assets/images/djangolocal.png" alt="example" /></p>
+<blockquote>
+
+  <p>장고 프로젝트를 로컬에서 실행하기 위한 가상 환경 설정 및 모듈 다운로드, 해결책에 대해 정리하고자 합니다.</p>
+
+</blockquote>
 
 <hr />
 
-<ul>
-  <li>특이 사항으로는 실패함수를 생성하여 로직을 구현한다.</li>
-</ul>
+<h3 id="가상환경-설정">가상환경 설정</h3>
+<p>장고 프로젝트를 실행할 가상환경을 구성한다. Python 을 설치한 후, 가상환경 폴더를 구성하고자 하는 폴도로 이동하여 아래와 같이 수행한다.</p>
 
-<h3 id="예제">예제</h3>
-<ul>
-  <li>아래의 문자열에서 패턴에 대응되는 횟수를 찾아라.</li>
-</ul>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D:\1_GitSource\PANABARA&gt;python -m venv pnbr_env
 
-<blockquote>
-  <p>KMP 알고리즘은 실패함수구하기, 패턴검색하기에서 while 구문 두번, i++,j++ 이 들어간다는 점을 기억하자.</p>
-</blockquote>
+D:\1_GitSource\PANABARA&gt;cd pnbr_env
 
-<ul>
-  <li>input
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 -- test case
-ABCDEFGABCDABCABCDEABD -- 탐색 대상 문자열
-BCD -- 패턴 문자열
-</code></pre></div>    </div>
-  </li>
-  <li>coding</li>
-</ul>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.io.FileInputStream</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.StringTokenizer</span><span class="o">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Solution</span><span class="o">{</span>
-	
-	<span class="kd">static</span> <span class="kt">int</span> <span class="no">T</span><span class="o">;</span>
-	<span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="no">F</span><span class="o">;</span>
-	<span class="kd">static</span> <span class="kt">char</span><span class="o">[]</span> <span class="no">S</span><span class="o">,</span> <span class="no">P</span><span class="o">;</span>
-	<span class="kd">static</span> <span class="nc">BufferedReader</span> <span class="n">br</span><span class="o">;</span>
-	<span class="kd">static</span> <span class="nc">StringTokenizer</span> <span class="n">st</span><span class="o">;</span>
-	
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span><span class="o">{</span>
-		
-		<span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"C:\\sample_input.txt"</span><span class="o">)));</span>
-		<span class="no">T</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
-		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">test_case</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">test_case</span> <span class="o">&lt;=</span> <span class="no">T</span><span class="o">;</span> <span class="n">test_case</span><span class="o">++)</span> <span class="o">{</span>
-			
-			<span class="c1">// 문자배열로 저장</span>
-			<span class="no">S</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">().</span><span class="na">toCharArray</span><span class="o">();</span>
-			<span class="no">P</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">().</span><span class="na">toCharArray</span><span class="o">();</span>
-			
-			<span class="c1">// 실패함수 생성 : 패턴길이 + 1</span>
-			<span class="no">F</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="no">P</span><span class="o">.</span><span class="na">length</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
-			<span class="no">F</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span> <span class="c1">// 0 번 인덱스는 -1 로 초기화</span>
-			
-			<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-			<span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
-			
-			<span class="c1">// 두번의 while 이 있음</span>
-			<span class="k">while</span><span class="o">(</span><span class="no">P</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
-				<span class="k">while</span><span class="o">(</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="no">P</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="no">P</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="n">j</span> <span class="o">=</span> <span class="no">F</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
-				<span class="n">i</span><span class="o">++;</span> <span class="n">j</span><span class="o">++;</span>
-				<span class="no">F</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">j</span><span class="o">;</span>
-			<span class="o">}</span>
-			
-			<span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-			
-			<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-			<span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-			<span class="c1">// 패턴 횟수 구하기</span>
-			<span class="k">while</span><span class="o">(</span><span class="no">S</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
-				<span class="k">while</span><span class="o">(</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="no">S</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="no">P</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="n">j</span> <span class="o">=</span> <span class="no">F</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
-				
-				<span class="n">i</span><span class="o">++;</span> <span class="n">j</span><span class="o">++;</span>
-				
-				<span class="k">if</span><span class="o">(</span><span class="no">P</span><span class="o">.</span><span class="na">length</span> <span class="o">==</span> <span class="n">j</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// j 가 패턴의 길이와 같다면 조건을 만족했으므로 카운트함.</span>
-					<span class="n">cnt</span><span class="o">++;</span> 
-					<span class="n">j</span> <span class="o">=</span> <span class="no">F</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
-				<span class="o">}</span>
-			<span class="o">}</span>
-			
-			<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"#"</span> <span class="o">+</span> <span class="n">test_case</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">cnt</span><span class="o">);</span>
-		<span class="o">}</span>
-		
-	<span class="o">}</span>
-<span class="o">}</span>
+D:\1_GitSource\PANABARA\pnbr_env&gt;dir
+ D 드라이브의 볼륨: 새 볼륨
+ 볼륨 일련 번호: 7816-659E
+
+ D:\1_GitSource\PANABARA\pnbr_env 디렉터리
+
+2021-11-30  오후 11:01    &lt;DIR&gt;          .
+2021-11-30  오후 11:01    &lt;DIR&gt;          ..
+2021-11-30  오후 11:01    &lt;DIR&gt;          Include
+2021-11-30  오후 11:01    &lt;DIR&gt;          Lib
+2021-11-30  오후 11:01               119 pyvenv.cfg
+2021-11-30  오후 11:02    &lt;DIR&gt;          Scripts
+               1개 파일                 119 바이트
+               5개 디렉터리  213,874,466,816 바이트 남음
+
+
+D:\1_GitSource\PANABARA\pnbr_env&gt;cd Scripts
+
+D:\1_GitSource\PANABARA\pnbr_env\Scripts&gt;activate
+
+
+(pnbr_env) D:\1_GitSource\PANABARA\pnbr_env\Scripts&gt;
+
+
+(pnbr_env) D:\1_GitSource\panabaraVenv&gt;pip3 install django //django 설치
+
 </code></pre></div></div>
 
+<h3 id="managepy-가-있는-폴더로-이동한다"><code class="language-plaintext highlighter-rouge">manage.py</code> 가 있는 폴더로 이동한다.</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+(pnbr_env) D:\1_GitSource\PANABARA\pnbr_env\Scripts&gt;cd D:\1_GitSource\PANABARA
+
+// requirements 내 모듈 모두 설치하기
+(pnbr_env) D:\1_GitSource\PANABARA&gt;pip install -r requirements.txt
+
+(pnbr_env) D:\1_GitSource\PANABARA&gt;python manage.py makemigrations &amp;&amp; python manage.py migrate
+
+</code></pre></div></div>
+
+<h4 id="진행-시-주요-오류-및-해결-방법">진행 시 주요 오류 및 해결 방법</h4>
+
+<p>[오류 해결] pip install <패키지> 설치 시 "UnicodeDecodeError: 'cp949' codec can't decode byte 0xe2 in position 2082: illegal multibyte sequence" 에러가 발생하는 경우</패키지></p>
+
 <ul>
-  <li>정답
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#1 4
-</code></pre></div>    </div>
+  <li>
+    <p>해당 오류는 pip 명령어로 패키지를 설치하거나 tar.gz, whl 파일로 패키지를 직접 설치할 때 압축 파일 안에 있는 setup.py 파일을 자동으로 실행하는데 여기에 포함되어 있는 코드 중 txt 파일과 같은 것을 읽을 때 디코딩이 제대로 되지 않아서 발생하는 문제이다.</p>
   </li>
-  <li>아래 그림 참조하여 기억하자.
-<img src="/assets/images/kmp-summary.jpg" alt="kmp-example" /></li>
+  <li>
+    <p>위 문제를 해결하기 위해서는 tar.gz 파일을 받은 후 압축을 해제하여 설치하는 방법을 이용해야 한다. 압축을 해제하면 해당 폴더에는 setup.py 파일이 있을 것이다. 여기 위치에서 cmd 또는 shell을 열어서 직접 python setup.py install 명령어를 실행하여 설치해야 한다.</p>
+  </li>
 </ul>
+
+<p>Numpy 에러 발생 시</p>
+<ul>
+  <li>https://m.blog.naver.com/beacon71/221872094394</li>
+</ul>
+
+<h1 id="여기서-막힌다ㅠㅠ">여기서 막힌다..ㅠㅠ</h1>
+
+<p>(pnbr_env) D:\1_GitSource\PANABARA&gt;pip install -r requirements.txt</p>
 
 </div>
 
@@ -945,18 +928,18 @@ BCD -- 패턴 문자열
     
       <li>
         <h4>
-          <a href="http://localhost:4000/05_cloud/2021/11/30/djangolocal/">
-            Django 로컬에서 실행하기
-            <small>30 Nov 2021</small>
+          <a href="http://localhost:4000/06_blockchain/2021/10/26/whatisblockchain/">
+            도서리뷰 - 블록체인 무엇인가
+            <small>26 Oct 2021</small>
           </a>
         </h4>
       </li>
     
       <li>
         <h4>
-          <a href="http://localhost:4000/06_blockchain/2021/10/26/whatisblockchain/">
-            도서리뷰 - 블록체인 무엇인가
-            <small>26 Oct 2021</small>
+          <a href="http://localhost:4000/05_cloud/2021/10/14/githubprofile/">
+            Github 프로필 꾸미기
+            <small>14 Oct 2021</small>
           </a>
         </h4>
       </li>

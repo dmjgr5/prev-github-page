@@ -1,6 +1,26 @@
 [
   
     {
+      "title"      : "Amazon Elastic Kubernetes Service(EKS) 이해하기",
+      "categories" : "05_Cloud",
+      "tags"       : "Kubernetes, AWS",
+      "date"       : "2021.12.01",
+      "urlString"  : "/05_cloud/2021/12/01/eksbasic/",
+      "url"        : "/05_cloud/2021/12/01/eksbasic/"
+      
+    },
+  
+    {
+      "title"      : "Django 로컬에서 실행하기",
+      "categories" : "05_Cloud",
+      "tags"       : "Django",
+      "date"       : "2021.11.30",
+      "urlString"  : "/05_cloud/2021/11/30/djangolocal/",
+      "url"        : "/05_cloud/2021/11/30/djangolocal/"
+      
+    },
+  
+    {
       "title"      : "도서리뷰 - 블록체인 무엇인가",
       "categories" : "06_BlockChain",
       "tags"       : "도서, 블록체인",

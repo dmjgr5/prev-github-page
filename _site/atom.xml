@@ -4,13 +4,189 @@
  <title>Git Note</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2021-11-17T21:47:14+09:00</updated>
+ <updated>2021-12-01T20:23:44+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>dcp</name>
    <email>dmjgr5@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Amazon Elastic Kubernetes Service(EKS) 이해하기</title>
+   <link href="http://localhost:4000/05_cloud/2021/12/01/eksbasic/"/>
+   <updated>2021-12-01T00:00:00+09:00</updated>
+   <id>http://localhost:4000/05_cloud/2021/12/01/eksbasic</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/eks.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Kubernetes 를 AWS 에 구축하기 위한 기본적은 절차와 고려해야 할만한 사항들을 간략히 정리해 보았습니다. 이해하기 쉬운 내용으로 작성하였으며, 보다 자세한 내용은 구글링을 통해 확인하면 좋을 것 같습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;aws-의-시작&quot;&gt;AWS 의 시작&lt;/h3&gt;
+
+&lt;p&gt;EC2 에 tomcat/apache 설치하고 war 파일을 넣으면 돌아갈까?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;일부 설치파일도 필요하다.&lt;/li&gt;
+  &lt;li&gt;OS/jdk/tomcat 등의 버전 확인도 필요하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aws-console-계정-생성하고-설치해보자&quot;&gt;AWS Console 계정 생성하고 설치해보자&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;대규모의 사이트의 경우는 과금도 고려해야 한다.&lt;/li&gt;
+  &lt;li&gt;지역/ 사용할 네트워크/ Subnet 등을 고려해야 한다.&lt;/li&gt;
+  &lt;li&gt;근래에는 elastic search, kafka 등의 오픈 소스 설치도 고려해야 한다.&lt;/li&gt;
+  &lt;li&gt;AWS 는 RDS 를 제공하기 때문에 별도 DB 생성하지 않아도 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;container-란&quot;&gt;Container 란?&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;여러 설치를 하나의 가상 공간에 설치하여 가상 공간을 서버와 연결하게 하는 역할을 해준다.&lt;/li&gt;
+    &lt;li&gt;Container 내 여러 모듈들이 상호작용을 해야하므로 운영자가 필요하다. 이는 Cubernetes 가 담당할 것이다.&lt;/li&gt;
+    &lt;li&gt;AMS 의 경우, 이는 EKS 모듈을 사용하면 수월하게 관리할 수 있게 해준다.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;주요-내용&quot;&gt;주요 내용&lt;/h2&gt;
+
+&lt;h3 id=&quot;aws-리소스-만들기&quot;&gt;AWS 리소스 만들기&lt;/h3&gt;
+&lt;p&gt;계정은 만들어 있으니 EC2 인스턴스를 만들어서 리전을 선택한다. 그리고 나만의 Network (VPC) 를 만들고 Subnet 을 만든다.
+OS 선택하고, 서버 사양을 설정하고 방화벽도 설정하고(Security Group), Keypair 도 설정해야 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Security Group 은 EC2 자체에서도 아무거나 접속하지 못하게 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;container-만들고-띄워보기&quot;&gt;Container 만들고 띄워보기&lt;/h3&gt;
+&lt;p&gt;docker 를 설치했는데 뭐부터 해야할까?
+OS docker image 를 받은 후, Docker image 안에 들어가 본다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run -it ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이후 jdk 와 같은 여러가지 설치해본다.
+이러한 작업은 어렵고 복잡하기 때문에 Dockerfile 을 만들어 실행한다. 대략적인 형식은 아래와 같다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM...
+RUN ...
+COPY ...
+RUN ...
+USER ...
+EXPOSE 8709 ...
+ENTRYPOINT ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이후 build , push 한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker build -tag
+docker push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;eks-설치하기&quot;&gt;EKS 설치하기&lt;/h3&gt;
+&lt;p&gt;k8s 의 설치와 관리 부담을 줄이기 위하여 사용할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;권한(IAM), 설치, 관리(kubectl), 등등의 작업을 AWS EKS 에서 제공한다. 이후 EKS 클러스터 생성하고 워크노드를 생성한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;yaml-파일을-만들면-진짜-동작할까&quot;&gt;yaml 파일을 만들면 진짜 동작할까?&lt;/h3&gt;
+&lt;p&gt;내가 만든 container 를 진짜 kubernetes 에서 작동할 수 있을까?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;namespace 를 만들어 보자.(파일의 폴더처럼..)
+    &lt;ul&gt;
+      &lt;li&gt;ex) deployment.yaml, service.yaml&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Django 로컬에서 실행하기</title>
+   <link href="http://localhost:4000/05_cloud/2021/11/30/djangolocal/"/>
+   <updated>2021-11-30T00:00:00+09:00</updated>
+   <id>http://localhost:4000/05_cloud/2021/11/30/djangolocal</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/djangolocal.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;장고 프로젝트를 로컬에서 실행하기 위한 가상 환경 설정 및 모듈 다운로드, 해결책에 대해 정리하고자 합니다.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;가상환경-설정&quot;&gt;가상환경 설정&lt;/h3&gt;
+&lt;p&gt;장고 프로젝트를 실행할 가상환경을 구성한다. Python 을 설치한 후, 가상환경 폴더를 구성하고자 하는 폴도로 이동하여 아래와 같이 수행한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;D:\1_GitSource\PANABARA&amp;gt;python -m venv pnbr_env
+
+D:\1_GitSource\PANABARA&amp;gt;cd pnbr_env
+
+
+
+D:\1_GitSource\PANABARA\pnbr_env&amp;gt;dir
+ D 드라이브의 볼륨: 새 볼륨
+ 볼륨 일련 번호: 7816-659E
+
+ D:\1_GitSource\PANABARA\pnbr_env 디렉터리
+
+2021-11-30  오후 11:01    &amp;lt;DIR&amp;gt;          .
+2021-11-30  오후 11:01    &amp;lt;DIR&amp;gt;          ..
+2021-11-30  오후 11:01    &amp;lt;DIR&amp;gt;          Include
+2021-11-30  오후 11:01    &amp;lt;DIR&amp;gt;          Lib
+2021-11-30  오후 11:01               119 pyvenv.cfg
+2021-11-30  오후 11:02    &amp;lt;DIR&amp;gt;          Scripts
+               1개 파일                 119 바이트
+               5개 디렉터리  213,874,466,816 바이트 남음
+
+
+D:\1_GitSource\PANABARA\pnbr_env&amp;gt;cd Scripts
+
+D:\1_GitSource\PANABARA\pnbr_env\Scripts&amp;gt;activate
+
+
+(pnbr_env) D:\1_GitSource\PANABARA\pnbr_env\Scripts&amp;gt;
+
+
+(pnbr_env) D:\1_GitSource\panabaraVenv&amp;gt;pip3 install django //django 설치
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;managepy-가-있는-폴더로-이동한다&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manage.py&lt;/code&gt; 가 있는 폴더로 이동한다.&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+(pnbr_env) D:\1_GitSource\PANABARA\pnbr_env\Scripts&amp;gt;cd D:\1_GitSource\PANABARA
+
+// requirements 내 모듈 모두 설치하기
+(pnbr_env) D:\1_GitSource\PANABARA&amp;gt;pip install -r requirements.txt
+
+(pnbr_env) D:\1_GitSource\PANABARA&amp;gt;python manage.py makemigrations &amp;amp;&amp;amp; python manage.py migrate
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;진행-시-주요-오류-및-해결-방법&quot;&gt;진행 시 주요 오류 및 해결 방법&lt;/h4&gt;
+
+&lt;p&gt;[오류 해결] pip install &lt;패키지&gt; 설치 시 &quot;UnicodeDecodeError: 'cp949' codec can't decode byte 0xe2 in position 2082: illegal multibyte sequence&quot; 에러가 발생하는 경우&lt;/패키지&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;해당 오류는 pip 명령어로 패키지를 설치하거나 tar.gz, whl 파일로 패키지를 직접 설치할 때 압축 파일 안에 있는 setup.py 파일을 자동으로 실행하는데 여기에 포함되어 있는 코드 중 txt 파일과 같은 것을 읽을 때 디코딩이 제대로 되지 않아서 발생하는 문제이다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;위 문제를 해결하기 위해서는 tar.gz 파일을 받은 후 압축을 해제하여 설치하는 방법을 이용해야 한다. 압축을 해제하면 해당 폴더에는 setup.py 파일이 있을 것이다. 여기 위치에서 cmd 또는 shell을 열어서 직접 python setup.py install 명령어를 실행하여 설치해야 한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Numpy 에러 발생 시&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://m.blog.naver.com/beacon71/221872094394&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;여기서-막힌다ㅠㅠ&quot;&gt;여기서 막힌다..ㅠㅠ&lt;/h1&gt;
+
+&lt;p&gt;(pnbr_env) D:\1_GitSource\PANABARA&amp;gt;pip install -r requirements.txt&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>도서리뷰 - 블록체인 무엇인가</title>
