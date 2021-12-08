@@ -8,7 +8,7 @@ tag: [Markdown]
 
 
 ![example](/assets/images/markdown.png)
->
+
 > 일정한 형식을 갖춘 문서를 작성하거나 체계적인 메모 시 손쉽게 작성할 수 있는 마크다운 문법에 대해 정리하고자 합니다.
 >
 

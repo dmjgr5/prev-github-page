@@ -8,9 +8,9 @@ tag: [Django]
 
 
 ![example](/assets/images/panabarabasic.png)
->
+
 > Panabara 프로젝트를 진행하면서 유용한 팁들을 정리해 보고자 합니다.
->
+
 
 ---
 

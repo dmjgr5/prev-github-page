@@ -2,15 +2,15 @@
 layout: post
 title: Cloud Network 개요
 category: 05_Cloud
-tag: [Cloud]]
+tag: [Cloud]
 ---
 
 
 
 ![example](/assets/images/cloudcomputing.png)
->
+
 > 기업의 핵심 경쟁력으로 Digital Transformation 이 화두가 됨에 따라 클라우드 컴퓨팅 기술이 대세인 시대입니다. 대표적인 기업으로 넷플릭스는 클라우드 기반의 데이터 센터를 구축하기도 했습니다. 네트워크 구조로서 IaaS, PaaS, SaaS 순으로 변하는 경향이 있으며 클라우드 네트워크의 주요 내용을 정리해 보고자 합니다. 
->
+
 
 ---
  

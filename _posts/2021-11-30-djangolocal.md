@@ -8,7 +8,8 @@ tag: [Django]
 
 
 ![example](/assets/images/djangolocal.png)
->
+
+
 > 장고 프로젝트를 로컬에서 실행하기 위한 가상 환경 설정 및 모듈 다운로드, 해결책에 대해 정리하고자 합니다. 
 >
 
