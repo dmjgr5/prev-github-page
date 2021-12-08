@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Panabara 프로젝트 환경 설정 &middot; Git Note
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/font.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VEHRJDYDE5');
+</script>
+  
+
+
+  
+
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+
+
+  <meta name="google-site-verification" content="v0aeEXWQ-gjxWFDbbfdHkDKbzu4BmIey_QigKtALiZ4" />
+
+
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>One a day</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/home/">Home</a>
+
+    
+
+    <!-- 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     -->
+<!-- 
+    <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+  </nav>
+  <div>
+    <div class="sidebar-nav-item">Category</div>
+    <nav class="content-ul">
+      
+
+
+      
+      <a href="/category/#01_Algorithm"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                01_Algorithm
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#02_Programming"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                02_Programming
+                            </span>
+        <span class="badge">6</span>
+      </a>
+      
+      <a href="/category/#03_Database"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                03_Database
+                            </span>
+        <span class="badge">4</span>
+      </a>
+      
+      <a href="/category/#04_AI"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                04_AI
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#05_Cloud"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                05_Cloud
+                            </span>
+        <span class="badge">12</span>
+      </a>
+      
+      <a href="/category/#06_BlockChain"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                06_BlockChain
+                            </span>
+        <span class="badge">4</span>
+      </a>
+      
+      <a href="/category/#07_Theoretical"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                07_Theoretical
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#08_ToyProject"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                08_ToyProject
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#09_Life"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                09_Life
+                            </span>
+        <span class="badge">1</span>
+      </a>
+      
+    </nav>
+  </div>
+  <div>
+    <div class="sidebar-nav-item">Tags</div>
+    <div class="tags-cloud">
+      <div>
+        
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Pro*C" style="font-size: 9pt; color: #555;">Pro*C</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SQL" style="font-size: 9pt; color: #555;">SQL</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#CSS" style="font-size: 9pt; color: #555;">CSS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#HTML" style="font-size: 9pt; color: #555;">HTML</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Python" style="font-size: 18pt; color: #eee;">Python</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GitBash" style="font-size: 9pt; color: #555;">GitBash</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySQL" style="font-size: 9pt; color: #555;">MySQL</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySql" style="font-size: 9pt; color: #555;">MySql</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Connect" style="font-size: 9pt; color: #555;">Connect</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#JavaScript" style="font-size: 12pt; color: #888;">JavaScript</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PHP" style="font-size: 9pt; color: #555;">PHP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MachineLearning" style="font-size: 9pt; color: #555;">MachineLearning</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LinearRegression" style="font-size: 9pt; color: #555;">LinearRegression</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LogisticClassification" style="font-size: 9pt; color: #555;">LogisticClassification</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Flask" style="font-size: 9pt; color: #555;">Flask</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GCP" style="font-size: 9pt; color: #555;">GCP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#NodeJs" style="font-size: 9pt; color: #555;">NodeJs</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#tensorflow" style="font-size: 9pt; color: #555;">tensorflow</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#주식" style="font-size: 9pt; color: #555;">주식</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PyQt5" style="font-size: 9pt; color: #555;">PyQt5</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Kubernetes" style="font-size: 12pt; color: #888;">Kubernetes</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#CloudVision" style="font-size: 9pt; color: #555;">CloudVision</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LCA" style="font-size: 9pt; color: #555;">LCA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SparseTable" style="font-size: 9pt; color: #555;">SparseTable</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MST" style="font-size: 9pt; color: #555;">MST</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#BFS" style="font-size: 9pt; color: #555;">BFS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#FailureFunction" style="font-size: 9pt; color: #555;">FailureFunction</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Priority Queue" style="font-size: 9pt; color: #555;">Priority Queue</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Django" style="font-size: 15pt; color: #bbb;">Django</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Git" style="font-size: 9pt; color: #555;">Git</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Github" style="font-size: 15pt; color: #bbb;">Github</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#깃허브페이지" style="font-size: 9pt; color: #555;">깃허브페이지</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Jekyll" style="font-size: 9pt; color: #555;">Jekyll</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MSA" style="font-size: 9pt; color: #555;">MSA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MicroService" style="font-size: 9pt; color: #555;">MicroService</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Architecture" style="font-size: 9pt; color: #555;">Architecture</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#중앙값" style="font-size: 9pt; color: #555;">중앙값</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#분산" style="font-size: 9pt; color: #555;">분산</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#IQR" style="font-size: 9pt; color: #555;">IQR</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#5Whys" style="font-size: 9pt; color: #555;">5Whys</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Life" style="font-size: 9pt; color: #555;">Life</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GoogleAnalytics" style="font-size: 9pt; color: #555;">GoogleAnalytics</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#geth" style="font-size: 9pt; color: #555;">geth</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Ethereum" style="font-size: 9pt; color: #555;">Ethereum</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Remix" style="font-size: 9pt; color: #555;">Remix</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Solidity" style="font-size: 9pt; color: #555;">Solidity</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#블록체인" style="font-size: 12pt; color: #888;">블록체인</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#도서" style="font-size: 9pt; color: #555;">도서</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#AWS" style="font-size: 9pt; color: #555;">AWS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Markdown" style="font-size: 9pt; color: #555;">Markdown</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Cloud" style="font-size: 9pt; color: #555;">Cloud</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a class="sidebar-nav-item" href="/about/">About</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2021. All rights reserved.
+    </p>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('hashchange', function(){
+    location.reload();
+  });
+</script>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="http://localhost:4000/" title="Home">Git Note</a>
+            <small>Day by day, in Everyway, I am getting better and better</small>
+
+            <a href="/search/"><i class="fa fa-search  " aria-hidden="true" style ="float:right;" ></i></a> 
+          </h3>
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
+  <h2 class="post-title"> Panabara 프로젝트 환경 설정</h2>
+  <span class="post-date">   06 Dec 2021</span>
+   <p><img src="/assets/images/panabarabasic.png" alt="example" /></p>
+
+<blockquote>
+  <p>Panabara 프로젝트를 진행하면서 유용한 팁들을 정리해 보고자 합니다.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="sqllite3-초기화-및-기타-설정"><u>sqllite3 초기화 및 기타 설정</u></h3>
+
+<h4 id="1-사전-삭제-파일">1. 사전 삭제 파일</h4>
+<p>기존의 DB 정보 삭제와 초기화를 위해서 아래와 같은 절차로 진행한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- migrations 폴더 내 `init.py` 외 파일
+- db.sqlite3
+</code></pre></div></div>
+
+<h4 id="2-migrate-실행">2. migrate 실행</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python manage.py makemigrations
+python manage.py migrate
+</code></pre></div></div>
+
+<h4 id="3-django-super-user-생성">3. Django Super User 생성</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;python manage.py createsuperuser
+Username (leave blank to use 'pinco'): xxxx
+Email address: test@example.com
+Password:xxxx
+Password (again):xxxx
+Superuser created successfully.
+</code></pre></div></div>
+
+<h3 id="테이블-기본-정보-생성"><u>테이블 기본 정보 생성</u></h3>
+
+<h4 id="1-stockbaseinfo-테이블">1. StockBaseInfo 테이블</h4>
+
+<ul>
+  <li>
+    <p>국내, 미국, 코인 전 종목의 기본 정보를 가져와 저장한다.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">__init__.py</code> 주석 해제 후 stockinfo update : <code class="language-plaintext highlighter-rouge">python manage.py runserver --noreload</code></p>
+  </li>
+</ul>
+
+<h4 id="2-mystocks-balances-테이블">2. MyStocks, Balances 테이블</h4>
+
+<ul>
+  <li>
+    <p>보유 종목, 월별 총액 정보를 엑셀 정보로 부터 가져온다.</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">txtuploader_banance.py</code>
+    <ul>
+      <li>월별 잔액 정보를 Balances 테이블에 Insert 한다.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">txtuploader_mystocks.py</code>
+    <ul>
+      <li>보유 종목 정보를 MyStocks 테이블에 Insert 한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="sqlite3-실행하기"><u>sqlite3 실행하기</u></h3>
+<p>가상환경을 Activate 한 후, 아래 명령어로 테이블 정보를 조회한다. 테이블 조회는 해당 모델 앞에 <code class="language-plaintext highlighter-rouge">상위폴더_</code> 를 추가하여 조회한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; python manage.py dbshell
+
+sqlite&gt; .tables  
+
+-- users 테이블 보기
+
+sqlite&gt; .schema examples_mystocks
+
+sqlite&gt; select * from auth_user;
+
+sqlite&gt; select * from examples_mystocks where author_id ='3';
+
+sqlite&gt; select * from examples_stockbaseinfo;
+
+sqlite&gt; select * from examples_MyStocks;
+
+select * from examples_balances;
+
+-- 유저별로 남긴 코멘트 조회 (join문)
+sqlite&gt; select users.naeme, comments.content
+        from users join comments
+        on comments.author_id = users.id;
+
+-- 유저ID 1번이 남긴 코멘트 조회
+sqlite&gt; select users.naeme, comments.content
+        from users join comments
+        on comments.author_id = users.id
+        where users.id=1;
+</code></pre></div></div>
+
+<h3 id="library-관련"><u>Library 관련</u></h3>
+<ul>
+  <li>YahooFinance 업데이트로 아래로 재설치 필요
+    <ul>
+      <li>에러 내용 :  <code class="language-plaintext highlighter-rouge">json.decoder.jsondecodeerror expecting value line 1 column 1 (char 0)</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">pip install yfinance --upgrade --no-cache-dir</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="bulk_update-관련"><u>bulk_update 관련</u></h3>
+<ul>
+  <li>
+    <p>일단 50 개씩 자르자.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  result = list(divide_list(update_queries,50)) # 이거 나중에 const 로 바꾸자.
+  for rs in result :
+      MyStocks.objects.bulk_update(rs, ['kcurrencyrate','kbuyprice','kcurprice','iunitcurprice',
+  'ktotalcurprice','ktotalbuyprice','kprofitratio','ktotalprevbuyprice','ktotalprevprice','kprofitpreratio','iupdatedate'])
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>이 에러는 왜나는거지??
+  File “d:\1_GitSource\PANABARA\pnbr_env\lib\site-packages\django\db\backends\sqlite3\base.py”, line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: too many SQL variables
+[07/Dec/2021 23:32:35] “GET /refresh/ HTTP/1.1” 500 305677</p>
+
+</div>
+
+
+ 
+
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h4>
+          <a href="http://localhost:4000/05_cloud/2021/12/08/cloudsummary/">
+            Cloud Network 개요
+            <small>08 Dec 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="http://localhost:4000/02_programming/2021/12/01/markdownbasic/">
+            마크다운(Markdown) 문법 정리
+            <small>01 Dec 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="http://localhost:4000/05_cloud/2021/12/01/eksbasic/">
+            Amazon Elastic Kubernetes Service(EKS) 이해하기
+            <small>01 Dec 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
