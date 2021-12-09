@@ -1,6 +1,16 @@
 [
   
     {
+      "title"      : "AWS EC2 서버 구축하기",
+      "categories" : "05_Cloud",
+      "tags"       : "AWS, EC2",
+      "date"       : "2021.12.09",
+      "urlString"  : "/05_cloud/2021/12/09/awsec2deploy/",
+      "url"        : "/05_cloud/2021/12/09/awsec2deploy/"
+      
+    },
+  
+    {
       "title"      : "Cloud Network 개요",
       "categories" : "05_Cloud",
       "tags"       : "Cloud",
