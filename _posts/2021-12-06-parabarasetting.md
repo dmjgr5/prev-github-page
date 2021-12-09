@@ -9,7 +9,7 @@ tag: [Django]
 
 ![example](/assets/images/panabarabasic.png)
 
-> Panabara 프로젝트를 진행하면서 유용한 팁들을 정리해 보고자 합니다.
+> Panabara 프로젝트를 진행하면서 유용한 팁들을 정리해 보고자 합니다. 주로 로컬 환경에서 개발 시의 설정 방법, 테이블 조회 방법, 에러 발생 시 팁 등을 정리하였습니다.
 
 
 ---
