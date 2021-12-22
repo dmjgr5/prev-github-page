@@ -18,8 +18,12 @@ tag: [Android, Dart]
 #### `don't support null safety: - package:english_words` 에러
 - Run --> Edit Configurations --> Add Additional Run args 에서 `--no-sound-null-safety` 를 추가한다.
 
+#### 코드 정렬
+- 단축키 Ctl+Alt+L을 누르면 아래와 같이 자동정렬이 됩니다. 
 
- 
+#### Flutter Layout 학습 사이트
+- [https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e](https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e)
+
 ### 주요 예제
 
 
@@ -28,7 +32,7 @@ tag: [Android, Dart]
 
 ![example](/assets/images/flutterex1.png)
 
-```
+```java
 
 import 'package:flutter/material.dart';
 
@@ -183,7 +187,7 @@ class Grade extends StatelessWidget {
 
 ![example](/assets/images/flutterex2.png)
 
-```
+```java
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -246,7 +250,7 @@ class MyPage extends StatelessWidget {
 
 ![example](/assets/images/flutterex3.png)
 
-```
+```java
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -364,5 +368,190 @@ class MyPage extends StatelessWidget {
 ```
 
 
+#### Navigator 페이지 이동
 
-코딩셰프 순한맛 17 강부터 시작하기
+![example](/assets/images/flutterex4.png)
+
+```java
+import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SnackBar',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context2) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('frist page'),
+      ),
+      body: Center(
+        child: RaisedButton(
+          child: Text('Go to the second page'),
+          onPressed: () {
+            Navigator.push(
+                context2, MaterialPageRoute(builder: (_) => SecondPage()));
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class SecondPage extends StatelessWidget {
+  const SecondPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext ctx) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('second page'),
+      ),
+      body: Center(
+        child: RaisedButton(
+          child: Text('Go to the first page'),
+          onPressed: () {
+            Navigator.pop(ctx);
+          },
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+
+
+#### Multi 페이지 구성 및 이동
+
+![example](/assets/images/flutterex5.png)
+
+`main.dart`
+```java
+
+import 'package:coding_chef1st/ScreenB.dart';
+import 'package:coding_chef1st/ScreenC.dart';
+import 'package:flutter/material.dart';
+import 'package:coding_chef1st/ScreenA.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/' : (context) => ScreenA(),
+        '/b': (context) => ScreenB(),
+        '/c': (context) => ScreenC()
+      },
+    );
+  }
+}
+
+```
+
+`ScreenA.dart`
+```java
+import 'package:flutter/material.dart';
+
+class ScreenA extends StatelessWidget {
+  const ScreenA({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('ScreenA')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            RaisedButton(
+              color: Colors.red,
+              child: Text('Go to Screen B'),
+              onPressed: (){
+                Navigator.pushNamed(context, '/b');
+              },
+            ),
+            RaisedButton(
+              color: Colors.red,
+              child: Text('Go to Screen C'),
+              onPressed: (){
+                Navigator.pushNamed(context, '/c');
+              },
+            )
+          ],
+        )
+      ),
+    );
+  }
+}
+
+```
+
+`ScreenB.dart`
+```java
+import 'package:flutter/material.dart';
+
+class ScreenB extends StatelessWidget {
+  const ScreenB({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('ScreenB')),
+      body: Center(
+        child: Text(
+          'ScreenB',
+          style: TextStyle(fontSize: 24.0),
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+`ScreenC.dart`
+```java
+import 'package:flutter/material.dart';
+
+class ScreenC extends StatelessWidget {
+  const ScreenC({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('ScreenC')),
+      body: Center(
+        child: Text(
+          'ScreenC',
+          style: TextStyle(fontSize: 24.0),
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+코딩셰프 순한맛 24 강부터 시작하기
