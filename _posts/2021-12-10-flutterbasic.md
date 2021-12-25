@@ -24,6 +24,11 @@ tag: [Android, Dart]
 #### Flutter Layout 학습 사이트
 - [https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e](https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e)
 
+#### Const 와 Final 의 차이점
+- Cont 변수 : 컴파일 시 상수가 된다. 런타임 시에도 변하지 않는다. (Compile-time Constant)
+- Final 변수 : 런타임 시 상수가 된다. 변경 시, reBuild 되어야 한다. (Run-time Constant)
+
+
 ### 주요 예제
 
 
@@ -1010,4 +1015,4 @@ void showToast(String message) {
 ```
 
 
-코딩셰프 조금 매운맛 6강부터 시작하기
+코딩셰프 조금 매운맛 8강부터 시작하기
