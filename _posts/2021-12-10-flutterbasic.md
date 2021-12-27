@@ -29,6 +29,74 @@ tag: [Android, Dart]
 - Final 변수 : 런타임 시 상수가 된다. 변경 시, reBuild 되어야 한다. (Run-time Constant)
 
 
+#### 자료구조 종류
+
+- List, Set
+
+#### Thread
+- 프로세스 내에서 실행되는 흐름의 단위
+- `Dart` 는 싱글스레드로 운영되는 언어
+
+
+#### Future, Async, await
+- Future 클래스는 비동기 작업을 할 때 사용
+- Future 는 일정 소요시간 후에 실제 데이터나 에러를 반환
+- async 클래스는 await 메서드를 가지고 있음
+  - await 로 선언된 메서드는 응답이 처리될 때까지 대기
+- 예제
+```python
+import 'dart:io';
+
+void main() {
+  showData();
+}
+
+void showData() async {
+  startTask();
+  String account = await accessData();
+  fetchData(account);
+}
+
+void startTask() {
+  String info1 = '요청수행 시작';
+  print(info1);
+}
+
+Future<String> accessData() async {
+  String account = '';
+
+  Duration time = Duration(seconds: 3);
+
+  if (time.inSeconds > 2) {
+    // sleep(time);
+    await Future.delayed(time, () {
+      account = '8500만원';
+      print(account);
+    });
+  } else {
+    String info2 = '데이터를 가져왔습니다';
+    print(info2);
+  }
+  return account;
+}
+
+void fetchData(String account) {
+  String info3 = '잔액은 $account 원입니다..';
+  print(info3);
+}
+
+```
+
+`출력`
+```bash
+요청수행 시작
+8500만원
+잔액은 8500만원 원입니다..
+```
+
+
+
+
 ### 주요 예제
 
 
@@ -1015,4 +1083,4 @@ void showToast(String message) {
 ```
 
 
-코딩셰프 조금 매운맛 8강부터 시작하기
+코딩셰프 조금 매운맛 13강부터 시작하기
