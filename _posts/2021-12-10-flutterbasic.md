@@ -850,6 +850,7 @@ class MyButtons extends StatelessWidget {
 ![example](/assets/images/flutterex9.png)
 
 `main.dart`
+
 ```python
 import 'package:flutter/material.dart';
 import 'dice.dart';
@@ -1080,7 +1081,111 @@ void showToast(String message) {
       toastLength: Toast.LENGTH_SHORT,
       gravity: ToastGravity.BOTTOM);
 }
+
 ```
 
 
-코딩셰프 조금 매운맛 13강부터 시작하기
+#### http & json 데이터 가져오기
+
+![example](/assets/images/flutterex10.png)
+
+`main.dart`
+
+```python
+import 'package:flutter/material.dart';
+
+import 'screens/loading.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Weather App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Loading(),
+    );
+  }
+}
+
+```
+
+`loading.dart`
+
+```python
+import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+
+class Loading extends StatefulWidget {
+  const Loading({Key? key}) : super(key: key);
+
+  @override
+  _LoadingState createState() => _LoadingState();
+}
+
+class _LoadingState extends State<Loading> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getLocation();
+    fetchData();
+  }
+
+  void getLocation() async{
+    try{
+      Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+      print(position);
+    } catch(e) {
+      print('인터넷 연결에 문제가 있습니다.');
+    }
+  }
+
+  void fetchData() async{
+    http.Response response = await http.get('https://samples.openweathermap.org/data/2.5/weather?q=London&appid=b1b15e88fa797225412429c1c50c122a1');
+    print(response.body);
+    print(response.statusCode);
+
+    if(response.statusCode == 200) {
+      String jsonData = response.body;
+      var myJson = jsonDecode(jsonData)['weather'][0]['description'];
+      print(myJson);
+      var windSpeed = jsonDecode(jsonData)['wind']['speed'];
+      var sysId = jsonDecode(jsonData)['id'];
+      print(windSpeed);
+      print(sysId);
+
+
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Center(
+            child: RaisedButton(
+              onPressed:null,
+              child: Text(
+                'Get my location',
+                style: TextStyle(color: Colors.white),
+                ),
+              color: Colors.blue,
+            )
+        )
+    );
+  }
+}
+
+
+
+```
+
+코딩셰프 조금 매운맛 16강부터 시작하기
