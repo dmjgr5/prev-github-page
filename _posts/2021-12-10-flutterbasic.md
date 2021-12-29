@@ -44,7 +44,9 @@ tag: [Android, Dart]
 - async 클래스는 await 메서드를 가지고 있음
   - await 로 선언된 메서드는 응답이 처리될 때까지 대기
 - 예제
+
 ```python
+
 import 'dart:io';
 
 void main() {
@@ -1185,7 +1187,574 @@ class _LoadingState extends State<Loading> {
 }
 
 
+```
+
+
+
+
+#### Spin 기능 및 날씨앱 (최종)
+
+![example](/assets/images/flutterex11.png)
+
+
+![example](/assets/images/flutterex12.png)
+
+
+`main.dart`
+
+```python
+import 'package:flutter/material.dart';
+
+import 'screens/loading.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Weather App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Loading(),
+    );
+  }
+}
 
 ```
 
-코딩셰프 조금 매운맛 16강부터 시작하기
+
+`my_location.dart`
+
+```python
+
+import 'package:geolocator/geolocator.dart';
+
+class MyLocation{
+
+  late double latitude2;
+  late double longitude2;
+
+  Future<void> getMyCurrentLocation() async{
+
+    try{
+      Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+      print(position);
+      latitude2 = position.latitude;
+      longitude2 = position.longitude;
+
+    } catch(e) {
+      print('인터넷 연결에 문제가 있습니다.');
+    }
+
+  }
+}
+```
+
+`network.dart`
+
+```python
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+
+class Network{
+
+  final String url;
+  final String url2;
+
+  Network(this.url, this.url2);
+
+  Future<dynamic> getJsonData() async {
+    http.Response response = await http.get(Uri.parse(url));
+    // print(response.body);
+    // print(response.statusCode);
+
+    if (response.statusCode == 200) {
+      String jsonData = response.body;
+      var pasingData = jsonDecode(jsonData);
+      return pasingData;
+    } else {
+      print(response.body);
+    }
+  }
+
+
+  Future<dynamic> getAirData() async {
+    http.Response response = await http.get(Uri.parse(url2));
+    // print(response.body);
+    // print(response.statusCode);
+
+    if (response.statusCode == 200) {
+      String jsonData = response.body;
+      var pasingData = jsonDecode(jsonData);
+      return pasingData;
+    } else {
+      print(response.body);
+    }
+  }
+
+
+}
+```
+
+
+`model.dart`
+
+```python
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+class Model {
+
+  Widget getWeatherIcon(int condition) {
+    if (condition < 300) {
+      return SvgPicture.asset(
+        'svg/climacon-cloud_lightning.svg',
+        color: Colors.black87,
+      );
+    } else if (condition < 600) {
+      return SvgPicture.asset(
+        'svg/climacon-cloud_snow_alt.svg',
+        color: Colors.black87,
+      );
+    } else if (condition < 800) {
+      return SvgPicture.asset(
+        'svg/climacon-sun.svg',
+        color: Colors.black87,
+      );
+    } else {
+      return SvgPicture.asset(
+        'svg/climacon-cloud_sun.svg',
+        color: Colors.black87,
+      );
+    }
+  }
+
+  Widget getAirIcon(int index){
+    if(index == 1) {
+      return Image.asset('image/good.png',
+      width: 37.0,
+      height: 35.0);
+    } else if(index == 2) {
+      return Image.asset('image/fair.png',
+          width: 37.0,
+          height: 35.0);
+    } else if(index == 3) {
+      return Image.asset('image/moderate.png',
+          width: 37.0,
+          height: 35.0);
+    } else if(index == 4) {
+      return Image.asset('image/poor.png',
+          width: 37.0,
+          height: 35.0);
+    } else  {
+      return Image.asset('image/bad.png',
+          width: 37.0,
+          height: 35.0);
+    }
+  }
+
+
+  Widget getAirCondition(int index){
+    if(index == 1) {
+      return Text('매우 좋음',
+      style: TextStyle(
+        color: Colors.indigo,
+        fontWeight: FontWeight.bold
+        ),
+      );
+    } else if(index == 2) {
+      return Text('좋음',
+        style: TextStyle(
+            color: Colors.indigo,
+            fontWeight: FontWeight.bold
+        ),
+      );
+    } else if(index == 3) {
+      return Text('보통',
+        style: TextStyle(
+            color: Colors.indigo,
+            fontWeight: FontWeight.bold
+        ),
+      );
+    } else if(index == 4) {
+      return Text('나쁨',
+        style: TextStyle(
+            color: Colors.indigo,
+            fontWeight: FontWeight.bold
+        ),
+      );
+    } else  {
+      return Text('매우 나쁨',
+        style: TextStyle(
+            color: Colors.indigo,
+            fontWeight: FontWeight.bold
+        ),
+      );
+    }
+  }
+
+
+}
+```
+
+
+`loading.dart`
+
+```python
+import 'package:coding_chef1st/screens/weather_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:coding_chef1st/data/my_location.dart';
+import 'package:coding_chef1st/data/network.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+
+const apikey = 'a759b12d9ea168907120f96bd766b754';
+
+
+class Loading extends StatefulWidget {
+  const Loading({Key? key}) : super(key: key);
+
+  @override
+  _LoadingState createState() => _LoadingState();
+}
+
+class _LoadingState extends State<Loading> {
+  late double latitude3;
+  late double longitude3;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getLocation();
+  }
+
+  void getLocation() async {
+    MyLocation myLocation = MyLocation();
+    await myLocation.getMyCurrentLocation();
+    latitude3 = myLocation.latitude2;
+    longitude3 = myLocation.longitude2;
+    print(latitude3);
+    print(longitude3);
+
+    Network network = new Network(
+        'https://api.openweathermap.org/data/2.5/'
+            'weather?lat=$latitude3&lon='
+            '$longitude3&appid=$apikey&units=metric',
+        'https://api.openweathermap.org/data/2.5/'
+            'air_pollution?lat=$latitude3&lon='
+            '$longitude3&appid=$apikey');
+
+    var weatherData = await network.getJsonData();
+    print(weatherData);
+
+    var airData = await network.getAirData();
+    print(airData);
+
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return WeatherScreen(
+        parseWeatherData: weatherData,
+        parseAirPollution: airData,
+      );
+    }));
+  }
+
+  // void fetchData() async{
+  //
+  //     var myJson = pasingData['weather'][0]['description'];
+  //     print(myJson);
+  //     var windSpeed = pasingData['wind']['speed'];
+  //     var sysId = pasingData['id'];
+  //     print(windSpeed);
+  //     print(sysId);
+  //   } else {
+  //     print(response.statusCode);
+  //   }
+  // }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.amber,
+      body: Center(
+        child: SpinKitDoubleBounce(
+          color: Colors.white,
+          size: 80.0,
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+
+`weather_screen.dart`
+
+```python
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:timer_builder/timer_builder.dart';
+import 'package:intl/intl.dart';
+import 'package:coding_chef1st/model/model.dart';
+
+class WeatherScreen extends StatefulWidget {
+  WeatherScreen({this.parseWeatherData, this.parseAirPollution});
+
+  final dynamic parseWeatherData;
+  final dynamic parseAirPollution;
+
+  @override
+  _WeatherScreenState createState() => _WeatherScreenState();
+}
+
+class _WeatherScreenState extends State<WeatherScreen> {
+  Model model = Model();
+  String? cityName;
+  late int temp;
+  late Widget icon;
+  late Widget airIcon;
+  late Widget airState;
+  late String des;
+  late double dust1;
+  late double dust2;
+
+  var date = DateTime.now();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    updateData(widget.parseWeatherData, widget.parseAirPollution);
+  }
+
+  void updateData(dynamic whetherData, dynamic airData) {
+    double temp2 = whetherData['main']['temp'];
+    temp = temp2.round();
+    int condition = whetherData['weather'][0]['id'];
+    int index = airData['list'][0]['main']['aqi'];
+    cityName = whetherData['name'];
+    icon = model.getWeatherIcon(condition);
+    des = whetherData['weather'][0]['description'];
+
+
+    airIcon = model.getAirIcon(index);
+    airState = model.getAirCondition(index);
+
+    dust1 = airData['list'][0]['components']['pm10'];
+    dust2 = airData['list'][0]['components']['pm2_5'];
+
+    print(temp);
+    print(cityName);
+  }
+
+  String getSystemTime() {
+    var now = DateTime.now();
+    return DateFormat("h:mm a").format(now);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        // title: Text('dd'),
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        leading: IconButton(
+          icon: Icon(Icons.near_me),
+          onPressed: () {},
+          iconSize: 30.0,
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.location_searching,
+            ),
+            onPressed: () {},
+            iconSize: 30,
+          )
+        ],
+      ),
+      body: Container(
+        child: Stack(
+          children: [
+            Image.asset(
+              'image/background.jpg',
+              fit: BoxFit.cover,
+              width: double.infinity,
+              height: double.infinity,
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 150.0),
+                            Text(
+                              '$cityName',
+                              style: GoogleFonts.lato(
+                                  fontSize: 35.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
+                            Row(
+                              children: [
+                                TimerBuilder.periodic((Duration(minutes: 1)),
+                                    builder: (context) {
+                                  print('${getSystemTime()}');
+                                  return Text(
+                                    '${getSystemTime()}',
+                                    style: GoogleFonts.lato(
+                                        fontSize: 16.0, color: Colors.white),
+                                  );
+                                }),
+                                Text(DateFormat(' - EEEE, ').format(date),
+                                    style: GoogleFonts.lato(
+                                        fontSize: 16.0, color: Colors.white)),
+                                Text(DateFormat('d MMM, yyy').format(date),
+                                    style: GoogleFonts.lato(
+                                        fontSize: 16.0, color: Colors.white))
+                              ],
+                            )
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '$temp\u2103',
+                              style: GoogleFonts.lato(
+                                  fontSize: 85.0,
+                                  fontWeight: FontWeight.w300,
+                                  color: Colors.white),
+                            ),
+                            Row(
+                              children: [
+                                icon,
+                                SizedBox(
+                                  width: 10.0,
+                                ),
+                                Text('$des',
+                                    style: GoogleFonts.lato(
+                                        fontSize: 16.0, color: Colors.white))
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      Divider(
+                        height: 15.0,
+                        thickness: 2.0,
+                        color: Colors.white30,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Text('대기질 지수',
+                                  style: GoogleFonts.lato(
+                                      fontSize: 14.0, color: Colors.white)),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              airIcon,
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              airState,
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Text('미세 먼지',
+                                  style: GoogleFonts.lato(
+                                      fontSize: 14.0, color: Colors.white)),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Text('$dust1',
+                                  style: GoogleFonts.lato(
+                                      fontSize: 24.0, color: Colors.white)),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Text('mg/m3',
+                                  style: GoogleFonts.lato(
+                                      fontSize: 14.0, color: Colors.white,
+                                      fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Text('초미세먼지',
+                                  style: GoogleFonts.lato(
+                                      fontSize: 14.0, color: Colors.white)),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Text('$dust2',
+                                  style: GoogleFonts.lato(
+                                      fontSize: 24.0, color: Colors.white)),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Text('mg/m3',
+                                  style: GoogleFonts.lato(
+                                      fontSize: 14.0, color: Colors.white,
+                                      fontWeight: FontWeight.bold)),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+코딩셰프 조금 매운맛 20강부터 시작하기
