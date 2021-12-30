@@ -1673,4 +1673,4 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
 
 
-코딩셰프 조금 매운맛 20강부터 시작하기
+코딩셰프 조금 매운맛 25강부터 시작하기
