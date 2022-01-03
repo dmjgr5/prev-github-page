@@ -1662,7 +1662,91 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
 
 
+#### Stream Builder 예제
+- 1초마다 카운터가 증가하는 예제
 
+![example](/assets/images/flutterex13.png)
+
+
+
+`main.dart`
+
+```python
+
+
+import 'package:flutter/material.dart';
+import 'package:stream_ex/counter.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Stream Builder',
+      theme: ThemeData(
+        primaryColor: Colors.blue
+      ),
+      home: Counter(),
+    );
+  }
+}
+
+```
+
+`counter.dart`
+
+```python
+import 'package:flutter/material.dart';
+
+
+class Counter extends StatefulWidget {
+  const Counter({Key? key}) : super(key: key);
+
+  @override
+  _CounterState createState() => _CounterState();
+}
+
+class _CounterState extends State<Counter> {
+
+  final int price = 2000;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Stream Builder'),
+      ),
+      body: StreamBuilder<int>(
+        initialData: price,
+        stream: addStreamValue(),
+        builder: (context, snapshot) {
+          final priceNumber = snapshot.data.toString();
+          return Center(
+            child: Text(priceNumber,
+              style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.blue
+              ),),
+          );
+        },
+      ),
+    );
+  }
+
+
+  Stream<int> addStreamValue() {
+    return Stream<int>.periodic(
+        Duration(seconds: 1),
+            (count) => price + count
+    );
+  }
+}
+
+
+```
 
 
 
