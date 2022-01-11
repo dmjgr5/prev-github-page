@@ -98,6 +98,30 @@ sqlite> select users.naeme, comments.content
         where users.id=1;
 ```
 
+### sqlite3 데이터 추출하기
+
+sqlite3.3exe 가 있는 폴더에서 아래와 같이 실행한다.
+
+```
+2021-12-06  오전 11:03         1,083,392 sqlite3.exe
+2021-08-10  오후 08:59    <DIR>          static
+2021-08-10  오후 08:59    <DIR>          tests
+              16개 파일           2,854,205 바이트
+              13개 디렉터리  195,968,417,792 바이트 남음
+
+(pnbr_env) D:\1_GitSource\PANABARA>sqlite3 D:\1_GitSource\PANABARA\db.sqlite3
+SQLite version 3.37.0 2021-11-27 14:13:22
+Enter ".help" for usage hints.
+sqlite> .headers on
+sqlite> .mode csv
+sqlite> .output dataoutput.csv
+sqlite> select * from examples_stockbaseinfo;
+sqlite> .quit
+
+(pnbr_env) D:\1_GitSource\PANABARA>
+
+```
+
 
 ### <U>Library 관련</U>
 - YahooFinance 업데이트로 아래로 재설치 필요
