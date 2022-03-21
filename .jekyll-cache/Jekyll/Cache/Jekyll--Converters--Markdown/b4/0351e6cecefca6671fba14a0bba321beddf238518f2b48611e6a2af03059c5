@@ -1,0 +1,105 @@
+I"F<p><img src="/assets/images/flutter.png" alt="example" /></p>
+
+<blockquote>
+  <p>앱을 구축하는데 있어서 주된 걸림돌인 Android, iOS 등의 상이한 아키텍쳐가 있었으나, 구글에서 개발한 <code class="language-plaintext highlighter-rouge">Flutter</code> 는 이를 보완하고 보다 직관적으로 개발을 할 수 있게 한다. 기본적인 내용 및 개발 시 참조해야 할 만한 사항을 정리하고자 합니다..</p>
+</blockquote>
+
+<hr />
+
+<h3 id="주요-에러-해결-방법">주요 에러 해결 방법</h3>
+
+<h4 id="dont-support-null-safety---packageenglish_words-에러"><code class="language-plaintext highlighter-rouge">don't support null safety: - package:english_words</code> 에러</h4>
+<ul>
+  <li>Run –&gt; Edit Configurations –&gt; Add Additional Run args 에서 <code class="language-plaintext highlighter-rouge">--no-sound-null-safety</code> 를 추가한다.</li>
+</ul>
+
+<h4 id="코드-정렬">코드 정렬</h4>
+<ul>
+  <li>단축키 Ctl+Alt+L을 누르면 아래와 같이 자동정렬이 됩니다.</li>
+</ul>
+
+<h4 id="flutter-layout-학습-사이트">Flutter Layout 학습 사이트</h4>
+<ul>
+  <li><a href="https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e">https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e</a></li>
+</ul>
+
+<h4 id="const-와-final-의-차이점">Const 와 Final 의 차이점</h4>
+<ul>
+  <li>Cont 변수 : 컴파일 시 상수가 된다. 런타임 시에도 변하지 않는다. (Compile-time Constant)</li>
+  <li>Final 변수 : 런타임 시 상수가 된다. 변경 시, reBuild 되어야 한다. (Run-time Constant)</li>
+</ul>
+
+<h4 id="자료구조-종류">자료구조 종류</h4>
+
+<ul>
+  <li>List, Set</li>
+</ul>
+
+<h4 id="thread">Thread</h4>
+<ul>
+  <li>프로세스 내에서 실행되는 흐름의 단위</li>
+  <li><code class="language-plaintext highlighter-rouge">Dart</code> 는 싱글스레드로 운영되는 언어</li>
+</ul>
+
+<h4 id="future-async-await">Future, Async, await</h4>
+<ul>
+  <li>Future 클래스는 비동기 작업을 할 때 사용</li>
+  <li>Future 는 일정 소요시간 후에 실제 데이터나 에러를 반환</li>
+  <li>async 클래스는 await 메서드를 가지고 있음
+    <ul>
+      <li>await 로 선언된 메서드는 응답이 처리될 때까지 대기</li>
+    </ul>
+  </li>
+  <li>예제</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">import</span> <span class="s">'dart:io'</span><span class="p">;</span>
+
+<span class="n">void</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">showData</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="n">void</span> <span class="n">showData</span><span class="p">()</span> <span class="k">async</span> <span class="p">{</span>
+  <span class="n">startTask</span><span class="p">();</span>
+  <span class="n">String</span> <span class="n">account</span> <span class="o">=</span> <span class="k">await</span> <span class="n">accessData</span><span class="p">();</span>
+  <span class="n">fetchData</span><span class="p">(</span><span class="n">account</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">void</span> <span class="n">startTask</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">String</span> <span class="n">info1</span> <span class="o">=</span> <span class="s">'요청수행 시작'</span><span class="p">;</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">info1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">Future</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">accessData</span><span class="p">()</span> <span class="k">async</span> <span class="p">{</span>
+  <span class="n">String</span> <span class="n">account</span> <span class="o">=</span> <span class="s">''</span><span class="p">;</span>
+
+  <span class="n">Duration</span> <span class="n">time</span> <span class="o">=</span> <span class="n">Duration</span><span class="p">(</span><span class="n">seconds</span><span class="p">:</span> <span class="mi">3</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">inSeconds</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">sleep</span><span class="p">(</span><span class="n">time</span><span class="p">);</span>
+    <span class="k">await</span> <span class="n">Future</span><span class="p">.</span><span class="n">delayed</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="n">account</span> <span class="o">=</span> <span class="s">'8500만원'</span><span class="p">;</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">account</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">String</span> <span class="n">info2</span> <span class="o">=</span> <span class="s">'데이터를 가져왔습니다'</span><span class="p">;</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">info2</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">account</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">void</span> <span class="n">fetchData</span><span class="p">(</span><span class="n">String</span> <span class="n">account</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">String</span> <span class="n">info3</span> <span class="o">=</span> <span class="s">'잔액은 $account 원입니다..'</span><span class="p">;</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">info3</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">출력</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>요청수행 시작
+8500만원
+잔액은 8500만원 원입니다..
+</code></pre></div></div>
+
+:ET

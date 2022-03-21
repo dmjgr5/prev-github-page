@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Panabara 프로젝트 환경 설정
-category: 08_ToyProject
+category: 05_Cloud
 tag: [Django]
 ---
 

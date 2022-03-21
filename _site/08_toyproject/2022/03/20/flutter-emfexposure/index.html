@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Flutter - 무선국전파노출지수 &middot; Git Note
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/font.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VEHRJDYDE5');
+</script>
+  
+
+
+  
+
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+
+
+  <meta name="google-site-verification" content="v0aeEXWQ-gjxWFDbbfdHkDKbzu4BmIey_QigKtALiZ4" />
+
+
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>One a day</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/home/">Home</a>
+
+    
+
+    <!-- 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item" href="/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     -->
+<!-- 
+    <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+  </nav>
+  <div>
+    <div class="sidebar-nav-item">Category</div>
+    <nav class="content-ul">
+      
+
+
+      
+      <a href="/category/#01_Algorithm"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                01_Algorithm
+                            </span>
+        <span class="badge">3</span>
+      </a>
+      
+      <a href="/category/#02_Programming"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                02_Programming
+                            </span>
+        <span class="badge">8</span>
+      </a>
+      
+      <a href="/category/#03_Database"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                03_Database
+                            </span>
+        <span class="badge">4</span>
+      </a>
+      
+      <a href="/category/#04_AI"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                04_AI
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#05_Cloud"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                05_Cloud
+                            </span>
+        <span class="badge">14</span>
+      </a>
+      
+      <a href="/category/#06_BlockChain"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                06_BlockChain
+                            </span>
+        <span class="badge">4</span>
+      </a>
+      
+      <a href="/category/#07_Theoretical"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                07_Theoretical
+                            </span>
+        <span class="badge">2</span>
+      </a>
+      
+      <a href="/category/#08_ToyProject"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                08_ToyProject
+                            </span>
+        <span class="badge">5</span>
+      </a>
+      
+      <a href="/category/#09_Life"
+         class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                09_Life
+                            </span>
+        <span class="badge">1</span>
+      </a>
+      
+    </nav>
+  </div>
+  <div>
+    <div class="sidebar-nav-item">Tags</div>
+    <div class="tags-cloud">
+      <div>
+        
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Pro*C" style="font-size: 9pt; color: #555;">Pro*C</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SQL" style="font-size: 9pt; color: #555;">SQL</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#CSS" style="font-size: 9pt; color: #555;">CSS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#HTML" style="font-size: 9pt; color: #555;">HTML</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Python" style="font-size: 18pt; color: #eee;">Python</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GitBash" style="font-size: 9pt; color: #555;">GitBash</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySQL" style="font-size: 9pt; color: #555;">MySQL</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MySql" style="font-size: 9pt; color: #555;">MySql</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Connect" style="font-size: 9pt; color: #555;">Connect</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#JavaScript" style="font-size: 12pt; color: #888;">JavaScript</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PHP" style="font-size: 9pt; color: #555;">PHP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MachineLearning" style="font-size: 9pt; color: #555;">MachineLearning</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LinearRegression" style="font-size: 9pt; color: #555;">LinearRegression</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LogisticClassification" style="font-size: 9pt; color: #555;">LogisticClassification</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Flask" style="font-size: 9pt; color: #555;">Flask</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GCP" style="font-size: 9pt; color: #555;">GCP</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#NodeJs" style="font-size: 9pt; color: #555;">NodeJs</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#tensorflow" style="font-size: 9pt; color: #555;">tensorflow</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#주식" style="font-size: 12pt; color: #888;">주식</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#PyQt5" style="font-size: 9pt; color: #555;">PyQt5</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Kubernetes" style="font-size: 12pt; color: #888;">Kubernetes</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#CloudVision" style="font-size: 9pt; color: #555;">CloudVision</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#LCA" style="font-size: 9pt; color: #555;">LCA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#SparseTable" style="font-size: 9pt; color: #555;">SparseTable</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MST" style="font-size: 9pt; color: #555;">MST</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#BFS" style="font-size: 9pt; color: #555;">BFS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#FailureFunction" style="font-size: 9pt; color: #555;">FailureFunction</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Priority Queue" style="font-size: 9pt; color: #555;">Priority Queue</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Django" style="font-size: 15pt; color: #bbb;">Django</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Git" style="font-size: 9pt; color: #555;">Git</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Github" style="font-size: 15pt; color: #bbb;">Github</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#깃허브페이지" style="font-size: 9pt; color: #555;">깃허브페이지</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Jekyll" style="font-size: 9pt; color: #555;">Jekyll</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MSA" style="font-size: 9pt; color: #555;">MSA</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#MicroService" style="font-size: 9pt; color: #555;">MicroService</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Architecture" style="font-size: 9pt; color: #555;">Architecture</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#중앙값" style="font-size: 9pt; color: #555;">중앙값</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#분산" style="font-size: 9pt; color: #555;">분산</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#IQR" style="font-size: 9pt; color: #555;">IQR</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#5Whys" style="font-size: 9pt; color: #555;">5Whys</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Life" style="font-size: 9pt; color: #555;">Life</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#GoogleAnalytics" style="font-size: 9pt; color: #555;">GoogleAnalytics</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#geth" style="font-size: 9pt; color: #555;">geth</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Ethereum" style="font-size: 9pt; color: #555;">Ethereum</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Remix" style="font-size: 9pt; color: #555;">Remix</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Solidity" style="font-size: 9pt; color: #555;">Solidity</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#블록체인" style="font-size: 12pt; color: #888;">블록체인</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#도서" style="font-size: 9pt; color: #555;">도서</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#AWS" style="font-size: 12pt; color: #888;">AWS</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Markdown" style="font-size: 9pt; color: #555;">Markdown</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Cloud" style="font-size: 9pt; color: #555;">Cloud</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#EC2" style="font-size: 9pt; color: #555;">EC2</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Android" style="font-size: 12pt; color: #888;">Android</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Dart" style="font-size: 12pt; color: #888;">Dart</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#Flutter" style="font-size: 15pt; color: #bbb;">Flutter</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#전기차충전소" style="font-size: 9pt; color: #555;">전기차충전소</a>
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <a href="/tag/#전파노출지수" style="font-size: 9pt; color: #555;">전파노출지수</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <a class="sidebar-nav-item" href="https://github.com/dmjgr5/dmjgr5.github.io">GitHub project</a> -->
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a class="sidebar-nav-item" href="/about/">About</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2022. All rights reserved.
+    </p>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('hashchange', function(){
+    location.reload();
+  });
+</script>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="http://localhost:4000/" title="Home">Git Note</a>
+            <small>Day by day, in Everyway, I am getting better and better</small>
+
+            <a href="/search/"><i class="fa fa-search  " aria-hidden="true" style ="float:right;" ></i></a> 
+          </h3>
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <!-- <div style="background-image: url('/assets/images/titlebgimg1.png'); background-size: contain;"> -->
+  <h2 class="post-title"> Flutter - 무선국전파노출지수</h2>
+  <span class="post-date">   20 Mar 2022</span>
+   <p>지역별 무선국 전파 노출 지수를 확인할 수 있습니다.</p>
+
+<hr />
+
+<ul>
+  <li>주요 기능</li>
+</ul>
+
+<p>현재 지역 또는 선택한 지역 내 주어진 반경의 각 무선국 별 전파 강도 및 전파 노출지수를 확인합니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 선택한 지역 내 무선국 측정 정보 조회
+- 내 주변 찾기 조회
+- 무선국별 측정 전파 강도 및 전파노출지수 조회
+</code></pre></div></div>
+
+<ul>
+  <li>개발 기간
+    <ul>
+      <li>2022-03-12 ~ 2022-03-20 (8일)</li>
+    </ul>
+  </li>
+  <li>
+    <p>App URL : <a href="https://play.google.com/store/apps/details?id=com.dmjgr5.emf_exposure">무선국전파노출지수</a></p>
+  </li>
+  <li>관련 API
+    <ul>
+      <li><a href="https://www.data.go.kr/data/15077675/openapi.do">한국방송통신전파진흥원_의무측정무선국에_따른_전자파_노출지수</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>주요 화면</p>
+
+    <p><img src="/assets/images/flutter_emfexposure/1.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/2.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/3.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/4.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/5.jpg" alt="panabara" /></p>
+  </li>
+</ul>
+
+</div>
+
+
+ 
+
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h4>
+          <a href="http://localhost:4000/08_toyproject/2022/03/12/flutter-eleccharger/">
+            Flutter - 전기차충전소 위치찾기
+            <small>12 Mar 2022</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="http://localhost:4000/08_toyproject/2022/02/23/flutter-panabara/">
+            Flutter - 투자종목관리
+            <small>23 Feb 2022</small>
+          </a>
+        </h4>
+      </li>
+    
+      <li>
+        <h4>
+          <a href="http://localhost:4000/02_programming/2021/12/29/flutterexample/">
+            Flutter 주요 예제 정리
+            <small>29 Dec 2021</small>
+          </a>
+        </h4>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

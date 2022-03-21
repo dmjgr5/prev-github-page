@@ -1,0 +1,40 @@
+I"�<p>지역별 무선국 전파 노출 지수를 확인할 수 있습니다.</p>
+
+<hr />
+
+<ul>
+  <li>주요 기능</li>
+</ul>
+
+<p>현재 지역 또는 선택한 지역 내 주어진 반경의 각 무선국 별 전파 강도 및 전파 노출지수를 확인합니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 선택한 지역 내 무선국 측정 정보 조회
+- 내 주변 찾기 조회
+- 무선국별 측정 전파 강도 및 전파노출지수 조회
+</code></pre></div></div>
+
+<ul>
+  <li>개발 기간
+    <ul>
+      <li>2022-03-12 ~ 2022-03-20 (8일)</li>
+    </ul>
+  </li>
+  <li>
+    <p>URL : <a href="https://play.google.com/store/apps/details?id=com.dmjgr5.emf_exposure">무선국전파노출지수</a></p>
+  </li>
+  <li>관련 API
+    <ul>
+      <li><a href="https://www.data.go.kr/data/15077675/openapi.do">한국방송통신전파진흥원_의무측정무선국에_따른_전자파_노출지수</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>주요 화면</p>
+
+    <p><img src="/assets/images/flutter_emfexposure/1.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/2.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/3.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/4.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_emfexposure/5.jpg" alt="panabara" /></p>
+  </li>
+</ul>
+:ET

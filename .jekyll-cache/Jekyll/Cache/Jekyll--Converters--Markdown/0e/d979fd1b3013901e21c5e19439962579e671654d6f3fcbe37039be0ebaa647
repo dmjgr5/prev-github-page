@@ -1,0 +1,39 @@
+I"9<p>주식, 코인 등의 여러 계좌에 분산된 보유 종목들을 등록하여 투자 자산을 체크할 수 있습니다.</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p>주요 기능</p>
+
+    <ul>
+      <li>국내주식, 미국주식, 코인 보유종목 등록 및 삭제</li>
+      <li>동기화 버튼으로 시세 반영</li>
+      <li>마켓별 펑가금액 차트 확인</li>
+      <li>보유종목 파일 업로드 및 다운로드</li>
+      <li>잠금번호 설정</li>
+    </ul>
+  </li>
+  <li>개발 기간
+    <ul>
+      <li>2022-01-23 ~ 2022-02-23 (4주)</li>
+    </ul>
+  </li>
+  <li>
+    <p>URL : <a href="https://play.google.com/store/apps/details?id=com.dmjgr5.panabara">Panabara - 투자종목관리앱</a></p>
+  </li>
+  <li>
+    <p>주요 화면</p>
+
+    <p><img src="/assets/images/flutter_panabara/1.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_panabara/2.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_panabara/3.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_panabara/4.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_panabara/5.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_panabara/6.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_panabara/7.jpg" alt="panabara" />
+  <img src="/assets/images/flutter_panabara/8.jpg" alt="panabara" /></p>
+  </li>
+</ul>
+
+:ET
