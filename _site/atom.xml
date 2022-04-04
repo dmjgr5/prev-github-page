@@ -4,13 +4,56 @@
  <title>Git Note</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2022-03-21T19:53:11+09:00</updated>
+ <updated>2022-04-04T19:54:22+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>dcp</name>
    <email>dmjgr5@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Flutter - EarthToday - DSCOVR's EPIC</title>
+   <link href="http://localhost:4000/08_toyproject/2022/04/04/flutter-dscovrepic/"/>
+   <updated>2022-04-04T00:00:00+09:00</updated>
+   <id>http://localhost:4000/08_toyproject/2022/04/04/flutter-dscovrepic</id>
+   <content type="html">&lt;p&gt;우주의 L1 영역에 위치한 DSCOVR 위성의 지구 이미지를 확인할 수 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;주요 기능&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;날짜 선택, 날짜별 이미지 수 조회&lt;/li&gt;
+      &lt;li&gt;시간별 애니매이션(플레이 기능, 속도 조절)&lt;/li&gt;
+      &lt;li&gt;특정 이미지 확대&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;개발 기간
+    &lt;ul&gt;
+      &lt;li&gt;2022-03-23 ~ 2022-04-04 (13일)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;App URL : &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.dmjgr5.dscovrepic&quot;&gt;EarthToday - DSCOVR’s EPIC&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;관련 API
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://api.nasa.gov/&quot;&gt;NASA&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;주요 화면&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/flutter_dscovrepic/1.jpg&quot; alt=&quot;panabara&quot; /&gt;
+  &lt;img src=&quot;/assets/images/flutter_dscovrepic/2.jpg&quot; alt=&quot;panabara&quot; /&gt;
+  &lt;img src=&quot;/assets/images/flutter_dscovrepic/3.jpg&quot; alt=&quot;panabara&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Flutter - 무선국전파노출지수</title>
@@ -39,7 +82,7 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;App URL : &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.dmjgr5.emf_exposure&quot;&gt;무선국전파노출지수&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;App URL : &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.dmjgr5.emfexposure&quot;&gt;무선국전파노출지수&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;관련 API
     &lt;ul&gt;

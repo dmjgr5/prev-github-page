@@ -22,7 +22,7 @@ tag: [Flutter, 전파노출지수]
 - 개발 기간
 	- 2022-03-12 ~ 2022-03-20 (8일)
 
-- App URL : [무선국전파노출지수](https://play.google.com/store/apps/details?id=com.dmjgr5.emf_exposure)
+- App URL : [무선국전파노출지수](https://play.google.com/store/apps/details?id=com.dmjgr5.emfexposure)
 
 
 - 관련 API
