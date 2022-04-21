@@ -10,6 +10,104 @@ Django 서버 구축
 
 ---
 
+- 폴더를 만든다. 
+`mkdir djangotest`
+
+- vscode 에서 폴더열기를 한다.
+- 이후 터미널을 실행한다.
+- 가상환경을 만든다.
+`python -m venv venv`
+- f1 을 눌러 SelectorInterpreter 에서 ` Python: Select Interpreter` 를 선택한다.
+- 생성한 가상환경 내 `../Script/python.exe` 를 선택한다.
+	- 해당 파일이 없다면 종료후 다시 실행한다.
+- 터미널을 실행하여 우측상단 + 버튼을 클릭하여 가상환경을 activate 한다.
+	- activate.ps1 파일을 로드할 수 없습니다 오류 시 파워쉘 관리자에서 아래를 실행한다.
+		`PS C:\WINDOWS\System32> Set-ExecutionPolicy Unrestricted`
+
+
+- 장고를 설치한다.
+
+```
+(venv) PS D:\5_Django\djangotest> pip list     
+Package    Version
+---------- -------
+pip        18.1
+setuptools 40.6.2
+```
+
+```
+(venv) PS D:\5_Django\djangotest> pip install django
+```
+
+```
+(venv) PS D:\5_Django\djangotest\FirstProject\firstproject> pip list
+Package           Version
+----------------- -------
+asgiref           3.4.1
+Django            3.2.13
+pip               18.1
+pytz              2022.1
+setuptools        40.6.2
+sqlparse          0.4.2
+typing-extensions 4.1.1
+```
+
+- 가상환경의 상위 폴더에 프로젝트를 생성한다.
+`(venv) PS D:\5_Django\djangotest> mkdir FirstProject`
+
+- 프로젝트로 이동한 후 동작을 실행하도록 하겠습니다. 먼저 makemigrations 와 migrate를 입력해 프로젝트의 변동사항을 데이터베이스에 적용시킵니다.
+
+```
+(venv) PS D:\5_Django\djangotest\FirstProject> cd .\firstproject\        
+(venv) PS D:\5_Django\djangotest\FirstProject\firstproject> python manage.py makemigrations
+No changes detected
+(venv) PS D:\5_Django\djangotest\FirstProject\firstproject> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+```
+
+
+- python manage.py runserver를 입력해 서버를 실행시킵니다.
+
+```
+(venv) PS D:\5_Django\djangotest\FirstProject\firstproject> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 21, 2022 - 23:01:52
+Django version 3.2.13, using settings 'firstproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Apr/2022 23:01:54] "GET / HTTP/1.1" 200 10697
+```
+
+
+
+
+
+기타 내용
+
+```
+
+
 - 가상환경 세팅
 
 	- 프로젝트 폴더 생성하기
@@ -26,43 +124,4 @@ Django 서버 구축
 	- 앱시작하기
 		`python manage.py startapp quiz`
 
-
-1) 가상환경 만들기
-먼저 장고 프로젝트에 필요한 플로그인 등의 버전을 관리하기 위해 가상환경을 만들어보도록 하겠습니다. 가상환경 없이 그냥 설치해버리면 프로젝트마다의 프로그램 버전이 달라서 문제가 발생할 수 있습니다. 한 프로젝트마다 해당 프로젝트에 맞는 도구들을 넣는 공구함이라고 생각하면 됩니다.
-
-(1) 바탕화면 혹은 원하는 장소에 프로젝트 폴더를 만듭니다. (cmd를 활용해 만드셔도 무방합니다.)
-(2) VScode를 열고, Ctrl + Shift + E를 눌러 만든 폴더를 불러옵니다.
-(3) VScode에서 Ctrl + `를 눌러 터미널을 실행시킵니다.
-(4) 아래와 같이 입력해 만든 폴더 내에 가상환경 폴더를 만듭니다.
-
-
-
-
-(5) 설치가 끝나면 f1을 누르고 Select Interpreter를 치시고 Python: Select Interpreter를 선택, 아래와 같은 목록이 뜨면 생성했던 가상환경 폴더와 같은 이름이 있는 항목을 선택합니다. *만약 아래와 같이 나타나지 않는다면 VScode를 종료 후 실행시켜보시기 바랍니다.
-
-
-(6) 선택 후 단축키(Ctrl + Shift + `)를 눌러 새로운 터미널을 실행시킵니다. 혹은 단축키(Ctrl + `)를 눌러 터미널을 실행시킨 후 우측 상단의 + 모양을 눌러 터미널을 실행시킵니다. 
-
-
-* 만약 이 과정에서 오류(venv\Script\activate.ps1 파일을 로드할 수 없습니다.)가 생긴다면, 윈도우 검색을 이용해 Windows PowerShell을 관리자 권한으로 실행한 후 다음을 입력하면 됩니다. 입력한 뒤에는 다시 6번을 실행해주시면 됩니다.
-
-
-오류 발생시 관리자 권한으로 powershell 실행
- 
-
- 
-
-2) 장고(Django) 설치 및 실행
-(1) 위의 과정이 끝났으면 가상환경 터미널에서 장고를 설치하도록 하겠습니다.
-(2) 장고 설치를 위해 아래와 같이 입력합니다.
-
-
-(3) 설치가 완료된 화면입니다. 아래 뜨는 WARNING은 pip 버전이 낮아서 생기는 경고인데, pip을 최신버전으로 업데이트 해주면 해결됩니다.
-
-
-(4) 본격적으로 장고 프로젝트를 생성하도록 하겠습니다. 시작하기에 앞서 TEST폴더 밑에 FirstProject라는 폴더를 만들어 이곳에 Project를 실행하도록 하겠습니다. 실행 후에는 폴더를 FirstProject로 이동하도록 하겠습니다.
-
-
-폴더를 만들 때는 "mkdir 폴더명" 을 입력하면 됩니다.
-
-폴더를 이동할 때는 "cd 폴더명"으로 이동하고, 하위폴더로 이동할 때는 "cd .."을 입력하면 됩니다.
+```
