@@ -54,6 +54,8 @@ typing-extensions 4.1.1
 
 - 가상환경의 상위 폴더에 프로젝트를 생성한다.
 `(venv) PS D:\5_Django\djangotest> mkdir FirstProject`
+`(venv) PS D:\5_Django\djangotest> django-admin.exe startproject firstproject`
+
 
 - 프로젝트로 이동한 후 동작을 실행하도록 하겠습니다. 먼저 makemigrations 와 migrate를 입력해 프로젝트의 변동사항을 데이터베이스에 적용시킵니다.
 
@@ -100,6 +102,8 @@ Quit the server with CTRL-BREAK.
 ```
 
 
+- 앱만들기 
+`(venv) PS D:\5_Django\quiz_backend> python manage.py startapp quiz`
 
 
 
